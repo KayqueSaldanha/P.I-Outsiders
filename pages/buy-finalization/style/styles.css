@@ -228,17 +228,47 @@ ul {
 }
 
 /* ARROW GO-BACK STYLE */
-.arrow-back {
-    margin-top: 10px;
+.go-back-section {
+    display: flex;
+    margin-top: 20px;
+}
+
+.arrow-back {  
+    margin-top: 20px;  
     width: 13px;
     height: 13px;
     border: solid black;
     border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
+    border-radius: 2px;
     transform: rotate(135deg);
 }
 
+.go-back {
+    padding-left: 5px;
+    margin-top: 20px;
+}
 
+/* GO BACK LINK */
+.go-back a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* CONTINUE BUTTON */
+
+.btn-continue {
+    background: #1e1e1e;
+    color: #FFFFFF;
+    padding: 24px;
+    border: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.115em;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-left: auto;
+}
 
 /* RIGHT SIDE STYLE */
 
