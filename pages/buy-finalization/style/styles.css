@@ -256,6 +256,7 @@ ul {
 }
 
 .elipse p {
+    padding-top: 13px;
     display: flex;
     align-items: center;
     margin-left: 8px;
