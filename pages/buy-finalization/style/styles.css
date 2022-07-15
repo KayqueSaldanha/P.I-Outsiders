@@ -7,11 +7,11 @@ section {
 
 /* LEFT SIDE STYLE */
 /* LOGO SECTION */
-.main_logo h1 {
-    font-size: 40px;
+.main_logo {
+    display: flex;
+    justify-content: center;
     text-align: center;
     margin-top: 20px;
-    margin-bottom: 10px;
 }
 
 /* DIVISION SECTION BELOW LOGO */
