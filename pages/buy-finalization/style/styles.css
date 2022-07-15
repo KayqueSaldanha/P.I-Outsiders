@@ -227,6 +227,19 @@ ul {
     color: #000;
 }
 
+/* ARROW GO-BACK STYLE */
+.arrow-back {
+    margin-top: 10px;
+    width: 13px;
+    height: 13px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(135deg);
+}
+
+
+
 /* RIGHT SIDE STYLE */
 
 .chart {
