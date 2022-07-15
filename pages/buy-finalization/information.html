@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="../../styles/reset.css">
+    <link rel="stylesheet" href="./style/theme.css">
+    <link rel="stylesheet" href="./style/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informações</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="grid_container bg-left-side">
+                <div class="content_section">
+                    <div class="main_logo">
+                        <a href="#">
+                            <h1>OUTSIDER</h1>
+                        </a>
+                    </div>
+                    <div class="division-1"></div>
+                    <div class="info_payment">
+                        <ul>
+                            <li class="information-li">Informações</li>
+                            <img src="./img/arrow.svg" alt="">
+                            <li>Frete</li>
+                            <img src="./img/arrow.svg" alt="">
+                            <li>Pagamento</li>
+                        </ul>
+                    </div>
+                    <!-- CONTACT INFO, HAVE ACCOUNT? -->
+                    <div class="contact_info">
+                        <p>Informações de contato</p>
+                        <p>Já possui uma conta? <a href="#"><b>Fazer login</b></a></p>
+                    </div>
+                    <!-- E-MAIL INPUT -->
+                    <input id="email" type="text" placeholder="E-mail">
+                    <!-- CHECKBOX ITEM -->
+                    <div class="checkbox-item">
+                        <label class="container">Quero receber descontos e novidades por e-mail
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                        </label>
+                    </div>
+                    <div class="deliver-address">
+                        <h2>Endereço de entrega</h2>
+                    </div>
+                    <div class="name">
+                        <input class="deliver-input" id="name" type="text" placeholder="Nome ou razão social">
+                        <input class="deliver-input" id="surname" type="text" placeholder="Sobrenome">
+                    </div>
+                    <div class="cpf">
+                        <input class="deliver-input" id="cpf" type="text" placeholder="CPF">
+                        <input class="deliver-input" id="telefone" type="text" placeholder="Telefone">
+                    </div>
+                    <div class="cep">
+                        <input class="deliver-input" id="cep" type="text" placeholder="CEP">
+                        <input class="deliver-input" id="city" type="text" placeholder="Cidade">
+                    </div>
+                    <div class="street">
+                        <input class="deliver-input" id="street" type="text" placeholder="Rua">
+                        <input class="deliver-input" id="number" type="text" placeholder="Número">
+                    </div>
+                    <div class="district">
+                        <input class="deliver-input" id="neighborhood" type="text" placeholder="Bairro">
+                        <input class="deliver-input" id="complement" type="text" placeholder="Complemento">
+                    </div>
+                    <div class="form-floating">
+                        <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+                            <option id="state-selector" selected>Selecione seu Estado</option>
+                            <option value="1">Acre - AC</option>
+                            <option value="2">Alagoas - AL</option>
+                            <option value="3">Amapá - AP</option>
+                            <option value="4">Amazonas - AM</option>
+                            <option value="5">Bahia - BA</option>
+                            <option value="6">Ceará - CE</option>
+                            <option value="7">Distrito Federal - DF</option>
+                            <option value="8">Espírito Santo - ES</option>
+                            <option value="9">Goiás - GO</option>
+                            <option value="10">Maranhão - MA</option>
+                            <option value="11">Mato Grosso - MT</option>
+                            <option value="12">Mato Grosso do Sul - MS</option>
+                            <option value="13">Minas Gerais - MG</option>
+                            <option value="14">Pará - PA</option>
+                            <option value="15">Paraíba - PB</option>
+                            <option value="16">Paraná - PR</option>
+                            <option value="17">Pernambuco - PE</option>
+                            <option value="18">Piauí - PI</option>
+                            <option value="19">Rio de Janeiro - RJ</option>
+                            <option value="20">Rio Grande do Norte - RN</option>
+                            <option value="21">Rio Grande do Sul - RS</option>
+                            <option value="22">Rondônia - RO</option>
+                            <option value="23">Roraima - RR</option>
+                            <option value="24">Santa Catarina - SC</option>
+                            <option value="25">São Paulo - SP</option>
+                            <option value="26">Sergipe - SE</option>
+                            <option value="27">Tocantins - TO</option>
+                        </select>
+                        <label for="floatingSelect">Estado</label>
+                    </div>
+                    <div class="checkbox-item">
+                        <label class="container">Salvar minhas informações para a próxima vez
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmark"></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="grid_container bg-right-side">
+                <div class="chart">
+                    <div class="img-superior">
+                        <div class="elipse">
+                            <p>1</p>
+                        </div>
+                        <img src="./img/Screen Shot 2019-09-05 at 3.51.png" alt="">
+                        <div class="item-description">
+                            <p id="description">TECH T-SHIRT</p>
+                            <p id="information">Preta / P</p>
+                        </div>
+                        <div class="item-price">
+                            <p>R$ 129,00</p>
+                        </div>
+                    </div>
+                    <div class="division">
+                        <!-- Here goes the division page -->
+                    </div>
+                    <div class="discount_section">
+                        <input type="text" id="discount-cuppon" name="discount" placeholder="Código de desconto">
+                        <button class="btn-apply">APLICAR</button>
+                    </div>
+                    <div class="division">
+                        <!-- Here goes the division page -->
+                    </div>
+                    <div>
+                        <div class="frete">
+                            <span id="subtotal">Subtotal</span>
+                            <span id="subtotal-price">R$ 129,00</span>
+                        </div>
+                        <div class="frete-price">
+                            <span id="frete">Frete</span>
+                            <span id="calc">Calculado na proxima etapa</span>
+                        </div>
+                        <div class="division">
+                            <!-- Here goes the division page -->
+                        </div>
+                        <div class="total-calc">
+                            <span id="total">TOTAL</span>
+                            <span id="total-price">R$ 129,00</span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <!-- BOOTSTRAP SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP SCRIPT -->
+</body>
+
+</html>
