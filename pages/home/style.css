@@ -1,0 +1,100 @@
+header{
+    font-family: 'Roboto';
+    width: 1920px;
+}
+
+.superior{
+    height: 3vh;
+    background: #323232;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.115em;
+    text-transform: uppercase;
+}
+ 
+.inferior{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 19px;
+    font-variant: small-caps;
+    color: #000000; 
+    margin-left: 70px;
+}
+
+.logo{
+    margin-left: 120px;
+}
+.titulos{
+    margin-left: 15px;
+}
+
+.search{
+    margin-left: 200px;
+    height: 35px;
+    width: 300px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    border-radius: 15px;
+}
+
+.pesquisar{
+    display: flex;
+}
+
+#usu{
+    margin-left: 40px;   
+}
+
+#sac{
+    margin-left: 15px; 
+}
+
+.carousel{
+    width: 1920px;
+    height: 560px;
+}
+.cd-block{
+    width: 1920px;
+    height: 900px;
+}
+
+.esq{
+    width: 684px;
+    height: 667px;
+    left: 157px;
+    top: 758px;
+    margin-top: 52px;
+    margin-left: 162px;
+}
+
+.dir{
+    width: 782px;
+    height: 503px;
+    display: flex;
+    justify-content: space-between;
+}
+.sec2{
+    display: flex;
+    width: 1920px;
+    height: 503px;
+}
+
+.lancamentos{
+    margin-top: 50px;
+}
+
