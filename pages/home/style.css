@@ -1,100 +1,88 @@
-header{
-    font-family: 'Roboto';
-    width: 1920px;
+#superior{
+    height: 30px;
 }
 
-.superior{
-    height: 3vh;
-    background: #323232;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 19px;
-    letter-spacing: 0.115em;
-    text-transform: uppercase;
-}
- 
-.inferior{
-    display: flex;
-    align-items: center;
-}
-
-.menu{
+#infos{
+    height: 19px;
+    width: 1394px;
     display: flex;
     justify-content: space-between;
-    font-style: normal;
+    margin-left: auto;
+    margin-right: auto;
     font-weight: 400;
-    font-size: 25px;
-    line-height: 19px;
-    font-variant: small-caps;
-    color: #000000; 
-    margin-left: 70px;
+    font-size: 16px;
+    padding-top: 7px;
+}
+
+#inferior{
+    height: 80px;
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
 }
 
 .logo{
-    margin-left: 120px;
-}
-.titulos{
-    margin-left: 15px;
+    padding-top: 39px;
 }
 
-.search{
-    margin-left: 200px;
-    height: 35px;
-    width: 300px;
-    font-weight: 300;
+#titulos{
+    width: 800px;
+    height: 16px;
+    justify-content: space-between;
     font-size: 16px;
-    line-height: 19px;
-    border-radius: 15px;
+    padding-top: 57px;
 }
 
 .pesquisar{
-    display: flex;
+    padding-top: 46px;
 }
 
-#usu{
-    margin-left: 40px;   
+#icones{
+    font-size: 40px;
+    padding-top: 40px;
 }
 
-#sac{
-    margin-left: 15px; 
+.sec1{
+    padding-top: 20px;
 }
 
-.carousel{
-    width: 1920px;
-    height: 560px;
-}
-.cd-block{
-    width: 1920px;
-    height: 900px;
-}
-
-.esq{
-    width: 684px;
-    height: 667px;
-    left: 157px;
-    top: 758px;
-    margin-top: 52px;
-    margin-left: 162px;
-}
-
-.dir{
-    width: 782px;
+#sec2{
+    width: 1592px;
     height: 503px;
-    display: flex;
-    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
 }
-.sec2{
-    display: flex;
-    width: 1920px;
-    height: 503px;
+
+#sec2-esq{
+    width: 666px;
+    height: 482px;
 }
 
 .lancamentos{
-    margin-top: 50px;
+    width: 479px;
+    height: 35px;
+    font-size: 30px;
+    line-height: 35px;
+    padding-left: 295px;
 }
 
+#card-master{
+    display: flex;
+    padding-top: 27px;
+}
+.card-header1{
+    width: 338px;
+    height: 338px;
+}
+
+.card-header2{
+    width: 338px;
+    height: 338px;
+}
+
+#sec2-dir{
+    width: 780px;
+    height: 503px;
+}
