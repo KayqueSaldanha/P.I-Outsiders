@@ -1,0 +1,33 @@
+/* 2. Main
+/************************************/
+
+.bread__list {
+    display: flex;
+    gap: 20px;
+    padding: 10px 0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+}
+
+.bread__list li a {
+    color: #626262;
+    color: inherit;
+    transition: color .5s;
+}
+
+.bread__crumb .bread__crumb-c .bread__list::after {
+    content: '/';
+    margin: 0 15px;
+    font-size: 10px;
+}
+
+.shelf__container {
+    padding: 30px 0px
+}
+
+.shelf__product {
+    border: 3px solid #F2F2F2;
+    width: 240px;
+    height: 420px
+}
