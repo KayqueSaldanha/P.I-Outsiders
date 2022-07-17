@@ -30,5 +30,6 @@ section {
 .division-shipping {
     width: 90%;
     margin-top: 10px;
+    margin-left: 20px;
     border: 1px solid #D9D9D9;
 }
