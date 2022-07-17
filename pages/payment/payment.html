@@ -32,81 +32,137 @@
                             <img src="../buy-finalization/img/arrow.svg" alt="">
                             <li class="frete-li">Frete</li>
                             <img src="../buy-finalization/img/arrow.svg" alt="">
-                            <li>Pagamento</li>
+                            <li class="payment-li">Pagamento</li>
                         </ul>
                     </div>
                     <div class="main-container-shipping">
                         <!-- SHIPPING SELECTOR -->
                         <div class="shipping-info">
-                            <p>Forma de frete</p>
+                            <p>Escolha sua forma de pagamento</p>
                         </div>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
 
-                        <div class="slc-shipping">
-                            <div class="shipping-container">
-                                <div class="shipping-item">
-                                    <label class="container">
-                                        <p>Loggi</p>
-                                        <p>4 dias úteis</p>
-                                        <input type="radio" checked="checked" name="radio">
-                                        <span class="checkmark"></span>
-                                    </label><!-- container -->
-                                </div><!-- shipping-item -->
-                                <div class="shipping-price">
-                                    <span id="shipping-price">R$ 9,90</span>
-                                </div><!-- shipping-price -->
-                            </div><!-- shipping-container -->
-                            <div class="division-shipping">
-                                <!-- Here goes the division page -->
-                            </div><!-- division-shipping -->
-                            <div class="shipping-container">
-                                <div class="shipping-item">
-                                    <label class="container">
-                                        <p>Loggi</p>
-                                        <p>4 dias úteis</p>
-                                        <input type="radio" checked="checked" name="radio">
-                                        <span class="checkmark"></span>
-                                    </label><!-- container -->
-                                </div><!-- shipping-item -->
-                                <div class="shipping-price">
-                                    <span id="shipping-price">R$ 9,90</span>
-                                </div><!-- shipping-price -->
-                            </div><!-- shipping-container -->
-                            <div class="division-shipping">
-                                <!-- Here goes the division page -->
-                            </div><!-- division-shipping -->
-                            <div class="shipping-container">
-                                <div class="shipping-item">
-                                    <label class="container">
-                                        <p>Loggi</p>
-                                        <p>4 dias úteis</p>
-                                        <input type="radio" checked="checked" name="radio">
-                                        <span class="checkmark"></span>
-                                    </label><!-- container -->
-                                </div><!-- shipping-item -->
-                                <div class="shipping-price">
-                                    <span id="shipping-price">R$ 9,90</span>
-                                </div><!-- shipping-price -->
-                            </div><!-- shipping-container -->
-                        </div><!-- slc-shipping -->
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <div class="payment-method">
+                                            <label class="container">
+                                                <img src="./img/Icon-CreditCard.svg" alt="">
+                                                <p class="description-method">Cartão de crédito</p>
+                                                <input type="radio" checked name="radio">
+                                                <span class="checkmark"></span>
+                                            </label><!-- container -->
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="name">
+                                            <input class="credit-card-input" id="credit-card-nmb" type="number"
+                                                placeholder="Número do cartão">
+                                            <input class="credit-card-input" id="credit-card-expiration" type="text"
+                                                placeholder="(MM/AA)">
+                                            <input class="credit-card-input" id="credit-card-cvv" type="number"
+                                                placeholder="CVV">
+                                            <input class="credit-card-input" id="credit-card-name" type="text"
+                                                placeholder="Nome impresso no cartão">
+                                            <input class="credit-card-input" id="credit-card-cpf" type="number"
+                                                placeholder="CPF ou CNPJ">
+                                            <div class="form-floating">
+                                                <select class="form-select" id="floatingSelect"
+                                                    aria-label="Floating label select example">
+                                                    <option id="state-selector" selected>Parcelas</option>
+                                                    <option value="1">1x - R$ 138,90 sem juros</option>
+                                                    <option value="2">2x - R$ 69,45 sem juros</option>
+                                                    <option value="3">3x - R$ 46,30 sem juros</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division">
+                                    <!-- Here goes the division page -->
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <div class="payment-method">
+                                            <label class="container">
+                                                <img src="./img/pix.svg" alt="">
+                                                <p class="description-method">Pix</p>
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label><!-- container -->
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="pix-description">
+                                            <img src="./img/pix-image.svg" alt="">
+                                            <p>Ao selecionar <strong>“Finalizar a compra”</strong>, você verá o código
+                                                para fazer o
+                                                pagamento instantâneo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division">
+                                    <!-- Here goes the division page -->
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <div class="payment-method">
+                                            <label class="container">
+                                                <img src="./img/Icon-Barcode.svg" alt="">
+                                                <p class="description-method">Boleto bancário</p>
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label><!-- container -->
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="bill-description">
+                                            <img src="./img/boleto-img.svg" alt="">
+                                            <p>Ao selecionar <strong>“Finalizar a compra”</strong>, você verá o boleto
+                                                na tela e terá 3 dias
+                                                para efetuar o pagamento.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- slc-shipping -->
 
-                        <!-- SECTION TO CONTINUE OR GO BACK -->
-                        <div class="go-back-section">
-                            <div class="arrow-back">
-                            </div><!-- arrow-back -->
-                            <div class="go-back">
-                                <a href="../buy-finalization/information.html">
-                                    <p>Voltar para Informações</p>
-                                </a>
-                            </div><!-- go-back -->
-                            <!-- CONTINUE BUTTON -->
-                            <div class="btn-payment">
-                                <a href="#">
-                                    <button class="btn-continue">Continuar com o pagamento</button>
-                                </a>
-                            </div><!-- btn-payment -->
-                        </div><!-- go-back-section -->
-                    </div><!-- main-container-shipping -->
-                </div><!-- content_section -->
+                    <!-- SECTION TO CONTINUE OR GO BACK -->
+                    <div class="go-back-section">
+                        <div class="arrow-back">
+                        </div><!-- arrow-back -->
+                        <div class="go-back">
+                            <a href="../shipping/shipping.html">
+                                <p>Voltar para frete</p>
+                            </a>
+                        </div><!-- go-back -->
+                        <!-- CONTINUE BUTTON -->
+                        <div class="btn-payment">
+                            <a href="#">
+                                <button class="btn-continue">Finalizar a compra</button>
+                            </a>
+                        </div><!-- btn-payment -->
+                    </div><!-- go-back-section -->
+                </div><!-- main-container-shipping -->
+            </div><!-- content_section -->
             </div><!-- grid_container bg-left-side -->
 
             <!-- RIGHT SIDE -->

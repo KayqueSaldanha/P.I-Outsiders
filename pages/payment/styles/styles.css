@@ -28,14 +28,14 @@
     justify-content: center;
 }
 
+.payment-li {
+    font-weight: 700;
+}
+
 .main-container-shipping {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.frete-li {
-    font-weight: 700;
 }
 
 ul {
@@ -71,6 +71,105 @@ ul {
     border-radius: 5px;
 }
 
+/* PAYMENT METHOD STYLE */
+.description-method {
+    margin-top: 12px;
+}
+
+.bill-description,
+.pix-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.accordion {
+    width: 550px;
+    border: solid 1px #9C9C9C;
+    border-radius: 5px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #000;
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    border: none !important;
+    box-shadow: none;
+}
+
+.accordion-item {
+    border: none;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.115em;
+}
+
+.credit-card-input {
+    display: flex;
+    box-sizing: border-box;
+    font-weight: 300;
+    height: 40px;
+    font-size: 14px;
+    letter-spacing: 0.115rem;
+    padding: 12px 20px;
+    background-color: #FFFFFF;
+    border-radius: 4px;
+    border: 1px solid #9C9C9C;
+    color: #9C9C9C;
+    margin-top: 10px;
+}
+
+#credit-card-nmb {
+    width: 370px;  
+}
+
+#credit-card-expiration {    
+    width: 120px;
+}
+
+#credit-card-cvv {
+    width: 100px;
+}
+
+#credit-card-name {
+    width: 390px;
+}
+
+#credit-card-cpf {
+    width: 300px;
+}
+
+.name {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-floating>.form-select {
+    margin-top: 10px;
+    width: 190px;
+    font-weight: 300;
+    padding-top: 10px;
+    letter-spacing: 0.115rem;
+    color: #9C9C9C;
+    border: 1px solid #9C9C9C;
+    height: 40px;
+}
+
+.accordion-body {
+    display: flex;
+}
+
 /* SHIPPING SELECTOR STYLE */
 .shipping-info {
     display: flex;
@@ -79,11 +178,10 @@ ul {
 
 /* radio btn style */
 .container {
-    display: block;
+    display: flex;
     position: relative;
+    gap: 1rem;
     padding-left: 35px;
-    margin-bottom: 12px;
-    margin-top: 20px;
     cursor: pointer;
     font-size: 18px;
     -webkit-user-select: none;
@@ -101,7 +199,7 @@ ul {
 
 /* Create a custom radio button */
 .checkmark {
-    margin-top: 18px;
+    margin-top: 10px;
     position: absolute;
     top: 0;
     left: 0;
