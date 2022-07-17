@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="../../styles/reset.css">
     <link rel="stylesheet" href="./styles/theme.css">
     <link rel="stylesheet" href="./styles/styles.css">
@@ -9,12 +14,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frete</title>
 </head>
+
 <body>
     <main>
         <section>
             <div class="grid_container bg-left-side">
-                
+                <div class="content_section">
+                    <div class="main_logo">
+                        <a href="#">
+                            <img src="../../assets/imagens/main-logo.png" alt="Outsider logo">
+                        </a>
+                    </div>
+                    <div class="division-1"></div>
+                    <div class="info_payment">
+                        <ul>
+                            <li class="information-li">Informações</li>
+                            <img src="../buy-finalization/img/arrow.svg" alt="">
+                            <li class="frete-li">Frete</li>
+                            <img src="../buy-finalization/img/arrow.svg" alt="">
+                            <li>Pagamento</li>
+                        </ul>
+                    </div>
+                    <!-- SHIPPING SELECTOR -->
+                    <div class="shipping-info">
+                        <p>Forma de frete</p>
+                    </div>
+
+                    <div class="slc-shipping">
+                        <div class="division-shipping">
+                            <!-- Here goes the division page -->
+                        </div>
+                        <div class="division-shipping">
+                            <!-- Here goes the division page -->
+                        </div>
+                    </div>
+
+                    <!-- SECTION TO CONTINUE OR GO BACK -->
+                    <div class="go-back-section">
+                        <div class="arrow-back">
+                        </div>
+                        <div class="go-back">
+                            <a href="../buy-finalization/information.html">
+                                <p>Voltar para Informações</p>
+                            </a>
+                        </div>
+                        <!-- CONTINUE BUTTON -->
+                        <div class="btn-payment">
+                            <a href="#">
+                                <button class="btn-continue">Continuar com o pagamento</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <!-- RIGHT SIDE -->
             <div class="grid_container bg-right-side">
                 <div class="chart">
                     <div class="img-superior">
@@ -60,6 +114,11 @@
                 </div>
         </section>
     </main>
-    
+    <!-- BOOTSTRAP SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP SCRIPT -->
 </body>
+
 </html>
