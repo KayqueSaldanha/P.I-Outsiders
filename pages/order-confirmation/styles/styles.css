@@ -1,0 +1,172 @@
+/* LEFT SIDE STYLE */
+/* LOGO SECTION */
+.main_logo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* DIVISION SECTION BELOW LOGO */
+.division-1 {
+    width: 300px;
+    display: flex;
+    border-top: 1px solid #000;
+}
+
+/* NO-LINK STYLE FOR LOGO */
+.main_logo a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* LIST OF THE ITENS BELOW THE DIVISION LOGO */
+/* main container, sessão que fica o background branco */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border: 1px solid #9c9c9c;
+    border-radius: 4px;
+    width: 550px;
+}
+
+
+/* ARROW GO-BACK STYLE */
+.go-back-section {
+    display: flex;
+    margin-top: 20px;
+}
+
+/* GO BACK LINK */
+.go-back a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* CONTINUE BUTTON */
+
+.btn-back-to-main {
+    margin-left: auto;
+}
+
+.btn-continue {
+    background: #1e1e1e;
+    color: #FFFFFF;
+    padding: 24px;
+    border: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.115em;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-left: auto;
+}
+
+/* RIGHT SIDE STYLE */
+
+.chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-superior {
+    display: flex;
+}
+
+.img-superior img {
+    display: flex;
+    width: 78px;
+    height: 70px;
+}
+
+.elipse {
+    display: flex;
+    position: absolute;
+    margin-left: 56px;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background: rgba(106, 102, 102, 0.8);
+}
+
+.elipse p {
+    padding-top: 13px;
+    display: flex;
+    align-items: center;
+    margin-left: 8px;
+    color: white;
+}
+
+#description,
+.item-price,
+#subtotal-price {
+    font-weight: 700;
+}
+
+#information {
+    font-weight: 300;
+}
+
+#description,
+#information {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.item-price {
+    font-size: 20px;
+    margin-left: 150px;
+}
+
+/* FRETE SECTION STYLE*/
+
+.frete {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#subtotal-price {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+#subtotal,
+#frete {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.frete-price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#calc {
+    margin-top: 6px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* TOTAL SECTION STYLE */
+
+.total-calc {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#total {
+    font-weight: 300;
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+#total-price {
+    font-weight: 900;
+    font-size: 32px;
+}
