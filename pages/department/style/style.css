@@ -29,5 +29,26 @@
 .shelf__product {
     border: 3px solid #F2F2F2;
     width: 240px;
-    height: 420px
+    height: 390px
+}
+
+.shelf__btn {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    height: 40px;
+    margin: 16px 0px;
+    opacity: 0;
+    position: absolute;
+}
+
+.shelf__product:hover .shelf__btn {
+    opacity: 1;
+    position: relative;
 }
