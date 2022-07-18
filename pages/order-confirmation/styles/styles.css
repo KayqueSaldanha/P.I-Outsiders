@@ -2,22 +2,46 @@
 /* LOGO SECTION */
 .main_logo {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     margin-top: 20px;
 }
 
 /* DIVISION SECTION BELOW LOGO */
 .division-1 {
     width: 300px;
-    display: flex;
     border-top: 1px solid #000;
+}
+
+/* margem da divisão entre itens */
+.division-adjustment {
+    margin: 0 40px;
 }
 
 /* NO-LINK STYLE FOR LOGO */
 .main_logo a {
     text-decoration: none;
     color: #000;
+}
+
+/* estilização do subtitulo */
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-confirmed {
+    letter-spacing: 0.115em;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 18px 0;
+}
+
+.tks {
+    font-weight: 300;
+    margin-bottom: 24px;
 }
 
 /* LIST OF THE ITENS BELOW THE DIVISION LOGO */
@@ -31,6 +55,74 @@
     width: 550px;
 }
 
+/* sessão que fica a parte de resumo da compra */
+/* numero da compra e forma de pagamento */
+.order-badge {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+
+.payment-method h2 {
+    margin-bottom: 20px;
+}
+
+.icon-value {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    position: relative;
+    bottom: 10px;
+}
+
+.buy-resume h2 {
+    margin: 10px 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.order-number {
+    margin-left: 40px;
+}
+
+#order-number {
+    font-weight: 700;
+}
+
+/* sessão do e-mail de contato */
+.email-of-contact {
+    margin: 18px 40px ;
+}
+
+.email-of-contact h2 {
+    font-weight: 700;
+}
+
+/* sessão do endereço do usuário */
+.address {
+    margin: 18px 40px;
+}
+
+.address h2 {
+    font-weight: 700;
+}
+
+.address p {
+    margin-bottom: 0;
+    line-height: 25px;
+}
+
+/* sessão da forma de frete */
+.shipping-method {
+    margin: 18px 40px;
+}
+
+.shipping-method h2 {
+    font-weight: 700;
+}
 
 /* ARROW GO-BACK STYLE */
 .go-back-section {
