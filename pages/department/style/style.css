@@ -31,3 +31,12 @@
     width: 240px;
     height: 420px
 }
+
+.title {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #363636;
+    padding-top: 8px;
+}

@@ -68,21 +68,58 @@
     padding-left: 295px;
 }
 
-#card-master{
-    display: flex;
-    padding-top: 27px;
-}
-.card-header1{
-    width: 338px;
-    height: 338px;
-}
-
-.card-header2{
-    width: 338px;
-    height: 338px;
-}
-
 #sec2-dir{
     width: 780px;
     height: 503px;
+}
+#card-master{
+    align-items: center;
+    padding-top: 27px;
+    display: flex;
+}
+
+.title {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #363636;
+    padding-top: 8px;
+}
+.price {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    padding: 15px 0px 5px;
+    justify-content: center;
+}
+
+.shelf__p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    color: #7B7B7B;
+}
+
+.card-body{
+    align-items: center;
+}
+
+.card{
+    width: 339px;
+    height: 400px;
+}
+
+#img2-tshirt{
+    margin-left: 103px;
+}
+
+.sec3{
+    width: 1589px;
+    height: 263px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 71px;
 }
