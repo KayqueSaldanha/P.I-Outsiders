@@ -1,10 +1,3 @@
-/* INIT OF GRID TEMPLATE, LEFT-RIGHT SIDED */
-section {
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr;
-}
-
 /* LEFT SIDE STYLE */
 /* LOGO SECTION */
 .main_logo {
@@ -17,10 +10,9 @@ section {
 /* DIVISION SECTION BELOW LOGO */
 .division-1 {
     display: flex;
-    justify-content: center;
     border-top: 1px solid #000;
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 115px;
+    margin-right: 115px;
     margin-bottom: 14px;
 }
 
@@ -36,8 +28,14 @@ section {
     justify-content: center;
 }
 
-.information-li {
+.payment-li {
     font-weight: 700;
+}
+
+.main-container-shipping {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 ul {
@@ -53,8 +51,8 @@ ul {
     height: 22px;
 }
 
-/* CONTACT INFORMATION AND EMAIL ADDRESS */
-.contact_info {
+/* SHIPPING INFORMATION */
+.shipping-info {
     margin-top: 30px;
     font-weight: 300;
     font-size: 15px;
@@ -62,169 +60,202 @@ ul {
     justify-content: space-between;
 }
 
-.contact_info a {
-    font-weight: 600;
-    color: #000;
-    text-decoration: none;
+/* SHIPPING SELECTION */
+.slc-shipping {
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    height: 300px;
+    background: #FFFFFF;
+    border: 1px solid #9C9C9C;
+    border-radius: 5px;
 }
 
-#email {
+/* PAYMENT METHOD STYLE */
+.description-method {
+    margin-top: 12px;
+}
+
+.bill-description,
+.pix-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.accordion {
+    width: 550px;
+    border: solid 1px #9C9C9C;
+    border-radius: 5px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #000;
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.accordion-button:focus {
+    border: none !important;
+    box-shadow: none;
+}
+
+.accordion-item {
+    border: none;
+}
+
+.payment-method {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.115em;
+}
+
+.credit-card-input {
     display: flex;
     box-sizing: border-box;
-    margin-top: 10px;
-    width: 600px;
-    height: 40px;
     font-weight: 300;
+    height: 40px;
     font-size: 14px;
-    letter-spacing: 0.115em;
+    letter-spacing: 0.115rem;
     padding: 12px 20px;
-    background: #FFFFFF;
+    background-color: #FFFFFF;
     border-radius: 4px;
     border: 1px solid #9C9C9C;
     color: #9C9C9C;
+    margin-top: 10px;
 }
 
-/* CHECKBOX STYLE */
-.checkbox-item {
+#credit-card-nmb {
+    width: 370px;  
+}
+
+#credit-card-expiration {    
+    width: 120px;
+}
+
+#credit-card-cvv {
+    width: 100px;
+}
+
+#credit-card-name {
+    width: 390px;
+}
+
+#credit-card-cpf {
+    width: 300px;
+}
+
+.name {
     display: flex;
-    align-items: center;
-    margin-top: 7px;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.container {
-    display: block;
-    position: relative;
-    padding-left: 25px;
-    padding-top: 3px;
-    margin-bottom: 12px;
-    cursor: pointer;
+.form-floating>.form-select {
+    margin-top: 10px;
+    width: 190px;
     font-weight: 300;
-    font-size: 14px;
+    padding-top: 10px;
+    letter-spacing: 0.115rem;
+    color: #9C9C9C;
+    border: 1px solid #9C9C9C;
+    height: 40px;
+}
+
+.accordion-body {
+    display: flex;
+}
+
+/* SHIPPING SELECTOR STYLE */
+.shipping-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* radio btn style */
+.container {
+    display: flex;
+    position: relative;
+    gap: 1rem;
+    padding-left: 35px;
+    cursor: pointer;
+    font-size: 18px;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
 }
 
+/* Hide the browser's default radio button */
 .container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
 
+/* Create a custom radio button */
 .checkmark {
+    margin-top: 10px;
     position: absolute;
     top: 0;
     left: 0;
     height: 20px;
     width: 20px;
     background-color: #eee;
-    border: 1px solid #9C9C9C;
-    border-radius: 2px;
+    border-radius: 50%;
 }
 
+/* On mouse-over, add a grey background color */
 .container:hover input~.checkmark {
     background-color: #ccc;
 }
 
+/* When the radio button is checked, add a black background */
 .container input:checked~.checkmark {
-    background-color: #9C9C9C;
+    background-color: #1e1e1e;
 }
 
+/* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
     content: "";
     position: absolute;
     display: none;
 }
 
+/* Show the indicator (dot/circle) when checked */
 .container input:checked~.checkmark:after {
     display: block;
 }
 
+/* Style the indicator (dot/circle) */
 .container .checkmark:after {
-    left: 6px;
-    top: 1px;
-    width: 7px;
-    height: 15px;
-    border: solid black;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(45deg);
-    -ms-transform: rotate(45deg);
-    transform: rotate(45deg);
+    top: 7px;
+    left: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
 }
 
-/* END OF CHECKBOX STYLE */
-
-.deliver-address {
-    margin-top: 14px;
-    font-weight: 300;
-    font-size: 18px;
-}
-
-.name,
-.cpf,
-.cep,
-.street,
-.district,
-.state {
+.shipping-container {
     display: flex;
     justify-content: space-between;
+    margin: 0 10px;
 }
 
-.deliver-input {
-    box-sizing: border-box;
-    margin-top: 10px;
-    width: 290px;
-    height: 40px;
-    font-weight: 300;
-    font-size: 14px;
-    letter-spacing: 0.115em;
-    padding: 12px 20px;
-    background: #FFFFFF;
-    border-radius: 4px;
-    border: 1px solid #9C9C9C;
-    color: #9C9C9C;
+.shipping-price {
+    display: flex;
 }
 
-/* STREET SECTION LIMITATION */
-#street {
-    width: 460px;
-}
-
-#number {
-    width: 120px;
-}
-
-/* DISTRICT SECTION LIMITATION */
-
-#neighborhood {
-    width: 420px;
-}
-
-#complement {
-    width: 160px;
-}
-
-/* STATE SELECTOR SECTION */
-.form-select {
-    height: 53px !important;
-    margin-top: 10px;
-    box-sizing: border-box;
-    font-weight: 300;
-    font-size: 15px;
-    letter-spacing: 0.115em;
-    border-radius: 4px;
-    border: 1px solid #9C9C9C;
-    color: #9C9C9C;
-    transition: ease 0.3s;
-}
-
-.form-select:focus {
-    box-shadow: none;
-}
-
-.form-select:defined {
-    color: #000;
+#shipping-price {
+    display: flex;
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 30px;
 }
 
 /* ARROW GO-BACK STYLE */
@@ -233,8 +264,8 @@ ul {
     margin-top: 20px;
 }
 
-.arrow-back {  
-    margin-top: 20px;  
+.arrow-back {
+    margin-top: 20px;
     width: 13px;
     height: 13px;
     border: solid black;
@@ -256,6 +287,10 @@ ul {
 
 /* CONTINUE BUTTON */
 
+.btn-payment {
+    margin-left: auto;
+}
+
 .btn-continue {
     background: #1e1e1e;
     color: #FFFFFF;
@@ -267,10 +302,6 @@ ul {
     letter-spacing: 0.115em;
     cursor: pointer;
     margin-bottom: 30px;
-    margin-left: auto;
-}
-
-.btn-shipping {
     margin-left: auto;
 }
 
@@ -400,8 +431,8 @@ ul {
 
 #calc {
     margin-top: 6px;
-    font-weight: 300;
-    font-size: 12px;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 /* TOTAL SECTION STYLE */

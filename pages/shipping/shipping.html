@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="../../styles/reset.css">
+    <link rel="stylesheet" href="./styles/theme.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frete</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="grid_container bg-left-side">
+                <div class="content_section">
+                    <div class="main_logo">
+                        <a href="#">
+                            <img src="../../assets/imagens/main-logo.png" alt="Outsider logo">
+                        </a>
+                    </div>
+                    <div class="division-1"></div>
+                    <div class="info_payment">
+                        <ul>
+                            <li class="information-li">Informações</li>
+                            <img src="../buy-finalization/img/arrow.svg" alt="">
+                            <li class="frete-li">Frete</li>
+                            <img src="../buy-finalization/img/arrow.svg" alt="">
+                            <li>Pagamento</li>
+                        </ul>
+                    </div>
+                    <div class="main-container-shipping">
+                        <!-- SHIPPING SELECTOR -->
+                        <div class="shipping-info">
+                            <p>Forma de frete</p>
+                        </div>
+
+                        <div class="slc-shipping">
+                            <div class="shipping-container">
+                                <div class="shipping-item">
+                                    <label class="container">
+                                        <p>Loggi</p>
+                                        <p>4 dias úteis</p>
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label><!-- container -->
+                                </div><!-- shipping-item -->
+                                <div class="shipping-price">
+                                    <span id="shipping-price">R$ 9,90</span>
+                                </div><!-- shipping-price -->
+                            </div><!-- shipping-container -->
+                            <div class="division-shipping">
+                                <!-- Here goes the division page -->
+                            </div><!-- division-shipping -->
+                            <div class="shipping-container">
+                                <div class="shipping-item">
+                                    <label class="container">
+                                        <p>Loggi</p>
+                                        <p>4 dias úteis</p>
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label><!-- container -->
+                                </div><!-- shipping-item -->
+                                <div class="shipping-price">
+                                    <span id="shipping-price">R$ 9,90</span>
+                                </div><!-- shipping-price -->
+                            </div><!-- shipping-container -->
+                            <div class="division-shipping">
+                                <!-- Here goes the division page -->
+                            </div><!-- division-shipping -->
+                            <div class="shipping-container">
+                                <div class="shipping-item">
+                                    <label class="container">
+                                        <p>Loggi</p>
+                                        <p>4 dias úteis</p>
+                                        <input type="radio" name="radio">
+                                        <span class="checkmark"></span>
+                                    </label><!-- container -->
+                                </div><!-- shipping-item -->
+                                <div class="shipping-price">
+                                    <span id="shipping-price">R$ 9,90</span>
+                                </div><!-- shipping-price -->
+                            </div><!-- shipping-container -->
+                        </div><!-- slc-shipping -->
+
+                        <!-- SECTION TO CONTINUE OR GO BACK -->
+                        <div class="go-back-section">
+                            <div class="arrow-back">
+                            </div><!-- arrow-back -->
+                            <div class="go-back">
+                                <a href="../buy-finalization/information.html">
+                                    <p>Voltar para Informações</p>
+                                </a>
+                            </div><!-- go-back -->
+                            <!-- CONTINUE BUTTON -->
+                            <div class="btn-payment">
+                                <a href="../payment/payment.html">
+                                    <button class="btn-continue">Continuar com o pagamento</button>
+                                </a>
+                            </div><!-- btn-payment -->
+                        </div><!-- go-back-section -->
+                    </div><!-- main-container-shipping -->
+                </div><!-- content_section -->
+            </div><!-- grid_container bg-left-side -->
+
+            <!-- RIGHT SIDE -->
+            <div class="grid_container bg-right-side">
+                <div class="chart">
+                    <div class="img-superior">
+                        <div class="elipse">
+                            <p>1</p>
+                        </div>
+                        <img src="../buy-finalization/img/Screen Shot 2019-09-05 at 3.51.png" alt="">
+                        <div class="item-description">
+                            <p id="description">TECH T-SHIRT</p>
+                            <p id="information">Preta / P</p>
+                        </div>
+                        <div class="item-price">
+                            <p>R$ 129,00</p>
+                        </div>
+                    </div>
+                    <div class="division">
+                        <!-- Here goes the division page -->
+                    </div>
+                    <div class="discount_section">
+                        <input type="text" id="discount-cuppon" name="discount" placeholder="Código de desconto">
+                        <button class="btn-apply">APLICAR</button>
+                    </div>
+                    <div class="division">
+                        <!-- Here goes the division page -->
+                    </div>
+                    <div>
+                        <div class="frete">
+                            <span id="subtotal">Subtotal</span>
+                            <span id="subtotal-price">R$ 129,00</span>
+                        </div>
+                        <div class="frete-price">
+                            <span id="frete">Frete</span>
+                            <span id="calc">R$ 9,90</span>
+                        </div>
+                        <div class="division">
+                            <!-- Here goes the division page -->
+                        </div>
+                        <div class="total-calc">
+                            <span id="total">TOTAL</span>
+                            <span id="total-price">R$ 138,90</span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <!-- BOOTSTRAP SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP SCRIPT -->
+</body>
+
+</html>

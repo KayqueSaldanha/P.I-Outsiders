@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="../../styles/reset.css">
+    <link rel="stylesheet" href="./styles/theme.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="grid_container bg-left-side">
+                <div class="content_section">
+                    <div class="main_logo">
+                        <a href="#">
+                            <img src="../../assets/imagens/main-logo.png" alt="Outsider logo">
+                        </a>
+                        <div class="division-1"></div>
+                    </div>
+                    <div class="subtitle">
+                        <div class="order-confirmed">
+                            <h1>PEDIDO CONFIRMADO</h1>
+                        </div>
+                        <div class="tks">
+                            <h2>Obrigado pela sua compra!</h2>
+                        </div>
+                    </div>
+                    <div class="main-container">
+                        <div class="buy-resume">
+                            <h2>Resumo da compra</h2>
+                        </div>
+                        <div class="order-badge">
+                            <div class="order-number">
+                                <span id="order-number">Compra nº:</span> <span id="numer-of-order">0001</span>
+                            </div>
+                            <div class="payment-method">
+                                <h2>Forma de pagamento</h2>
+                                <div class="icon-value">
+                                    <div class="icon">
+                                        <img src="./img/Icon-CreditCard.svg" alt="">
+                                    </div>
+                                    <div class="value">
+                                        <p>3x R$ 46,30</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="division division-adjustment">
+                            <!-- Here goes the division page -->
+                        </div>
+                        <div class="email-of-contact">
+                            <h2>E-mail de contato</h2>
+                            <span id="email">email@email.com.br</span>
+                        </div>
+                        <div class="division division-adjustment">
+                            <!-- Here goes the division page -->
+                        </div>
+                        <div class="address">
+                            <h2>Endereço de entrega</h2>
+                            <div class="address-badge">
+                                <p>Fulano de tal
+                                <p>123.123.123-12</p>
+                                <p>Rua blabla, 123</p>
+                                <p>Ap 1</p>
+                                <p>Santo André - SP</p>
+                                <p>01234-123</p>
+                                <p>Brasil</p>
+                                <p>(11)99999-9999</p>
+                            </div>
+                        </div>
+                        <div class="division division-adjustment">
+                            <!-- Here goes the division page -->
+                        </div>
+                        <div class="shipping-method">
+                            <h2>Forma de frete</h2>
+                            <p>Loggi</p>
+                        </div>
+                    </div>
+
+                    <!-- SECTION TO CONTINUE OR GO BACK -->
+                    <div class="go-back-section">
+
+                        <!-- CONTINUE BUTTON -->
+                        <div class="btn-back-to-main">
+                            <a href="#">
+                                <button class="btn-continue">Voltar à loja</button>
+                            </a>
+                        </div><!-- btn-payment -->
+                    </div><!-- go-back-section -->
+                </div><!-- main-container-shipping -->
+            </div><!-- content_section -->
+            </div><!-- grid_container bg-left-side -->
+
+            <!-- RIGHT SIDE -->
+            <div class="grid_container bg-right-side">
+                <div class="chart">
+                    <div class="img-superior">
+                        <div class="elipse">
+                            <p>1</p>
+                        </div>
+                        <img src="../buy-finalization/img/Screen Shot 2019-09-05 at 3.51.png" alt="">
+                        <div class="item-description">
+                            <p id="description">TECH T-SHIRT</p>
+                            <p id="information">Preta / P</p>
+                        </div>
+                        <div class="item-price">
+                            <p>R$ 129,00</p>
+                        </div>
+                    </div>
+
+                    <div class="division">
+                        <!-- Here goes the division page -->
+                    </div>
+                    <div>
+                        <div class="frete">
+                            <span id="subtotal">Subtotal</span>
+                            <span id="subtotal-price">R$ 129,00</span>
+                        </div>
+                        <div class="frete-price">
+                            <span id="frete">Frete</span>
+                            <span id="calc">R$ 9,90</span>
+                        </div>
+                        <div class="division">
+                            <!-- Here goes the division page -->
+                        </div>
+                        <div class="total-calc">
+                            <span id="total">TOTAL</span>
+                            <span id="total-price">R$ 138,90</span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <!-- BOOTSTRAP SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP SCRIPT -->
+</body>
+
+</html>

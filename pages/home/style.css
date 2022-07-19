@@ -49,7 +49,7 @@
 
 #sec2{
     width: 1592px;
-    height: 503px;
+    height: 560px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
@@ -57,15 +57,15 @@
 
 #sec2-esq{
     width: 666px;
-    height: 482px;
+    height: 560px;
 }
 
 .lancamentos{
-    width: 479px;
-    height: 35px;
+    display: flex;
     font-size: 30px;
     line-height: 35px;
-    padding-left: 295px;
+    text-align: center;
+    justify-content: center;
 }
 
 #sec2-dir{
@@ -73,9 +73,9 @@
     height: 503px;
 }
 #card-master{
-    align-items: center;
     padding-top: 27px;
     display: flex;
+    justify-content: space-between;
 }
 
 .title {
@@ -108,12 +108,12 @@
 }
 
 .card{
-    width: 339px;
-    height: 400px;
+    width: 350px;
+    height: 480px;
 }
 
-#img2-tshirt{
-    margin-left: 103px;
+.card img{
+    width: 350px;
 }
 
 .sec3{
@@ -121,5 +121,66 @@
     height: 263px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 71px;
+    margin-top: 71px;
+}
+
+.sec4{
+    width: 1300px;
+    height: 510px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titleSec4{
+    margin-top: 47px;
+    margin-bottom: 25px;
+    width: 250px;
+    height: 35.7px;
+    margin-left: auto;
+    margin-right: auto;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-variant: small-caps;
+    color: #000000;
+}
+
+.card1{
+    width: 350px;
+    height: 480px;
+    margin-left:auto;
+    margin-left:auto;   
+}
+
+.sec5{
+    width: 1589px;
+    height: 263px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 71px;
+}
+
+.card1{
+    width: 350px;
+    height: 480px;
+    margin-left:auto;
+    margin-left:auto;   
+}
+
+.sec6{
+    width: 1300px;
+    height: 510px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#sec7{
+    padding-top: 20px;
+    width: 1920px;
+    height: 612px;
+    margin-left: auto;
+    margin-right: auto;
 }

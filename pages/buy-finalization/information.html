@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <!-- BOOTSTRAP -->
@@ -38,14 +38,14 @@
                     <!-- CONTACT INFO, HAVE ACCOUNT? -->
                     <div class="contact_info">
                         <p>Informações de contato</p>
-                        <p>Já possui uma conta? <a href="#"><b>Fazer login</b></a></p>
+                        <p>Já possui uma conta? <a href="../login-page/index.html"><b>Fazer login</b></a></p>
                     </div>
                     <!-- E-MAIL INPUT -->
                     <input id="email" type="text" placeholder="E-mail">
                     <!-- CHECKBOX ITEM -->
                     <div class="checkbox-item">
                         <label class="container">Quero receber descontos e novidades por e-mail
-                            <input type="checkbox" checked="checked">
+                            <input type="checkbox">
                             <span class="checkmark"></span>
                         </label>
                     </div>
@@ -107,7 +107,7 @@
                     </div>
                     <div class="checkbox-item">
                         <label class="container">Salvar minhas informações para a próxima vez
-                            <input type="checkbox" checked="checked">
+                            <input type="checkbox">
                             <span class="checkmark"></span>
                     </div>
                     <!-- SECTION TO CONTINUE OR GO BACK -->
@@ -115,10 +115,16 @@
                         <div class="arrow-back">
                         </div>
                         <div class="go-back">
-                            <a href="#"><p>Voltar ao Carrinho</p></a>
+                            <a href="#">
+                                <p>Voltar ao Carrinho</p>
+                            </a>
                         </div>
                         <!-- CONTINUE BUTTON -->
-                        <button class="btn-continue">Continuar com o frete</button>
+                        <div class="btn-shipping">
+                            <a href="../shipping/shipping.html">
+                                <button class="btn-continue">Continuar com o frete</button>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

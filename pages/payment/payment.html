@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="../../styles/reset.css">
+    <link rel="stylesheet" href="./styles/theme.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagamento</title>
+</head>
+
+<body>
+    <main>
+        <section>
+            <div class="grid_container bg-left-side">
+                <div class="content_section">
+                    <div class="main_logo">
+                        <a href="#">
+                            <img src="../../assets/imagens/main-logo.png" alt="Outsider logo">
+                        </a>
+                    </div>
+                    <div class="division-1"></div>
+                    <div class="info_payment">
+                        <ul>
+                            <li class="information-li">Informações</li>
+                            <img src="../buy-finalization/img/arrow.svg" alt="">
+                            <li class="frete-li">Frete</li>
+                            <img src="../buy-finalization/img/arrow.svg" alt="">
+                            <li class="payment-li">Pagamento</li>
+                        </ul>
+                    </div>
+                    <div class="main-container-shipping">
+                        <!-- SHIPPING SELECTOR -->
+                        <div class="shipping-info">
+                            <p>Escolha sua forma de pagamento</p>
+                        </div>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        <div class="payment-method">
+                                            <label class="container">
+                                                <img src="./img/Icon-CreditCard.svg" alt="">
+                                                <p class="description-method">Cartão de crédito</p>
+                                                <input type="radio" checked name="radio">
+                                                <span class="checkmark"></span>
+                                            </label><!-- container -->
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="name">
+                                            <input class="credit-card-input" id="credit-card-nmb" type="number"
+                                                placeholder="Número do cartão">
+                                            <input class="credit-card-input" id="credit-card-expiration" type="text"
+                                                placeholder="(MM/AA)">
+                                            <input class="credit-card-input" id="credit-card-cvv" type="number"
+                                                placeholder="CVV">
+                                            <input class="credit-card-input" id="credit-card-name" type="text"
+                                                placeholder="Nome impresso no cartão">
+                                            <input class="credit-card-input" id="credit-card-cpf" type="number"
+                                                placeholder="CPF ou CNPJ">
+                                            <div class="form-floating">
+                                                <select class="form-select" id="floatingSelect"
+                                                    aria-label="Floating label select example">
+                                                    <option id="state-selector" selected>Parcelas</option>
+                                                    <option value="1">1x - R$ 138,90 sem juros</option>
+                                                    <option value="2">2x - R$ 69,45 sem juros</option>
+                                                    <option value="3">3x - R$ 46,30 sem juros</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division division-2">
+                                    <!-- Here goes the division page -->
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <div class="payment-method">
+                                            <label class="container">
+                                                <img src="./img/pix.svg" alt="">
+                                                <p class="description-method">Pix</p>
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label><!-- container -->
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="pix-description">
+                                            <img src="./img/pix-image.svg" alt="">
+                                            <p>Ao selecionar <strong>“Finalizar a compra”</strong>, você verá o código
+                                                para fazer o
+                                                pagamento instantâneo.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division division-2">
+                                    <!-- Here goes the division page -->
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <div class="payment-method">
+                                            <label class="container">
+                                                <img src="./img/Icon-Barcode.svg" alt="">
+                                                <p class="description-method">Boleto bancário</p>
+                                                <input type="radio" name="radio">
+                                                <span class="checkmark"></span>
+                                            </label><!-- container -->
+                                        </div>
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <div class="bill-description">
+                                            <img src="./img/boleto-img.svg" alt="">
+                                            <p>Ao selecionar <strong>“Finalizar a compra”</strong>, você verá o boleto
+                                                na tela e terá 3 dias
+                                                para efetuar o pagamento.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- slc-shipping -->
+
+                    <!-- SECTION TO CONTINUE OR GO BACK -->
+                    <div class="go-back-section">
+                        <div class="arrow-back">
+                        </div><!-- arrow-back -->
+                        <div class="go-back">
+                            <a href="../shipping/shipping.html">
+                                <p>Voltar para frete</p>
+                            </a>
+                        </div><!-- go-back -->
+                        <!-- CONTINUE BUTTON -->
+                        <div class="btn-payment">
+                            <a href="../order-confirmation/confirmation.html">
+                                <button class="btn-continue">Finalizar a compra</button>
+                            </a>
+                        </div><!-- btn-payment -->
+                    </div><!-- go-back-section -->
+                </div><!-- main-container-shipping -->
+            </div><!-- content_section -->
+            </div><!-- grid_container bg-left-side -->
+
+            <!-- RIGHT SIDE -->
+            <div class="grid_container bg-right-side">
+                <div class="chart">
+                    <div class="img-superior">
+                        <div class="elipse">
+                            <p>1</p>
+                        </div>
+                        <img src="../buy-finalization/img/Screen Shot 2019-09-05 at 3.51.png" alt="">
+                        <div class="item-description">
+                            <p id="description">TECH T-SHIRT</p>
+                            <p id="information">Preta / P</p>
+                        </div>
+                        <div class="item-price">
+                            <p>R$ 129,00</p>
+                        </div>
+                    </div>
+                    <div class="division">
+                        <!-- Here goes the division page -->
+                    </div>
+                    <div class="discount_section">
+                        <input type="text" id="discount-cuppon" name="discount" placeholder="Código de desconto">
+                        <button class="btn-apply">APLICAR</button>
+                    </div>
+                    <div class="division">
+                        <!-- Here goes the division page -->
+                    </div>
+                    <div>
+                        <div class="frete">
+                            <span id="subtotal">Subtotal</span>
+                            <span id="subtotal-price">R$ 129,00</span>
+                        </div>
+                        <div class="frete-price">
+                            <span id="frete">Frete</span>
+                            <span id="calc">R$ 9,90</span>
+                        </div>
+                        <div class="division">
+                            <!-- Here goes the division page -->
+                        </div>
+                        <div class="total-calc">
+                            <span id="total">TOTAL</span>
+                            <span id="total-price">R$ 138,90</span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+    </main>
+    <!-- BOOTSTRAP SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP SCRIPT -->
+</body>
+
+</html>

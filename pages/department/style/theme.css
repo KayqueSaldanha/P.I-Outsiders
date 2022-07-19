@@ -40,10 +40,35 @@ html {
     justify-content: center;
 }
 
-.shelf__p {
+
+.title__dep {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    padding: 45px 0px 85px 0px;
+}
+
+.filters__title {
+    font-size: 14px;
+    display: block;
+    text-align: center;
+    font-weight: 700;
+
+    text-transform: uppercase;
+    margin-right: 55px
+}
+
+
+.shelf__installments {
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     color: #7B7B7B;
+}
+
+.line {
+    margin-top: 18px;
+    border-bottom: 1px solid #888888;
 }
