@@ -45,3 +45,14 @@ section {
 strong {
     font-weight: 700;
 }
+
+.arrow-info {
+    margin-top: 3px;
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    border-radius: 2px;
+    transform: rotate(315deg);
+}
