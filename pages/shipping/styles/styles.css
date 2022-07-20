@@ -64,6 +64,7 @@ ul {
 .slc-shipping {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     width: 550px;
     height: 300px;
     background: #FFFFFF;
@@ -101,7 +102,7 @@ ul {
 
 /* Create a custom radio button */
 .checkmark {
-    margin-top: 18px;
+    margin-top: 10px;
     position: absolute;
     top: 0;
     left: 0;
