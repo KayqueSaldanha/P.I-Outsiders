@@ -323,22 +323,17 @@ ul {
     height: 70px;
 }
 
-.elipse {
-    display: flex;
-    position: absolute;
-    margin-left: 56px;
+#elipse {
+    left: 85px;
+    bottom: 10px;
     width: 25px;
     height: 25px;
-    border-radius: 100%;
-    background: rgba(106, 102, 102, 0.8);
-}
-
-.elipse p {
-    padding-top: 13px;
+    padding: 8px;
     display: flex;
-    align-items: center;
-    margin-left: 8px;
-    color: white;
+    position: relative;
+    background: rgba(106, 102, 102, 0.8);
+    color: #ffffff;
+    border-radius: 50%;
 }
 
 #description,
