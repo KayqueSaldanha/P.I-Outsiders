@@ -147,11 +147,11 @@
     margin-left: auto;
     margin-right: auto;
 }
-/* Titulo em cima da 1º e 2º prateleira */
-.titleSec4{
+/* Titulo em cima da 1º ,2º prateleira e @OUTSIDER*/
+.titlePrincipaisHome{
     margin-top: 47px;
     margin-bottom: 25px;
-    width: 250px;
+    width: 480px;
     height: 35.7px;
     margin-left: auto;
     margin-right: auto;
@@ -199,3 +199,24 @@
     width: 1920px;
     height: 612px;
 }
+
+#cardsSec8{
+    width: 1400px;
+    height: 401px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card8{
+    width: 350px;
+    height: 480px;
+    justify-content: space-between;
+    display: flex;
+}
+
+/* .card8{
+    justify-content: space-between;
+    display: flex;
+    width: 350px;
+    height: 480px;
+} */
