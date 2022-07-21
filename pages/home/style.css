@@ -1,3 +1,5 @@
+/* inicio do Header */
+/* Parte superior dele "faixa toda preta" */
 #superior{
     height: 30px;
 }
@@ -13,7 +15,7 @@
     font-size: 16px;
     padding-top: 7px;
 }
-
+/* Parte inferior com logo e menu Nav  */
 #inferior{
     height: 80px;
     width: 1500px;
@@ -26,6 +28,7 @@
     padding-top: 39px;
 }
 
+/* Menu Nav */
 #titulos{
     width: 800px;
     height: 16px;
@@ -34,19 +37,26 @@
     padding-top: 57px;
 }
 
+/* Botão (Input) */
 .pesquisar{
-    padding-top: 46px;
+    padding-top: 48px;
 }
 
+/* Icones usuario e sacola */
 #icones{
-    font-size: 40px;
-    padding-top: 40px;
+    font-size: 25px;
+    padding-top: 42px;
 }
+/* Final do Header */
 
+
+/* carrousel */
 .sec1{
     padding-top: 20px;
+    max-width: auto;
 }
 
+/* Primeira prateleira de colunas */
 #sec2{
     width: 1592px;
     height: 560px;
@@ -54,12 +64,13 @@
     margin-right: auto;
     padding-top: 30px;
 }
-
+/* Imagem da esquerda abaixo do carrousel */
 #sec2-esq{
     width: 666px;
     height: 560px;
 }
 
+/* Titulo acima das imagens */
 .lancamentos{
     display: flex;
     font-size: 30px;
@@ -67,17 +78,19 @@
     text-align: center;
     justify-content: center;
 }
-
+/* seção com os 2 cards com img, nome e preço */
 #sec2-dir{
     width: 780px;
     height: 503px;
 }
+/* os 2 cards */
 #card-master{
     padding-top: 27px;
     display: flex;
     justify-content: space-between;
 }
 
+/* titulo da imagem */
 .title {
     font-weight: 300;
     font-size: 20px;
@@ -86,6 +99,8 @@
     color: #363636;
     padding-top: 8px;
 }
+
+/* preço da imagem */
 .price {
     font-weight: 700;
     font-size: 20px;
@@ -95,6 +110,7 @@
     justify-content: center;
 }
 
+/* x no cartao da imagem */
 .shelf__p {
     font-weight: 400;
     font-size: 16px;
@@ -116,6 +132,7 @@
     width: 350px;
 }
 
+/* imagem banner */
 .sec3{
     width: 1589px;
     height: 263px;
@@ -123,14 +140,14 @@
     margin-right: auto;
     margin-top: 71px;
 }
-
+/* 1 prateleira de roupas (4 imagens) */
 .sec4{
     width: 1300px;
     height: 510px;
     margin-left: auto;
     margin-right: auto;
 }
-
+/* Titulo em cima da 1º e 2º prateleira */
 .titleSec4{
     margin-top: 47px;
     margin-bottom: 25px;
@@ -148,6 +165,7 @@
     color: #000000;
 }
 
+/* os 4 cards da prateleira */
 .card1{
     width: 350px;
     height: 480px;
@@ -155,21 +173,17 @@
     margin-left:auto;   
 }
 
+
+/* imagem banner */
 .sec5{
     width: 1589px;
     height: 263px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 71px;
+    margin-top: 70px;
 }
 
-.card1{
-    width: 350px;
-    height: 480px;
-    margin-left:auto;
-    margin-left:auto;   
-}
-
+/* 2º prateleira de roupas (4 imagens) */
 .sec6{
     width: 1300px;
     height: 510px;
@@ -177,10 +191,11 @@
     margin-right: auto;
 }
 
-#sec7{
-    padding-top: 20px;
-    width: 1920px;
-    height: 612px;
+
+.sec7{
+    margin-top: 70px;
     margin-left: auto;
     margin-right: auto;
+    width: 1920px;
+    height: 612px;
 }
