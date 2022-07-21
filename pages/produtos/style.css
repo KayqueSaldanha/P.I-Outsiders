@@ -1,6 +1,52 @@
+/*header*/
+#superior{
+    height: 30px;
+}
+
+#infos{
+    height: 19px;
+    width: 1394px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 7px;
+}
+#inferior{
+    height: 80px;
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.logo{
+    padding-top: 39px;
+}
+
+#titulos{
+    width: 800px;
+    height: 16px;
+    justify-content: space-between;
+    font-size: 16px;
+    padding-top: 57px;
+}
+
+.pesquisar{
+    padding-top: 48px;
+}
+
+#icones{
+    font-size: 25px;
+    padding-top: 42px;
+}
+
+/* main - corpo da pagina */
+
 main{
-    width: 100vw;
-    
+    width: 100vw;        
 }
 
 div>nav{
@@ -159,3 +205,100 @@ div>nav>h2>a{
 #bot{
     display: flex;
 }
+
+#bot>div{
+    flex-direction: column;
+}
+
+#bot>div>p{
+    margin-left: 20px;
+    margin-top:10px; 
+    Font-family: Roboto;
+    Font-style: Regular;
+    Font-size: 18px;
+    Line-height: 16px;
+    Line-height: 100%;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+#bot>div>.cores{
+    display: flex;
+}
+
+#bot>div>.cores>#riscapreta{
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 1px solid black;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+}
+
+#bot>div>.cores>#riscapreta>#azulclaro{
+    background-color: #296BA0;
+    Width:35px;
+    Height: 35px;
+    position: relative;
+    left:5px;
+    top: 5px
+
+}
+
+#bot>div>.cores>#azulescuro{
+    background-color: #083359;
+    Width:35px;
+    Height: 35px;
+    position: relative;
+    left:80px;
+    top: 16px
+}
+
+#bot>div>div>#carrinho{
+    position: relative;
+    top: 45px;
+    margin-left: 20px;
+    color: white;
+    background-color:black;
+    Width: 400px;
+    Height: 50px;
+    margin-bottom: 43px;
+    border: none;
+    Font-family: Roboto;
+    Font-style: Regular;
+    Font-size: 25px;
+    Line-height: 40px;
+    Line-height: 100%;
+}
+
+#carrinho:hover{    
+    cursor: pointer;
+    transition: 1.5s;
+    box-shadow: 0px 10px 40px black;
+}
+
+#descricao{
+    margin-top: 20px;
+    margin-left: 160px;
+    width: 400px;
+}
+
+#descricao>h4{
+    Font-family: Roboto;
+    Font-style: Bold;
+    Font-size: 20px;
+    Line-height: 23px;
+    color:#363636
+}
+
+#descricao>p{
+    margin-top: 5px;
+    Font-family: Roboto;
+    Font-style: Light;
+    Font-size: 16px;
+    Line-height: 19px;
+    Line-height: 100%;
+    color: #000000;
+}
+
+
+
