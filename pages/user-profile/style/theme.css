@@ -1,0 +1,24 @@
+/* 1. Estilos gerais
+/************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    margin: 0px;
+}
+
+a,
+ol,
+ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.max-width-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
