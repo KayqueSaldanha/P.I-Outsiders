@@ -1,0 +1,161 @@
+main{
+    width: 100vw;
+    
+}
+
+div>nav{
+    display: flex;
+    margin-left: 230px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+div>nav>h2{
+    text-decoration: none;
+    color: rgba(98, 98, 98, 1);
+    Font-family: Roboto;
+    Font-style: Regular;
+    Font-size: 12px;
+    Line-height: 14px;
+    Line-height: 100%;
+    margin-left: 10px;
+}
+
+div>nav>h2>a{
+    text-decoration: none;
+    color: rgba(98, 98, 98, 1);
+    Font-family: Roboto;
+    Font-style: Regular;
+    Font-size: 12px;
+    Line-height: 14px;
+    Line-height: 100%;
+}
+
+#sec1{
+    display: flex;
+    justify-content: center;
+}
+
+#direita{
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+#top{
+    display: flex;
+}
+
+#top>div{
+    margin-left: 20px;
+}
+
+#top>div>h3{
+    Font-family: Roboto;
+    Font-style: SemiBold;
+    Font-size: 30px;
+    Line-height: 35px;
+    Line-height: 100%;    
+    color: #303030;
+}
+
+#top>div>#p1{   
+    margin-top:10px; 
+    Font-family: Roboto;
+    Font-style: Regular;
+    Font-size: 14px;
+    Line-height: 16px;
+    Line-height: 100%;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+#top>div>#p2{
+    margin-top: 30px;
+    Font-family: Roboto;
+    Font-style: SemiBold;
+    Font-size: 20px;
+    Line-height: 20px;
+    Line-height: 100%;
+}
+
+#top>div>#p2>span{
+    color: red;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+#top>div>#p3{
+    margin-top:5px; 
+    Font-family: Roboto;
+    Font-style: Regular;
+    Font-size: 14px;
+    Line-height: 16px;
+    Line-height: 100%;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+
+#mid{
+    display: flex;
+}
+
+#mid>div>h3{
+    margin-left: 20px;
+    Font-family: Roboto;
+    Font-style: Regular;
+    Font-size: 20px;
+    Line-height: 16px;
+    Line-height: 100%;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+#mid>div>#escolhaTamanho{
+    display: flex;
+    margin-left: 20px;
+}
+
+#mid>div>#escolhaTamanho>.tamanhos{
+    Width:50px;
+    Height: 40px;
+    border: 0.5px solid black;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+
+#mid>div>#escolhaTamanho>.tamanhos>p{
+    display: flex;
+    margin-top: 13px;
+    justify-content: center;
+    color: black;
+}
+
+#pp{    
+    Width:53px;
+    Height: 42px;
+    border: 0.5px solid black;
+    background-color: black;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+#pp>p{
+    display: flex;
+    margin-top: 12px;
+    justify-content: center;
+    color: white;
+}
+
+#mid>div>p{
+    margin-left: 20px;
+    margin-top: 35px;
+    Font-family: Roboto;
+    Font-style: Regular;
+    Font-size: 20px;
+    Line-height: 18px;
+    Line-height: 100%;
+    text-decoration: underline;
+    color: #292929;
+}
+
+#bot{
+    display: flex;
+}
