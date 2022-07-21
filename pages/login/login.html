@@ -2,16 +2,49 @@
 <html lang="pt-br">
 <head>
     <link rel="stylesheet" href="../../styles/reset.css">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="../../styles/theme.css">
+    <link rel="stylesheet" href="theme.css">
     <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    
 </head>
 <body>
-    <header></header>
+    <header>
+        <div id="superior" class="bg-black text-white">
+            <div id="infos">   
+                <h4 >10X sem juros no cartão</h4>
+                <h4>troca grátis em até 30 dias</h4>
+                <h4>+1000 lojas</h4>
+                <h4>frete grátis em compras acima de R$249</h4>
+            </div>
+        </div>
+        <nav id="inferior" class="inferior disp-flex">
+            <div class="logo">
+                <img src="../../assets/imagens/main-logo.png" alt="Outsider logo">
+            </div>
+                <div id="titulos" class="text-black disp-flex">
+                    <h4>HOMEM</h4>
+                    <h4>MULHER</h4>
+                    <h4>ACESSÓRIOS</h4>
+                    <h4>PROMOS</h4>
+                    <h4>NEW IN</h4>
+                    <h4>COMING SOON</h4>
+                </div>
+                <div class="pesquisar">
+                    <input class="search" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+                    <button class="lupa" type="submit"><i class="las la-search"></i></button>
+                </div>
+                <div id="iconessuperior">
+                    <i class="lar la-user"></i>
+                    <i class="las la-shopping-bag"></i>
+                </div>
+        </nav>
+    </header>
+
     <main>
         <section>
             
@@ -20,11 +53,11 @@
             <p id="p1">Digite seu e-mail e senha</p>
             
             <div>
-                <input class="campo" type="email" value="email" id="email">
+                <input class="campo" type="email" placeholder="email" id="email">
             </div>
 
             <div>
-                <input class="campo" type="text" value="senha" id="senha">
+                <input class="campo" type="text" placeholder="senha" id="senha">
             </div>
             
             <div>
@@ -34,7 +67,45 @@
             <p id="p3">Ainda não tem uma conta? <span> <a class="link" href="../subscribe/">Crie uma</a></span></p>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="barracinza">
+            <div>
+                <h2>Faça seu Cadastro</h2>
+                <p>Inscreva-se em nossa newsletter e receba 10% de desconto</p>
+            </div>
+            <div>
+                <input type="text" value="Digite se e-mail">
+                <input type="button" value="CADASTRAR">
+            </div>            
+        </div>
+
+        <div class="telapreta">
+
+            <div class="superior">   
+            
+                <div id="esquerda">
+                    <img id="tamanhoimagem" src="../../assets/imagens/mapa-footer.svg" alt=""></div>
+
+                <div class="direita">
+                    <p class="paragrafos">Broad St, Newark, NJ 07102 - USA</p>
+                    <p class="paragrafos">+1 (973) 854-555-548</p>
+                    <p class="paragrafos">contact@lovtrealstate.com</p>
+                    <p class="paragrafos">Sigam-nos nas redes sociais</p>
+
+                    
+                    <div id="iconesinferior">
+                        <div><img src="../../assets/icons/facebook.svg" alt=""></div>
+                        <div><img src="../../assets/icons/instagram.svg" alt=""></div>
+                        <div><img src="../../assets/icons/youtube.svg" alt=""></div>
+                    </div>
+                </div>
+            
+            </div>
+
+            <div id="inferior"></div>
+
+        </div>
+    </footer>
     
 </body>
 </html>
