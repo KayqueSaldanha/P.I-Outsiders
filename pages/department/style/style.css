@@ -45,7 +45,7 @@
 }
 
 .filters>ul>li {
-    margin-right: 28px;
+    margin-right: 68px;
 }
 
 
@@ -83,10 +83,6 @@
 .filters>ul>li.opened>ul {
     visibility: visible;
     height: 100%
-}
-
-.filters__title-cores {
-    padding-left: 66px;
 }
 
 /* ORDER */
