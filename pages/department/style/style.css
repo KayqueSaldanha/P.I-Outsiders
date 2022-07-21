@@ -45,7 +45,7 @@
 }
 
 .filters>ul>li {
-    margin-right: 75px;
+    margin-right: 28px;
 }
 
 
@@ -85,12 +85,17 @@
     height: 100%
 }
 
+.filters__title-cores {
+    padding-left: 66px;
+}
+
 /* ORDER */
 .order-c {
     display: flex;
     justify-content: space-between;
     margin: 18px 0px 49px;
     padding: 0px;
+    cursor: pointer;
 }
 
 /* SHELF */
