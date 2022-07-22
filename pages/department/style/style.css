@@ -66,6 +66,19 @@
     transform: rotate(-45deg);
 }
 
+.filters>ul>li>span::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    display: block;
+    position: absolute;
+    top: 1px;
+    right: -18px;
+    border-bottom: 2px solid #888888;
+    border-left: 2px solid #888888;
+    transform: rotate(-45deg);
+}
+
 .filters>ul>li>ul {
     visibility: hidden;
     height: 0;
@@ -149,4 +162,19 @@
     opacity: 1;
     position: relative;
     >>>>>>>845f56b7089d3eca1f5dbd21c16a9a55a62b56ce
+}
+
+.banner_principal {
+    width: 984px;
+    padding-top: 181px;
+    margin: 0 auto;
+}
+
+.btn__banner {
+    background-color: #000;
+    color: #fff;
+    position: relative;
+    text-transform: uppercase;
+    left: 822px;
+    bottom: 76px;
 }
