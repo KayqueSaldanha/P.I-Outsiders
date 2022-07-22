@@ -45,7 +45,7 @@
 }
 
 .filters>ul>li {
-    margin-right: 75px;
+    margin-right: 68px;
 }
 
 
@@ -91,14 +91,19 @@
     justify-content: space-between;
     margin: 18px 0px 49px;
     padding: 0px;
+    cursor: pointer;
 }
 
 /* SHELF */
 
 .shelf__container {
-    padding: 30px 0px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 33px;
+    row-gap: 85px;
 }
 
 .shelf__product {
