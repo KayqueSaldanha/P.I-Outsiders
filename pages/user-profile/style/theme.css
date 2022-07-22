@@ -14,6 +14,13 @@ ul {
     list-style: none;
 }
 
+h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    padding-bottom: 14px;
+}
+
 html {
     font-family: 'Roboto', sans-serif;
 }
