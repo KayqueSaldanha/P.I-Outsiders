@@ -19,6 +19,7 @@ h2 {
     font-size: 30px;
     line-height: 41px;
     padding-bottom: 14px;
+    padding-left: 15px;
 }
 
 html {
@@ -33,4 +34,16 @@ html {
 .item-c {
     background: #e3e3e3;
     font-weight: 500;
+}
+
+.acc__on-base {
+    color: #3f3f40;
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 35px;
+}
+
+.acc__on-disabled {
+    color: #979899;
+    font-size: 15px;
 }
