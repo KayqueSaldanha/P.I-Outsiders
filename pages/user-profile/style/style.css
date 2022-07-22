@@ -20,6 +20,19 @@
     padding-top: 20px
 }
 
+#account {
+    display: flex;
+}
+
+.account__page {
+    margin-top: 175px;
+    margin-left: 32px
+}
+
+.account__menu {
+    margin-top: 66px;
+}
+
 .account__itens {
     padding: 15px;
     font-weight: 300;
@@ -28,4 +41,17 @@
     color: #000;
     width: 275px;
     height: 23px;
+}
+
+.account__form {
+    border: 1px solid #888888;
+    width: 531px;
+    height: 299px;
+    border-radius: 5px;
+    padding: 20px
+}
+
+.profile__form {
+    display: flex;
+    gap: 159px;
 }
