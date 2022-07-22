@@ -22,27 +22,42 @@
     </header> <!-- .header -->
 
     <main class="max-width-content">
-        <aside class="account__menu">
-            <div class="account__user-info">
-                <div class="account__user-img">
-                    <img width="55" src="../user-profile/img/user.svg" alt="Ícone de user">
-                </div> <!-- .account__user-img -->
-                <div class="account__user-greeting">
-                    <span>Olá!</span>
-                </div> <!-- .account__user-greeting -->
-            </div> <!-- .account__user-info -->
+        <section id="account">
+            <aside class="account__menu">
+                <div class="account__user-info">
+                    <div class="account__user-img">
+                        <img width="55" src="../user-profile/img/user.svg" alt="Ícone de user">
+                    </div> <!-- .account__user-img -->
+                    <div class="account__user-greeting">
+                        <span>Olá!</span>
+                    </div> <!-- .account__user-greeting -->
+                </div> <!-- .account__user-info -->
+                <nav class="account__link">
+                    <a href="" class="account__itens item-c">Dados pessoais</a>
+                    <a href="" class="account__itens">Cartões</a>
+                    <a href="" class="account__itens">Endereços</a>
+                    <a href="" class="account__itens">Pedidos</a>
+                    <a href="" class="account__itens">Sair</a>
+                </nav> <!-- . account__link -->
+            </aside> <!-- .account__menu -->
 
-            <nav class="account__link">
-                <a href="" class="account__itens item-c">Dados pessoais</a>
-                <a href="" class="account__itens">Cartões</a>
-                <a href="" class="account__itens">Endereços</a>
-                <a href="" class="account__itens">Pedidos</a>
-                <a href="" class="account__itens">Sair</a>
-            </nav>
-
-        </aside> <!-- .account__menu -->
-
-    </main>
+            <section class="account__page">
+                <h2>Dados Pessoais</h2>
+                <section class="account__form">
+                    <div class="profile__form">
+                        <div>
+                            <label for="acc__on-base">Nome</label>
+                            <div class="acc__on-disabled">Andressa</div>
+                        </div>
+                        <div>
+                            <label for="acc__on-base">Sobrenome</label>
+                            <div class="acc__on-disabled">Paranhos</div>
+                        </div>
+                    </div> <!-- .profile__form -->
+                </section> <!-- .account__form -->
+            </section> <!-- .account__page -->
+        </section> <!-- .account -->
+    </main> <!-- .main -->
     <footer></footer>
 </body>
 
