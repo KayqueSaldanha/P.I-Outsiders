@@ -22,3 +22,8 @@ html {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+.item-c {
+    background: #e3e3e3;
+    font-weight: 500;
+}
