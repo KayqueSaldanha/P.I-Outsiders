@@ -121,7 +121,7 @@
 
 .shelf__product {
     width: 240px;
-    <<<<<<< HEAD height: 420px
+    height: 420px
 }
 
 .title {
@@ -131,7 +131,7 @@
     text-align: center;
     color: #363636;
     padding-top: 8px;
-    =======height: 390px;
+    height: 390px;
     transition: transform .2s;
 }
 
@@ -161,7 +161,6 @@
 .shelf__product:hover .shelf__btn {
     opacity: 1;
     position: relative;
-    >>>>>>>845f56b7089d3eca1f5dbd21c16a9a55a62b56ce
 }
 
 .banner_principal {
