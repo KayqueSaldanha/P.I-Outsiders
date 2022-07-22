@@ -116,12 +116,12 @@
     margin-right: auto;
     margin-left: auto;
     gap: 33px;
-    row-gap: 85px;
+    row-gap: 36px;
 }
 
 .shelf__product {
     width: 240px;
-    height: 420px
+    height: 388px;
 }
 
 .title {
@@ -131,7 +131,6 @@
     text-align: center;
     color: #363636;
     padding-top: 8px;
-    height: 390px;
     transition: transform .2s;
 }
 
@@ -165,11 +164,12 @@
 
 .banner_principal {
     width: 984px;
-    padding-top: 181px;
+    padding: 87px 0px 50px 0px;
     margin: 0 auto;
 }
 
-.btn__banner {
+
+.cta__banner {
     background-color: #000;
     color: #fff;
     position: relative;
