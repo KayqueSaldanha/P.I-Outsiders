@@ -29,6 +29,7 @@
 #titulos{
     width: 800px;
     height: 16px;
+    display: flex;
     justify-content: space-between;
     font-size: 16px;
     padding-top: 57px;
@@ -165,6 +166,12 @@ div>nav>h2>a{
     margin-left: 10px;
     margin-top: 30px;
 }
+#mid>div>#escolhaTamanho>.tamanhos:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.7s;
+}
 
 
 #mid>div>#escolhaTamanho>.tamanhos>p{
@@ -172,6 +179,11 @@ div>nav>h2>a{
     margin-top: 13px;
     justify-content: center;
     color: black;
+}
+
+#mid>div>#escolhaTamanho>.tamanhos>p:hover{
+    color: white;
+    transition: 0.7s;
 }
 
 #pp{    
@@ -268,6 +280,12 @@ div>nav>h2>a{
     Font-size: 25px;
     Line-height: 40px;
     Line-height: 100%;
+    text-decoration: none;
+}
+
+#bot>div>div>#carrinho>a{
+    text-decoration: none;
+    color: white;
 }
 
 #carrinho:hover{    
