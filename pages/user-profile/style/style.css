@@ -13,3 +13,19 @@
     display: flex;
     margin-top: 66px
 }
+
+.account__link {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px
+}
+
+.account__itens {
+    padding: 15px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 35px;
+    color: #000;
+    width: 275px;
+    height: 23px;
+}
