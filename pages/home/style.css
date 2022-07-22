@@ -121,11 +121,24 @@
 
 .card-body{
     align-items: center;
+    text-decoration: none;
 }
 
 .card{
     width: 350px;
     height: 480px;
+}
+
+.card:hover .shelf__btn {
+    opacity: 1;
+    position: relative;
+}
+
+.card:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border: 1px solid #f2f2f2;
 }
 
 .card img{
@@ -220,3 +233,37 @@
     width: 350px;
     height: 480px;
 } */
+
+/* botão de comprar de todas as img */
+.shelf__btn {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    height: 40px;
+    width: 120px;
+    margin: 16px 0px;
+    opacity: 0;
+    text-decoration: none;
+}
+
+.card1:hover .shelf__btn {
+    opacity: 1;
+    position: relative;
+}
+
+.card1:hover {
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border: 1px solid #f2f2f2;
+}
+
+.shelf__container {
+ align-items:center;
+}
