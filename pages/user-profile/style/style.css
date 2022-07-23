@@ -11,13 +11,19 @@
 /************************************/
 .account__user-info {
     display: flex;
-    margin-top: 66px
+    margin-top: 66px;
+    gap: 7px;
+}
+
+.account__user-greeting {
+    padding-top: 24px;
+    font-size: 20px;
 }
 
 .account__link {
     display: flex;
     flex-direction: column;
-    padding-top: 20px
+    padding-top: 20px;
 }
 
 #account {
@@ -26,16 +32,19 @@
 
 .account__page {
     margin-top: 84px;
-    margin-left: 32px
+    margin-left: 32px;
 }
 
 .account__itens {
     padding: 15px;
-    font-size: 16px;
     line-height: 35px;
-    color: #000;
+    color: #979899;
     width: 275px;
     height: 23px;
+}
+
+.account__itens:hover {
+    color: #000;
 }
 
 .account__form {
@@ -43,22 +52,33 @@
     width: 531px;
     height: 299px;
     border-radius: 5px;
-    padding: 20px
+    padding: 20px;
 }
 
+
 .profile__form {
-    display: flex;
-    gap: 277px;
-    padding-bottom: 48px;
+    gap: 255px;
 }
 
 .profile__form-email {
-    display: flex;
-    gap: 91px;
+    gap: 63px;
 }
 
 .profile__form-date {
-    display: flex;
-    padding-top: 45px;
-    gap: 179px;
+    gap: 151px;
+}
+
+.acc_edit {
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-left: 475px;
+}
+
+
+.acc_edit:hover {
+    background-color: #e3e3e3;
+    border-radius: 5px;
+    display: inline-block;
+    width: 68px;
+    height: 28px;
 }
