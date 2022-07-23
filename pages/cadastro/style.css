@@ -46,7 +46,6 @@
 
 /* main - corpo */
 main{
-    width: 100vw;
     height: 1200px;
  }
  section{
@@ -135,7 +134,6 @@ main{
 
 /* footer */
 .barracinza{
-   width: 100vw;
    height: 80px;
    background-color: rgba(135, 135, 135, 1);
    display: flex;
@@ -189,7 +187,6 @@ main{
 }
 
 .telapreta{
-   width: 100vw;
    background-color: black;
    padding-top: 20px;
    padding-bottom:20px;

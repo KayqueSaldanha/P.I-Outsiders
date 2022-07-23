@@ -46,8 +46,7 @@
 }
 
 /* main */
-main{
-}
+
 
 
 section{
@@ -144,8 +143,8 @@ span:hover{
 
 /* footer */
 
+
 .barracinza{
-   width: 100vw;
    height: 80px;
    background-color: rgba(135, 135, 135, 1);
    display: flex;
@@ -199,7 +198,6 @@ span:hover{
 }
 
 .telapreta{
-   width: 100vw;
    background-color: black;
    padding-top: 20px;
    padding-bottom:20px;
