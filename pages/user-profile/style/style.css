@@ -31,8 +31,7 @@
 
 .account__itens {
     padding: 15px;
-    font-weight: 300;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 35px;
     color: #000;
     width: 275px;
@@ -61,5 +60,5 @@
 .profile__form-date {
     display: flex;
     padding-top: 45px;
-    gap: 159px;
+    gap: 179px;
 }
