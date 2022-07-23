@@ -33,6 +33,7 @@ html {
 
 .item-c {
     background: #e3e3e3;
+    border-radius: 4px;
     font-weight: 500;
 }
 
