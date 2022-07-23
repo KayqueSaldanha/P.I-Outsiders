@@ -1,3 +1,4 @@
+/* header */
 #superior{
    height: 30px;
 }
@@ -43,6 +44,7 @@
    padding-top: 40px;
 }
 
+/* main - corpo */
 main{
     width: 100vw;
     height: 1200px;
@@ -57,7 +59,7 @@ main{
  }
  
  section>div>h1{
-   margin-top: 400px;
+   margin-top: 550px;
    margin-bottom: 50px;
     Font-family: Roboto;
     Font-style: Light;
@@ -97,7 +99,6 @@ main{
  
  
  .campo{
-    color: rgba(0, 0, 0, 0.5);
     background-color: #D9D9D9;
     Width: 500px;
     Height: 60px;
@@ -111,7 +112,28 @@ main{
     text-align: start;
  }
  
- 
+ #entrar{
+   color: white;
+   background-color:black;
+   Width: 500px;
+   Height: 60px;
+   margin-bottom: 43px;
+   border: none;
+   Font-family: Roboto;
+   Font-style: Regular;
+   Font-size: 39px;
+   Line-height: 40px;
+   Line-height: 100%;
+   margin-bottom: 400px;
+}
+
+#entrar:hover{
+   cursor: pointer;
+   transition: 1.5s;
+   box-shadow: 0px 10px 40px black;
+}
+
+/* footer */
 .barracinza{
    width: 100vw;
    height: 80px;
@@ -151,17 +173,16 @@ main{
    Line-height: 19px;
    Line-height: 100%;
    Vertical-align: Top;
-   color: #747474;
 }
 
-.barracinza>div>input[type="button"]{
+.barracinza>div>button{
    Width:158px;
    Height: 37px;
    background-color: black;
    color: white;
 }
 
-.barracinza>div>input[type="button"]:hover{
+.barracinza>div>button:hover{
    cursor: pointer;
    transition: 1.5s;
    box-shadow: 0px 10px 40px black;
