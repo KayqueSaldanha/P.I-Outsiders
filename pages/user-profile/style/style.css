@@ -49,5 +49,18 @@
 
 .profile__form {
     display: flex;
+    gap: 277px;
+    padding-bottom: 48px;
+}
+
+.profile__form-email {
+    display: flex;
+    gap: 91px;
+}
+
+.profile__form-date {
+    display: flex;
+    gap: 181px;
+    padding-top: 45px;
     gap: 159px;
 }
