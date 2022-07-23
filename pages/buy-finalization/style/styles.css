@@ -233,8 +233,8 @@ ul {
     margin-top: 20px;
 }
 
-.arrow-back {  
-    margin-top: 20px;  
+.arrow-back {
+    margin-top: 20px;
     width: 13px;
     height: 13px;
     border: solid black;
@@ -416,4 +416,88 @@ ul {
 #total-price {
     font-weight: 900;
     font-size: 32px;
+}
+
+@media (max-width: 576px) {
+    section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .info_payment ul {
+        font-size: 13px;
+        gap: 0;
+    }
+
+    .arrow-info {
+        margin-top: 0;
+        width: 10px;
+        height: 10px;
+    }
+    
+    .content_section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact_info {
+        display: flex;
+        margin: 20px;
+    }
+
+    #info {
+        font-size: 16px;
+    }
+
+    #account {
+        font-size: 12px;
+    }
+
+
+    #email {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .container {
+        font-size: 13px;
+        margin-left: 10px;
+    }
+
+    .name,
+    .cpf,
+    .cep,
+    .street,
+    .district {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    #name,
+    #surname,
+    #cpf,
+    #telefone,
+    #cep,
+    #street,
+    #city,
+    #number,
+    #neighborhood,
+    #complement {
+        width: 90vw;
+    }
+
+    .form-floating {
+        width: 90%;
+    }
+
+    .go-back-section {
+        width: 90%;
+    }
+
+    .bg-right-side {
+        display: none;
+    }
 }
