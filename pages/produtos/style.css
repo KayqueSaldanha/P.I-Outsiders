@@ -44,10 +44,11 @@
     padding-top: 42px;
 }
 
-/* main - corpo da pagina */
+/* main - corpo da pagina - superior */
 
 main{
-    width: 100vw;        
+    display: flex;
+    flex-direction: column;
 }
 
 div>nav{
@@ -318,5 +319,40 @@ div>nav>h2>a{
     color: #000000;
 }
 
+/* main - inferior - prateleira */
 
+#sec{
+    display: flex;
+    flex-direction: column;
+}
+
+#sec2>h3{
+    Font-family: Roboto;
+    Font-style: Medium;
+    Font-size: 30px;
+    Line-height: 35px;
+    Line-height: 100%;
+    color: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+#sec2>#prateleira{
+    display: flex;
+    justify-content: center;
+}
+
+#prateleira>.card{
+    margin-left: 20px;
+
+}
+
+#prateleira>.card:hover{
+    cursor: pointer;
+    transition: 1.5s;
+    box-shadow: 0px 10px 40px black;
+}
 
