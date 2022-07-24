@@ -347,7 +347,6 @@ div>nav>h2>a{
 
 #prateleira>.card{
     margin-left: 20px;
-
 }
 
 #prateleira>.card:hover{
@@ -355,4 +354,31 @@ div>nav>h2>a{
     transition: 1.5s;
     box-shadow: 0px 10px 40px black;
 }
+
+#prateleira>.card>a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#prateleira>.card>a>h2{
+    Font-family: Roboto;
+    Font-style: Light;
+    Font-size: 20px;
+    Line-height: 23px;
+    Line-height: 100%;
+    color: #363636;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
+}
+
+
+#prateleira>.card>span
+
+
+#prateleira>.card>p
+
+#prateleira>.card>button
 
