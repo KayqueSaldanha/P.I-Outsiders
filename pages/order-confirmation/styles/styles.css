@@ -8,6 +8,10 @@
     margin-top: 20px;
 }
 
+.accordion {
+    display: none;
+}
+
 /* DIVISION SECTION BELOW LOGO */
 .division-1 {
     width: 300px;
