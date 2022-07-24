@@ -371,14 +371,40 @@ div>nav>h2>a{
     color: #363636;
     padding-top: 10px;
     padding-bottom: 20px;
-    
 }
 
 
-#prateleira>.card>span
+#prateleira>.card>a>h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    padding-bottom: 15px;
+    color: #000000;
+}
 
 
-#prateleira>.card>p
+#prateleira>.card>a>p{
+    Font-family: Roboto;
+    Font-style: Regular;
+    Font-size: 16px;
+    Line-height: 19px;
+    Line-height: 100%;
+    color: #7B7B7B;
+}
 
-#prateleira>.card>button
+#prateleira>.card>a>button{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    height: 40px;
+    margin-top: 20px;
+    width: 100%;
+}
 
