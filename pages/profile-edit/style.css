@@ -27,8 +27,11 @@
 .account__form-edit {
     border: 1px solid #888888;
     width: 380px;
-    height: 290px;
+    height: 325px;
     border-radius: 5px;
+}
+
+.container__form {
     padding: 20px;
 }
 
