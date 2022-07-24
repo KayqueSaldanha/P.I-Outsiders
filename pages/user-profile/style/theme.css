@@ -5,6 +5,7 @@
 
 body {
     margin: 0px;
+    font-size: 16px;
 }
 
 a,
@@ -12,6 +13,7 @@ ol,
 ul {
     text-decoration: none;
     list-style: none;
+    color: #000;
 }
 
 h2 {
@@ -32,6 +34,11 @@ html {
 }
 
 .item-c {
+    padding: 15px;
+    line-height: 35px;
+    width: 275px;
+    height: 23px;
+    color: #000;
     background: #e3e3e3;
     border-radius: 4px;
     font-weight: 500;
@@ -47,4 +54,10 @@ html {
 .acc__on-disabled {
     color: #979899;
     font-size: 15px;
+}
+
+.d-flex {
+    display: flex;
+    padding-bottom: 42px;
+    flex-wrap: wrap;
 }
