@@ -441,6 +441,10 @@ ul {
         border-radius: 0 !important;
     }
 
+    .icon-chart {
+        margin-right: 10px;
+    }
+
     .accordion-button:focus {
         border-color: #FFFFFF;
         box-shadow: none;
