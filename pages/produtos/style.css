@@ -406,5 +406,7 @@ div>nav>h2>a{
     height: 40px;
     margin-top: 20px;
     width: 100%;
+    cursor: pointer;
+
 }
 
