@@ -369,29 +369,6 @@
         margin-left: 10px;
     }
 
-    .name,
-    .cpf,
-    .cep,
-    .street,
-    .district {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    #name,
-    #surname,
-    #cpf,
-    #telefone,
-    #cep,
-    #street,
-    #city,
-    #number,
-    #neighborhood,
-    #complement {
-        width: 90vw;
-    }
-
     .form-floating {
         width: 90%;
     }
