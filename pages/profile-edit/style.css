@@ -51,7 +51,7 @@
     background: #000;
     text-transform: uppercase;
     border-radius: 5px;
-    letter-spacing: 2px;
+    letter-spacing: 0.115rem;
 }
 
 .submit__form:hover {
