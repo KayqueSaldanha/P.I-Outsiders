@@ -48,13 +48,27 @@
                         <img width="17" src="./img/seta.svg" alt="ícone seta esquerda">
                         Dados pessoais
                     </a>
-                </div>
-                <h2>Dados Pessoais</h2>
-                <section class="account__form">
+                </div> <!-- .account__dados -->
+                <h2>Editar dados pessoais</h2>
+                <section class="account__form-edit">
+                    <form action="/profile" method="post" class="form__edit">
+                        <label for="firstName">Nome</label>
+                        <input type="text" name="firstName" id="firstName" value="Fulano">
 
-                </section>
-            </section> <!-- .account__form -->
-        </section> <!-- .account__page -->
+                        <label for="lastName">Sobrenome</label>
+                        <input type="text" name="lastName" id="lastName" value="De tal">
+
+                        <label for="document">CPF</label>
+                        <input type="text" name="document" id="document" value="000.000.000-00">
+
+                        <label for="phone">Telefone</label>
+                        <input type="text" name="phone" id="phone" value="(11) 00000-0000">
+
+                        <label for="birthDate">Data de nascimento</label>
+                        <input type="text" name="birthDate" id="birthDate" value="00/00/0000">
+                    </form>
+                </section> <!-- .account__form-edit -->
+            </section> <!-- .account__page -->
         </section> <!-- .account -->
     </main> <!-- .main -->
     <footer></footer>
