@@ -5,6 +5,10 @@ section {
     grid-template-columns: 1fr 1fr;
 }
 
+.accordion {
+    display: none;
+}
+
 /* LEFT SIDE STYLE */
 /* LOGO SECTION */
 .main_logo {
@@ -418,10 +422,67 @@ ul {
     font-size: 32px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
     section {
         display: flex;
         flex-wrap: wrap;
+    }
+
+    .accordion {
+        display: flex;
+        justify-content: center;
+    }
+
+    .accordion-item {
+        width: 100vw;
+    }
+
+    .accordion-button {
+        border-radius: 0 !important;
+    }
+
+    .accordion-button:focus {
+        border-color: #FFFFFF;
+        box-shadow: none;
+    }
+
+    .img-superior {
+        position: relative;
+        display: flex;
+        right: 30px;
+        justify-content: space-between;
+    }
+
+    #subtotal,
+    #frete {
+        font-size: 14px;
+    }
+
+    #subtotal-price{
+        font-size: 20px;
+    }
+
+    #total {
+        font-size: 14px;
+    }
+
+    #total-price {
+        font-size: 20px;
+    }
+
+    .item-description {
+        width: 100px;
+    }
+
+    #description,
+    #information {
+        font-size: 12px;
+        width: inherit;
+    }
+
+    .item-price {
+        font-size: 15px;
+        margin-left: auto;
     }
 
     .info_payment ul {
@@ -434,7 +495,7 @@ ul {
         width: 10px;
         height: 10px;
     }
-    
+
     .content_section {
         display: flex;
         flex-wrap: wrap;
@@ -443,7 +504,8 @@ ul {
 
     .contact_info {
         display: flex;
-        margin: 20px;
+        flex-direction: column;
+        margin-top: 20px;
     }
 
     #info {
