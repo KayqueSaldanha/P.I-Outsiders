@@ -1,3 +1,5 @@
+/* 1. Main - Dados Pessoais
+/************************************/
 .account__dados {
     display: flex;
 }
@@ -18,4 +20,19 @@
     background: #e3e3e3;
     border-radius: 5px;
 
+}
+
+/* 1. Main - Formulário de edição dos dados
+/************************************/
+.account__form-edit {
+    border: 1px solid #888888;
+    width: 380px;
+    height: 290px;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.form__edit {
+    display: flex;
+    flex-direction: column;
 }
