@@ -35,7 +35,7 @@
                     </div> <!-- .account__user-greeting -->
                 </div> <!-- .account__user-info -->
                 <nav class="account__link">
-                    <a href="" class="account__itens">Dados pessoais</a>
+                    <a href="../user-profile/profile.html" class="account__itens">Dados pessoais</a>
                     <a href="" class="account__itens">Cartões</a>
                     <a href="" class="account__itens">Endereços</a>
                     <a href="" class="item-c">Pedidos</a>
@@ -47,34 +47,26 @@
                 <div class="account__dados">
                     <a href="../user-profile/profile.html" class="acc__dados-request">
                         <img width="17" src="../../pages/profile-edit/img/seta.svg" alt="ícone seta esquerda">
-                        Pedidos
+                        Voltar
                     </a>
                 </div> <!-- .account__dados -->
-                <h2>Editar dados pessoais</h2>
+                <h2>Pedidos</h2>
                 <section class="account__form-edit">
-                    <form action="/profile" method="post" class="form__edit">
-                        <div class="flex__form">
-                            <label for="firstName">Nome</label>
-                            <input type="text" name="firstName" id="firstName" value="Fulano" required>
-                        </div>
-                        <div class="flex__form">
-                            <label for="lastName">Sobrenome</label>
-                            <input type="text" name="lastName" id="lastName" value="De tal" required>
-                        </div>
-                        <div class="flex__form">
-                            <label for="document">CPF</label>
-                            <input type="text" name="document" id="document" value="000.000.000-00" required>
-                        </div>
-                        <div class="flex__form">
-                            <label for="phone">Telefone</label>
-                            <input type="text" name="phone" id="phone" value="(11) 00000-0000" required>
-                        </div>
-                        <div class="flex__form">
-                            <label for="birthDate">Data de nascimento</label>
-                            <input type="text" name="birthDate" id="birthDate" value="00/00/0000" required>
-                        </div>
-                        <button type="submit" class="submit__form">Salvar alterações</button>
-                    </form>
+                    <div class="account_bg">
+                        <div class="account__container">
+                            <div class="title__description">
+                                <span>data do pedido</span>
+                            </div> <!-- .title__description-date -->
+                            <div class="title__description">
+                                <span>total</span>
+                            </div> <!-- .title__description-value-->
+                            <div class="title__description description-left">
+                                <span>#1245141635962-01</span>
+                            </div> <!-- .title__description-code -->
+
+
+                        </div> <!-- .account__container-->
+                    </div> <!-- .account_bg -->
                 </section> <!-- .account__form-edit -->
             </section> <!-- .account__page -->
         </section> <!-- .account -->
