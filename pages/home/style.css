@@ -6,19 +6,20 @@
 
 #infos{
     height: 19px;
-    width: 1394px;
     display: flex;
+    width: 100%;
+    max-width: 950px;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
     padding-top: 7px;
 }
 /* Parte inferior com logo e menu Nav  */
 #inferior{
     height: 80px;
-    width: 1500px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
@@ -30,10 +31,12 @@
 
 /* Menu Nav */
 #titulos{
-    width: 800px;
+    max-width: 800px;
+    width: 50%;
     height: 16px;
-    justify-content: space-between;
-    font-size: 16px;
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 12px;
     padding-top: 57px;
 }
 
@@ -44,7 +47,7 @@
 
 /* Icones usuario e sacola */
 #icones{
-    font-size: 25px;
+    font-size: 20px;
     padding-top: 42px;
 }
 /* Final do Header */
@@ -52,22 +55,28 @@
 
 /* carrousel */
 .sec1{
+    display: flex;
+    justify-content: center;
     padding-top: 20px;
-    max-width: auto;
+    max-width: 1284px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Primeira prateleira de colunas */
 #sec2{
-    width: 1592px;
-    height: 560px;
+    max-width: 1150px;
+    width: 80%;
+    height: 460px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
 }
 /* Imagem da esquerda abaixo do carrousel */
 #sec2-esq{
-    width: 666px;
-    height: 560px;
+    width: 350x;
+    height: 350px;
 }
 
 /* Titulo acima das imagens */
@@ -80,7 +89,7 @@
 }
 /* seção com os 2 cards com img, nome e preço */
 #sec2-dir{
-    width: 780px;
+    width: 650px;
     height: 503px;
 }
 /* os 2 cards */
@@ -108,6 +117,7 @@
     display: flex;
     padding: 15px 0px 5px;
     justify-content: center;
+    color: #000;
 }
 
 /* x no cartao da imagem */
@@ -125,20 +135,9 @@
 }
 
 .card{
-    width: 350px;
-    height: 480px;
-}
-
-.card:hover .shelf__btn {
-    opacity: 1;
-    position: relative;
-}
-
-.card:hover {
-    -ms-transform: scale(1.1);
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-    border: 1px solid #f2f2f2;
+    width: 250px;
+    height: 300px;
+    display:flex ;
 }
 
 .card img{
@@ -147,32 +146,41 @@
 
 /* imagem banner */
 .sec3{
-    width: 1589px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1078px;
+    width: 90%;
     height: 263px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 71px;
+    margin-top: 20px;
 }
 /* 1 prateleira de roupas (4 imagens) */
 .sec4{
-    width: 1300px;
+    max-width: 880px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     height: 510px;
     margin-left: auto;
     margin-right: auto;
 }
 /* Titulo em cima da 1º ,2º prateleira e @OUTSIDER*/
 .titlePrincipaisHome{
-    margin-top: 47px;
+    margin-top: 40px;
     margin-bottom: 25px;
-    width: 480px;
-    height: 35.7px;
     margin-left: auto;
     margin-right: auto;
-    font-style: normal;
+    width: 250px;
+    height: 35.7px;
     font-weight: 400;
-    font-size: 30px;
+    font-size: 22px;
     line-height: 35px;
+    display: flex;
     text-align: center;
+    justify-content: center;
     letter-spacing: 0.2em;
     font-variant: small-caps;
     color: #000000;
@@ -180,25 +188,35 @@
 
 /* os 4 cards da prateleira */
 .card1{
-    width: 350px;
-    height: 480px;
+    width: 250px;
+    height: 300px;
+    display: flex;
     margin-left:auto;
     margin-left:auto;   
+    flex-direction: column;
 }
 
 
 /* imagem banner */
 .sec5{
-    width: 1589px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1078px;
+    width: 90%;
     height: 263px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 70px;
+    margin-top: 40px;
 }
 
 /* 2º prateleira de roupas (4 imagens) */
 .sec6{
-    width: 1300px;
+    max-width: 880px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
     height: 510px;
     margin-left: auto;
     margin-right: auto;
@@ -206,15 +224,22 @@
 
 
 .sec7{
-    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1078px;
+    width: 90%;
+    height: 263px;
     margin-left: auto;
     margin-right: auto;
-    width: 1920px;
+    margin-top: 190px;
+    max-width: 1284px;
     height: 612px;
 }
 
 #cardsSec8{
-    width: 1400px;
+    max-width: 936px;
+    width: 72%;
     height: 401px; 
     margin-left: auto;
     margin-right: auto;
@@ -246,15 +271,12 @@
     line-height: 26px;
     text-transform: uppercase;
     height: 40px;
-    width: 120px;
     margin: 16px 0px;
     opacity: 0;
-    text-decoration: none;
 }
 
 .card1:hover .shelf__btn {
     opacity: 1;
-    position: relative;
 }
 
 .card1:hover {
@@ -264,6 +286,11 @@
     border: 1px solid #f2f2f2;
 }
 
-.shelf__container {
- align-items:center;
+.shelf_body{
+    text-decoration: none;
 }
+
+/* INICIO DO FOOTER */
+
+ 
+ /*FINAL FOOTER  */
