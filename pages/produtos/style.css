@@ -1,0 +1,412 @@
+/*header*/
+#superior{
+    height: 30px;
+}
+
+#infos{
+    height: 19px;
+    width: 1394px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 7px;
+}
+#inferior{
+    height: 80px;
+    width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.logo{
+    padding-top: 39px;
+}
+
+#titulos{
+    width: 800px;
+    height: 16px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    padding-top: 57px;
+}
+
+.pesquisar{
+    padding-top: 48px;
+}
+
+#icones{
+    font-size: 25px;
+    padding-top: 42px;
+}
+
+/* main - corpo da pagina - superior */
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+div>nav{
+    display: flex;
+    margin-left: 230px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+div>nav>h2{
+    text-decoration: none;
+    color: rgba(98, 98, 98, 1);
+    Font-family: Roboto;
+    Font-style: Regular;
+    Font-size: 12px;
+    Line-height: 14px;
+    Line-height: 100%;
+    margin-left: 10px;
+}
+
+div>nav>h2>a{
+    text-decoration: none;
+    color: rgba(98, 98, 98, 1);
+    Font-family: Roboto;
+    Font-style: Regular;
+    Font-size: 12px;
+    Line-height: 14px;
+    Line-height: 100%;
+}
+
+#sec1{
+    display: flex;
+    justify-content: center;
+}
+
+#direita{
+    flex-direction: column;
+    margin-left: 30px;
+}
+
+#top{
+    display: flex;
+}
+
+#top>div{
+    margin-left: 20px;
+}
+
+#top>div>h3{
+    Font-family: Roboto;
+    Font-style: SemiBold;
+    Font-size: 30px;
+    Line-height: 35px;
+    Line-height: 100%;    
+    color: #303030;
+}
+
+#top>div>#p1{   
+    margin-top:10px; 
+    Font-family: Roboto;
+    Font-style: Regular;
+    Font-size: 14px;
+    Line-height: 16px;
+    Line-height: 100%;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+#top>div>#p2{
+    margin-top: 30px;
+    Font-family: Roboto;
+    Font-style: SemiBold;
+    Font-size: 20px;
+    Line-height: 20px;
+    Line-height: 100%;
+}
+
+#top>div>#p2>span{
+    color: red;
+    font-size: 15px;
+    text-decoration: line-through;
+}
+
+#top>div>#p3{
+    margin-top:5px; 
+    Font-family: Roboto;
+    Font-style: Regular;
+    Font-size: 14px;
+    Line-height: 16px;
+    Line-height: 100%;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+
+#mid{
+    display: flex;
+}
+
+#mid>div>h3{
+    margin-left: 20px;
+    Font-family: Roboto;
+    Font-style: Regular;
+    Font-size: 20px;
+    Line-height: 16px;
+    Line-height: 100%;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+#mid>div>#escolhaTamanho{
+    display: flex;
+    margin-left: 20px;
+}
+
+#mid>div>#escolhaTamanho>.tamanhos{
+    Width:50px;
+    Height: 40px;
+    border: 0.5px solid black;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+#mid>div>#escolhaTamanho>.tamanhos:hover{
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.7s;
+}
+
+
+#mid>div>#escolhaTamanho>.tamanhos>p{
+    display: flex;
+    margin-top: 13px;
+    justify-content: center;
+    color: black;
+}
+
+#mid>div>#escolhaTamanho>.tamanhos>p:hover{
+    color: white;
+    transition: 0.7s;
+}
+
+#pp{    
+    Width:53px;
+    Height: 42px;
+    border: 0.5px solid black;
+    background-color: black;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+#pp>p{
+    display: flex;
+    margin-top: 12px;
+    justify-content: center;
+    color: white;
+}
+
+#mid>div>p{
+    margin-left: 20px;
+    margin-top: 35px;
+    Font-family: Roboto;
+    Font-style: Regular;
+    Font-size: 20px;
+    Line-height: 18px;
+    Line-height: 100%;
+    text-decoration: underline;
+    color: #292929;
+}
+
+#bot{
+    display: flex;
+}
+
+#bot>div{
+    flex-direction: column;
+}
+
+#bot>div>p{
+    margin-left: 20px;
+    margin-top:10px; 
+    Font-family: Roboto;
+    Font-style: Regular;
+    Font-size: 18px;
+    Line-height: 16px;
+    Line-height: 100%;
+    color: rgba(0, 0, 0, 0.25);
+}
+
+#bot>div>.cores{
+    display: flex;
+}
+
+#bot>div>.cores>#riscapreta{
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 1px solid black;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+}
+
+#bot>div>.cores>#riscapreta>#azulclaro{
+    background-color: #296BA0;
+    Width:35px;
+    Height: 35px;
+    position: relative;
+    left:5px;
+    top: 5px
+
+}
+
+#bot>div>.cores>#azulescuro{
+    background-color: #083359;
+    Width:35px;
+    Height: 35px;
+    position: relative;
+    left:80px;
+    top: 16px
+}
+
+#bot>div>div>#carrinho{
+    position: relative;
+    top: 45px;
+    margin-left: 20px;
+    color: white;
+    background-color:black;
+    Width: 400px;
+    Height: 50px;
+    margin-bottom: 43px;
+    border: none;
+    Font-family: Roboto;
+    Font-style: Regular;
+    Font-size: 25px;
+    Line-height: 40px;
+    Line-height: 100%;
+    text-decoration: none;
+}
+
+#bot>div>div>#carrinho>a{
+    text-decoration: none;
+    color: white;
+}
+
+#carrinho:hover{    
+    cursor: pointer;
+    transition: 1.5s;
+    box-shadow: 0px 10px 40px black;
+}
+
+#descricao{
+    margin-top: 20px;
+    margin-left: 160px;
+    width: 400px;
+}
+
+#descricao>h4{
+    Font-family: Roboto;
+    Font-style: Bold;
+    Font-size: 20px;
+    Line-height: 23px;
+    color:#363636
+}
+
+#descricao>p{
+    margin-top: 5px;
+    Font-family: Roboto;
+    Font-style: Light;
+    Font-size: 16px;
+    Line-height: 19px;
+    Line-height: 100%;
+    color: #000000;
+}
+
+/* main - inferior - prateleira */
+
+#sec{
+    display: flex;
+    flex-direction: column;
+}
+
+#sec2>h3{
+    Font-family: Roboto;
+    Font-style: Medium;
+    Font-size: 30px;
+    Line-height: 35px;
+    Line-height: 100%;
+    color: #303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+#sec2>#prateleira{
+    display: flex;
+    justify-content: center;
+}
+
+#prateleira>.card{
+    margin-left: 20px;
+}
+
+#prateleira>.card:hover{
+    cursor: pointer;
+    transition: 1.5s;
+    box-shadow: 0px 10px 40px black;
+}
+
+#prateleira>.card>a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#prateleira>.card>a>h2{
+    Font-family: Roboto;
+    Font-style: Light;
+    Font-size: 20px;
+    Line-height: 23px;
+    Line-height: 100%;
+    color: #363636;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+
+#prateleira>.card>a>h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    padding-bottom: 15px;
+    color: #000000;
+}
+
+
+#prateleira>.card>a>p{
+    Font-family: Roboto;
+    Font-style: Regular;
+    Font-size: 16px;
+    Line-height: 19px;
+    Line-height: 100%;
+    color: #7B7B7B;
+}
+
+#prateleira>.card>a>button{
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-transform: uppercase;
+    height: 40px;
+    margin-top: 20px;
+    width: 100%;
+    cursor: pointer;
+
+}
+

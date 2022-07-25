@@ -171,6 +171,8 @@
 .titlePrincipaisHome{
     margin-top: 40px;
     margin-bottom: 25px;
+    width: 480px;
+    height: 35.7px;
     margin-left: auto;
     margin-right: auto;
     width: 250px;
@@ -257,6 +259,7 @@
     display: flex;
     width: 350px;
     height: 480px;
+<<<<<<< HEAD
 } */
 
 /* botão de comprar de todas as img */

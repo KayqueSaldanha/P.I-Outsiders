@@ -8,6 +8,10 @@
     margin-top: 20px;
 }
 
+.accordion {
+    display: none;
+}
+
 /* DIVISION SECTION BELOW LOGO */
 .division-1 {
     width: 300px;
@@ -256,4 +260,136 @@
 #total-price {
     font-weight: 900;
     font-size: 32px;
+}
+
+@media (max-width: 768px) {
+    section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .accordion {
+        display: flex;
+        justify-content: center;
+    }
+
+    .accordion-item {
+        width: 100vw;
+        margin-bottom: 10px;
+    }
+
+    .accordion-button {
+        border-radius: 0 !important;
+    }
+
+    .icon-chart {
+        margin-right: 10px;
+    }
+
+    .accordion-button:focus {
+        border-color: #FFFFFF;
+        box-shadow: none;
+    }
+
+    .img-superior {
+        position: relative;
+        display: flex;
+        right: 30px;
+        justify-content: space-between;
+    }
+
+    #subtotal,
+    #frete {
+        font-size: 14px;
+    }
+
+    #subtotal-price{
+        font-size: 20px;
+    }
+
+    #total {
+        font-size: 14px;
+    }
+
+    #total-price {
+        font-size: 20px;
+    }
+
+    .item-description {
+        width: 100px;
+    }
+
+    #description,
+    #information {
+        font-size: 12px;
+        width: inherit;
+    }
+
+    .item-price {
+        font-size: 15px;
+        margin-left: auto;
+    }
+
+    .info_payment ul {
+        font-size: 13px;
+        gap: 0;
+    }
+
+    .arrow-info {
+        margin-top: 0;
+        width: 10px;
+        height: 10px;
+    }
+
+    .content_section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact_info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    #info {
+        font-size: 16px;
+    }
+
+    #account {
+        font-size: 12px;
+    }
+
+
+    #email {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .container {
+        font-size: 13px;
+        margin-left: 10px;
+    }
+
+    .form-floating {
+        width: 90%;
+    }
+
+    .go-back-section {
+        width: 90%;
+    }
+
+    .bg-right-side {
+        display: none;
+    }
+
+    .main-container {
+        width: 350px;
+    }
+
+    .order-confirmed {
+        text-align: center;
+    }
 }

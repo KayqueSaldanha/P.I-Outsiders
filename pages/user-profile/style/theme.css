@@ -1,0 +1,63 @@
+/* 1. Estilos gerais
+/************************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+    margin: 0px;
+    font-size: 16px;
+}
+
+a,
+ol,
+ul {
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 41px;
+    padding-bottom: 14px;
+    padding-left: 15px;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+.max-width-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.item-c {
+    padding: 15px;
+    line-height: 35px;
+    width: 275px;
+    height: 23px;
+    color: #000;
+    background: #e3e3e3;
+    border-radius: 4px;
+    font-weight: 500;
+}
+
+.acc__on-base {
+    color: #3f3f40;
+    font-size: 16px;
+    margin-bottom: 15px;
+    line-height: 35px;
+}
+
+.acc__on-disabled {
+    color: #979899;
+    font-size: 15px;
+}
+
+.d-flex {
+    display: flex;
+    padding-bottom: 42px;
+    flex-wrap: wrap;
+}

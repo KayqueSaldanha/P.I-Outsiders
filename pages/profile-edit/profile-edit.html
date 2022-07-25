@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="../../styles/reset.css">
+    <link rel="stylesheet" href="../user-profile/style/theme.css">
+    <link rel="stylesheet" href="../../pages/user-profile/style/style.css">
+    <link rel="stylesheet" href="../profile-edit/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - edit</title>
+</head>
+
+<body>
+    <header>
+        <section id="profile">
+            <div class="max-width-content profile__container">
+                <a href="index.html"><img width="200" src="../../pages/user-profile/img/outsider 2.svg"
+                        alt="Outsider Logo"></a>
+            </div> <!-- .profile__container -->
+        </section> <!-- . profile -->
+    </header> <!-- .header -->
+
+    <main class="max-width-content">
+        <section id="account">
+            <aside class="account__menu">
+                <div class="account__user-info">
+                    <div class="account__user-img">
+                        <img width="55" src="../user-profile/img/user.svg" alt="Ícone de user">
+                    </div> <!-- .account__user-img -->
+                    <div class="account__user-greeting">
+                        <span>Olá!</span>
+                    </div> <!-- .account__user-greeting -->
+                </div> <!-- .account__user-info -->
+                <nav class="account__link">
+                    <a href="" class="item-c">Dados pessoais</a>
+                    <a href="" class="account__itens">Cartões</a>
+                    <a href="" class="account__itens">Endereços</a>
+                    <a href="" class="account__itens">Pedidos</a>
+                    <a href="" class="account__itens">Sair</a>
+                </nav> <!-- . account__link -->
+            </aside> <!-- .account__menu -->
+
+            <section class="account__page">
+                <div class="account__dados">
+                    <a href="../user-profile/profile.html" class="acc__dados">
+                        <img width="17" src="./img/seta.svg" alt="ícone seta esquerda">
+                        Dados pessoais
+                    </a>
+                </div> <!-- .account__dados -->
+                <h2>Editar dados pessoais</h2>
+                <section class="account__form-edit">
+                    <div class="container__form">
+                        <form action="/profile" method="post" class="form__edit">
+                            <div class="flex__form">
+                                <label for="firstName">Nome</label>
+                                <input type="text" name="firstName" id="firstName" value="Fulano" required>
+                            </div>
+                            <div class="flex__form">
+                                <label for="lastName">Sobrenome</label>
+                                <input type="text" name="lastName" id="lastName" value="De tal" required>
+                            </div>
+                            <div class="flex__form">
+                                <label for="document">CPF</label>
+                                <input type="text" name="document" id="document" value="000.000.000-00" required>
+                            </div>
+                            <div class="flex__form">
+                                <label for="phone">Telefone</label>
+                                <input type="text" name="phone" id="phone" value="(11) 00000-0000" required>
+                            </div>
+                            <div class="flex__form">
+                                <label for="birthDate">Data de nascimento</label>
+                                <input type="text" name="birthDate" id="birthDate" value="00/00/0000" required>
+                            </div>
+                            <button type="submit" class="submit__form">Salvar alterações</button>
+                        </form>
+                    </div> <!-- .container__form -->
+                </section> <!-- .account__form-edit -->
+            </section> <!-- .account__page -->
+        </section> <!-- .account -->
+    </main> <!-- .main -->
+    <footer></footer>
+</body>
+
+</html>
