@@ -1,0 +1,61 @@
+/* inicio do Header */
+/* Parte superior dele "faixa toda preta" */
+#superior{
+    height: 30px;
+}
+
+#infos{
+    height: 19px;
+    max-width: 950px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 7px;
+}
+/* Parte inferior com logo e menu Nav  */
+#inferior{
+    height: 80px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.logo{
+    padding-top: 39px;
+}
+
+#carrinho{
+    font-size: 25px;
+    margin-top: 42px;
+    color:#000000 ;
+}
+
+/* CARRINHO DE COMPRA */
+#titulos{
+    width: 500px;
+    height: 16px;
+    font-size: 25px;
+    margin-top: 42px;
+    height: 38px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 38px;
+    color:#000000 ;
+}
+
+/* Botão (Input) */
+.pesquisar{
+    padding-top: 48px;
+}
+
+/* Icones usuario e sacola */
+#icones{
+    font-size: 25px;
+    padding-top: 42px;
+}
+/* Final do Header */

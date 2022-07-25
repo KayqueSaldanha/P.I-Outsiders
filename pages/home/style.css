@@ -167,7 +167,7 @@
 
 /* os 4 cards da prateleira */
 .card1{
-    width: 350px;
+    width: 0px;
     height: 480px;
     margin-left:auto;
     margin-left:auto;   
@@ -307,7 +307,5 @@
     width: 300px;
     height: 300px;
  }
- 
- 
- 
+  
  /*FINAL DO FOOTER  */
