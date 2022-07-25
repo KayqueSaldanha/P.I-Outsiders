@@ -62,3 +62,21 @@
     text-transform: uppercase;
     color: #888888;
 }
+
+.request__product {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+
+.request__btn {
+    margin-left: 129px;
+    font-size: 14px;
+    padding: 5px 5px;
+    text-decoration: underline;
+}
+
+.request__btn:hover {
+    background: #e3e3e3;
+    border-radius: 2px;
+}
