@@ -60,3 +60,18 @@
 .submit__form:hover {
     box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
 }
+
+@media (max-width: 768px) {
+
+    .account__link {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        width: 193px;
+    }
+
+    .item-c,
+    .account__itens {
+        width: 192px;
+    }
+}
