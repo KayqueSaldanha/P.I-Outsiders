@@ -4,6 +4,7 @@
 #profile {
     display: flex;
     border-bottom: 1px solid #ededed;
+    justify-content: center;
 }
 
 
@@ -83,4 +84,49 @@
 .acc_edit:hover {
     background-color: #e3e3e3;
     border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+    .account__link {
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        width: 261px;
+    }
+
+    .item-c,
+    .account__itens {
+        width: 180px;
+    }
+
+    .account__form {
+        border: 1px solid #888888;
+        width: 280px;
+        height: 300px;
+        border-radius: 5px;
+        padding: 20px;
+        position: absolute;
+    }
+
+    .profile__form {
+        gap: 120px;
+    }
+
+    .d-flex {
+        display: flex;
+        padding-bottom: 21px;
+        flex-wrap: wrap;
+    }
+
+    .profile__form-email,
+    .profile__form-date {
+        gap: 19px;
+    }
+
+    .acc_edit {
+        margin-left: 218px;
+        width: 68px;
+        height: 28px;
+        position: relative;
+    }
 }
