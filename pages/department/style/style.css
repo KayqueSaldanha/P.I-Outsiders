@@ -155,6 +155,7 @@
     margin: 16px 0px;
     opacity: 0;
     position: absolute;
+    border-radius: 2px;
 }
 
 .shelf__product:hover .shelf__btn {
@@ -177,4 +178,5 @@
     left: 806px;
     bottom: 76px;
     padding: 10px;
+    border-radius: 2px;
 }
