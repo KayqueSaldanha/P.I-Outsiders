@@ -1,0 +1,215 @@
+/* inicio do Header */
+/* Parte superior dele "faixa toda preta" */
+#superior{
+    height: 30px;
+}
+
+#infos{
+    height: 19px;
+    max-width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 400;
+    font-size: 16px;
+    padding-top: 7px;
+}
+/* Parte inferior com logo e menu Nav  */
+#inferior{
+    height: 80px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
+}
+
+.logo{
+    padding-top: 39px;
+}
+
+#carrinho{
+    font-size: 35px;
+    margin-top: 42px;
+    color:#000000 ;
+}
+
+/* CARRINHO DE COMPRA */
+#titulos{
+    width: 500px;
+    height: 16px;
+    font-size: 25px;
+    margin-top: 42px;
+    height: 38px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    line-height: 38px;
+    color:#000000 ;
+}
+
+/* Botão (Input) */
+.pesquisar{
+    padding-top: 48px;
+}
+
+/* Icones usuario e sacola */
+#icones{
+    font-size: 25px;
+    padding-top: 42px;
+}
+/* Final do Header */
+
+#sec1{
+    margin-top: 62px;
+    height: 80px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#sec1>.tituloEsq{
+    width: 400px;
+    height: 298px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.23em;
+    font-variant: small-caps;
+    color: #000000;
+}
+
+#sec1>.tituloDir{
+    width: 800px;
+    height: 35px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-variant: small-caps;
+    color: #000000;
+    margin-left: 300px;
+}
+
+#sec1>.tituloDir>ul{
+    display: flex;    
+    justify-content: space-between;
+}
+
+#sec1>.tituloDir>ul>li{
+    list-style-type: none;
+}
+
+#sec2{
+    height: 300px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+#sec2>.desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.2em;
+    color: #000000;
+}
+
+#sec2>.desc>.imgDesc{
+    width: 240px;
+    height: 240px;
+    text-align: center;
+}
+
+#sec2>.valores{
+    display: flex;    
+    justify-content: space-between;
+    width: 600px;
+    height: 300px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    color: #000000;
+    align-items: center;
+}
+
+#sec2>.valores>div>.trash{
+  font-size: 25px;
+}
+
+#sec3{
+    height: 300px;
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+}
+
+#sec3>.desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 0.2em;
+    color: #000000;
+}
+
+#sec3>.desc>.imgDesc{
+    width: 240px;
+    height: 240px;
+    text-align: center;
+}
+
+#sec3>.valores{
+    display: flex;    
+    justify-content: space-between;
+    width: 600px;
+    height: 300px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 0.2em;
+    color: #000000;
+    align-items: center;
+}
+
+#sec3>.valores>div>.trash{
+  font-size: 25px;
+}
+
+#sec4{
+    height: 80px;
+    width: 1200px;
+    align-items: center;
+}
+
+#sec4>.escProd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
