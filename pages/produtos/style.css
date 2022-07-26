@@ -350,10 +350,17 @@ div>nav>h2>a{
 }
 
 #prateleira>.card:hover{
-    cursor: pointer;
-    transition: 1.5s;
-    box-shadow: 0px 10px 40px black;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    border: 1px solid #f2f2f2;
 }
+
+#prateleira>.card:hover>.btn{
+    opacity: 1;
+    position: relative;
+}
+
 
 #prateleira>.card>a{
     text-decoration: none;
@@ -409,9 +416,7 @@ div>nav>h2>a{
     opacity: 0;
 }
 
-#prateleira>.card>.btn:hover{
-    opacity: 1;
-}
+
 
 
 .espaco{
