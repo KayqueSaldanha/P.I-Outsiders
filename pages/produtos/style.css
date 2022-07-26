@@ -1,4 +1,5 @@
 /*header*/
+
 #superior{
     height: 30px;
 }
@@ -211,8 +212,17 @@ div>nav>h2>a{
     Font-size: 20px;
     Line-height: 18px;
     Line-height: 100%;
-    text-decoration: underline;
     color: #292929;
+    
+}
+
+
+#mid>div>p>input{
+    border-radius: 10%;
+    height: 15px;
+    width: 40px;
+    margin-left: 112px;
+    box-shadow: 0px 10px 70px black;
 }
 
 #bot{
