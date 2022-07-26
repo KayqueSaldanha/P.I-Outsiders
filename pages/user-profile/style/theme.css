@@ -29,8 +29,8 @@ html {
 }
 
 .max-width-content {
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 100%;
+    padding: 0px 74.5px 0px 74.5px;
 }
 
 .item-c {
