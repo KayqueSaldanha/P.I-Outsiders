@@ -50,6 +50,10 @@ html {
     padding: 45px 0px 85px 0px;
 }
 
+.bold {
+    font-weight: 700;
+}
+
 .filters__title {
     font-size: 14px;
     display: block;
@@ -71,4 +75,13 @@ html {
 .line {
     margin-top: 18px;
     border-bottom: 1px solid #888888;
+}
+
+.bg-grey {
+    background-color: #323232;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
 }
