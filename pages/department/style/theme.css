@@ -50,6 +50,10 @@ html {
     padding: 45px 0px 85px 0px;
 }
 
+.bold {
+    font-weight: 700;
+}
+
 .filters__title {
     font-size: 14px;
     display: block;
