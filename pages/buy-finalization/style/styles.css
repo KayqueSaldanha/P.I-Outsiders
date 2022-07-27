@@ -566,4 +566,26 @@ ul {
     .bg-right-side {
         display: none;
     }
+
+    .arrow-back {
+        display: none;
+    }
+
+    .go-back {
+        display: none;
+    }
+
+    .btn-shipping {
+        margin: 0;
+    }
+
+    .btn-continue {
+        border-radius: 4px;
+    }
+
+    .go-back-section {
+        display: flex;
+        justify-content: center;
+        width: 95vw;
+    }
 }
