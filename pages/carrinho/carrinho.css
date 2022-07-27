@@ -5,7 +5,6 @@
 }
 
 #infos{
-    height: 19px;
     max-width: 1000px;
     display: flex;
     justify-content: space-between;
@@ -17,7 +16,6 @@
 }
 /* Parte inferior com logo e menu Nav  */
 #inferior{
-    height: 80px;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -37,7 +35,6 @@
 /* CARRINHO DE COMPRA */
 #titulos{
     width: 500px;
-    height: 16px;
     font-size: 25px;
     margin-top: 42px;
     height: 38px;
@@ -62,7 +59,6 @@
 
 #sec1{
     margin-top: 62px;
-    height: 80px;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -72,7 +68,6 @@
 
 #sec1>.tituloEsq{
     width: 400px;
-    height: 298px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -86,7 +81,6 @@
 
 #sec1>.tituloDir{
     width: 800px;
-    height: 35px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -109,13 +103,13 @@
 }
 
 #sec2{
-    height: 300px;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid black;
+    flex-wrap: wrap;
 }
 
 #sec2>.desc{
@@ -129,6 +123,7 @@
     line-height: 26px;
     letter-spacing: 0.2em;
     color: #000000;
+    flex-wrap: wrap;
 }
 
 #sec2>.desc>.imgDesc{
@@ -141,7 +136,6 @@
     display: flex;    
     justify-content: space-between;
     width: 600px;
-    height: 300px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -163,6 +157,7 @@
     display: flex;
     justify-content: space-between;
     border-bottom: 2px solid black;
+    flex-wrap: wrap;
 }
 
 #sec3>.desc{
@@ -176,6 +171,7 @@
     line-height: 26px;
     letter-spacing: 0.2em;
     color: #000000;
+    flex-wrap: wrap;
 }
 
 #sec3>.desc>.imgDesc{
@@ -212,4 +208,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (max-width: 580px){
+    .sec3{
+        display: none;
+    }
+
 }

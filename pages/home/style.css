@@ -5,7 +5,6 @@
 }
 
 #infos{
-    height: 19px;
     display: flex;
     width: 100%;
     max-width: 950px;
@@ -32,12 +31,15 @@
 /* Menu Nav */
 #titulos{
     max-width: 800px;
-    width: 50%;
     height: 16px;
     display: flex;
-    flex-flow: row wrap;
     font-size: 12px;
     padding-top: 57px;
+}
+
+#titulos>li{
+    display: flex;
+    display: inline-block;
 }
 
 /* Botão (Input) */
@@ -59,24 +61,27 @@
     justify-content: center;
     padding-top: 20px;
     max-width: 1284px;
-    width: 100%;
+    width: 100vw;
     margin-left: auto;
     margin-right: auto;
 }
 
 /* Primeira prateleira de colunas */
 #sec2{
-    max-width: 1150px;
-    width: 80%;
-    height: 460px;
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
 }
 /* Imagem da esquerda abaixo do carrousel */
 #sec2-esq{
-    width: 350x;
-    height: 350px;
+    width: 300x;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* Titulo acima das imagens */
@@ -89,14 +94,18 @@
 }
 /* seção com os 2 cards com img, nome e preço */
 #sec2-dir{
+    padding-left: 80px;
     width: 650px;
-    height: 503px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between ;
 }
 /* os 2 cards */
 #card-master{
     padding-top: 27px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 /* titulo da imagem */
@@ -150,33 +159,35 @@
     justify-content: center;
     align-items: center;
     max-width: 1078px;
-    width: 90%;
-    height: 263px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 20px;
+    padding-top: 100px;
 }
 /* 1 prateleira de roupas (4 imagens) */
 .sec4{
-    max-width: 880px;
+    max-width: 1100px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 510px;
     margin-left: auto;
     margin-right: auto;
+    flex-wrap: wrap;
 }
+
+#cardsImag{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 /* Titulo em cima da 1º ,2º prateleira e @OUTSIDER*/
 .titlePrincipaisHome{
     margin-top: 40px;
     margin-bottom: 25px;
-    width: 480px;
-    height: 35.7px;
     margin-left: auto;
     margin-right: auto;
     width: 250px;
-    height: 35.7px;
     font-weight: 400;
     font-size: 22px;
     line-height: 35px;
@@ -190,12 +201,13 @@
 
 /* os 4 cards da prateleira */
 .card1{
-    width: 250px;
-    height: 300px;
+    width: 240px;
+    height: 240px;
     display: flex;
     margin-left:auto;
     margin-left:auto;   
     flex-direction: column;
+    padding-left: 35px;
 }
 
 
@@ -209,19 +221,19 @@
     height: 263px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 40px;
+    padding-top: 280px;
 }
 
 /* 2º prateleira de roupas (4 imagens) */
 .sec6{
-    max-width: 880px;
+    max-width: 1100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 70%;
-    height: 510px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 120px;
 }
 
 
@@ -229,28 +241,27 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 1078px;
-    width: 90%;
-    height: 263px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top: 190px;
-    max-width: 1284px;
-    height: 612px;
+}
+
+#sec8{
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #cardsSec8{
-    max-width: 936px;
-    width: 72%;
-    height: 401px; 
+    max-width: 936px; 
     margin-left: auto;
     margin-right: auto;
 }
 
 .card8{
-    width: 350px;
-    height: 480px;
-    justify-content: space-between;
+    width: 240px;
     display: flex;
 }
 
@@ -285,3 +296,137 @@
     text-decoration: none;
 }
 
+/* ultima prateleira de fotos antes do footer */
+#sec8{
+    max-width: 1150px;
+    height: 460px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+}
+
+#sec8>.cardSec8{
+    width: 240x;
+    height: 240px;
+    flex-wrap: wrap;
+}
+/* footer */
+
+.barracinza{
+    height: 80px;
+    background-color: rgba(135, 135, 135, 1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+ 
+ .barracinza>div>h2{
+    Font-family: Roboto;  
+    Font-style: Bold;
+    Font-size: 20px;
+    Line-height: 29px;
+    Line-height: 100%;
+    margin-left: 100px;
+    color: white;
+ }
+ 
+ .barracinza>div>p{
+    font-style: Roboto;
+    font-Weight: 400;
+    font-Size: 13px;
+    color: white;
+    margin-top: 10px;
+    margin-left: 100px;
+ }
+ 
+ .barracinza>div>input[type="text"]{
+    background-color: white;
+    Width: 380px;
+    Height:35px;
+    border: none;  
+    Font-family: Roboto;
+    Font-style: Regular;
+    Font-size: 16px;
+    Line-height: 19px;
+    Line-height: 100%;
+    Vertical-align: Top;
+ }
+ 
+ .barracinza>div>button{
+    Width:158px;
+    Height: 37px;
+    background-color: black;
+    color: white;
+ }
+ 
+ .barracinza>div>button:hover{
+    cursor: pointer;
+    transition: 1.5s;
+    box-shadow: 0px 10px 40px black;
+ }
+ 
+ .telapreta{
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom:20px;
+ }
+ 
+ .telapreta .superior{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+ }
+ 
+ .telapreta .superior>#esquerda{
+    margin-top: 20px;
+ }
+ 
+ .paragrafos{
+    margin-top: 15px;
+    color: white;
+ }
+ 
+ #iconesinferior{
+    padding-top: 25px;
+    display: flex;
+    justify-content: space-around;
+ }
+ 
+ #tamanhoimagem{
+    width: 300px;
+    height: 300px;
+ }
+
+/* FINAL FOOTER */
+
+
+@media (max-width: 580px){
+    #titulos{
+        display: none;
+    }
+    .sec3{
+        display: none;
+    }
+    .sec5{
+        display: none;
+    }
+    #sec8{
+        display: none;
+    }
+    #sec2-dir{
+        display: flex;
+        align-items: center;
+        padding-top: 100px;
+    }
+    #card-master{
+        display: flex;
+        padding-top: 80px;
+        align-items: center;
+    }
+    #card-master.card1{
+        margin-top: 80px;
+    }
+}
