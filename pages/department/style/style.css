@@ -253,6 +253,7 @@
 
     .menu__logo {
         order: 2;
+        padding-right: 0px;
     }
 
     .menu__supportNav {
