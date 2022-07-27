@@ -392,4 +392,17 @@
     .order-confirmed {
         text-align: center;
     }
+
+    .go-back-section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-back-to-main {
+        margin: 0;
+    }
+
+    .btn-continue {
+        border-radius: 4px;
+    }
 }
