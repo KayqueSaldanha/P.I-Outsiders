@@ -1,3 +1,20 @@
+/* 1. Header
+/************************************/
+.topbar {
+    padding: 3px 0px;
+}
+
+.topbar__list {
+    justify-content: space-between;
+
+}
+
+.topbar__item,
+.topbar__item>a {
+    color: #fff;
+    font-size: 14px;
+}
+
 /* 2. Main
 /************************************/
 
@@ -24,11 +41,6 @@
 }
 
 /* FILTERS */
-.filters {
-    display: flex;
-    align-items: center;
-}
-
 .filters>ul {
     display: flex;
 }
