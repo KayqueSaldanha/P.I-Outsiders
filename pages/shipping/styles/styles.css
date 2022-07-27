@@ -210,6 +210,7 @@ ul {
     cursor: pointer;
     margin-bottom: 30px;
     margin-left: auto;
+    border-radius: 4px;
 }
 
 /* RIGHT SIDE STYLE */
@@ -438,7 +439,12 @@ ul {
     .content_section {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .division-1 {
+        display: none;
     }
 
     .contact_info {
@@ -467,7 +473,6 @@ ul {
     .go-back-section {
         display: flex;
         justify-content: center;
-        width: 95vw;
     }
 
     .bg-right-side {
@@ -475,8 +480,8 @@ ul {
     }
 
     .slc-shipping {
-        width: auto;
-        height: auto;
+        display: flex;
+        width: 95vw;
     }
 
     .arrow-back {
@@ -493,5 +498,19 @@ ul {
 
     #shipping-price {
         font-size: 16px;
+    }
+
+    .btn-continue {
+        border-radius: 4px;
+    }
+
+    .shipping-main-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .shipping-info {
+        margin-left: 20px;
+        margin-bottom: 10px;
     }
 }

@@ -272,6 +272,7 @@ ul {
     cursor: pointer;
     margin-bottom: 30px;
     margin-left: auto;
+    border-radius: 4px;
 }
 
 .btn-shipping {
@@ -422,7 +423,7 @@ ul {
     font-size: 32px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     section {
         display: flex;
         flex-wrap: wrap;
@@ -565,5 +566,27 @@ ul {
 
     .bg-right-side {
         display: none;
+    }
+
+    .arrow-back {
+        display: none;
+    }
+
+    .go-back {
+        display: none;
+    }
+
+    .btn-shipping {
+        margin: 0;
+    }
+
+    .btn-continue {
+        border-radius: 4px;
+    }
+
+    .go-back-section {
+        display: flex;
+        justify-content: center;
+        width: 95vw;
     }
 }
