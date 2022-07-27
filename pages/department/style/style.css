@@ -219,3 +219,52 @@
     padding: 10px;
     border-radius: 2px;
 }
+
+/* 2. Media Query
+/************************************/
+
+@media (max-width: 576px) {
+
+    .menu__nav,
+    .topbar,
+    .filters,
+    .order,
+    .search__input {
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        background-color: #000;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+    }
+
+    .menu__toggle {
+        width: 40px;
+        height: 30px;
+        margin: 20px;
+    }
+
+
+
+
+    .menu__logo {
+        order: 2;
+    }
+
+    .menu__supportNav {
+        order: 3;
+    }
+
+    .menu__container {
+        justify-content: space-between;
+    }
+
+    /* Filtro do menu mobile */
+    .filters__mobile {
+        
+    }
+}
