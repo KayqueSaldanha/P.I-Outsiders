@@ -480,8 +480,8 @@ ul {
     }
 
     .slc-shipping {
-        width: auto;
-        height: auto;
+        display: flex;
+        width: 95vw;
     }
 
     .arrow-back {
@@ -502,5 +502,15 @@ ul {
 
     .btn-continue {
         border-radius: 4px;
+    }
+
+    .shipping-main-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .shipping-info {
+        margin-left: 20px;
+        margin-bottom: 10px;
     }
 }
