@@ -15,6 +15,30 @@
     font-size: 14px;
 }
 
+.menu__logo {
+    padding-right: 94px;
+}
+
+.menu__container {
+    height: 94px;
+}
+
+.nav__list {
+    gap: 28px;
+    text-transform: uppercase;
+    font-weight: 300;
+    line-height: 19px;
+    padding-right: 23px;
+}
+
+.nav__link:hover {
+    font-weight: 500;
+}
+
+.menu__supportNav {
+    gap: 10px;
+}
+
 /* 2. Main
 /************************************/
 
