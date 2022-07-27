@@ -472,7 +472,6 @@ ul {
     .go-back-section {
         display: flex;
         justify-content: center;
-        width: 95vw;
     }
 
     .bg-right-side {
