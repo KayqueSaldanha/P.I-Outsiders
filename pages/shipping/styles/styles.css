@@ -494,4 +494,8 @@ ul {
     #shipping-price {
         font-size: 16px;
     }
+
+    .btn-continue {
+        border-radius: 4px;
+    }
 }
