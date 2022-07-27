@@ -405,4 +405,8 @@
     .btn-continue {
         border-radius: 4px;
     }
+
+    .division-1 {
+        display: none;
+    }
 }
