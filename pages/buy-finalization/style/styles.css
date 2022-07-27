@@ -422,7 +422,7 @@ ul {
     font-size: 32px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 576px) {
     section {
         display: flex;
         flex-wrap: wrap;
