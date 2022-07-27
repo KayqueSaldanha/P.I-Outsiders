@@ -17,8 +17,9 @@ html {
 
 
 .max-width-content {
-    max-width: 100%;
+    width: 100%;
     padding: 0px 74.5px 0px 74.5px;
+
 }
 
 .img-main {
