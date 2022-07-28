@@ -18,8 +18,9 @@ html {
 
 .max-width-content {
     width: 100%;
+    max-width: 1200px;
+    margin: auto;
     padding: 0px 74.5px 0px 74.5px;
-
 }
 
 .img-main {

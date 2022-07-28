@@ -2,6 +2,8 @@
 <html lang="pt-br">
 
 <head>
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="stylesheet" href="../../styles/reset.css">
     <link rel="stylesheet" href="../../pages/department/style/theme.css">
     <link rel="stylesheet" href="../../pages/department/style/style.css">
@@ -33,6 +35,13 @@
                     <a href="#"><img width="192" height="50" src="../../pages/user-profile/img/outsider 2.svg"
                             alt="Logo Outsider"></a>
                 </div> <!-- .menu__logo -->
+                <div class="menu__mobile">
+                    <div class="menu__toggle">
+                        <div class="one"></div>
+                        <div class="two"></div>
+                        <div class="three"></div>
+                    </div> <!-- .menu__toggle -->
+                </div> <!-- .menu__mobile -->
                 <nav class="menu__nav">
                     <ul class="nav__list flex">
                         <li class="nav__link"><a href="">Homem</a></li>
@@ -46,7 +55,7 @@
 
                 <div class="menu__supportNav flex">
                     <div class="search">
-                        <input class="search" type="text" placeholder="O que você precisa?">
+                        <input class="search__input" type="text" placeholder="O que você precisa?">
                         <button><img src="../department/img/search.svg" alt="Ícone search"></button>
                     </div> <!-- .search -->
                     <div class="user">
@@ -92,6 +101,22 @@
             <div class="title__dep">
                 <h2>CAMISETA BÁSICA ANTISSUOR E ANTIODOR</h2>
             </div> <!-- .title__dep -->
+            <div class="filters__mobile">
+                <div class="filters__container-m">
+                    <ul class="filters__item">
+                        <li>
+                            <a href="#">
+                                <i class="las la-sort-alpha-down"></i>
+                                Ordenar por:</a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="las la-filter"></i>
+                                Filtrar por:</a>
+                        </li>
+                    </ul>
+                </div> <!-- .filters__container-mobile -->
+            </div> <!-- .filters__mobile -->
             <div class="filters flex">
                 <span class="filters__title">Filtre a sua busca</span>
                 <ul>
@@ -371,7 +396,7 @@
 
 
         <div class="banner_principal">
-            <a href=""><img width="984" src="../../pages/department/img/base layer.jpg" alt="">
+            <a href=""><img src="../../pages/department/img/base layer.jpg" alt="">
                 <span class="cta__banner">comprar agora</span>
             </a>
         </div> <!-- .banner_principal -->

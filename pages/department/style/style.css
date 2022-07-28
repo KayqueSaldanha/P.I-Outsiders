@@ -137,6 +137,10 @@
     height: 103px;
 }
 
+.filters__mobile {
+    display: none;
+}
+
 /* ORDER */
 .order-c {
     display: flex;
@@ -203,9 +207,7 @@
 }
 
 .banner_principal {
-    width: 984px;
-    padding: 87px 0px 50px 0px;
-    margin: 0 auto;
+    padding: 53px 182px;
 }
 
 
@@ -218,4 +220,80 @@
     bottom: 76px;
     padding: 10px;
     border-radius: 2px;
+}
+
+/* 2. Media Query
+/************************************/
+
+@media (max-width: 576px) {
+
+    .menu__nav,
+    .topbar,
+    .filters,
+    .order,
+    .search__input,
+    .banner_principal {
+        display: none;
+    }
+
+    .menu,
+    .bread__crumb-c {
+        margin: 0px 14px;
+    }
+
+    .one,
+    .two,
+    .three {
+        background-color: #000;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+    }
+
+    .menu__toggle {
+        width: 40px;
+        height: 30px;
+    }
+
+    .menu__logo {
+        order: 2;
+        padding-right: 0px;
+    }
+
+    .menu__supportNav {
+        order: 3;
+    }
+
+    .menu__container {
+        justify-content: space-between;
+    }
+
+    .title__dep {
+        font-size: 20px;
+        padding: 28px 0px 25px 0px;
+    }
+
+    .shelf__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 17px;
+        row-gap: 1px;
+        margin: 0px 14px;
+        justify-content: center;
+        padding-top: 15px;
+    }
+
+    /* Filtro do menu mobile */
+    .filters__mobile {
+        display: block;
+        background: #F3F3F3;
+    }
+
+    .filters__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 51px;
+        gap: 54px;
+    }
 }
