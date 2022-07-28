@@ -80,3 +80,29 @@
     background: #e3e3e3;
     border-radius: 2px;
 }
+
+@media (max-width: 576px) {
+
+    .account__form-edit {
+        width: 403px;
+        height: 185px;
+    }
+
+    .description {
+        gap: 47px;
+    }
+
+    .title-left,
+    .description-btn {
+        margin-left: 33px;
+    }
+
+    .request__btn {
+        margin-left: -6px;
+        font-size: 13px;
+    }
+
+    .account_bg {
+        height: 76px;
+    }
+}
