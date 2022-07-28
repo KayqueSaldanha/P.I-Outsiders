@@ -303,6 +303,7 @@ ul {
     cursor: pointer;
     margin-bottom: 30px;
     margin-left: auto;
+    border-radius: 4px;
 }
 
 /* RIGHT SIDE STYLE */
@@ -447,4 +448,88 @@ ul {
 #total-price {
     font-weight: 900;
     font-size: 32px;
+}
+
+@media (max-width: 576px) {
+    section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .content_section {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100vw;
+    }
+
+    .division-1 {
+        display: none;
+    }
+
+    .bg-right-side {
+        display: none;
+    }
+
+    .info_payment ul {
+        font-size: 13px;
+        gap: 0;
+    }
+
+    .arrow-info {
+        margin-top: 0;
+        width: 10px;
+        height: 10px;
+    }
+
+    .shipping-info {
+        margin-bottom: 20px;
+    }
+
+    .main-container-shipping {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .accordion {
+        width: 95%;
+    }
+    
+    .name {
+        justify-content: flex-start;
+    }
+
+    #credit-card-nmb {
+        width: 80%;
+    }
+
+    #credit-card-name {
+        width: 80%;
+    }
+
+    #credit-card-cvv {
+        margin-left: 1rem;
+    }
+
+    .btn-continue {
+        border-radius: 4px;
+    }
+
+    .btn-payment {
+        margin: 0;
+    }
+
+    .go-back-section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .go-back {
+        display: none;
+    }
+
+    .arrow-back {
+        display: none;
+    }
 }
