@@ -222,6 +222,35 @@
     border-radius: 2px;
 }
 
+/*FOOTER*/
+
+.news__container {
+    height: 80px;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.newsletter>.news__container>.news_text>h2 {
+    line-height: 29px;
+    Font-size: 20px;
+    font-weight: 700;
+}
+
+.news_input {
+    width: 200px;
+    height: 27px;
+}
+
+.news_btn {
+    width: 158px;
+    height: 32px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
 /* 2. Media Query
 /************************************/
 
