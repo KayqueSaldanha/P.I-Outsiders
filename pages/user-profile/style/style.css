@@ -101,6 +101,11 @@ header {
         width: 261px;
     }
 
+    #account {
+        height: 500px;
+        margin: 0px 14px;
+    }
+
     .item-c,
     .account__itens {
         width: 180px;
@@ -135,5 +140,13 @@ header {
         width: 68px;
         height: 28px;
         position: relative;
+    }
+}
+
+@media (max-width: 576px) {
+
+
+    .account__page {
+        margin-left: -39px;
     }
 }
