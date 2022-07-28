@@ -86,6 +86,10 @@ html {
     background-color: #878787;
 }
 
+.bg-black {
+    background-color: #000;
+}
+
 .flex {
     display: flex;
     align-items: center;
