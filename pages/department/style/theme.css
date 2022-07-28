@@ -82,6 +82,10 @@ html {
     background-color: #323232;
 }
 
+.bg-news {
+    background-color: #878787;
+}
+
 .flex {
     display: flex;
     align-items: center;
