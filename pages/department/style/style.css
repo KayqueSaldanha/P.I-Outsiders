@@ -263,6 +263,11 @@
     line-height: 29px;
 }
 
+.social_networks {
+    padding-top: 20px;
+    gap: 44px;
+}
+
 /* 2. Media Query
 /************************************/
 
