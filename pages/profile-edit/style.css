@@ -1,5 +1,14 @@
-/* 1. Main - Dados Pessoais
+/* 1. Header
 /************************************/
+
+.profile__container {
+    display: flex;
+    justify-content: center;
+}
+
+/* 2. Main - Dados Pessoais
+/************************************/
+
 .account__dados {
     display: flex;
 }
@@ -22,7 +31,7 @@
 
 }
 
-/* 1. Main - Formulário de edição dos dados
+/* 2. Main - Formulário de edição dos dados
 /************************************/
 .account__form-edit {
     border: 1px solid #888888;
@@ -73,5 +82,13 @@
     .item-c,
     .account__itens {
         width: 192px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .item-c,
+    .account__itens {
+        width: 125px;
     }
 }

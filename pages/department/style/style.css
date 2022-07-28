@@ -234,6 +234,7 @@
     line-height: 29px;
     Font-size: 20px;
     font-weight: 700;
+    padding: 0px;
 }
 
 .news_input {
@@ -355,6 +356,7 @@
     .newsletter>.news__container>.news_text>h2 {
         display: flex;
         justify-content: center;
+
     }
 
     .news_form {

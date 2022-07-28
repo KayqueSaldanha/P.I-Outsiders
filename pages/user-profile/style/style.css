@@ -1,9 +1,12 @@
 /* 1. header
 /************************************/
 
+header {
+    border-bottom: 1px solid #ededed;
+}
+
 #profile {
     display: flex;
-    border-bottom: 1px solid #ededed;
     justify-content: center;
 }
 
@@ -29,6 +32,7 @@
 
 #account {
     display: flex;
+    padding-bottom: 181px;
 }
 
 .account__page {
@@ -86,12 +90,20 @@
     border-radius: 5px;
 }
 
+/* 3. Footer
+/************************************/
+
 @media (max-width: 930px) {
     .account__link {
         display: flex;
         flex-direction: column;
         padding-top: 20px;
         width: 261px;
+    }
+
+    #account {
+        height: 500px;
+        margin: 0px 14px;
     }
 
     .item-c,
@@ -128,5 +140,13 @@
         width: 68px;
         height: 28px;
         position: relative;
+    }
+}
+
+@media (max-width: 576px) {
+
+
+    .account__page {
+        margin-left: -39px;
     }
 }
