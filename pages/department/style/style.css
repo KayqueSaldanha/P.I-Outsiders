@@ -345,4 +345,35 @@
         gap: 54px;
     }
 
+    /* FOOTER */
+
+    .news__container {
+        flex-direction: column;
+        padding: 15px 0px;
+    }
+
+    .newsletter>.news__container>.news_text>h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .news_form {
+        padding-top: 10px;
+    }
+
+    .container_institutional {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .infos_institutional {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social_networks {
+        justify-content: center;
+    }
 }
