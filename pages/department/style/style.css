@@ -128,7 +128,7 @@
 
 .filters>ul>li>ul>li {
     line-height: 30px;
-    padding: 10px 5px
+    padding: 10px 5px;
 }
 
 
@@ -232,7 +232,9 @@
     .filters,
     .order,
     .search__input,
-    .banner_principal {
+    .banner_principal,
+    .shelf__btn,
+    .shelf__product:hover {
         display: none;
     }
 
@@ -296,7 +298,5 @@
         height: 51px;
         gap: 54px;
     }
-
-
 
 }
