@@ -1,4 +1,4 @@
-/* header */
+/* header
 #superior{
    height: 30px;
 }
@@ -42,14 +42,11 @@
 #iconessuperior{
    font-size: 40px;
    padding-top: 40px;
-}
+} */
 
 /* main - corpo */
-main{
-    height: 1200px;
- }
+
  section{
-    height: 100vh;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -58,7 +55,7 @@ main{
  }
  
  section>div>h1{
-   margin-top: 550px;
+   margin-top: 200px;
    margin-bottom: 50px;
     Font-family: Roboto;
     Font-style: Light;
@@ -132,88 +129,3 @@ main{
    box-shadow: 0px 10px 40px black;
 }
 
-/* footer */
-.barracinza{
-   height: 80px;
-   background-color: rgba(135, 135, 135, 1);
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-}
-
-.barracinza>div>h2{
-   Font-family: Roboto;  
-   Font-style: Bold;
-   Font-size: 20px;
-   Line-height: 29px;
-   Line-height: 100%;
-   margin-left: 100px;
-   color: white;
-}
-
-.barracinza>div>p{
-   font-style: Roboto;
-   font-Weight: 400;
-   font-Size: 13px;
-   color: white;
-   margin-top: 10px;
-   margin-left: 100px;
-}
-
-.barracinza>div>input[type="text"]{
-   background-color: white;
-   Width: 380px;
-   Height:35px;
-   border: none;  
-   Font-family: Roboto;
-   Font-style: Regular;
-   Font-size: 16px;
-   Line-height: 19px;
-   Line-height: 100%;
-   Vertical-align: Top;
-}
-
-.barracinza>div>button{
-   Width:158px;
-   Height: 37px;
-   background-color: black;
-   color: white;
-}
-
-.barracinza>div>button:hover{
-   cursor: pointer;
-   transition: 1.5s;
-   box-shadow: 0px 10px 40px black;
-}
-
-.telapreta{
-   background-color: black;
-   padding-top: 20px;
-   padding-bottom:20px;
-}
-
-.telapreta .superior{
-   display: flex;
-   justify-content: space-around;
-   align-items: center;
-}
-
-.telapreta .superior>#esquerda{
-   margin-top: 20px;
-}
-
-.paragrafos{
-   margin-top: 15px;
-   color: white;
-}
-
-#iconesinferior{
-   padding-top: 25px;
-   display: flex;
-   justify-content: space-around;
-}
-
-#tamanhoimagem{
-   width: 300px;
-   height: 300px;
-}
