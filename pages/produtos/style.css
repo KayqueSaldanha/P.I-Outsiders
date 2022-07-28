@@ -513,3 +513,12 @@ div>nav>h2>a{
     height: 300px;
  }
 
+
+ @media screen and (max-width:375px){
+ .telapreta .superior{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+ }
+ }
