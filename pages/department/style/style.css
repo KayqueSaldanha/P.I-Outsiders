@@ -251,6 +251,18 @@
     cursor: pointer;
 }
 
+.container_institutional {
+    padding: 40px 0px;
+    justify-content: center;
+    gap: 278px;
+    color: #fff;
+}
+
+.item_contact {
+    color: #fff;
+    line-height: 29px;
+}
+
 /* 2. Media Query
 /************************************/
 
