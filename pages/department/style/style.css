@@ -153,7 +153,7 @@
 /* SHELF */
 
 .shelf__container {
-    display: flex;    
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     max-width: 1100px;
@@ -211,6 +211,7 @@
     display: flex;
     justify-content: center;
     width: 100%;
+    margin-top: 48px;
 }
 
 .banner_principal a {
@@ -357,13 +358,17 @@
 
     .news__container {
         flex-direction: column;
-        padding: 15px 0px;
+        padding: 43px 0px;
     }
 
     .newsletter>.news__container>.news_text>h2 {
         display: flex;
         justify-content: center;
 
+    }
+
+    .news_text>p {
+        text-align: center;
     }
 
     .news_form {
