@@ -92,3 +92,27 @@
         width: 125px;
     }
 }
+
+@media (max-width: 375px) {
+    .container__form {
+        padding: 10px;
+    }
+
+    .account__form-edit {
+        margin-left: 49px;
+        width: 291px;
+    }
+
+    .acc__dados {
+        margin-left: 53px;
+    }
+
+    .account__page>h2 {
+        padding-left: 53px;
+    }
+
+    .account__page {
+        margin-top: 64px;
+    }
+
+}
