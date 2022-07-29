@@ -106,9 +106,9 @@
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
     justify-content: space-between;
     border-bottom: 2px solid black;
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -126,10 +126,16 @@
     flex-wrap: wrap;
 }
 
+#sec2>.desc>.descProd{
+    padding-left: 30px;
+}
+
 #sec2>.desc>.imgDesc{
     width: 240px;
     height: 240px;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 #sec2>.valores{
@@ -143,6 +149,7 @@
     letter-spacing: 0.2em;
     color: #000000;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #sec2>.valores>div>.trash{
@@ -150,7 +157,7 @@
 }
 
 #sec3{
-    height: 300px;
+    padding-top: 40px;
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -174,6 +181,11 @@
     flex-wrap: wrap;
 }
 
+#sec3>.desc>.descProd{
+    padding-left: 30px;
+}
+
+
 #sec3>.desc>.imgDesc{
     width: 240px;
     height: 240px;
@@ -184,7 +196,6 @@
     display: flex;    
     justify-content: space-between;
     width: 600px;
-    height: 300px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -199,20 +210,207 @@
 }
 
 #sec4{
+    max-width: 1200px;
+    display: flex;
+    justify-content:space-between;
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+    color: black;
+    padding-bottom: 15px;
+}
+
+#sec4 .finalPedido{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#sec4 .finalPedido .totalPedido{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+#sec4 .finalPedido .cupom{
+    display: flex;
+}
+
+#sec4 .finalPedido .fecharPedido{
+    display: flex;
+}
+
+#sec4 .escProd #btn_escolher{
+    width: 250px;
+    height: 40px;
+    font-family: 'Roboto'; 
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: black;
+    color:white;
+}
+
+#sec4 .finalPedido .totalPedido{
+    padding-bottom: 10px;
+    display:flex;
+}
+
+#sec4 .finalPedido .totalPedido .totalPedidoValor{
+    padding-right: 190px;
+}
+
+#sec4 .cupom .cupomName{
+    padding-right: 180px;
+}
+
+#sec4 .fecharPedido .subtotal .subTotalValor{
+    padding-right: 270px;
+}
+
+
+#sec4 .fecharPedido #finalizarCompra{
+    margin-left: 50px
+}
+
+#sec4 .fecharPedido .subtotal{
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+}
+
+#sec4 .fecharPedido #finalizarCompra{
+    width: 250px;
+    height: 30px;
+    font-family: 'Roboto'; 
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+    background-color: black;
+    color:white;
+}
+
+/* INICIO FOOTER */
+
+.novoCadastro {
     height: 80px;
-    width: 1200px;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.cadastro>.novoCadastro>.novoTexto>h2 {
+    line-height: 29px;
+    Font-size: 20px;
+    font-weight: 700;
+    padding: 0px;
+    display:flex;
+    align-items: center;
+    text-align: center;
+}
+
+.inputEmail {
+    width: 200px;
+    height: 27px;
+}
+
+.btnEmail {
+    width: 158px;
+    height: 32px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.mapaEmpresa {
+    padding: 40px 0px;
+    justify-content: center;
+    gap: 278px;
+    color: #fff;
+}
+
+.contatoEmpresa {
+    color: #fff;
+    line-height: 29px;
+}
+
+.iconesSocial {
+    padding-top: 20px;
+    gap: 44px;
+    display: flex;
     align-items: center;
 }
 
-#sec4>.escProd{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
+/* FINAL FOOTER */
+
 
 @media (max-width: 580px){
-    .sec3{
+
+    #sec1,
+    .sec3,
+    #superior,
+    #titulos{
         display: none;
     }
 
+
+    #inferior{
+        display:flex ;
+        justify-content: space-between;
+    }
+    
+    .descProd{
+        padding-left: 0;
+    }
+
+    .valores{
+        width: auto;
+    }
+
+    /* FOOTER INICIO */
+    .novoCadastro {
+        flex-direction: column;
+        padding: 100px 0px;
+    }
+
+    .cadastro>.neovoCadastro>.novoTexto>h2 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .novoTexto>p {
+        text-align: center;
+    }
+
+    .novoFormulario {
+        padding-top: 10px;
+    }
+
+    .mapaEmpresa {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .contatoEmpresa {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .iconesSocial{
+        justify-content: center;
+    }
+    
+/* FOOTER FINAL */
 }

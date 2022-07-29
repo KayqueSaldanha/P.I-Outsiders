@@ -28,7 +28,6 @@
     padding-top: 39px;
 }
 
-/* Menu Nav */
 #titulos{
     max-width: 800px;
     height: 16px;
@@ -37,10 +36,19 @@
     padding-top: 57px;
 }
 
-#titulos>li{
+
+#titulos>ul{
     display: flex;
-    display: inline-block;
+    justify-content: space-between;
+    margin-left: 10px;
 }
+
+#titulos>ul>li>a{
+    text-decoration: none;
+    color: black;
+    margin-left: 15px;
+}
+
 
 /* Botão (Input) */
 .pesquisar{
@@ -53,7 +61,6 @@
     padding-top: 42px;
 }
 /* Final do Header */
-
 
 /* carrousel */
 .sec1{
@@ -82,6 +89,7 @@
     height: 300px;
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 /* Titulo acima das imagens */
@@ -94,7 +102,6 @@
 }
 /* seção com os 2 cards com img, nome e preço */
 #sec2-dir{
-    padding-left: 80px;
     width: 650px;
     display: flex;
     flex-wrap: wrap;
@@ -119,7 +126,7 @@
 }
 
 /* preço da imagem */
-.price {
+.preço {
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
@@ -279,10 +286,12 @@
     height: 40px;
     margin: 16px 0px;
     opacity: 0;
+    text-decoration: none;
 }
 
 .card1:hover .shelf__btn {
     opacity: 1;
+    color: white;
 }
 
 .card1:hover {
@@ -313,120 +322,232 @@
     height: 240px;
     flex-wrap: wrap;
 }
+
+
 /* footer */
 
-.barracinza{
-    height: 80px;
-    background-color: rgba(135, 135, 135, 1);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
- }
- 
- .barracinza>div>h2{
-    Font-family: Roboto;  
-    Font-style: Bold;
-    Font-size: 20px;
-    Line-height: 29px;
-    Line-height: 100%;
-    margin-left: 100px;
-    color: white;
- }
- 
- .barracinza>div>p{
-    font-style: Roboto;
-    font-Weight: 400;
-    font-Size: 13px;
-    color: white;
-    margin-top: 10px;
-    margin-left: 100px;
- }
- 
- .barracinza>div>input[type="text"]{
-    background-color: white;
-    Width: 380px;
-    Height:35px;
-    border: none;  
-    Font-family: Roboto;
-    Font-style: Regular;
-    Font-size: 16px;
-    Line-height: 19px;
-    Line-height: 100%;
-    Vertical-align: Top;
- }
- 
- .barracinza>div>button{
-    Width:158px;
-    Height: 37px;
-    background-color: black;
-    color: white;
- }
- 
- .barracinza>div>button:hover{
-    cursor: pointer;
-    transition: 1.5s;
-    box-shadow: 0px 10px 40px black;
- }
- 
- .telapreta{
-    background-color: black;
-    padding-top: 20px;
-    padding-bottom:20px;
- }
- 
- .telapreta .superior{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
- }
- 
- .telapreta .superior>#esquerda{
-    margin-top: 20px;
- }
- 
- .paragrafos{
-    margin-top: 15px;
-    color: white;
- }
- 
- #iconesinferior{
-    padding-top: 25px;
-    display: flex;
-    justify-content: space-around;
- }
- 
- #tamanhoimagem{
-    width: 300px;
-    height: 300px;
- }
 
-/* FINAL FOOTER */
+.novoCadastro {
+    height: 80px;
+    color: #fff;
+    justify-content: space-between;
+}
+
+.cadastro>.novoCadastro>.novoTexto>h2 {
+    line-height: 29px;
+    Font-size: 20px;
+    font-weight: 700;
+    padding: 0px;
+    display:flex;
+    align-items: center;
+    text-align: center;
+}
+
+.inputEmail {
+    width: 200px;
+    height: 27px;
+}
+
+.btnEmail {
+    width: 158px;
+    height: 32px;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.mapaEmpresa {
+    padding: 40px 0px;
+    justify-content: center;
+    gap: 278px;
+    color: #fff;
+}
+
+.contatoEmpresa {
+    color: #fff;
+    line-height: 29px;
+}
+
+.iconesSocial {
+    padding-top: 20px;
+    gap: 44px;
+    display: flex;
+    align-items: center;
+}
+
 
 
 @media (max-width: 580px){
+
+    #superior{
+        display: none;
+    }
+
     #titulos{
         display: none;
     }
+
+    .lancamentos{
+        margin-top:50px;
+        align-items: center;
+        display: flex;
+    }
+
+    .titlePrincipaisHome{
+        margin-bottom: 80px;
+        display: flex;
+        align-items: center;
+    }
+    .logo{
+        padding-left: 0px;
+        display: flex;
+        align-items: center;
+        order: 3;
+    }
+
+    .icones{
+        order: 2;
+        padding-top: 60px;
+    }
+
+    .pesquisar{
+        display: none;
+    }
+
+    .menuCell {
+        padding-left: 0;
+        margin-top: 50px;
+        width: 40px;
+        height: 30px;
+    }
+    
+    #card-master{
+        align-items: center;
+        display: flex;
+    }
+
+    .card1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px;
+    row-gap: 1px;
+    margin: 0px 70px 90px;
+    justify-content: center;
+    }
+
+    .shelf__btn{
+        display: none;
+    }
+    
+    #sec2{
+        margin-bottom: -120px;
+    }
+
     .sec3{
         display: none;
     }
+
+    .sec4{
+        margin-bottom: -100px;
+    }
+
     .sec5{
         display: none;
     }
+
+    #pesquisar{
+        display: none;
+    }
+
+    .sec7{
+       display: none;
+    }
+
     #sec8{
         display: none;
     }
+
+    #footer{
+        padding-top: 120px;
+    }
+
     #sec2-dir{
         display: flex;
         align-items: center;
         padding-top: 100px;
     }
+
     #card-master{
         display: flex;
         padding-top: 80px;
         align-items: center;
     }
+
     #card-master.card1{
         margin-top: 80px;
     }
+
+    .one,
+    .two,
+    .three {
+    background-color: #000;
+    height: 5px;
+    width: 100%;
+    margin: 6px auto;
 }
+
+.menu__toggle {
+    width: 40px;
+    height: 30px;
+}
+
+.menu__logo {
+    order: 1;
+    margin-left: 80px;
+}
+
+/* FOOTER INICIO */
+.novoCadastro {
+    flex-direction: column;
+    padding: 100px 0px;
+}
+
+.cadastro>.neovoCadastro>.novoTexto>h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.novoTexto>p {
+    text-align: center;
+}
+
+.novoFormulario {
+    padding-top: 10px;
+}
+
+.mapaEmpresa {
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contatoEmpresa {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconesSocial{
+    justify-content: center;
+}
+
+/* FOOTER FINAL */
+}
+
+
+
+
+
+
