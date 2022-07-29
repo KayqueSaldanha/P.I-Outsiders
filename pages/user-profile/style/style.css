@@ -144,9 +144,58 @@ header {
 }
 
 @media (max-width: 576px) {
-
-
     .account__page {
         margin-left: -39px;
+    }
+}
+
+@media (max-width: 414px) {
+    #account {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .account__page>h2 {
+        padding-left: 37px;
+        font-size: 20px;
+    }
+
+    .profile__form {
+        gap: 30px;
+    }
+
+    .account__form {
+        margin-left: 39px;
+        width: 233px;
+        padding: 6px;
+        height: 373px;
+    }
+
+    .account__page {
+        margin-top: 84px;
+    }
+
+    .acc_edit {
+        margin-left: 163px;
+        height: 17px;
+    }
+
+    footer {
+        padding-top: 194px;
+    }
+
+    .container_institutional {
+        flex-direction: column;
+        gap: 25px;
+        margin-left: -50px;
+    }
+
+    .news__container,
+    .container_institutional {
+        margin: 0px 1px;
+    }
+
+    .news_btn {
+        width: 117px;
     }
 }
