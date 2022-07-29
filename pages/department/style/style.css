@@ -23,6 +23,17 @@
     height: 94px;
 }
 
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.btn__button {
+    border: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
 .nav__list {
     gap: 28px;
     text-transform: uppercase;
