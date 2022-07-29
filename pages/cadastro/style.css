@@ -1,48 +1,46 @@
-/* header
-#superior{
-   height: 30px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+/* 1. Header
+/************************************/
+.topbar {
+   padding: 3px 0px;
 }
 
-#infos{
-   height: 19px;
-   width: 1394px;
-   display: flex;
+.topbar__list {
    justify-content: space-between;
-   margin-left: auto;
-   margin-right: auto;
-   font-weight: 400;
-   font-size: 16px;
-   padding-top: 7px;
+
 }
 
-#inferior{
-   height: 80px;
-   width: 1500px;
-   margin-left: auto;
-   margin-right: auto;
-   justify-content: space-between;
+.topbar__item,
+.topbar__item>a {
+   color: #fff;
+   font-size: 14px;
 }
 
-.logo{
-   padding-top: 39px;
+.menu__logo {
+   padding-right: 94px;
 }
 
-#titulos{
-   width: 800px;
-   height: 16px;
-   justify-content: space-between;
-   font-size: 16px;
-   padding-top: 57px;
+.menu__container {
+   height: 94px;
 }
 
-.pesquisar{
-   padding-top: 46px;
+.nav__list {
+   gap: 28px;
+   text-transform: uppercase;
+   font-weight: 300;
+   line-height: 19px;
+   padding-right: 23px;
 }
 
-#iconessuperior{
-   font-size: 40px;
-   padding-top: 40px;
-} */
+.nav__link:hover {
+   font-weight: 500;
+}
+
+.menu__supportNav {
+   gap: 10px;
+}
+
 
 /* main - corpo */
 
@@ -55,7 +53,7 @@
  }
  
  section>div>h1{
-   margin-top: 200px;
+   margin-top: 100px;
    margin-bottom: 50px;
     Font-family: Roboto;
     Font-style: Light;

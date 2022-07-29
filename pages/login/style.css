@@ -1,49 +1,46 @@
-/* header */
-#superior{
-   height: 30px;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+/* 1. Header
+/************************************/
+.topbar {
+   padding: 3px 0px;
 }
 
-#infos{
-   height: 19px;
-   width: 1394px;
-   display: flex;
+.topbar__list {
    justify-content: space-between;
-   margin-left: auto;
-   margin-right: auto;
-   font-weight: 400;
-   font-size: 16px;
-   padding-top: 7px;
+
 }
 
-#inferior{
-   height: 80px;
-   width: 1500px;
-   margin-left: auto;
-   margin-right: auto;
-   justify-content: space-between;
+.topbar__item,
+.topbar__item>a {
+   color: #fff;
+   font-size: 14px;
 }
 
-.logo{
-   padding-top: 39px;
+.menu__logo {
+   padding-right: 94px;
 }
 
-#titulos{
-   width: 800px;
-   height: 16px;
-   justify-content: space-between;
-   font-size: 16px;
-   padding-top: 57px;
+.menu__container {
+   height: 94px;
 }
 
-.pesquisar{
-   padding-top: 46px;
+.nav__list {
+   gap: 28px;
+   text-transform: uppercase;
+   font-weight: 300;
+   line-height: 19px;
+   padding-right: 23px;
 }
 
-#iconessuperior{
-   font-size: 40px;
-   padding-top: 40px;
+.nav__link:hover {
+   font-weight: 500;
 }
+
+.menu__supportNav {
+   gap: 10px;
+}
+
 
 /* main */
 
@@ -139,5 +136,71 @@ span:hover{
    box-shadow: 0px 10px 40px black;
 }
 
+@media (max-width: 576px) {
+
+   .menu__nav,
+   .topbar,
+   .filters,
+   .order,
+   .search__input,
+   .banner_principal,
+   .shelf__btn,
+   .shelf__product:hover {
+       display: none;
+   }
+
+   #sec1{
+       display: flex;
+       justify-content: center;
+       margin-top: 10px;
+   }
+
+   .menu,
+   .bread__crumb-c {
+       margin: 0px 14px;
+   }
+
+   .one,
+   .two,
+   .three {
+       background-color: #000;
+       height: 5px;
+       width: 100%;
+       margin: 6px auto;
+   }
+
+   .menu__toggle {
+       width: 40px;
+       height: 30px;
+   }
+
+   .menu__logo {
+       order: 2;
+       padding-right: 0px;
+   }
+
+   .menu__supportNav {
+       order: 3;
+   }
+
+   .menu__container {
+       justify-content: space-between;
+   }
+
+   .title__dep {
+       font-size: 20px;
+       padding: 28px 0px 25px 0px;
+   }
+
+   .shelf__container {
+       display: flex;
+       flex-wrap: wrap;
+       gap: 17px;
+       row-gap: 1px;
+       margin: 0px 14px;
+       justify-content: center;
+       padding-top: 15px;
+   }
+}
 
 

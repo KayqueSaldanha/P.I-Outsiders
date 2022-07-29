@@ -4,14 +4,14 @@
 
     /********** main ************/
 
+    #menu_de_nav>nav{    
+        margin-left: 280px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
 
     #sec1>#esquerda>img{
         width: 700px;
-    }
-
-
-    div>nav{
-        margin-left: 250px;
     }
 
 /* direita - top */
@@ -161,18 +161,18 @@
 /* ///////////////////////////////////////////////////////////////////////////////// */
 
 @media screen and (max-width:1620px){
-    div>nav{
-        margin-left: 250px;
-    }
+    
+        #menu_de_nav>nav{    
+            display: none;
+        }
+
 }
 
 /* ///////////////////////Break-Point///////////////////////////// */
 
 
 @media screen and (max-width:1180px){
-    div>nav{
-        margin-left: 250px;
-    }
+    #sec1{margin-top: 40px;}
 
     #sec1>#esquerda>img{
         width: 550px;
@@ -240,7 +240,7 @@
 
 @media screen and (max-width:950px){
 
-    div>nav{
+    #menu_de_nav>nav{
         margin-left: 150px;
     }
 
@@ -307,7 +307,7 @@
 /* ///////////////////////Break-Point///////////////////////////// */
 
 @media screen and (max-width:900px){
-    div>nav{
+    #menu_de_nav>nav{
         display:none;
     }
 
@@ -712,4 +712,71 @@
         font-size: 14px;
     }
 
+}
+
+@media (max-width: 576px) {
+
+    .menu__nav,
+    .topbar,
+    .filters,
+    .order,
+    .search__input,
+    .banner_principal,
+    .shelf__btn,
+    .shelf__product:hover {
+        display: none;
+    }
+
+    #sec1{
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .menu,
+    .bread__crumb-c {
+        margin: 0px 14px;
+    }
+
+    .one,
+    .two,
+    .three {
+        background-color: #000;
+        height: 5px;
+        width: 100%;
+        margin: 6px auto;
+    }
+
+    .menu__toggle {
+        width: 40px;
+        height: 30px;
+    }
+
+    .menu__logo {
+        order: 2;
+        padding-right: 0px;
+    }
+
+    .menu__supportNav {
+        order: 3;
+    }
+
+    .menu__container {
+        justify-content: space-between;
+    }
+
+    .title__dep {
+        font-size: 20px;
+        padding: 28px 0px 25px 0px;
+    }
+
+    .shelf__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 17px;
+        row-gap: 1px;
+        margin: 0px 14px;
+        justify-content: center;
+        padding-top: 15px;
+    }
 }
