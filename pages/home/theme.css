@@ -33,3 +33,18 @@ body{
 .justify-space-center{
     justify-content:center ; 
 }
+
+.max-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.flex-align-center {
+    display: flex;
+    align-items: center;
+}
+
+.bg-cinza {
+    background-color: #878787;
+}

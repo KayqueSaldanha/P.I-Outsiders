@@ -96,14 +96,73 @@
     </section>
     <section id="sec4">
         <div class="escProd">
-            <div class="">
-                <button>ESCOLHER MAIS PRODUTOS</button>
+            <div class="botaoEscolher">
+                <button id="btn_escolher">ESCOLHER MAIS PRODUTOS</button>
             </div>
-            <div>
-                <p>TOTAL DO PEDIDO</p>
+        </div>
+         <div class="finalPedido">
+            <div class="totalPedido">
+                <p class="totalPedidoValor">TOTAL DO PEDIDO</p>
                 <p>R$ 259,80</p>
+            </div>
+            <div class="cupom">
+                <p class="cupomName">CUPOM</p>
+                <input class="insiraCupom" type="text" placeholder="Insira o Cupom" aria-label="Pesquisar">
+            </div>
+            <div class="fecharPedido">
+                <div class="subtotal">
+                    <p class="subTotalValor">SUBTOTAL</p>
+                    <p>R$ 259,80</p>
+                </div>
+                <button id="finalizarCompra">FECHAR PEDIDO<i class="las la-shopping-cart"></i></button>
             </div>
         </div>
     </section>
+    <footer>
+        <div class="cadastro bg-cinza">
+            <div class="novoCadastro max-width flex-align-center">
+                <div class="novoTexto">
+                    <h2>Faça seu cadastro</h2>
+                    <p>Inscreva-se em nossa newsletter e receba 10% de desconto.</p>
+                </div>
+                <div class="novoFormulario">
+                    <input class="inputEmail" type="text" name="news" id="news" placeholder="Digite seu email">
+                    <button class="btnEmail" type="submit">Cadastrar</button>
+                </div> 
+            </div> 
+          </div> 
+  
+          <div class="bg-black">
+            <div class="mapaEmpresa max-width flex-align-center">
+                <div>
+                    <a href="#"><img src="../../assets/imagens/mapa-footer.svg" alt="Localização"></a>
+                </div> 
+                <div>
+                    <address class="contatoEmpresa">Broad St, Newark, NJ 07102 - USA</address>
+                    <ul class="contact_institutional">
+                        <li>
+                            <a class="contatoEmpresa" href="#">+1 (973) 854-555-548</a>
+                        </li>
+                        <li>
+                            <a class="contatoEmpresa" href="#">contact@lovtrealstate.com</a>
+                        </li>
+                        <li class="contatoEmpresa">Sigam-nos nas redes sociais</li>
+                        <div class="iconesSocial">
+                            <li>
+                                <a href="#"><img src="../../assets/icons/facebook.svg" alt="Facebook"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../../assets/icons/instagram.svg" alt="Instagram"></a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="../../assets/icons/youtube.svg" alt="Youtube"></a>
+                            </li>
+                        </div> 
+                    </ul> 
+                </div> 
+            </div> 
+          </div> 
+    </footer>
+    
 </body>
 </html>
