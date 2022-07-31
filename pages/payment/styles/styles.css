@@ -492,6 +492,74 @@ ul {
         align-items: center;
     }
 
+    .main-cart {
+        display: flex;
+        justify-content: center;
+        width: 100% !important;
+        border: none;
+    }
+
+    .cart-description {
+        width: 100vw;
+    }
+
+    .cart-button {
+        border-radius: 0 !important;
+    }
+
+    .icon-chart {
+        margin-right: 10px;
+    }
+
+    .cart-button:focus {
+        border-color: #FFFFFF;
+        box-shadow: none;
+    }
+
+    .img-superior {
+        position: relative;
+        display: flex;
+        right: 30px;
+        justify-content: space-between;
+    }
+
+    .badge-description {
+        display: flex;
+        gap: 5rem;
+    }
+
+    #subtotal,
+    #frete {
+        font-size: 14px;
+    }
+
+    #subtotal-price{
+        font-size: 20px;
+    }
+
+    #total {
+        font-size: 14px;
+    }
+
+    #total-price {
+        font-size: 20px;
+    }
+
+    .item-description {
+        width: 100px;
+    }
+
+    #description,
+    #information {
+        font-size: 12px;
+        width: inherit;
+    }
+
+    .item-price {
+        font-size: 15px;
+        margin-left: auto;
+    }
+
     .accordion {
         width: 95%;
     }
