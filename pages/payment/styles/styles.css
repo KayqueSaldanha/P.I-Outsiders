@@ -7,6 +7,10 @@
     margin-top: 20px;
 }
 
+.main-cart {
+    display: none;
+}
+
 /* DIVISION SECTION BELOW LOGO */
 .division-1 {
     display: flex;
