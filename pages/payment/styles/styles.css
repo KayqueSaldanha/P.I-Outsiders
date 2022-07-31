@@ -159,6 +159,75 @@ ul {
     justify-content: space-between;
 }
 
+/* checkbox test */
+.checkbox-item2 {
+    display: flex;
+    align-items: center;
+    margin-top: 7px;
+}
+
+.container2 {
+    display: block;
+    position: relative;
+    padding-left: 25px;
+    padding-top: 3px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-weight: 300;
+    font-size: 14px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container2 input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border: 1px solid #9C9C9C;
+    border-radius: 2px;
+}
+
+.container2:hover input~.checkmark2 {
+    background-color: #ccc;
+}
+
+.container2 input:checked~.checkmark2 {
+    background-color: #9C9C9C;
+}
+
+.checkmark2:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container2 input:checked~.checkmark2:after {
+    display: block;
+}
+
+.container2 .checkmark2:after {
+    left: 6px;
+    top: 1px;
+    width: 7px;
+    height: 15px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
 .form-floating>.form-select {
     margin-top: 10px;
     width: 190px;
