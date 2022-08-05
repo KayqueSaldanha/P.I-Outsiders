@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="/stylesheets/reset">
+    <link rel="stylesheet" href="/stylesheets/department">
+    <link rel="stylesheet" href="/stylesheets/account">
+    <link rel="stylesheet" href="/stylesheets/account-edit">
+    <link rel="stylesheet" href="/stylesheets/account-request">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account - Outsider</title>
+</head>
+
+<body>
+    <header>
+        <section id="profile">
+            <div class="max-width-content profile__container">
+                <a href="index.html"><img width="200" src="/images/account/outsider 2.svg" alt="Outsider Logo"></a>
+            </div> <!-- .profile__container -->
+        </section> <!-- . profile -->
+    </header> <!-- .header -->
+
+    <main class="max-width-content">
+        <section id="account">
+            <aside class="account__menu">
+                <div class="account__user-info">
+                    <div class="account__user-img">
+                        <img width="55" src="/images/account/user.svg" alt="Ícone de user">
+                    </div> <!-- .account__user-img -->
+                    <div class="account__user-greeting">
+                        <span>Olá!</span>
+                    </div> <!-- .account__user-greeting -->
+                </div> <!-- .account__user-info -->
+                <nav class="account__link">
+                    <a href="../user-profile/profile.html" class="account__itens">Dados pessoais</a>
+                    <a href="" class="account__itens">Cartões</a>
+                    <a href="" class="account__itens">Endereços</a>
+                    <a href="" class="item-c">Pedidos</a>
+                    <a href="" class="account__itens">Sair</a>
+                </nav> <!-- . account__link -->
+            </aside> <!-- .account__menu -->
+
+            <section class="account__page">
+                <div class="account__dados">
+                    <a href="../user-profile/profile.html" class="acc__dados-request">
+                        <img width="17" src="/images/account-edit/seta.svg" alt="ícone seta esquerda">
+                        Voltar
+                    </a>
+                </div> <!-- .account__dados -->
+                <h2>Pedidos</h2>
+                <section class="account__form-edit">
+                    <div class="account_bg">
+                        <div class="container">
+                            <div class="description">
+                                <div class="title__description">
+                                    <span>data do pedido</span>
+                                </div> <!-- .title__description-date -->
+                                <div class="title__description">
+                                    <span>total</span>
+                                </div> <!-- .title__description-value-->
+                                <div class="title__description title-left">
+                                    <span>#1245141635962-01</span>
+                                </div> <!-- .title__description-code -->
+                            </div> <!-- .description -->
+
+                            <div class="description">
+                                <div class="description__info">
+                                    <span>07 de julho de 2022</span>
+                                </div> <!-- .description__info-date-->
+
+                                <div class="description__info description__value">
+                                    <span>R$ 150,00</span>
+                                </div> <!-- .description__info-value -->
+
+                                <div class="description__info description-btn">
+                                    <span>Finalizado</span>
+                                </div> <!-- .description__info-status -->
+                            </div>
+                        </div> <!-- .account_bg -->
+
+                        <div class="request__product container">
+                            <div class="resquest__img">
+                                <img width="50" src="/images/information/Screen Shot 2019-09-05 at 3.51.png"
+                                    alt="Imagem do pedido">
+                            </div> <!-- .resquest__img -->
+                            <div class="request__description">
+                                <h4>
+                                    <a href="#">Tech T-Shirt</a>
+                                </h4>
+                                <p class="title_light">Entrega até 4 dias úteis</p>
+                            </div> <!-- .request__description -->
+                            <div class="request__btn">
+                                <a href="#">Ver detalhes do pedido</a>
+                            </div> <!-- .request__btn -->
+                        </div> <!-- .request__product -->
+                    </div> <!-- .account__container-->
+
+
+                </section> <!-- .account__form-edit -->
+            </section> <!-- .account__page -->
+        </section> <!-- .account -->
+
+
+    </main> <!-- .main -->
+    <footer>
+        <div class="newsletter bg-news">
+            <div class="news__container max-width-content flex">
+                <div class="news_text">
+                    <h2>Faça seu cadastro</h2>
+                    <p>Inscreva-se em nossa newsletter e receba 10% de desconto</p>
+                </div> <!-- .news_text -->
+                <div class="news_form">
+                    <input class="news_input" type="text" name="news" id="news" placeholder="Digite seu email">
+                    <button class="news_btn" type="submit">Cadastrar</button>
+                </div> <!-- .news_form -->
+            </div> <!-- .news__container -->
+        </div> <!-- .newsletter -->
+        <%- include("./partials/footer") %>
+</body>
+
+</html>
