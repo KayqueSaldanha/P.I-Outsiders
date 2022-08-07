@@ -2,20 +2,20 @@ const express = require('express');
 const router = express.Router();
 
 const pageController = require('../controllers/pageController');
-const searchController = require('../controllers/searchController');
+// const searchController = require('../controllers/searchController');
 
 
-router.get('/', pageController.home)
-router.get('/carrinho', pageController.carrinho)
+// router.get('/', pageController.home)
+// router.get('/carrinho', pageController.carrinho)
 router.get('/information', pageController.information)
-router.get('/departament', pageController.departament)
-router.get('/cadastro', pageController.cadastro)
-router.get('/account', pageController.account)
-router.get('/login', pageController.login)
-router.get('/produtos', pageController.produtos)
+// router.get('/departament', pageController.departament)
+// router.get('/cadastro', pageController.cadastro)
+// router.get('/account', pageController.account)
+// router.get('/login', pageController.login)
+// router.get('/produtos', pageController.produtos)
 
 
-router.get('/search', searchController.search)
+// router.get('/search', searchController.search)
 
 module.exports = router 
 
