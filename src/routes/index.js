@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-const pageController = require('../src/controllers/pageController')
-const searchController = require('../src/controllers/searchController')
+const pageController = require('../controllers/pageController');
+const searchController = require('../controllers/searchController');
 
 
 router.get('/', pageController.home)
