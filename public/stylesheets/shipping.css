@@ -1,0 +1,565 @@
+/* LEFT SIDE STYLE */
+/* LOGO SECTION */
+.accordion {
+    display: none;
+}
+
+.main_logo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* DIVISION SECTION BELOW LOGO */
+.division-1 {
+    display: flex;
+    border-top: 1px solid #000;
+    margin-left: 115px;
+    margin-right: 115px;
+    margin-bottom: 14px;
+}
+
+/* NO-LINK STYLE FOR LOGO */
+.main_logo a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* LIST OF THE ITENS BELOW THE DIVISION LOGO */
+.info_payment {
+    display: flex;
+    justify-content: center;
+}
+
+.main-container-shipping {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.frete-li {
+    font-weight: 700;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 6px;
+    font-weight: 300;
+    font-size: 20px;
+}
+
+.info_payment img {
+    width: 12px;
+    height: 22px;
+}
+
+/* SHIPPING INFORMATION */
+.shipping-info {
+    margin-top: 30px;
+    font-weight: 300;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* SHIPPING SELECTION */
+.slc-shipping {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 550px;
+    height: 300px;
+    background: #FFFFFF;
+    border: 1px solid #9C9C9C;
+    border-radius: 5px;
+}
+
+/* SHIPPING SELECTOR STYLE */
+.shipping-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* radio btn style */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    margin-top: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+/* When the radio button is checked, add a black background */
+.container input:checked~.checkmark {
+    background-color: #1e1e1e;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+    top: 7px;
+    left: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+}
+
+.shipping-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.shipping-price {
+    display: flex;
+}
+
+#shipping-price {
+    display: flex;
+    font-weight: 700;
+    font-size: 24px;
+    margin-top: 30px;
+}
+
+/* ARROW GO-BACK STYLE */
+.go-back-section {
+    display: flex;
+    margin-top: 20px;
+}
+
+.arrow-back {
+    margin-top: 20px;
+    width: 13px;
+    height: 13px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    border-radius: 2px;
+    transform: rotate(135deg);
+}
+
+.go-back {
+    padding-left: 5px;
+    margin-top: 20px;
+}
+
+/* GO BACK LINK */
+.go-back a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* CONTINUE BUTTON */
+
+.btn-payment {
+    margin-left: auto;
+}
+
+.btn-continue {
+    background: #1e1e1e;
+    color: #FFFFFF;
+    padding: 24px;
+    border: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.115em;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-left: auto;
+    border-radius: 4px;
+}
+
+/* RIGHT SIDE STYLE */
+
+.chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-superior {
+    display: flex;
+}
+
+.img-superior img {
+    display: flex;
+    width: 78px;
+    height: 70px;
+}
+
+#elipse {
+    left: 85px;
+    bottom: 10px;
+    width: 25px;
+    height: 25px;
+    padding: 8px;
+    display: flex;
+    position: relative;
+    background: rgba(106, 102, 102, 0.8);
+    color: #ffffff;
+    border-radius: 50%;
+}
+
+#description,
+.item-price,
+#subtotal-price {
+    font-weight: 700;
+}
+
+#information {
+    font-weight: 300;
+}
+
+#description,
+#information {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.item-price {
+    font-size: 20px;
+    margin-left: 150px;
+}
+
+/* CUPOM SECTION STYLE */
+
+.discount_section {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn-apply {
+    background: #D9D9D9;
+    border: none;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 6px;
+    margin-left: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-apply:hover {
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#discount-cuppon {
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.115em;
+    padding: 12px 20px;
+    margin: 8px 0;
+    width: 300px;
+    height: 40px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #9C9C9C;
+    color: #9C9C9C;
+    border-radius: 4px;
+}
+
+/* FRETE SECTION STYLE*/
+
+.frete {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#subtotal-price {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+#subtotal,
+#frete {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.frete-price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#calc {
+    margin-top: 6px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* TOTAL SECTION STYLE */
+
+.total-calc {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#total {
+    font-weight: 300;
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+#total-price {
+    font-weight: 900;
+    font-size: 32px;
+}
+
+@media (max-width: 576px) {
+    section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .accordion {
+        display: flex;
+        justify-content: center;
+    }
+
+    .accordion-item {
+        width: 100vw;
+        height: fit-content;
+    }
+
+    .accordion-button {
+        border-radius: 0 !important;
+    }
+
+    .icon-chart {
+        margin-right: 10px;
+    }
+
+    .accordion-button:focus {
+        border-color: #FFFFFF;
+        box-shadow: none;
+    }
+
+    .img-superior {
+        position: relative;
+        display: flex;
+        right: 30px;
+        justify-content: space-between;
+    }
+
+    #subtotal,
+    #frete {
+        font-size: 14px;
+    }
+
+    #subtotal-price {
+        font-size: 20px;
+    }
+
+    #total {
+        font-size: 14px;
+    }
+
+    #total-price {
+        font-size: 20px;
+    }
+
+    .item-description {
+        width: 100px;
+    }
+
+    #description,
+    #information {
+        font-size: 12px;
+        width: inherit;
+    }
+
+    .item-price {
+        font-size: 15px;
+        margin-left: auto;
+    }
+
+    .info_payment ul {
+        font-size: 13px;
+        gap: 0;
+    }
+
+    .arrow-info {
+        margin-top: 0;
+        width: 10px;
+        height: 10px;
+    }
+
+    .content_section {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .division-1 {
+        display: none;
+    }
+
+    .contact_info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    #info {
+        font-size: 16px;
+    }
+
+    #account {
+        font-size: 12px;
+    }
+
+    .container {
+        font-size: 13px;
+        margin-left: 10px;
+    }
+
+    .form-floating {
+        width: 90%;
+    }
+
+    .go-back-section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bg-right-side {
+        display: none;
+    }
+
+    .slc-shipping {
+        display: flex;
+        width: 95vw;
+    }
+
+    .arrow-back {
+        display: none;
+    }
+
+    .go-back {
+        display: none;
+    }
+
+    .btn-payment {
+        margin: 0;
+    }
+
+    #shipping-price {
+        font-size: 16px;
+    }
+
+    .btn-continue {
+        border-radius: 4px;
+    }
+
+    .shipping-main-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .shipping-info {
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+}
+
+/* theme */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.115em;
+}
+
+section {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bg-left-side {
+    display: flex;
+    justify-content: center;
+    background: #F4F4F4;
+}
+
+.bg-right-side {
+    display: flex;
+    justify-content: center;
+}
+
+.division {
+    border: 1px solid #D9D9D9;
+    margin-top: 10px;
+}
+
+.division-shipping {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 1px solid #D9D9D9;
+}
+
+.arrow-info {
+    margin-top: 3px;
+    margin-right: 5px;
+    width: 15px;
+    height: 15px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    border-radius: 2px;
+    transform: rotate(315deg);
+}

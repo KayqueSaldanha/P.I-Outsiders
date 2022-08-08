@@ -1,0 +1,458 @@
+/* LEFT SIDE STYLE */
+/* LOGO SECTION */
+.main_logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.accordion {
+    display: none;
+}
+
+/* DIVISION SECTION BELOW LOGO */
+.division-1 {
+    width: 300px;
+    border-top: 1px solid #000;
+}
+
+/* margem da divisão entre itens */
+.division-adjustment {
+    margin: 0 40px;
+}
+
+/* NO-LINK STYLE FOR LOGO */
+.main_logo a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* estilização do subtitulo */
+.subtitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-confirmed {
+    letter-spacing: 0.115em;
+    font-size: 32px;
+    font-weight: 700;
+    margin: 18px 0;
+}
+
+.tks {
+    font-weight: 300;
+    margin-bottom: 24px;
+}
+
+/* LIST OF THE ITENS BELOW THE DIVISION LOGO */
+/* main container, sessão que fica o background branco */
+.main-container {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border: 1px solid #9c9c9c;
+    border-radius: 4px;
+    width: 550px;
+}
+
+/* sessão que fica a parte de resumo da compra */
+/* numero da compra e forma de pagamento */
+.order-badge {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 40px;
+}
+
+.payment-method h2 {
+    margin-bottom: 20px;
+}
+
+.icon-value {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    position: relative;
+    bottom: 10px;
+}
+
+.buy-resume h2 {
+    margin: 10px 0;
+    text-align: center;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.order-number {
+    margin-left: 40px;
+}
+
+#order-number {
+    font-weight: 700;
+}
+
+/* sessão do e-mail de contato */
+.email-of-contact {
+    margin: 18px 40px ;
+}
+
+.email-of-contact h2 {
+    font-weight: 700;
+}
+
+/* sessão do endereço do usuário */
+.address {
+    margin: 18px 40px;
+}
+
+.address h2 {
+    font-weight: 700;
+}
+
+.address p {
+    margin-bottom: 0;
+    line-height: 25px;
+}
+
+/* sessão da forma de frete */
+.shipping-method {
+    margin: 18px 40px;
+}
+
+.shipping-method h2 {
+    font-weight: 700;
+}
+
+/* ARROW GO-BACK STYLE */
+.go-back-section {
+    display: flex;
+    margin-top: 20px;
+}
+
+/* GO BACK LINK */
+.go-back a {
+    text-decoration: none;
+    color: #000;
+}
+
+/* CONTINUE BUTTON */
+
+.btn-back-to-main {
+    margin-left: auto;
+}
+
+.btn-continue {
+    background: #1e1e1e;
+    color: #FFFFFF;
+    padding: 24px;
+    border: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 0.115em;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-left: auto;
+    border-radius: 4px;
+}
+
+/* RIGHT SIDE STYLE */
+
+.chart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-superior {
+    display: flex;
+}
+
+.img-superior img {
+    display: flex;
+    width: 78px;
+    height: 70px;
+}
+
+#elipse {
+    left: 85px;
+    bottom: 10px;
+    width: 25px;
+    height: 25px;
+    padding: 8px;
+    display: flex;
+    position: relative;
+    background: rgba(106, 102, 102, 0.8);
+    color: #ffffff;
+    border-radius: 50%;
+}
+
+#description,
+.item-price,
+#subtotal-price {
+    font-weight: 700;
+}
+
+#information {
+    font-weight: 300;
+}
+
+#description,
+#information {
+    margin-left: 10px;
+    font-size: 18px;
+}
+
+.item-price {
+    font-size: 20px;
+    margin-left: 150px;
+}
+
+/* FRETE SECTION STYLE*/
+
+.frete {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#subtotal-price {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+#subtotal,
+#frete {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.frete-price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#calc {
+    margin-top: 6px;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+/* TOTAL SECTION STYLE */
+
+.total-calc {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#total {
+    font-weight: 300;
+    font-size: 22px;
+    margin-top: 5px;
+}
+
+#total-price {
+    font-weight: 900;
+    font-size: 32px;
+}
+
+@media (max-width: 576px) {
+    section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .accordion {
+        display: flex;
+        justify-content: center;
+    }
+
+    .accordion-item {
+        width: 100vw;
+        margin-bottom: 10px;
+    }
+
+    .accordion-button {
+        border-radius: 0 !important;
+    }
+
+    .icon-chart {
+        margin-right: 10px;
+    }
+
+    .accordion-button:focus {
+        border-color: #FFFFFF;
+        box-shadow: none;
+    }
+
+    .img-superior {
+        position: relative;
+        display: flex;
+        right: 30px;
+        justify-content: space-between;
+    }
+
+    #subtotal,
+    #frete {
+        font-size: 14px;
+    }
+
+    #subtotal-price{
+        font-size: 20px;
+    }
+
+    #total {
+        font-size: 14px;
+    }
+
+    #total-price {
+        font-size: 20px;
+    }
+
+    .item-description {
+        width: 100px;
+    }
+
+    #description,
+    #information {
+        font-size: 12px;
+        width: inherit;
+    }
+
+    .item-price {
+        font-size: 15px;
+        margin-left: auto;
+    }
+
+    .info_payment ul {
+        font-size: 13px;
+        gap: 0;
+    }
+
+    .arrow-info {
+        margin-top: 0;
+        width: 10px;
+        height: 10px;
+    }
+
+    .content_section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .contact_info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    #info {
+        font-size: 16px;
+    }
+
+    #account {
+        font-size: 12px;
+    }
+
+
+    #email {
+        display: flex;
+        justify-content: center;
+        width: 90%;
+    }
+
+    .container {
+        font-size: 13px;
+        margin-left: 10px;
+    }
+
+    .form-floating {
+        width: 90%;
+    }
+
+    .go-back-section {
+        width: 90%;
+    }
+
+    .bg-right-side {
+        display: none;
+    }
+
+    .main-container {
+        width: 350px;
+    }
+
+    .order-confirmed {
+        text-align: center;
+    }
+
+    .go-back-section {
+        display: flex;
+        justify-content: center;
+    }
+
+    .btn-back-to-main {
+        margin: 0;
+    }
+
+    .btn-continue {
+        border-radius: 4px;
+    }
+
+    .division-1 {
+        display: none;
+    }
+}
+
+/* THEME */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+html {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.115em;
+}
+
+section {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bg-left-side {
+    display: flex;
+    justify-content: center;
+    background: #F4F4F4;
+}
+
+.bg-right-side {
+    display: flex;
+    justify-content: center;
+}
+
+.division {
+    border: 1px solid #D9D9D9;
+    margin-top: 10px;
+}
+
+.division-2 {
+    margin: 0 20px;
+}
+
+.division-shipping {
+    width: 90%;
+    margin-top: 10px;
+    margin-left: 20px;
+    border: 1px solid #D9D9D9;
+}
+
+strong {
+    font-weight: 700;
+}
