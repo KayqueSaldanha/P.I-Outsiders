@@ -1,5 +1,7 @@
-const information = (req, res) => {
-    res.render ('information');
-};
+const pageController = {
+    information: (req, res) => {
+        res.render('information');
+    }
+}
 
-module.exports.information = information;
+module.exports = pageController;
