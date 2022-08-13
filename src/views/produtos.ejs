@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/theme.css">
     <link rel="stylesheet" href="/stylesheets/produtos.css">
     <title>Produtos</title>
 </head>
+
 <body>
     
     <div id="menu_de_nav">
@@ -69,7 +72,34 @@
                             <button id="carrinho"><a href="carrinho">adicionar a sacola →</a></button>
                         </div>
                     </div>
+
+                    <div id="bot">
+                        <img src="/public/images/produtos/imagem 2 3 4.svg" alt="">
+                        <div>
+                            <div class="cores">
+                                <p>cores:</p>
+                                <div class="cor" id="azulclaro"></div>
+                                <div class="cor" id="azulescuro"></div>
+                                <div class="cor" id="rosa"></div>
+                                <div class="cor" id="vermelho"></div>
+                                <div class="cor" id="preto"></div>
+                            </div>
+                            <div>
+                                <button id="carrinho"><a href="/views/carrinho">adicionar a sacola →</a></button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="descricao">
+                        <h4>Descrição:</h4>
+                        <p>Armani Exchange é perfeito para quem busca sofisticação e estilo.Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                            aliqua.
+                        </p>
+                    </div>
                 </div>
+            </section>
 
 
                 <div id="descricao">
@@ -93,8 +123,6 @@
                         <p>10x R$ 32,00 sem juros</p>
                     </a>
                         <a class="btn" href="#">comprar</a>
-                    
-                </div>
 
                 <div class="card">
                     <a href="#">
@@ -105,7 +133,14 @@
                         <a class="btn" href="#">comprar</a>
                     </a>
 
-                </div>
+                    <div class="card">
+                        <a href="#">
+                            <img src="/public/images/produtos/imagem 6.svg" alt="">
+                            <h2>Tech T-Shirt</h2>
+                            <h3>R$ 320</h3>
+                            <p>10x R$ 32,00 sem juros</p>
+                            <a class="btn" href="#">comprar</a>
+                        </a>
 
                 <div class="card">
                     <a href="#">
@@ -126,11 +161,10 @@
                         <a class="btn" href="#">comprar</a>
                     </a>
                 </div>
-            </div>
-        </section>
-    </main>
-    <div class="espaco"></div>
-    
-    
+            </section>
+        </main>
+        <div class="espaco"></div>
+        <%- include("./partials/footer") %>
 </body>
+
 </html>

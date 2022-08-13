@@ -2,9 +2,9 @@
 <html lang="pt-br">
 
 <head>
-    <link rel="stylesheet" href="/stylesheets/reset">
-    <link rel="stylesheet" href="/stylesheets/department">
-    <link rel="stylesheet" href="/stylesheets/account">
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/department.css">
+    <link rel="stylesheet" href="/stylesheets/account.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,8 +15,7 @@
     <header>
         <section id="profile" class="max-width-content">
             <div class="profile__container">
-                <a href="index.html"><img width="200" src="/images/account/outsider 2.svg"
-                        alt="Outsider Logo"></a>
+                <a href="index.html"><img width="200" src="/images/account/outsider 2.svg" alt="Outsider Logo"></a>
             </div> <!-- .profile__container -->
         </section> <!-- . profile -->
     </header> <!-- .header -->
@@ -79,51 +78,7 @@
             </section> <!-- .account__page -->
         </section> <!-- .account -->
     </main> <!-- .main -->
-    <footer>
-        <div class="newsletter bg-news">
-            <div class="news__container max-width-content flex">
-                <div class="news_text">
-                    <h2>Faça seu cadastro</h2>
-                    <p>Inscreva-se em nossa newsletter e receba 10% de desconto.</p>
-                </div> <!-- .news_text -->
-                <div class="news_form">
-                    <input class="news_input" type="text" name="news" id="news" placeholder="Digite seu email">
-                    <button class="news_btn" type="submit">Cadastrar</button>
-                </div> <!-- .news_form -->
-            </div> <!-- .news__container -->
-        </div> <!-- .newsletter -->
-
-        <div class="footer_institutional bg-black">
-            <div class="container_institutional max-width-content flex">
-                <div class="img_institutional">
-                    <a href="#"><img src="../../assets/imagens/mapa-footer.svg" alt="Mapa da empresa"></a>
-                </div> <!-- .img_institutional -->
-                <div class="infos_institutional">
-                    <address class="item_contact">Broad St, Newark, NJ 07102 - USA</address>
-                    <ul class="contact_institutional">
-                        <li>
-                            <a class="item_contact" href="#">+1 (973) 854-555-548</a>
-                        </li>
-                        <li>
-                            <a class="item_contact" href="#">contact@lovtrealstate.com</a>
-                        </li>
-                        <li class="item_contact">Sigam-nos nas redes sociais</li>
-                        <div class="social_networks flex">
-                            <li>
-                                <a href="#"><img src="../../assets/icons/facebook.svg" alt="Facebook"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="../../assets/icons/instagram.svg" alt="Instagram"></a>
-                            </li>
-                            <li>
-                                <a href="#"><img src="../../assets/icons/youtube.svg" alt="Youtube"></a>
-                            </li>
-                        </div> <!-- . social_networks-->
-                    </ul> <!-- .contact_institutional -->
-                </div> <!-- .infos_institutional -->
-            </div> <!-- .container_institutional -->
-        </div> <!-- .footer_institutional -->
-    </footer> <!-- .footer -->
+    <%- include("./partials/footer") %>
 </body>
 
 </html>
