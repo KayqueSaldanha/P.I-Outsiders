@@ -8,11 +8,12 @@ const pageController = require('../controllers/pageController');
 // router.get('/', pageController.home)
 // router.get('/carrinho', pageController.carrinho)
 router.get('/information', pageController.information)
-// router.get('/departament', pageController.departament)
+router.get('/department', pageController.department)
 // router.get('/cadastro', pageController.cadastro)
-// router.get('/account', pageController.account)
+router.get('/account', pageController.account)
+// router.get('/account-edit', pageController.account)
 // router.get('/login', pageController.login)
-// router.get('/produtos', pageController.produtos)
+router.get('/produtos', pageController.produtos)
 
 
 // router.get('/search', searchController.search)

@@ -1,15 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
 /*header*/
 
- 
+
 /* main - corpo da pagina - superior */
 
-main{
+main {
     display: flex;
     flex-direction: column;
 }
 
-#menu_de_nav>nav{
+#menu_de_nav>nav {
     display: flex;
     justify-content: flex-start;
 
@@ -17,7 +18,8 @@ main{
     margin-top: 10px;
     margin-bottom: 30px;
 }
-div>nav>h2{
+
+div>nav>h2 {
     text-decoration: none;
     color: rgba(98, 98, 98, 1);
     Font-family: Roboto;
@@ -28,7 +30,7 @@ div>nav>h2{
     margin-left: 10px;
 }
 
-div>nav>h2>a{
+div>nav>h2>a {
     text-decoration: none;
     color: rgba(98, 98, 98, 1);
     Font-family: Roboto;
@@ -38,37 +40,37 @@ div>nav>h2>a{
     Line-height: 100%;
 }
 
-#sec1{
+#sec1 {
     display: flex;
     justify-content: center;
     margin-top: 40px;
 }
 
-#direita{
+#direita {
     flex-direction: column;
     margin-left: 30px;
 }
 
 /* direita - top */
-#top{
+#top {
     display: flex;
 }
 
-#top>div{
+#top>div {
     margin-left: 20px;
 }
 
-#top>div>h3{
+#top>div>h3 {
     Font-family: Roboto;
     Font-style: SemiBold;
     Font-size: 30px;
     Line-height: 35px;
-    Line-height: 100%;    
+    Line-height: 100%;
     color: #303030;
 }
 
-#top>div>#p1{   
-    margin-top:10px; 
+#top>div>#p1 {
+    margin-top: 10px;
     Font-family: Roboto;
     Font-style: Regular;
     Font-size: 14px;
@@ -77,7 +79,7 @@ div>nav>h2>a{
     color: rgba(0, 0, 0, 0.25);
 }
 
-#top>div>#p2{
+#top>div>#p2 {
     margin-top: 30px;
     Font-family: Roboto;
     Font-style: SemiBold;
@@ -86,14 +88,14 @@ div>nav>h2>a{
     Line-height: 100%;
 }
 
-#top>div>#p2>span{
+#top>div>#p2>span {
     color: red;
     font-size: 15px;
     text-decoration: line-through;
 }
 
-#top>div>#p3{
-    margin-top:5px; 
+#top>div>#p3 {
+    margin-top: 5px;
     Font-family: Roboto;
     Font-style: Regular;
     Font-size: 14px;
@@ -103,11 +105,11 @@ div>nav>h2>a{
 }
 
 /* direita - mid */
-#mid{
+#mid {
     display: flex;
 }
 
-#mid>div>h3{
+#mid>div>h3 {
     margin-left: 20px;
     Font-family: Roboto;
     Font-style: Regular;
@@ -117,32 +119,33 @@ div>nav>h2>a{
     color: rgba(0, 0, 0, 0.25);
 }
 
-#mid>div>#escolhaTamanho{
+#mid>div>#escolhaTamanho {
     display: flex;
     margin-left: 20px;
 }
 
-#mid>div>#escolhaTamanho>.tamanhos{
-    Width:50px;
+#mid>div>#escolhaTamanho>.tamanhos {
+    Width: 50px;
     Height: 40px;
     border: 0.5px solid black;
     margin-left: 10px;
     margin-top: 30px;
     border-radius: 10%;
 }
-#mid>div>#escolhaTamanho>.tamanhos:hover{
+
+#mid>div>#escolhaTamanho>.tamanhos:hover {
     cursor: pointer;
 }
 
 
-#mid>div>#escolhaTamanho>.tamanhos>p{
+#mid>div>#escolhaTamanho>.tamanhos>p {
     display: flex;
     margin-top: 13px;
     justify-content: center;
     color: black;
 }
 
-#mid>div>p{
+#mid>div>p {
     margin-left: 20px;
     margin-top: 35px;
     Font-family: Roboto;
@@ -150,11 +153,11 @@ div>nav>h2>a{
     Font-size: 20px;
     Line-height: 18px;
     Line-height: 100%;
-    color: #292929;  
+    color: #292929;
 }
 
 
-#mid>div>p>input{
+#mid>div>p>input {
     border-radius: 10%;
     height: 15px;
     width: 40px;
@@ -164,26 +167,26 @@ div>nav>h2>a{
 
 
 /* direita - bot */
-#bot{
+#bot {
     display: flex;
 }
 
-#bot>div{
+#bot>div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
 }
 
-#bot>div>.cores{
+#bot>div>.cores {
     display: flex;
     justify-content: start;
     margin-top: 50px;
 }
 
-#bot>div>.cores>p{
+#bot>div>.cores>p {
     margin-left: 20px;
-    margin-top:10px; 
+    margin-top: 10px;
     Font-family: Roboto;
     Font-style: Regular;
     Font-size: 18px;
@@ -192,48 +195,48 @@ div>nav>h2>a{
     color: rgba(0, 0, 0, 0.25);
 }
 
-#bot>div>.cores>.cor{
+#bot>div>.cores>.cor {
     border-radius: 100%;
-    Width:35px;
+    Width: 35px;
     Height: 35px;
     margin-left: 10px;
 }
 
-#bot>div>.cores>.cor:hover{
+#bot>div>.cores>.cor:hover {
     cursor: pointer;
     box-shadow: 0px 10px 70px black;
 }
 
-#bot>div>.cores>#azulclaro{
+#bot>div>.cores>#azulclaro {
     background-color: #296BA0;
     border-radius: 100%;
     margin-left: 20px;
 
 }
 
-#bot>div>.cores>#azulescuro{
+#bot>div>.cores>#azulescuro {
     background-color: #083359;
 
 }
 
-#bot>div>.cores>#rosa{
+#bot>div>.cores>#rosa {
     background-color: pink;
 }
 
-#bot>div>.cores>#vermelho{
-    background-color:red;
+#bot>div>.cores>#vermelho {
+    background-color: red;
 }
 
-#bot>div>.cores>#preto{
+#bot>div>.cores>#preto {
     background-color: #000;
 }
 
 
-#bot>div>div>#carrinho{
+#bot>div>div>#carrinho {
     margin-top: 50px;
     margin-left: 20px;
     color: white;
-    background-color:black;
+    background-color: black;
     Width: 400px;
     Height: 50px;
     margin-bottom: 43px;
@@ -247,32 +250,32 @@ div>nav>h2>a{
     border-radius: 3%;
 }
 
-#bot>div>div>#carrinho>a{
+#bot>div>div>#carrinho>a {
     text-decoration: none;
     color: white;
 }
 
-#carrinho:hover{    
+#carrinho:hover {
     cursor: pointer;
     transition: 1.5s;
     box-shadow: 0px 10px 40px black;
 }
 
-#descricao{
+#descricao {
     margin-top: 20px;
     margin-left: 160px;
     width: 400px;
 }
 
-#descricao>h4{
+#descricao>h4 {
     Font-family: Roboto;
     Font-style: Bold;
     Font-size: 20px;
     Line-height: 23px;
-    color:#363636
+    color: #363636
 }
 
-#descricao>p{
+#descricao>p {
     margin-top: 5px;
     Font-family: Roboto;
     Font-style: Light;
@@ -285,12 +288,12 @@ div>nav>h2>a{
 
 /* main - inferior - prateleira */
 
-#sec2{
+#sec2 {
     display: flex;
     flex-direction: column;
 }
 
-#sec2>h3{
+#sec2>h3 {
     Font-family: Roboto;
     Font-style: Medium;
     Font-size: 30px;
@@ -304,29 +307,29 @@ div>nav>h2>a{
     margin-bottom: 40px;
 }
 
-#sec2>#prateleira{
+#sec2>#prateleira {
     display: flex;
     justify-content: center;
 }
 
-#prateleira>.card{
+#prateleira>.card {
     margin-left: 21px;
 }
 
-#prateleira>.card:hover{
+#prateleira>.card:hover {
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
     transform: scale(1.1);
     border: 1px solid #f2f2f2;
 }
 
-#prateleira>.card:hover>.btn{
+#prateleira>.card:hover>.btn {
     opacity: 1;
     position: relative;
 }
 
 
-#prateleira>.card>a{
+#prateleira>.card>a {
     text-decoration: none;
     display: flex;
     flex-direction: column;
@@ -334,7 +337,7 @@ div>nav>h2>a{
     border-radius: 5%;
 }
 
-#prateleira>.card>a>h2{
+#prateleira>.card>a>h2 {
     Font-family: Roboto;
     Font-style: Light;
     Font-size: 20px;
@@ -346,7 +349,7 @@ div>nav>h2>a{
 }
 
 
-#prateleira>.card>a>h3{
+#prateleira>.card>a>h3 {
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
@@ -356,7 +359,7 @@ div>nav>h2>a{
 }
 
 
-#prateleira>.card>a>p{
+#prateleira>.card>a>p {
     Font-family: Roboto;
     Font-style: Regular;
     Font-size: 16px;
@@ -365,7 +368,7 @@ div>nav>h2>a{
     color: #7B7B7B;
 }
 
-#prateleira>.card>.btn{
+#prateleira>.card>.btn {
     background-color: #000;
     color: #fff;
     display: flex;
@@ -381,71 +384,71 @@ div>nav>h2>a{
     opacity: 0;
 }
 
-.espaco{
+.espaco {
     margin-bottom: 250px;
 }
 
 
 /* //////////responsividade //////////// */
 
-@media screen and (max-width:1820px){
+@media screen and (max-width:1820px) {
 
     /********** main ************/
 
-    #menu_de_nav>nav{    
+    #menu_de_nav>nav {
         margin-left: 280px;
         margin-top: 10px;
         margin-bottom: 30px;
     }
 
-    #sec1>#esquerda>img{
+    #sec1>#esquerda>img {
         width: 700px;
     }
 
-/* direita - top */
+    /* direita - top */
 
-    #sec1>#direita>#top>img{
+    #sec1>#direita>#top>img {
         width: 100px;
     }
 
-    #top>div>h3{
+    #top>div>h3 {
         Font-size: 20px;
         Line-height: 35px;
-        Line-height: 100%; 
+        Line-height: 100%;
     }
 
-    #top>div>#p1{
-        margin-top:20px; 
-    }   
+    #top>div>#p1 {
+        margin-top: 20px;
+    }
 
-    #top>div>#p2{
+    #top>div>#p2 {
         margin-top: 20px;
         Font-size: 20px;
         Line-height: 20px;
         Line-height: 100%;
     }
 
-    #top>div>#p2>span{
+    #top>div>#p2>span {
         color: red;
         font-size: 15px;
         text-decoration: line-through;
     }
 
-    #top>div>#p3{
-        margin-top:5px; 
+    #top>div>#p3 {
+        margin-top: 5px;
         Font-size: 14px;
         Line-height: 12px;
         Line-height: 100%;
     }
 
-/* direita - mid */
+    /* direita - mid */
 
 
-    #sec1>#direita>#mid>img{
+    #sec1>#direita>#mid>img {
         width: 100px;
     }
 
-    #mid>div>h3{
+    #mid>div>h3 {
         margin-top: 5px;
         margin-left: 20px;
         Font-size: 20px;
@@ -454,24 +457,24 @@ div>nav>h2>a{
         color: rgba(0, 0, 0, 0.25);
     }
 
-    #mid>div>#escolhaTamanho{
+    #mid>div>#escolhaTamanho {
         display: flex;
         margin-left: 0px;
     }
 
-    #mid>div>#escolhaTamanho>.tamanhos{
-        Width:30px;
+    #mid>div>#escolhaTamanho>.tamanhos {
+        Width: 30px;
         Height: 30px;
         margin-left: 20px;
         margin-top: 15px;
     }
 
-    #mid>div>#escolhaTamanho>.tamanhos>p{
+    #mid>div>#escolhaTamanho>.tamanhos>p {
         margin-top: 8px;
         color: black;
     }
 
-    #mid>div>p{
+    #mid>div>p {
         margin-left: 20px;
         margin-top: 25px;
         Font-size: 15px;
@@ -479,26 +482,26 @@ div>nav>h2>a{
         Line-height: 100%;
     }
 
-    #mid>div>p>input{
+    #mid>div>p>input {
         margin-left: 50px;
     }
 
-/* direita - bot */
+    /* direita - bot */
 
-    #sec1>#direita>#bot>img{
+    #sec1>#direita>#bot>img {
         width: 100px;
     }
 
-    #bot>div>.cores{
+    #bot>div>.cores {
         margin-top: 25px;
 
     }
 
-    #bot>div>div>#carrinho{
+    #bot>div>div>#carrinho {
         margin-top: 50px;
         margin-left: 20px;
         color: white;
-        background-color:black;
+        background-color: black;
         Width: 300px;
         Height: 45px;
         margin-bottom: 43px;
@@ -511,13 +514,13 @@ div>nav>h2>a{
         text-decoration: none;
     }
 
-    #descricao{
+    #descricao {
         margin-top: 0px;
         margin-left: 0px;
         width: 430px;
-}
+    }
 
-    #descricao>p{
+    #descricao>p {
         Font-family: Roboto;
         Font-style: Light;
         Font-size: 20px;
@@ -526,195 +529,198 @@ div>nav>h2>a{
         color: #000000;
     }
 
-/* main - inferior - prateleira */
+    /* main - inferior - prateleira */
 
-#sec2>h3{
-
-    Font-size: 30px;
-    Line-height: 35px;
-    margin-top: 50px;
-    margin-bottom: 40px;
-}
-
-#sec2>h3{
-    margin-top: 100px;
-    margin-bottom: 40px;
-}
-
-#prateleira>.card>a>img{
-    width: 250px;
-}
-
-}
-/* ///////////////////////////////////////////////////////////////////////////////// */
-
-@media screen and (max-width:1620px){
-    
-        #menu_de_nav>nav{    
-            display: none;
-        }
-
-}
-
-/* ///////////////////////Break-Point///////////////////////////// */
-
-
-@media screen and (max-width:1180px){
-    #sec1{margin-top: 40px;}
-
-    #sec1>#esquerda>img{
-        width: 550px;
-    }
-
-    #mid>div>#escolhaTamanho>.tamanhos{
-        Width:25px;
-        Height: 25px;
-        margin-left: 15px;
-        margin-top: 15px;
-    }
-    
-    #bot>div>.cores>.cor{
-        Width: 35px;
-        Height: 35px;
-    }
-
-
-    #bot>div>.cores>p{
-        display: none;
-    }
-
-    #bot>div>div>#carrinho{
-        margin-top: 30px;
-        margin-left: 20px;
-        Width: 230px;
-        Height: 40px;
-        Font-size: 20px;
-}
-
-    #descricao{
-        margin-top: 0px;
-        margin-left: 0px;
-        width: 350px;
-}
-
-    #descricao>p{
-        Font-size: 15px;
-    }
-
-/* main - inferior - prateleira */
-    #sec2>h3{
+    #sec2>h3 {
 
         Font-size: 30px;
         Line-height: 35px;
         margin-top: 50px;
         margin-bottom: 40px;
     }
-    
-    #sec2>h3{
+
+    #sec2>h3 {
         margin-top: 100px;
         margin-bottom: 40px;
     }
-    
-    #prateleira>.card>a>img{
+
+    #prateleira>.card>a>img {
+        width: 250px;
+    }
+
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width:1620px) {
+
+    #menu_de_nav>nav {
+        display: none;
+    }
+
+}
+
+/* ///////////////////////Break-Point///////////////////////////// */
+
+
+@media screen and (max-width:1180px) {
+    #sec1 {
+        margin-top: 40px;
+    }
+
+    #sec1>#esquerda>img {
+        width: 550px;
+    }
+
+    #mid>div>#escolhaTamanho>.tamanhos {
+        Width: 25px;
+        Height: 25px;
+        margin-left: 15px;
+        margin-top: 15px;
+    }
+
+    #bot>div>.cores>.cor {
+        Width: 35px;
+        Height: 35px;
+    }
+
+
+    #bot>div>.cores>p {
+        display: none;
+    }
+
+    #bot>div>div>#carrinho {
+        margin-top: 30px;
+        margin-left: 20px;
+        Width: 230px;
+        Height: 40px;
+        Font-size: 20px;
+    }
+
+    #descricao {
+        margin-top: 0px;
+        margin-left: 0px;
+        width: 350px;
+    }
+
+    #descricao>p {
+        Font-size: 15px;
+    }
+
+    /* main - inferior - prateleira */
+    #sec2>h3 {
+
+        Font-size: 30px;
+        Line-height: 35px;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+
+    #sec2>h3 {
+        margin-top: 100px;
+        margin-bottom: 40px;
+    }
+
+    #prateleira>.card>a>img {
         width: 200px;
     }
 
-    #prateleira>.card>a>p{
+    #prateleira>.card>a>p {
         font-size: 14px;
     }
 }
 
 /* ///////////////////////Break-Point///////////////////////////// */
 
-@media screen and (max-width:950px){
+@media screen and (max-width:950px) {
 
-    #menu_de_nav>nav{
+    #menu_de_nav>nav {
         margin-left: 150px;
     }
 
-    #sec1>#esquerda>img{
+    #sec1>#esquerda>img {
         width: 500px;
     }
 
-    #top>div>h3{
+    #top>div>h3 {
         Font-size: 15px;
         Line-height: 35px;
-        Line-height: 100%; 
+        Line-height: 100%;
     }
 
-    #mid>div>#escolhaTamanho>.tamanhos{
-        Width:25px;
+    #mid>div>#escolhaTamanho>.tamanhos {
+        Width: 25px;
         Height: 25px;
         margin-left: 15px;
         margin-top: 15px;
     }
 
-    #mid>div>p>input{
+    #mid>div>p>input {
         margin-left: 30px;
     }
 
-    #bot>div>.cores>.cor{
+    #bot>div>.cores>.cor {
         Width: 30px;
         Height: 30px;
         margin-top: 0px;
     }
 
-    #bot>div>div>#carrinho{
+    #bot>div>div>#carrinho {
         margin-top: 30px;
         margin-left: 10px;
         Width: 200px;
         Height: 40px;
         Font-size: 17px;
-}
+    }
 
-    #descricao{
+    #descricao {
         width: 300px;
-}
+    }
 
-    #descricao>p{
+    #descricao>p {
         Font-size: 13px;
-}
+    }
 
-    #prateleira>.card>a>img{
+    #prateleira>.card>a>img {
         width: 200px;
     }
 
-    #prateleira>.card>a>p{
+    #prateleira>.card>a>p {
         font-size: 14px;
     }
 
-    #prateleira>.card>a>img{
+    #prateleira>.card>a>img {
         width: 190px;
     }
 
-    .barracinza{
+    .barracinza {
         display: none;
     }
 }
 
 /* ///////////////////////Break-Point///////////////////////////// */
 
-@media screen and (max-width:900px){
-    #menu_de_nav>nav{
-        display:none;
+@media screen and (max-width:900px) {
+    #menu_de_nav>nav {
+        display: none;
     }
 
-    #sec1{
+    #sec1 {
         margin-top: 50px;
         display: flex;
         flex-direction: column;
     }
 
-    #sec1>#esquerda>img{
+    #sec1>#esquerda>img {
         width: 700px;
     }
 
-    #sec1>#esquerda{
+    #sec1>#esquerda {
         display: flex;
         justify-content: center;
     }
 
-    #sec1>#direita{
+    #sec1>#direita {
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -723,47 +729,47 @@ div>nav>h2>a{
         margin-top: 30px;
     }
 
-    #sec1>#direita>#top>img{
+    #sec1>#direita>#top>img {
         width: 200px;
     }
 
-    #sec1>#direita>#top>div>h3{
+    #sec1>#direita>#top>div>h3 {
         Font-size: 40px;
     }
 
-    #top>div>#p1{
+    #top>div>#p1 {
         font-size: 20px;
-        margin-top:20px; 
-    }   
+        margin-top: 20px;
+    }
 
-    #top>div>#p2{
+    #top>div>#p2 {
         margin-top: 20px;
         Font-size: 30px;
         Line-height: 20px;
         Line-height: 100%;
     }
 
-    #top>div>#p2>span{
+    #top>div>#p2>span {
         color: red;
         font-size: 25px;
         text-decoration: line-through;
     }
 
-    #top>div>#p3{
-        margin-top:5px; 
+    #top>div>#p3 {
+        margin-top: 5px;
         Font-size: 20px;
         Line-height: 12px;
         Line-height: 100%;
     }
 
-/* direita - mid */
+    /* direita - mid */
 
 
-    #sec1>#direita>#mid>img{
+    #sec1>#direita>#mid>img {
         width: 200px;
     }
 
-    #mid>div>h3{
+    #mid>div>h3 {
         margin-top: 5px;
         margin-left: 30px;
         Font-size: 30px;
@@ -772,25 +778,25 @@ div>nav>h2>a{
         color: rgba(0, 0, 0, 0.25);
     }
 
-    #mid>div>#escolhaTamanho{
+    #mid>div>#escolhaTamanho {
         display: flex;
         margin-left: 0px;
     }
 
-    #mid>div>#escolhaTamanho>.tamanhos{
-        Width:50px;
+    #mid>div>#escolhaTamanho>.tamanhos {
+        Width: 50px;
         Height: 50px;
         margin-left: 30px;
         margin-top: 30px;
     }
 
-    #mid>div>#escolhaTamanho>.tamanhos>p{
+    #mid>div>#escolhaTamanho>.tamanhos>p {
         margin-top: 15px;
         font-size: larger;
         color: black;
     }
 
-    #mid>div>p{
+    #mid>div>p {
         margin-left: 30px;
         margin-top: 60px;
         Font-size: 20px;
@@ -798,34 +804,34 @@ div>nav>h2>a{
         Line-height: 100%;
     }
 
-    #mid>div>p>input{
+    #mid>div>p>input {
         margin-left: 180px;
         width: 50px;
         height: 20px;
     }
 
-/* direita - bot */
+    /* direita - bot */
 
-    #sec1>#direita>#bot>img{
+    #sec1>#direita>#bot>img {
         width: 200px;
     }
 
-    #bot>div>.cores{
+    #bot>div>.cores {
         margin-top: 25px;
     }
 
-    #bot>div>.cores>.cor{
+    #bot>div>.cores>.cor {
         border-radius: 100%;
-        Width:60px;
+        Width: 60px;
         Height: 60px;
         margin-left: 25px;
     }
 
-    #bot>div>div>#carrinho{
+    #bot>div>div>#carrinho {
         margin-top: 120px;
         margin-left: 20px;
         color: white;
-        background-color:black;
+        background-color: black;
         Width: 400px;
         Height: 45px;
         margin-bottom: 43px;
@@ -838,13 +844,13 @@ div>nav>h2>a{
         text-decoration: none;
     }
 
-    #descricao{
+    #descricao {
         margin-top: 0px;
         margin-left: 0px;
         width: 650px;
-}
+    }
 
-    #descricao>p{
+    #descricao>p {
         Font-family: Roboto;
         Font-style: Light;
         Font-size: 20px;
@@ -853,11 +859,11 @@ div>nav>h2>a{
         color: #000000;
     }
 
-    #prateleira>.card>a>img{
+    #prateleira>.card>a>img {
         width: 150px;
     }
 
-    #prateleira>.card>a>p{
+    #prateleira>.card>a>p {
         font-size: 11px;
     }
 
@@ -865,12 +871,12 @@ div>nav>h2>a{
 
 /* /////////////////////BREAK-POINT//////////////// */
 
-@media screen and (max-width:759px){
-    #sec1>#esquerda>img{
+@media screen and (max-width:759px) {
+    #sec1>#esquerda>img {
         width: 400px;
     }
 
-    #sec1>#direita{
+    #sec1>#direita {
         display: flex;
         flex-direction: column;
         justify-content: start;
@@ -879,71 +885,71 @@ div>nav>h2>a{
         margin-top: 30px;
     }
 
-    #sec1>#direita>#top>img{
+    #sec1>#direita>#top>img {
         width: 120px;
     }
 
-    #sec1>#direita>#top>div>h3{
+    #sec1>#direita>#top>div>h3 {
         Font-size: 20px;
     }
 
-    #top>div>#p1{
+    #top>div>#p1 {
         font-size: 15px;
-        margin-top:20px; 
-    }   
+        margin-top: 20px;
+    }
 
-    #top>div>#p2{
+    #top>div>#p2 {
         margin-top: 20px;
         Font-size: 20px;
         Line-height: 20px;
         Line-height: 100%;
     }
 
-    #top>div>#p2>span{
+    #top>div>#p2>span {
         color: red;
         font-size: 15px;
         text-decoration: line-through;
     }
 
-    #top>div>#p3{
-        margin-top:5px; 
+    #top>div>#p3 {
+        margin-top: 5px;
         Font-size: 15px;
         Line-height: 12px;
         Line-height: 100%;
     }
 
-/* direita - mid */
+    /* direita - mid */
 
 
-    #sec1>#direita>#mid>img{
+    #sec1>#direita>#mid>img {
         width: 120px;
     }
 
-    #mid>div>h3{
+    #mid>div>h3 {
         margin-top: 0px;
         margin-left: 30px;
         Font-size: 20px;
     }
 
-    #mid>div>#escolhaTamanho{
+    #mid>div>#escolhaTamanho {
         display: flex;
         margin-left: 0px;
     }
 
-    #mid>div>#escolhaTamanho>.tamanhos{
-        Width:25px;
+    #mid>div>#escolhaTamanho>.tamanhos {
+        Width: 25px;
         Height: 25px;
         margin-left: 20px;
         margin-top: 25px;
     }
 
-    #mid>div>#escolhaTamanho>.tamanhos>p{
+    #mid>div>#escolhaTamanho>.tamanhos>p {
         margin-top: 5px;
         font-size: medium;
         color: black;
     }
 
-    #mid>div>p{
+    #mid>div>p {
         margin-left: 30px;
         margin-top: 25px;
         Font-size: 15px;
@@ -951,24 +957,24 @@ div>nav>h2>a{
         Line-height: 100%;
     }
 
-    #mid>div>p>input{
+    #mid>div>p>input {
         margin-left: 52px;
         width: 45px;
         height: 20px;
     }
 
-/* direita - bot */
+    /* direita - bot */
 
-    #sec1>#direita>#bot{
+    #sec1>#direita>#bot {
         margin-top: -40px;
     }
 
-    #sec1>#direita>#bot>img{
+    #sec1>#direita>#bot>img {
         margin-top: 0px;
         width: 120px;
     }
 
-    #bot>div>.cores>.cor{
+    #bot>div>.cores>.cor {
         border-radius: 100%;
         Width: 25px;
         Height: 25px;
@@ -977,10 +983,10 @@ div>nav>h2>a{
         top: 55px
     }
 
-    #bot>div>div>#carrinho{
+    #bot>div>div>#carrinho {
         margin-left: 20px;
         color: white;
-        background-color:black;
+        background-color: black;
         Width: 230px;
         Height: 45px;
         Font-size: 17px;
@@ -991,43 +997,43 @@ div>nav>h2>a{
         bottom: 20px;
     }
 
-    #descricao{
+    #descricao {
         margin-top: 0px;
         margin-left: 0px;
         width: 370px;
-}
+    }
 
-    #descricao>p{
+    #descricao>p {
         Font-family: Roboto;
         Font-style: Light;
         Font-size: 17px;
         Line-height: 19px;
         Line-height: 100%;
-        
+
         color: #000000;
     }
 
-    #prateleira>.card>a>img{
+    #prateleira>.card>a>img {
         width: 120px;
     }
 
-    #prateleira>.card>a>h2{
+    #prateleira>.card>a>h2 {
         font-size: 16px;
     }
 
-    #prateleira>.card>a>p{
+    #prateleira>.card>a>p {
         font-size: 11px;
     }
 
-    #prateleira>.card>a>h3{
+    #prateleira>.card>a>h3 {
         font-size: 17px;
     }
 
-    #prateleira>.card>a>p{
+    #prateleira>.card>a>p {
         font-size: 8px;
     }
 
-    .espaco{
+    .espaco {
         margin-bottom: 100px;
     }
 
@@ -1036,69 +1042,68 @@ div>nav>h2>a{
 
 /* ///////////BREAK-POINT/////////////// */
 
-@media screen and (max-width:375px){
+@media screen and (max-width:375px) {
 
-    #sec1>#esquerda>img{
+    #sec1>#esquerda>img {
         width: 375px;
     }
 
-    #sec1{
+    #sec1 {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
     }
 
-    #sec1>#direita{
+    #sec1>#direita {
         position: relative;
         left: -70px;
     }
 
-    #sec1>#direita>#top>img{
+    #sec1>#direita>#top>img {
         display: none;
     }
 
-    #top>div>h3{
-        font-size:small;
+    #top>div>h3 {
+        font-size: small;
     }
 
-   #top>div>#p1{
-    font-size: 10px;
-   }
+    #top>div>#p1 {
+        font-size: 10px;
+    }
 
 
-    #direita>#mid>img{
+    #direita>#mid>img {
         display: none;
     }
 
-    #mid>div>h3{
+    #mid>div>h3 {
         display: none;
     }
 
-    #sec1>#direita>#bot>img{
+    #sec1>#direita>#bot>img {
         display: none;
     }
 
 
-    #sec2{
-    
-    display:none
+    #sec2 {
+
+        display: none
     }
 
-    #descricao{
+    #descricao {
         position: relative;
         left: -20px;
         margin-top: 0px;
         width: 320px;
     }
 
-    #descricao>h4{
+    #descricao>h4 {
         font-size: 20px;
     }
 
-    #descricao>p{
+    #descricao>p {
         font-size: 14px;
     }
 
 }
-
