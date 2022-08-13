@@ -13,7 +13,16 @@ const pageController = {
 
     produtos: (req, res) => {
         res.render('produtos');
+    },
+
+    login: (req, res) => {
+        res.render('login');
+    },
+
+    cadastro: (req,res) => {
+        res.render('cadastro');
     }
+
 }
 
 module.exports = pageController;
