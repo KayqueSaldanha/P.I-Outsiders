@@ -28,6 +28,10 @@
     align-items: center;
 }
 
+.las {
+    font-size: 24px;
+}
+
 .btn__button {
     border: none;
     background-color: #fff;
@@ -35,7 +39,7 @@
 }
 
 .nav__list {
-    gap: 28px;
+    gap: 25px;
     text-transform: uppercase;
     font-weight: 300;
     line-height: 19px;
@@ -47,7 +51,7 @@
 }
 
 .menu__supportNav {
-    gap: 10px;
+    gap: 6px;
 }
 
 a,
