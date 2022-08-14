@@ -190,6 +190,11 @@ html {
     line-height: 29px;
 }
 
+.lab {
+    color: #fff;
+    font-size: 30px;
+}
+
 .social_networks {
     padding-top: 20px;
     gap: 44px;
@@ -207,22 +212,27 @@ html {
     .search__input,
     .banner_principal,
     .shelf__btn,
+    .la-user,
+    .la-search,
     .shelf__product:hover {
         display: none;
     }
 
-    .menu,
-    .bread__crumb-c {
+    .menu {
         margin: 0px 14px;
+    }
+
+    .la-shopping-bag {
+        font-size: 30px;
     }
 
     .one,
     .two,
     .three {
         background-color: #000;
-        height: 5px;
+        height: 2px;
         width: 100%;
-        margin: 6px auto;
+        margin: 9px auto;
     }
 
     .menu__toggle {
