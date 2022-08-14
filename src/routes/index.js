@@ -14,14 +14,15 @@ router.get('/compra-confirmada', pageController.compra_confirmada)
 router.get('/department', pageController.department)
 router.get('/cadastro', pageController.cadastro)
 router.get('/account', pageController.account)
-// router.get('/account-edit', pageController.account)
+router.get('/account_edit', pageController.account_edit)
+router.get('/account_request', pageController.account_request)
 router.get('/login', pageController.login)
 router.get('/produtos', pageController.produtos)
 
 
 // router.get('/search', searchController.search)
 
-module.exports = router 
+module.exports = router
 
 
 
