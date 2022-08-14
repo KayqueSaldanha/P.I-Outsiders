@@ -2,7 +2,7 @@ const pageController = {
     information: (req, res) => {
         res.render('information');
     },
-    
+
     frete: (req, res) => {
         res.render('shipping');
     },
@@ -23,6 +23,14 @@ const pageController = {
         res.render('account');
     },
 
+    account_edit: (req, res) => {
+        res.render('account_edit');
+    },
+
+    account_request: (req, res) => {
+        res.render('account_request');
+    },
+
     produtos: (req, res) => {
         res.render('produtos');
     },
@@ -31,7 +39,7 @@ const pageController = {
         res.render('login');
     },
 
-    cadastro: (req,res) => {
+    cadastro: (req, res) => {
         res.render('cadastro');
     }
 
