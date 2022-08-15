@@ -55,17 +55,12 @@
  }
  
  #entrar{
-   color: white;
+
    background-color:black;
    Width: 500px;
    Height: 60px;
    margin-bottom: 43px;
    border: none;
-   Font-family: Roboto;
-   Font-style: Regular;
-   Font-size: 39px;
-   Line-height: 40px;
-   Line-height: 100%;
    margin-bottom: 400px;
 }
 
@@ -73,6 +68,15 @@
    cursor: pointer;
    transition: 1.5s;
    box-shadow: 0px 10px 40px black;
+}
+
+#entrar>a{
+   color: white;
+   Font-family: Roboto;
+   Font-style: Regular;
+   Font-size: 39px;
+   Line-height: 40px;
+   Line-height: 100%;
 }
 
 /*////////// responsividade //////////*/
