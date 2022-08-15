@@ -7,8 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="/stylesheets/reset">
-    <link rel="stylesheet" href="/stylesheets/carrinho">
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/theme.css">
+    <link rel="stylesheet" href="/stylesheets/carrinho.css">
 </head>
 <body>
 
@@ -70,7 +71,9 @@
     <section id="sec4">
         <div class="escProd">
             <div class="botaoEscolher">
-                <button id="btn_escolher">ESCOLHER MAIS PRODUTOS</button>
+                <button id="btn_escolher">
+                   <a href="/department">ESCOLHER MAIS PRODUTOS</a>
+                </button>
             </div>
         </div>
          <div class="finalPedido">
@@ -87,7 +90,8 @@
                     <p class="subTotalValor">SUBTOTAL</p>
                     <p>R$ 259,80</p>
                 </div>
-                <button id="finalizarCompra">FECHAR PEDIDO<i class="las la-shopping-cart"></i></button>
+                <button id="finalizarCompra"><a href="/payment">FECHAR PEDIDO</a><i class="las la-shopping-cart">
+                </i></button>
             </div>
         </div>
     </section>

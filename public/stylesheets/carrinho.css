@@ -183,18 +183,23 @@
     display: flex;
 }
 
-#sec4 .escProd #btn_escolher{
+#sec4 .escProd .botaoEscolher #btn_escolher{
     width: 250px;
     height: 40px;
     font-family: 'Roboto'; 
     font-style: normal;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 22px;
     background-color: black;
-    color:white;
+    text-decoration: none;
+}
+
+#sec4 .escProd .botaoEscolher #btn_escolher a{
+    color: white;
 }
 
 #sec4 .finalPedido .totalPedido{
+    padding-top: 50px;
     padding-bottom: 10px;
     display:flex;
 }
@@ -213,7 +218,12 @@
 
 
 #sec4 .fecharPedido #finalizarCompra{
+    text-decoration: none;
     margin-left: 50px;
+}
+
+#sec4 .fecharPedido #finalizarCompra a{
+   color: white;
 }
 
 #sec4 .fecharPedido .subtotal{
