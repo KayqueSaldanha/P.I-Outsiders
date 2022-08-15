@@ -41,8 +41,15 @@ const pageController = {
 
     cadastro: (req, res) => {
         res.render('cadastro');
-    }
+    },
 
+    home: (req, res) => {
+        res.render('home')
+    },
+
+    carrinho: (req, res) =>{
+        res.render('carrinho')
+    }
 }
 
 module.exports = pageController;
