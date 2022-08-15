@@ -1,32 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheet/reset.css">
-    <link rel="stylesheet" href="/public/stylesheets/produtos.css">
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/theme.css">
+    <link rel="stylesheet" href="/stylesheets/produtos.css">
     <title>Produtos</title>
 </head>
+
 <body>
-    
+    <%- include("./partials/header") %>
+
     <div id="menu_de_nav">
         <nav>
-            <h2> <a href="/views/home">Home</a></h2>
+            <h2> <a href="home">Home</a></h2>
             <h2> / </h2>
             <h2>Tech T-Shirt</h2>
             <h2> / </h2>
             <h2> Mulherr</h2>
         </nav>
     </div>
+    
     <main>
         <section id="sec1">
+            
             <div id="esquerda">
-                <img src="/public/images/produtos/imagem 1.svg" alt="">
+                <img src="/images/produtos/imagem 1.svg" alt="">
             </div>
+
+
             <div id="direita">
+                
                 <div id="top">
-                    <img src="/public/images/produtos/imagem 2 3 4.svg" alt="">
+                    <img src="/images/produtos/imagem 2 3 4.svg" alt="">
                     <div>
                         <h3>Tech T-Shirt Feminina</h3>
                         <p id="p1">ref A3060</p>
@@ -36,7 +45,7 @@
 
                 </div>
                 <div id="mid">
-                    <img src="/public/images/produtos/imagem 2 3 4.svg" alt="">
+                    <img src="/images/produtos/imagem 2 3 4.svg" alt="">
                     <div>
                         <h3>Tamanho</h3>
                         <div id="escolhaTamanho">
@@ -51,7 +60,7 @@
                 </div>
                 
                 <div id="bot">
-                    <img src="/public/images/produtos/imagem 2 3 4.svg" alt="">
+                    <img src="/images/produtos/imagem 2 3 4.svg" alt="">
                     <div>
                         <div class="cores">
                             <p>cores:</p>                            
@@ -62,49 +71,40 @@
                             <div class="cor" id="preto"></div>
                         </div>
                         <div>
-                            <button id="carrinho"><a href="/views/carrinho">adicionar a sacola →</a></button>
-                        </div>
+                            <button id="carrinho"><a href="carrinho">adicionar a sacola →</a></button>
+                        </div>                        
                     </div>
                 </div>
 
-
-                <div id="descricao">
-                    <h4>Descrição:</h4>
-                    <p>Armani Exchange é perfeito para quem busca sofisticação e estilo.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
+                    <div id="descricao">
+                        <h4>Descrição:</h4>
+                        <p>Armani Exchange é perfeito para quem busca sofisticação e estilo.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
             </div>
+
         </section>
 
         <section id="sec2">
+            
             <h3>Talvez te interesse</h3>
+            
             <div id="prateleira">
+                
                 <div class="card">
                     <a href="#">
-                        <img src="/public/images/produtos/imagem 5.svg" alt="">
+                        <img src="/images/produtos/imagem 5.svg" alt="">
                         <h2>Tech T-Shirt</h2>
                         <h3>R$ 320</h3>
                         <p>10x R$ 32,00 sem juros</p>
                     </a>
                         <a class="btn" href="#">comprar</a>
-                    
                 </div>
 
                 <div class="card">
                     <a href="#">
-                        <img src="/public/images/produtos/imagem 6.svg" alt="">
+                        <img src="/images/produtos/imagem 6.svg" alt="">
                         <h2>Tech T-Shirt</h2>
-                        <h3>R$ 320</h3>
-                        <p>10x R$ 32,00 sem juros</p>
-                        <a class="btn" href="#">comprar</a>
-                    </a>
-
-                </div>
-
-                <div class="card">
-                    <a href="#">
-                        <img src="/public/images/produtos/imagem 7.svg" alt="">
-                        <h2>Tech T-Shirt</h2>
-                        <h3>R$ 320</h3>
+                        <h3>R$ 320</h3>                            
                         <p>10x R$ 32,00 sem juros</p>
                         <a class="btn" href="#">comprar</a>
                     </a>
@@ -112,18 +112,27 @@
 
                 <div class="card">
                     <a href="#">
-                        <img src="/public/images/produtos/imagem 8.svg" alt="">
+                        <img src="/images/produtos/imagem 7.svg" alt="">
                         <h2>Tech T-Shirt</h2>
                         <h3>R$ 320</h3>
                         <p>10x R$ 32,00 sem juros</p>
                         <a class="btn" href="#">comprar</a>
                     </a>
                 </div>
-            </div>
-        </section>
-    </main>
-    <div class="espaco"></div>
-    
-    
+
+                <div class="card">
+                    <a href="#">
+                        <img src="/images/produtos/imagem 8.svg" alt="">
+                        <h2>Tech T-Shirt</h2>
+                        <h3>R$ 320</h3>
+                        <p>10x R$ 32,00 sem juros</p>
+                        <a class="btn" href="#">comprar</a>
+                    </a>
+                </div>
+            </section>
+        </main>
+        <div class="espaco"></div>
+        <%- include("./partials/footer") %>
 </body>
+
 </html>
