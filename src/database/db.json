@@ -1,0 +1,27 @@
+
+{
+    "produtos": [{
+        "id": 1,
+        "image1": "",
+        "image2": "",
+        "nome": "Tech T-Shirt",
+        "preco": 229,
+        "cor": "Preta",
+        "genero": "Homem",
+        "categoria": "T-shirts",
+        "tamanho": ["PP", "P", "M", "G", "GG"],
+        "estoque": true
+    },
+    {
+        "id": 2,
+        "image1": "",
+        "image2": "",
+        "nome": "T-Shirt Sportee",
+        "preco": 129,
+        "cor": "Branca",
+        "genero": "Homem",
+        "categoria": "T-shirts",
+        "tamanho": ["PP", "P", "M", "G", "GG"],
+        "estoque": true
+    }]
+}
