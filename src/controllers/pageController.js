@@ -1,3 +1,5 @@
+const Produto = require('../models/Produto');
+
 const pageController = {
     information: (req, res) => {
         res.render('information');
@@ -16,7 +18,11 @@ const pageController = {
     },
 
     department: (req, res) => {
-        res.render('department');
+        index: (req, res) => {
+            const produtos = Produto.findAll();
+            res.render('department');
+        }
+
     },
 
     account: (req, res) => {
@@ -47,7 +53,7 @@ const pageController = {
         res.render('home')
     },
 
-    carrinho: (req, res) =>{
+    carrinho: (req, res) => {
         res.render('carrinho')
     }
 }
