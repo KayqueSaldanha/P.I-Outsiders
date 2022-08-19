@@ -9,8 +9,7 @@
         "cor": "Preta",
         "genero": "Homem",
         "categoria": "T-shirts",
-        "tamanho": ["PP", "P", "M", "G", "GG"],
-        "estoque": true
+        "tamanhos": ["PP", "P", "M", "G", "GG"]
     },
     {
         "id": 2,
@@ -21,7 +20,11 @@
         "cor": "Branca",
         "genero": "Homem",
         "categoria": "T-shirts",
-        "tamanho": ["PP", "P", "M", "G", "GG"],
-        "estoque": true
+        "tamanhos": ["PP", "P", "M", "G", "GG"]
+    }],
+
+    "users": [{
+        
     }]
 }
+
