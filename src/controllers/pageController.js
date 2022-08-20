@@ -18,10 +18,10 @@ const pageController = {
     },
 
     department: (req, res) => {
-        index: (req, res) => {
-            const produtos = Produto.findAll();
+        // index: (req, res) => {
+        //     const produtos = Produto.findAll();
             res.render('department');
-        }
+        
 
     },
 
