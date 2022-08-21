@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+</head>
+<body>
+    <a href="/adm"> Voltar</a>
+    <h1>Formulario de cadastro de produtos:</h1>
+    <form 
+    method="POST"
+    action="/adm/"
+    enctype="multipart/form-data"
+    >
+        <label for="">Nome do produto:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="">Preço:</label><br>
+        <input type="text" id="preço" name="preco" required><br><br>
+
+        <label for="">Status:</label><br>
+        <input type="text" name="status"><br><br>
+        
+        <label for="">Imagens:</label><br>
+        <input type="file" name="imagem" id="imagem"><br><br>
+
+        <label for="">Volume em ml:</label><br>
+        <input type="text" name="volume" id="volume"><br><br>
+
+        <label for="">Material:</label><br>
+        <input type="text" name="material" id="material"><br><br>
+
+        <label for="">Cor:</label><br>
+        <input type="text"name='cor'  required id="cor"><br><br>
+
+        <label for="">Largura:</label><br>
+        <input type="text" id="largura" name="largura"><br><br>
+
+        <label for="">Garantia em meses:</label><br>
+        <input type="number" id="garantia" required name="garantia"><br><br>
+
+        <label for="">Tamanhos disponiveis:</label><br>
+        <input type="checkbox" name="tamanho" value="11"> 11 <br>
+        <input type="checkbox" name="tamanho" value="12"> 12 <br>
+        <input type="checkbox" name="tamanho" value="13"> 13 <br>
+        <input type="checkbox" name="tamanho" value="14"> 14 <br>
+        <input type="checkbox" name="tamanho" value="15"> 15 <br>
+        <input type="checkbox" name="tamanho" value="16"> 16  <br>
+        <input type="checkbox" name="tamanho" value="17"> 17  <br>
+        <input type="checkbox" name="tamanho" value="18"> 18 <br>
+        <input type="checkbox" name="tamanho" value="19"> 19  <br>
+        <input type="checkbox" name="tamanho" value="20"> 20 <br>
+        <input type="checkbox" name="tamanho" value="21"> 21  <br>
+        <input type="checkbox" name="tamanho" value="22"> 22 <br>
+
+
+
+        <br><br><label for="">Categorias:</label><br>
+        <input type="checkbox" id="tipo1" name="tipo" value="joias">
+        <label for="tipo1"> Joias</label><br>
+
+        <input type="checkbox" id="tipo2" name="tipo" value="casamento">
+        <label for="tipo2"> Casamento</label><br>
+
+        <input type="checkbox" id="tipo3" name="tipo" value="relogios">
+        <label for="tipo3"> Relogios</label><br>
+
+        <input type="checkbox" id="tipo4" name="tipo" value="acessorios">
+        <label for="tipo4"> Acessorios</label><br>
+
+        <input type="checkbox" id="tipo5" name="tipo" value="masculino">
+        <label for="tipo5"> Masculino</label><br><br>
+
+        <input type="submit" value="CADASTRAR">  
+
+    </form>
+</body>
+</html>
