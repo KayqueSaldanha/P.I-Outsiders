@@ -2,26 +2,60 @@
 {
     "produtos": [{
         "id": 1,
-        "image1": "",
+        "image1": "TechTShirt_Preta.jpg",
         "image2": "",
         "nome": "Tech T-Shirt",
         "preco": 229,
         "cor": "Preta",
-        "genero": "Homem",
+        "genero": "homem",
         "categoria": "T-shirts",
         "tamanhos": ["PP", "P", "M", "G", "GG"]
     },
     {
         "id": 2,
-        "image1": "",
+        "image1": "TshirtSport-Preto02.webp",
         "image2": "",
         "nome": "T-Shirt Sportee",
         "preco": 129,
         "cor": "Branca",
-        "genero": "Homem",
+        "genero": "homem",
         "categoria": "T-shirts",
         "tamanhos": ["PP", "P", "M", "G", "GG"]
-    }],
+    },
+    {
+        "id": 3,
+        "image1": "",
+        "image2": "",
+        "nome": "TESTE MULHER",
+        "preco": 129,
+        "cor": "Branca",
+        "genero": "mulher",
+        "categoria": "T-shirts",
+        "tamanhos": ["PP", "P", "M", "G", "GG"]
+    },
+    {
+        "id": 4,
+        "image1": "Oversized_T-Shirt.webp",
+        "image2": "",
+        "nome": "Oversized T-Shirt",
+        "preco": 249,
+        "cor": "Branca",
+        "genero": "homem",
+        "categoria": "T-shirts",
+        "tamanhos": ["PP", "P", "M", "G", "GG"]
+    },
+    {
+        "id": 5,
+        "image1": "Cueca_Performance.jpg",
+        "image2": "",
+        "nome": "Cueca Performance",
+        "preco": 129,
+        "cor": "Branca",
+        "genero": "homem",
+        "categoria": "T-shirts",
+        "tamanhos": ["PP", "P", "M", "G", "GG"]
+    }
+],
 
     "users": [{
         

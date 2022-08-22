@@ -33,7 +33,8 @@
                     </div> <!-- .bread__crumb-container -->
                 </div> <!-- .bread__crumb -->
                 <div class="box-banner">
-                    <a href="#"><img src="/images/department/img_homem.png" class="img-main"
+
+                    <a href="#"><img src="/images/department/<%= banner.background %>" class="img-main"
                             alt="Categoria Tech T-Shirt Homem"></a>
                 </div> <!-- .box-banner -->
             </section> <!-- .section bread -->
@@ -118,232 +119,41 @@
             <section id="shelf" class="max-width-content">
                 <div class="shelf__container">
                     <!-- shelf 1 -->
-                    <div class="shelf__product">
-                        <div class="shelf__img">
-                            <a href="#">
-                                <img src="/images/department/TechTShirt_Preta.jpg" class="img__shelf"
-                                    alt="Tech Tshirt Preta">
-                        </div> <!-- .shelf__img -->
-                        <div class="shelf__content">
-                            <h2 class="title">Daily T-Shirt</h2>
-                            <div class="shelf__price">
-                                <span class="price">R$ 320</span>
-                                <p class="shelf__installments">10x R$ 32,00 sem juros</p>
-                                </a>
-                            </div> <!-- .shelf__price -->
-                            <a href="/produtos" class="shelf__btn">Comprar</a>
-                        </div> <!-- .shelf__content -->
-                    </div> <!-- .shelf__product -->
+                    <% if (produtos && produtos.length> 0) { %>
+                        <% produtos.map( produtos=> { %>
+                            <div class="shelf__product">
+                                <div class="shelf__img">
+                                    <a href="#">
+                                        <img src="/images/produtos/<%= produtos.image1 %>" class="img__shelf"
+                                            alt="Tech Tshirt Preta">
+                                </div> <!-- .shelf__img -->
+                                <div class="shelf__content">
+                                    <h2 class="title">
+                                        <%= produtos.nome %>
+                                    </h2>
+                                    <div class="shelf__price">
+                                        <span class="price">
+                                            R$ <%= produtos.preco %>,00
+                                        </span>
+                                        <p class="shelf__installments">3x de R$ <%= produtos.preco/3 %> sem juros</p>
+                                        </a>
+                                    </div> <!-- .shelf__price -->
+                                    <a href="/produtos" class="shelf__btn">Comprar</a>
+                                </div> <!-- .shelf__content -->
+                            </div> <!-- .shelf__product -->
+                            <% }) %>
+                                <% } else { %>
+                                    <h2 class="h2_titulo texto_roboto">-- NÃO HÁ NENHUM PRODUTO CADASTRADO --</h2>
+                                    <% } %>
+                                        <div class="banner_principal">
+                                            <a href=""><img src="/images/department/base layer.jpg" alt="">
+                                                <span class="cta__banner">comprar agora</span>
+                                            </a>
+                                        </div> <!-- .banner_principal -->
 
-                    <!-- shelf 2 -->
-                    <div class="shelf__product">
-                        <div class="shelf__img">
-                            <a href="#">
-                                <img src="/images/department/TechTShirt_Preta.jpg" class="img__shelf"
-                                    alt="Tech Tshirt Preta">
-                        </div> <!-- .shelf__img -->
-                        <div class="shelf__content">
-                            <h2 class="title">Daily T-Shirt</h2>
-                            <div class="shelf__price">
-                                <span class="price">R$ 320</span>
-                                <p class="shelf__installments">10x R$ 32,00 sem juros</p>
-                                </a>
-                            </div> <!-- .shelf__price -->
-                            <a href="/produtos" class="shelf__btn">Comprar</a>
-                        </div> <!-- .shelf__content -->
-                    </div> <!-- .shelf__product -->
-
-                    <!-- shelf 3 -->
-                    <div class="shelf__product">
-                        <div class="shelf__img">
-                            <a href="#">
-                                <img src="/images/department/TechTShirt_Preta.jpg" class="img__shelf"
-                                    alt="Tech Tshirt Preta">
-                        </div> <!-- .shelf__img -->
-                        <div class="shelf__content">
-                            <h2 class="title">Daily T-Shirt</h2>
-                            <div class="shelf__price">
-                                <span class="price">R$ 320</span>
-                                <p class="shelf__installments">10x R$ 32,00 sem juros</p>
-                                </a>
-                            </div> <!-- .shelf__price -->
-                            <a href="/produtos" class="shelf__btn">Comprar</a>
-                        </div> <!-- .shelf__content -->
-                    </div> <!-- .shelf__product -->
-
-                    <!-- shelf 4 -->
-                    <div class="shelf__product">
-                        <div class="shelf__img">
-                            <a href="#">
-                                <img src="/images/department/TechTShirt_Preta.jpg" class="img__shelf"
-                                    alt="Tech Tshirt Preta">
-                        </div> <!-- .shelf__img -->
-                        <div class="shelf__content">
-                            <h2 class="title">Daily T-Shirt</h2>
-                            <div class="shelf__price">
-                                <span class="price">R$ 320</span>
-                                <p class="shelf__installments">10x R$ 32,00 sem juros</p>
-                                </a>
-                            </div> <!-- .shelf__price -->
-                            <a href="/produtos" class="shelf__btn">Comprar</a>
-                        </div> <!-- .shelf__content -->
-                    </div> <!-- .shelf__product -->
-
-                    <!-- shelf 5 -->
-                    <div class="shelf__product">
-                        <div class="shelf__img">
-                            <a href="#">
-                                <img src="/images/department/TechTShirt_Preta.jpg" class="img__shelf"
-                                    alt="Tech Tshirt Preta">
-                        </div> <!-- .shelf__img -->
-                        <div class="shelf__content">
-                            <h2 class="title">Daily T-Shirt</h2>
-                            <div class="shelf__price">
-                                <span class="price">R$ 320</span>
-                                <p class="shelf__installments">10x R$ 32,00 sem juros</p>
-                                </a>
-                            </div> <!-- .shelf__price -->
-                            <a href="/produtos" class="shelf__btn">Comprar</a>
-                        </div> <!-- .shelf__content -->
-                    </div> <!-- .shelf__product -->
-
-                    <!-- shelf 6 -->
-                    <div class="shelf__product">
-                        <div class="shelf__img">
-                            <a href="#">
-                                <img src="/images/department/TechTShirt_Preta.jpg" class="img__shelf"
-                                    alt="Tech Tshirt Preta">
-                        </div> <!-- .shelf__img -->
-                        <div class="shelf__content">
-                            <h2 class="title">Daily T-Shirt</h2>
-                            <div class="shelf__price">
-                                <span class="price">R$ 320</span>
-                                <p class="shelf__installments">10x R$ 32,00 sem juros</p>
-                                </a>
-                            </div> <!-- .shelf__price -->
-                            <a href="/produtos" class="shelf__btn">Comprar</a>
-                        </div> <!-- .shelf__content -->
-                    </div> <!-- .shelf__product -->
-
-                    <!-- shelf 7 -->
-                    <div class="shelf__product">
-                        <div class="shelf__img">
-                            <a href="#">
-                                <img src="/images/department/TechTShirt_Preta.jpg" class="img__shelf"
-                                    alt="Tech Tshirt Preta">
-                        </div> <!-- .shelf__img -->
-                        <div class="shelf__content">
-                            <h2 class="title">Daily T-Shirt</h2>
-                            <div class="shelf__price">
-                                <span class="price">R$ 320</span>
-                                <p class="shelf__installments">10x R$ 32,00 sem juros</p>
-                                </a>
-                            </div> <!-- .shelf__price -->
-                            <a href="/produtos" class="shelf__btn">Comprar</a>
-                        </div> <!-- .shelf__content -->
-                    </div> <!-- .shelf__product -->
-
-                    <!-- shelf 8 -->
-                    <div class="shelf__product">
-                        <div class="shelf__img">
-                            <a href="#">
-                                <img src="/images/department/TechTShirt_Preta.jpg" class="img__shelf"
-                                    alt="Tech Tshirt Preta">
-                        </div> <!-- .shelf__img -->
-                        <div class="shelf__content">
-                            <h2 class="title">Daily T-Shirt</h2>
-                            <div class="shelf__price">
-                                <span class="price">R$ 320</span>
-                                <p class="shelf__installments">10x R$ 32,00 sem juros</p>
-                                </a>
-                            </div> <!-- .shelf__price -->
-                            <a href="/produtos" class="shelf__btn">Comprar</a>
-                        </div> <!-- .shelf__content -->
-                    </div> <!-- .shelf__product -->
-
-                    <!-- shelf 9 -->
-                    <div class="shelf__product">
-                        <div class="shelf__img">
-                            <a href="#">
-                                <img src="/images/department/TechTShirt_Preta.jpg" class="img__shelf"
-                                    alt="Tech Tshirt Preta">
-                        </div> <!-- .shelf__img -->
-                        <div class="shelf__content">
-                            <h2 class="title">Daily T-Shirt</h2>
-                            <div class="shelf__price">
-                                <span class="price">R$ 320</span>
-                                <p class="shelf__installments">10x R$ 32,00 sem juros</p>
-                                </a>
-                            </div> <!-- .shelf__price -->
-                            <a href="/produtos" class="shelf__btn">Comprar</a>
-                        </div> <!-- .shelf__content -->
-                    </div> <!-- .shelf__product -->
-
-                    <!-- shelf 10 -->
-                    <div class="shelf__product">
-                        <div class="shelf__img">
-                            <a href="#">
-                                <img src="/images/department/TechTShirt_Preta.jpg" class="img__shelf"
-                                    alt="Tech Tshirt Preta">
-                        </div> <!-- .shelf__img -->
-                        <div class="shelf__content">
-                            <h2 class="title">Daily T-Shirt</h2>
-                            <div class="shelf__price">
-                                <span class="price">R$ 320</span>
-                                <p class="shelf__installments">10x R$ 32,00 sem juros</p>
-                                </a>
-                            </div> <!-- .shelf__price -->
-                            <a href="/produtos" class="shelf__btn">Comprar</a>
-                        </div> <!-- .shelf__content -->
-                    </div> <!-- .shelf__product -->
-
-                    <!-- shelf 11 -->
-                    <div class="shelf__product">
-                        <div class="shelf__img">
-                            <a href="#">
-                                <img src="/images/department/TechTShirt_Preta.jpg" class="img__shelf"
-                                    alt="Tech Tshirt Preta">
-                        </div> <!-- .shelf__img -->
-                        <div class="shelf__content">
-                            <h2 class="title">Daily T-Shirt</h2>
-                            <div class="shelf__price">
-                                <span class="price">R$ 320</span>
-                                <p class="shelf__installments">10x R$ 32,00 sem juros</p>
-                                </a>
-                            </div> <!-- .shelf__price -->
-                            <a href="/produtos" class="shelf__btn">Comprar</a>
-                        </div> <!-- .shelf__content -->
-                    </div> <!-- .shelf__product -->
-
-                    <!-- shelf 12 -->
-                    <div class="shelf__product">
-                        <div class="shelf__img">
-                            <a href="#">
-                                <img src="/images/department/TechTShirt_Preta.jpg" class="img__shelf"
-                                    alt="Tech Tshirt Preta">
-                        </div> <!-- .shelf__img -->
-                        <div class="shelf__content">
-                            <h2 class="title">Daily T-Shirt</h2>
-                            <div class="shelf__price">
-                                <span class="price">R$ 320</span>
-                                <p class="shelf__installments">10x R$ 32,00 sem juros</p>
-                                </a>
-                            </div> <!-- .shelf__price -->
-                            <a href="/produtos" class="shelf__btn">Comprar</a>
-                        </div> <!-- .shelf__content -->
-                    </div> <!-- .shelf__product -->
-                </div> <!-- .shelf__container -->
-            </section> <!-- .shelf -->
-
-
-            <div class="banner_principal">
-                <a href=""><img src="/images/department/base layer.jpg" alt="">
-                    <span class="cta__banner">comprar agora</span>
-                </a>
-            </div> <!-- .banner_principal -->
-
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-            <script src="/javascripts/department/department.js"></script>
+                                        <script
+                                            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                                        <script src="/javascripts/department/department.js"></script>
         </main> <!-- .main -->
         <%- include("./partials/footer") %>
 </body> <!-- .body -->

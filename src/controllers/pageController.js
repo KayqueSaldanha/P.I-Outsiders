@@ -1,4 +1,5 @@
 const Produto = require('../models/Produto');
+const { createMenuObject } = require('../../helpers/createMenuObject')
 
 const pageController = {
     information: (req, res) => {
@@ -17,12 +18,26 @@ const pageController = {
         res.render('confirmation');
     },
 
-    department: (req, res) => {
-        // index: (req, res) => {
-        //     const produtos = Produto.findAll();
-            res.render('department');
-        
+    homem: (req, res) => {
+        const produtos = Produto.findByGenero('homem')
+        res.render('department', {
+            menu: createMenuObject('homem'),
+            banner: {
+                background: 'img_homem.png'
+            },
+            produtos
+        })
+    },
 
+    mulher: (req, res) => {
+        const produtos = Produto.findByGenero('mulher')
+        res.render('department', {
+            menu: createMenuObject('mulher'),
+            banner: {
+                background: 'img_mulher.png'
+            }
+            , produtos
+        })
     },
 
     account: (req, res) => {
