@@ -53,7 +53,9 @@ const pageController = {
     },
 
     produtos: (req, res) => {
-        res.render('produtos', { menu: createMenuObject('false') });
+        res.render('produtos', {
+                menu: createMenuObject('false')
+            });
     },
 
     login: (req, res) => {
