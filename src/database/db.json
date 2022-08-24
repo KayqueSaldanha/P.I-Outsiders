@@ -9,7 +9,8 @@
         "cor": "Preta",
         "genero": "homem",
         "categoria": "T-shirts",
-        "tamanhos": ["PP", "P", "M", "G", "GG"]
+        "tamanhos": ["PP", "P", "M", "G", "GG"],
+        "status" : ""
     },
     {
         "id": 2,
@@ -20,18 +21,20 @@
         "cor": "Branca",
         "genero": "homem",
         "categoria": "T-shirts",
-        "tamanhos": ["PP", "P", "M", "G", "GG"]
+        "tamanhos": ["PP", "P", "M", "G", "GG"],
+        "status" : ""
     },
     {
         "id": 3,
-        "image1": "",
+        "image1": "img5 - Mulher Roupa Esporte.png",
         "image2": "",
         "nome": "TESTE MULHER",
         "preco": 129,
         "cor": "Branca",
         "genero": "mulher",
         "categoria": "T-shirts",
-        "tamanhos": ["PP", "P", "M", "G", "GG"]
+        "tamanhos": ["PP", "P", "M", "G", "GG"],
+        "status" : "esporte"
     },
     {
         "id": 4,
@@ -42,7 +45,8 @@
         "cor": "Branca",
         "genero": "homem",
         "categoria": "T-shirts",
-        "tamanhos": ["PP", "P", "M", "G", "GG"]
+        "tamanhos": ["PP", "P", "M", "G", "GG"],
+        "status" : ""
     },
     {
         "id": 5,
@@ -53,7 +57,20 @@
         "cor": "Branca",
         "genero": "homem",
         "categoria": "T-shirts",
-        "tamanhos": ["PP", "P", "M", "G", "GG"]
+        "tamanhos": ["PP", "P", "M", "G", "GG"],
+        "status" : ""
+    },
+    {
+        "id": 6,
+        "image1": "img4 - Mulher Blusa Clara.png",
+        "image2": "",
+        "nome": "TESTE MULHER",
+        "preco": 129,
+        "cor": "Branca",
+        "genero": "mulher",
+        "categoria": "T-shirts",
+        "tamanhos": ["PP", "P", "M", "G", "GG"],
+        "status" : "esporte"
     }
 ],
 

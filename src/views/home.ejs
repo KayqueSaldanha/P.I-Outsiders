@@ -54,29 +54,31 @@
           </div>
             <div> 
                 <div id="card-master">
+                  <% if(homens){ %> 
                   <div class="card1" >
                     <a href="/produtos" class="shelf_body">
-                    <img src="/images/home/img2 - Camiseta Preta.png" class="card-img-top" alt="...">
+                    <img src="/images/produtos/<%= homens[0].image1 %>" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <p class="title">Tech T-Shirt</p>
-                      <p class="preço">R$ 320</p>
-                      <p class="shelf__p">10x R$ 32,00 sem juros</p>
+                      <p class="title"><%= homens[0].nome %></p>
+                      <p class="preço">R$<%= homens[0].preco %>,00</p>
+                      <p class="shelf__p">10x R$ <%= Math.round(homens[0].preco /3) %>,00 sem juros</p>
                     </div>
                     </a>
                     <a href="/produtos" class="shelf__btn">Comprar</a>
                   </div>
                   <div  class="card1" >
                     <a href="/produtos" class="shelf_body">
-                    <img src="/images/home/img2 - Camiseta Preta.png" class="card-img-top" alt="...">
+                    <img src="/images/produtos/<%= homens[1].image1 %>" class="card-img-top" alt="...">
                     <div class="card-body">
-                      <p class="title">Tech T-Shirt</p>
-                      <p class="preço">R$ 320</p>
-                      <p class="shelf__p">10x R$ 32,00 sem juros</p>
+                      <p class="title"><%= homens[1].nome %></p>
+                      <p class="preço">R$<%= homens[1].preco %>,00</p>
+                      <p class="shelf__p">10x R$ <%= Math.round(homens[1].preco /3) %>,00 sem juros</p>
                     </div>
                     </a>
                     <a href="/produtos" class="shelf__btn">Comprar</a>
                   </div>
-            </div>
+                  <% } %> 
+                </div>
         </div>
     </section>
     <section class="sec3">
@@ -150,13 +152,25 @@
           <h2>ESPORTE</h2>
         </div>
         <div id="cardsImag" class="disp-flex justify-space-between">
+          <% if(esporte){ %> 
           <div  class="card1" >
             <a href="/produtos" class="shelf_body">
-            <img src="/images/home/img5 - Mulher Roupa Esporte.png" class="card-img-top" alt="...">
+            <img src="/images/produtos/<%= esporte[0].image1 %>" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="title">Tech T-Shirt</p>
-              <p class="preço">R$ 320</p>
-              <p class="shelf__p">10x R$ 32,00 sem juros</p>
+              <p class="title"><%= esporte[0].nome %></p>
+              <p class="preço">R$<%= esporte[0].preco %>,00</p>
+              <p class="shelf__p">10x R$ <%= Math.round(esporte[0].preco /3) %>,00 sem juros</p>
+            </div>
+            </a>
+            <a href="/produtos" class="shelf__btn">Comprar</a>
+          </div>
+          <div  class="card1" >
+            <a href="/produtos" class="shelf_body">
+            <img src="/images/produtos/<%= esporte[1].image1 %>" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="title"><%= esporte[1].nome %></p>
+              <p class="preço">R$<%= esporte[1].preco %>,00</p>
+              <p class="shelf__p">10x R$ <%= Math.round(esporte[1].preco /3) %>,00 sem juros</p>
             </div>
             </a>
             <a href="/produtos" class="shelf__btn">Comprar</a>
@@ -183,17 +197,7 @@
             </a>
             <a href="/produtos" class="shelf__btn">Comprar</a>
           </div>
-          <div  class="card1" >
-            <a href="/produtos" class="shelf_body">
-            <img src="/images/home/img5 - Mulher Roupa Esporte.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="title">Tech T-Shirt</p>
-              <p class="preço">R$ 320</p>
-              <p class="shelf__p">10x R$ 32,00 sem juros</p>
-            </div>
-            </a>
-            <a href="/produtos" class="shelf__btn">Comprar</a>
-          </div>
+          <% } %>
         </div>
       </div>
     </div>

@@ -53,7 +53,9 @@ const pageController = {
     },
 
     produtos: (req, res) => {
-        res.render('produtos');
+        res.render('produtos', {
+            menu: createMenuObject('false'),
+        })
     },
 
     login: (req, res) => {
@@ -65,7 +67,14 @@ const pageController = {
     },
 
     home: (req, res) => {
-        res.render('home')
+        const esporte = Produto.findByStatus('esporte')
+        const homens = Produto.findByGenero('homem')
+        res.render('home', {
+            menu: createMenuObject('false'),
+            homens,
+            esporte
+        }) 
+        
     },
 
     carrinho: (req, res) => {

@@ -25,7 +25,18 @@ const Produto = {
     findById: (id) => {
         const produto = db.produtos.find(produto => produto.id === id);
         return produto;
+    },
+
+    findByStatus: (status) => {
+        return db.produtos.filter(produto =>{
+            if(produto.status == status){
+                return true
+            } else{
+                false
+            }
+        })
     }
 }
+
 
 module.exports = Produto;
