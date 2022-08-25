@@ -53,7 +53,9 @@ const pageController = {
     },
 
     produtos: (req, res) => {
-        res.render('produtos');
+        res.render('produtos', {
+            menu: createMenuObject('false')
+        });
     },
 
     login: (req, res) => {
@@ -65,7 +67,9 @@ const pageController = {
     },
 
     home: (req, res) => {
-        res.render('home')
+        res.render('home', {
+            menu: createMenuObject('false')
+        });
     },
 
     carrinho: (req, res) => {
