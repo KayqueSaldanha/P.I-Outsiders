@@ -75,7 +75,14 @@
 ],
 
     "users": [{
-        
+        "id": 1,
+        "nome": "Leandro",
+        "sobrenome": "Furtado",
+        "email": "le_furtado@outlook.com.br",
+        "senha": "123456",
+        "dataDeNascimento": "22/04/1993",
+        "CPF": "123.456.789-12",
+        "telefone": "(11)00000-0000"
     }]
 }
 
