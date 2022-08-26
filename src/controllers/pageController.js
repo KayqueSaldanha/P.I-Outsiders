@@ -58,6 +58,17 @@ const pageController = {
         });
     },
 
+    mostrarProduto: (req, res) => {
+        const {id} = req.params
+        console.log(id)
+        const produto = Produto.findById(id)
+        console.log(produto)
+        res.render('produtos', {
+            menu: createMenuObject('false'),
+            produto})
+        
+    },
+
     login: (req, res) => {
         res.render('login');
     },

@@ -3,7 +3,8 @@
         {
             "id": 1,
             "image1": "TechTShirt_Preta.jpg",
-            "image2": "",
+            "image2": "TechTShirt_Preta.jpg",
+            "image3": "TechTShirt_Preta.jpg",
             "nome": "Tech T-Shirt",
             "preco": 229,
             "cor": "Preta",

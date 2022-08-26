@@ -14,7 +14,7 @@ router.get('/compra-confirmada', pageController.compra_confirmada)
 router.get('/homem', pageController.homem)
 router.get('/mulher', pageController.mulher)
 router.get('/produtos', pageController.produtos)
-
+router.get('/produtos/:id', pageController.mostrarProduto)
 
 // router.get('/search', searchController.search)
 
