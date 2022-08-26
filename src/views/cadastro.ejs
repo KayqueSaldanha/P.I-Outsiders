@@ -14,14 +14,14 @@
     
     <main>
 
-        <%- include("./partials/header") %>
+        
 
         <section>
             <div><h1>Registrar</h1></div>    
 
             <p id="p1">Preencha as informações abaixo:</p>
 
-            <form action="" method="post">
+            <form action="/users/cadastro" method="post">
                             
                 
                 <div>
@@ -37,7 +37,7 @@
                 </div>
 
                 <div>
-                    <input class="campo" name="emailconf" type="email" placeholder="confirmar email" id="email2" required>
+                    <input class="campo" type="email" placeholder="confirmar email" id="email2" required>
                 </div>
 
                 <div>
@@ -45,11 +45,11 @@
                 </div>
                 
                 <div>
-                    <input class="campo" name="passswordconf" type="password" placeholder="confirmar senha" id="password2" required>
+                    <input class="campo" type="password" placeholder="confirmar senha" id="password2" required>
                 </div>
 
                 <div>
-                    <button id="entrar"> <a href="/"> cadastrar </a></button>
+                    <button id="entrar">cadastrar</button>
                 </div>
 
             </form>
