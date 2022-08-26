@@ -6,6 +6,7 @@ let db = require('../database/db.json');
 
 // Variavel auxiliar para salvar os dados no arquivo json
 // Função writeToDB pega os dados que estão na memoria e transforma em json
+// função necessária para cadastro de:
 const writeToDB = () => {
  const json = JSON.stringify(db);
  fs.writeFileSync('src/database/db.json', json);
@@ -23,8 +24,7 @@ const Produto = {
     },
 
     findById: (id) => {
-        const produto = db.produtos.find(produto => produto.id === id);
-        return produto;
+        return db.produtos.find(produto => produto.id == id);
     },
 
     findByStatus: (status) => {
