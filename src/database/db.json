@@ -1,88 +1,121 @@
-
 {
-    "produtos": [{
-        "id": 1,
-        "image1": "TechTShirt_Preta.jpg",
-        "image2": "",
-        "nome": "Tech T-Shirt",
-        "preco": 229,
-        "cor": "Preta",
-        "genero": "homem",
-        "categoria": "T-shirts",
-        "tamanhos": ["PP", "P", "M", "G", "GG"],
-        "status" : ""
-    },
-    {
-        "id": 2,
-        "image1": "TshirtSport-Preto02.webp",
-        "image2": "",
-        "nome": "T-Shirt Sportee",
-        "preco": 129,
-        "cor": "Branca",
-        "genero": "homem",
-        "categoria": "T-shirts",
-        "tamanhos": ["PP", "P", "M", "G", "GG"],
-        "status" : ""
-    },
-    {
-        "id": 3,
-        "image1": "img5 - Mulher Roupa Esporte.png",
-        "image2": "",
-        "nome": "TESTE MULHER",
-        "preco": 129,
-        "cor": "Branca",
-        "genero": "mulher",
-        "categoria": "T-shirts",
-        "tamanhos": ["PP", "P", "M", "G", "GG"],
-        "status" : "esporte"
-    },
-    {
-        "id": 4,
-        "image1": "Oversized_T-Shirt.webp",
-        "image2": "",
-        "nome": "Oversized T-Shirt",
-        "preco": 249,
-        "cor": "Branca",
-        "genero": "homem",
-        "categoria": "T-shirts",
-        "tamanhos": ["PP", "P", "M", "G", "GG"],
-        "status" : ""
-    },
-    {
-        "id": 5,
-        "image1": "Cueca_Performance.jpg",
-        "image2": "",
-        "nome": "Cueca Performance",
-        "preco": 129,
-        "cor": "Branca",
-        "genero": "homem",
-        "categoria": "T-shirts",
-        "tamanhos": ["PP", "P", "M", "G", "GG"],
-        "status" : ""
-    },
-    {
-        "id": 6,
-        "image1": "img4 - Mulher Blusa Clara.png",
-        "image2": "",
-        "nome": "TESTE MULHER",
-        "preco": 129,
-        "cor": "Branca",
-        "genero": "mulher",
-        "categoria": "T-shirts",
-        "tamanhos": ["PP", "P", "M", "G", "GG"],
-        "status" : "esporte"
-    }
-],
-
-    "users": [{
-        "id": 1,
-        "nome": "Leandro",
-        "sobrenome": "Furtado",
-        "email": "le_furtado@outlook.com.br",
-        "senha": "123456",
-        "dataDeNascimento": "22/04/1993",
-        "CPF": "123.456.789-12",
-        "telefone": "(11)00000-0000"
-    }]
+    "produtos": [
+        {
+            "id": 1,
+            "image1": "TechTShirt_Preta.jpg",
+            "image2": "",
+            "nome": "Tech T-Shirt",
+            "preco": 229,
+            "cor": "Preta",
+            "genero": "homem",
+            "categoria": "T-shirts",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": ""
+        },
+        {
+            "id": 2,
+            "image1": "TshirtSport-Preto02.webp",
+            "image2": "",
+            "nome": "T-Shirt Sportee",
+            "preco": 129,
+            "cor": "Branca",
+            "genero": "homem",
+            "categoria": "T-shirts",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": ""
+        },
+        {
+            "id": 3,
+            "image1": "img5 - Mulher Roupa Esporte.png",
+            "image2": "",
+            "nome": "TESTE MULHER",
+            "preco": 129,
+            "cor": "Branca",
+            "genero": "mulher",
+            "categoria": "T-shirts",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "esporte"
+        },
+        {
+            "id": 4,
+            "image1": "Oversized_T-Shirt.webp",
+            "image2": "",
+            "nome": "Oversized T-Shirt",
+            "preco": 249,
+            "cor": "Branca",
+            "genero": "homem",
+            "categoria": "T-shirts",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": ""
+        },
+        {
+            "id": 5,
+            "image1": "Cueca_Performance.jpg",
+            "image2": "",
+            "nome": "Cueca Performance",
+            "preco": 129,
+            "cor": "Branca",
+            "genero": "homem",
+            "categoria": "T-shirts",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": ""
+        },
+        {
+            "id": 6,
+            "image1": "img4 - Mulher Blusa Clara.png",
+            "image2": "",
+            "nome": "TESTE MULHER",
+            "preco": 129,
+            "cor": "Branca",
+            "genero": "mulher",
+            "categoria": "T-shirts",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "esporte"
+        }
+    ],
+    "users": [
+        {
+            "id": "caa95bcb-018d-440b-8752-21a2db1e8296",
+            "nome": "João",
+            "sobrenome": "Battezini",
+            "email": "teste@teste.com",
+            "password": "123456"
+        }
+    ]
 }
-

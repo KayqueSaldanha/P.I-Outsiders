@@ -13,11 +13,6 @@ router.get('/metodo-de-pagamento', pageController.metodo_de_pagamento)
 router.get('/compra-confirmada', pageController.compra_confirmada)
 router.get('/homem', pageController.homem)
 router.get('/mulher', pageController.mulher)
-router.get('/cadastro', pageController.cadastro)
-router.get('/account', pageController.account)
-router.get('/account_edit', pageController.account_edit)
-router.get('/account_request', pageController.account_request)
-router.get('/login', pageController.login)
 router.get('/produtos', pageController.produtos)
 
 
