@@ -59,14 +59,15 @@ const pageController = {
     },
 
     mostrarProduto: (req, res) => {
-        const {id} = req.params
+        const { id } = req.params
         console.log(id)
         const produto = Produto.findById(id)
         console.log(produto)
         res.render('produtos', {
             menu: createMenuObject('false'),
-            produto})
-        
+            produto
+        })
+
     },
 
     login: (req, res) => {
@@ -78,9 +79,15 @@ const pageController = {
     },
 
     home: (req, res) => {
+        const esporte = Produto.findByStatus('esporte')
+        const homens = Produto.findByGenero('homem')
         res.render('home', {
-            menu: createMenuObject('false')
-        });
+            menu: createMenuObject('false'),
+            homens,
+            esporte
+        })
+
+        res.render('home')
     },
 
     carrinho: (req, res) => {
