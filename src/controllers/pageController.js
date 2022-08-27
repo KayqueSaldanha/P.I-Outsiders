@@ -54,8 +54,9 @@ const pageController = {
 
     produtos: (req, res) => {
         res.render('produtos', {
-            menu: createMenuObject('false')
-        });
+            menu: createMenuObject('false'),
+        })
+        res.render('produtos');
     },
 
     mostrarProduto: (req, res) => {
