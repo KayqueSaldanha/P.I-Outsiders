@@ -118,5 +118,56 @@
             "email": "teste@teste.com",
             "password": "123456"
         }
+    ],
+    "compras": [
+        {
+            "id": 1,
+            "userid": "caa95bcb-018d-440b-8752-21a2db1e8296",
+            "enderecoId": 278631283512367,
+            "numeroParcela": 3,
+            "cartaoId": 12345,
+            "boleto": "boletoteste.pdf",
+            "pix": "pixteste.png",
+            "metodoDePagamento": "cartao",
+            "status": "aguardando pagamento",
+            "itens": [
+                {
+                    "quantidade": 1,
+                    "nome": "TESTE MULHER",
+                    "preco": 129,
+                    "cor": "Preta",
+                    "tamanho": "P",
+                    "image1": "img4 - Mulher Blusa Clara.png"
+                }
+            ],
+            "frete": {
+                "nomeEmpresa": "Loggi",
+                "prazo": "4 dias úteis",
+                "valor": 9.90
+            }
+        }
+    ],
+    "endereco": [
+        {
+            "id": 278631283512367,
+            "userid": "caa95bcb-018d-440b-8752-21a2db1e8296",
+            "cep": "12345-450",
+            "cidade": "santo andré",
+            "rua": "rua exemplo",
+            "bairro": "bairro exemplo",
+            "complemento": "ap 2",
+            "estado": "São Paulo - SP"
+        }
+    ],
+    "cartoes": [
+        {
+            "id": 12345,
+            "userid": "caa95bcb-018d-440b-8752-21a2db1e8296",
+            "numeroDoCartao": "2222.2222.2222.2222",
+            "validade": "10/29",
+            "CVV": 123,
+            "nomeImpresso": "Leandro Furtado",
+            "CPF": "123.123.123-12"
+        }
     ]
 }
