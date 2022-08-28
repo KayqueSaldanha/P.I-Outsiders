@@ -134,7 +134,10 @@
             "nome": "João",
             "sobrenome": "Battezini",
             "email": "teste@teste.com",
-            "password": "123456"
+            "password": "123456",
+            "cpf": null,
+            "nascimento": null,
+            "telefone": null
         }
     ],
     "compras": [
