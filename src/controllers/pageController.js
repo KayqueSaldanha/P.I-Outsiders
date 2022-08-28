@@ -23,7 +23,7 @@ const pageController = {
         res.render('department', {
             menu: createMenuObject('homem'),
             banner: {
-                background: 'img_homem.png'
+                background: 'departamento_homem.png'
             },
             produtos
         });
@@ -34,7 +34,7 @@ const pageController = {
         res.render('department', {
             menu: createMenuObject('mulher'),
             banner: {
-                background: 'img_mulher.png'
+                background: 'departamento_mulher.jpg'
             }
             , produtos
         });

@@ -93,6 +93,76 @@
         },
         {
             "id": 6,
+            "image1": "img-homem-Cueca-Comfort.webp",
+            "image2": "",
+            "nome": "Cueca Comfort",
+            "preco": 69,
+            "cor": "Branca",
+            "genero": "homem",
+            "categoria": "",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "interesses",
+            "descricao": "Criamos a Cueca Comfort para oferecer mais conforto ao seu dia a dia."
+        },
+        {
+            "id": 7,
+            "image1": "img-homem-Urban-Cap.webp",
+            "image2": "",
+            "nome": "Urban Cap",
+            "preco": 159,
+            "cor": "Branca",
+            "genero": "homem",
+            "categoria": "",
+            "tamanhos": "",
+            "status": "",
+            "descricao": "O primeiro boné Insider é versátil e ultra funcional, resistente à água e com aba flexível."
+        },
+        {
+            "id": 8,
+            "image1": "img-homem-Spectrum-Socks-High.webp",
+            "image2": "",
+            "nome": "Spectrum Socks High",
+            "preco": 80,
+            "cor": "Branca",
+            "genero": "homem",
+            "categoria": "T-shirts",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "",
+            "descricao": "SPECTRUM é a evolução tecnológica das meias. Além de ser respirável, anti-odor e com rápida evaporação de suor, tem a tecnologia Infrared, que transforma calor corporal em radiação infravermelha para melhorar seu conforto e bem estar."
+        },
+        {
+            "id": 9,
+            "image1": "img-homem-Heavy-Hoodie.webp",
+            "image2": "",
+            "nome": "Heavy Hoodie",
+            "preco": 449,
+            "cor": "Branca",
+            "genero": "homem",
+            "categoria": "",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "interesses",
+            "descricao": "Ultra confortável para ser seu agasalho preferido do dia-a-dia, te acompanha em todas as ocasiões."
+        },
+        {
+            "id": 10,
             "image1": "img-mulher-esporte-T-shirt.webp",
             "image2": "",
             "nome": "T-shirt Feminina",
@@ -110,7 +180,7 @@
             "status": "esporte"
         },
         {
-            "id": 7,
+            "id": 11,
             "image1": "img-mulher-esporte.webp",
             "image2": "",
             "nome": "Easy Legging",
@@ -128,7 +198,7 @@
             "status": "esporte"
         },
         {
-            "id": 8,
+            "id": 12,
             "image1": "imagem 5.svg",
             "image2": "",
             "nome": "T-Shirt Male",

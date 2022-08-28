@@ -26,6 +26,7 @@
 /* FILTERS */
 .filters>ul {
     display: flex;
+    align-items: center;
 }
 
 .filters>ul>li>span {
