@@ -135,7 +135,9 @@
                                         <span class="price">
                                             R$ <%= produtos.preco %>,00
                                         </span>
-                                        <p class="shelf__installments">3x de R$ <%= produtos.preco/3 %> sem juros</p>
+                                        <p class="shelf__installments">3x de R$ <%= Math.round(produtos.preco /3) %>,00
+                                                sem
+                                                juros</p>
                                         </a>
                                     </div> <!-- .shelf__price -->
                                     <a href="/produtos" class="shelf__btn">Comprar</a>

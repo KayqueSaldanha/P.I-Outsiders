@@ -1,5 +1,6 @@
 const { create } = require('domain');
 const User = require('../models/Users');
+const { createMenuObject } = require('../../helpers/createMenuObject');
 
 const userController = {
 
@@ -11,23 +12,23 @@ const userController = {
     },
 
     formularioCadastro: (req, res) => {
-        res.render('cadastro');
+        res.render('cadastro', { menu: createMenuObject('false') });
     },
 
     login: (req, res) => {
-
+        res.render('login', { menu: createMenuObject('false') });
     },
 
     account: (req, res) => {
-
+        res.render('account')
     },
 
     accountEdit: (req, res) => {
-
+        res.render('account_edit')
     },
 
     accountRequest: (req, res) => {
-
+        res.render('account_request')
     },
 
     index: (req, res) => {

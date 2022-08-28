@@ -26,7 +26,7 @@ const pageController = {
                 background: 'img_homem.png'
             },
             produtos
-        })
+        });
     },
 
     mulher: (req, res) => {
@@ -37,7 +37,7 @@ const pageController = {
                 background: 'img_mulher.png'
             }
             , produtos
-        })
+        });
     },
 
     account: (req, res) => {
@@ -67,7 +67,7 @@ const pageController = {
         res.render('produtos', {
             menu: createMenuObject('false'),
             produto
-        })
+        });
 
     },
 
@@ -86,13 +86,15 @@ const pageController = {
             menu: createMenuObject('false'),
             homens,
             esporte
-        })
+        });
 
         res.render('home')
     },
 
     carrinho: (req, res) => {
-        res.render('carrinho')
+        res.render('carrinho', {
+            menu: createMenuObject('false')
+        });
     }
 }
 
