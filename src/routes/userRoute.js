@@ -3,12 +3,6 @@ const router = express.Router();
 
 const userController = require('../controllers/userController');
 
-//formulario de registro
-router.get('/cadastro', userController.formularioCadastro);
-
-//rota de cadastro de usuario
-router.post('/cadastro', userController.cadastro);
-
 //formulário de login
 router.get('/login', userController.login);
 

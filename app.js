@@ -7,6 +7,8 @@ const session = require('express-session');
 
 const indexRouter = require('./src/routes/index');
 const userRoute = require('./src/routes/userRoute');
+const publicRoute = require('./src/routes/publicRoute');
+const privateRoute = require('./src/routes/privateRoute');
 
 const app = express();
 
@@ -26,7 +28,8 @@ app.use(session({
 }));
 
 app.use('/', indexRouter);
-app.use('/users', userRoute);
+app.use('/users', publicRoute);
+app.use('/arealogada', privateRoute);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
