@@ -7,12 +7,11 @@
     <title>Header</title>
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <link rel="stylesheet" href="/stylesheets/theme.css">
     <link rel="stylesheet" href="/stylesheets/reset.css">
     <link rel="stylesheet" href="/stylesheets/home.css">
+    <link rel="stylesheet" href="/stylesheets/theme.css">
 </head>
 <body>
-
   <%- include("./partials/header") %>
 
     <section class="sec1">
@@ -177,11 +176,11 @@
           </div>
           <div  class="card1" >
             <a href="/produtos" class="shelf_body">
-            <img src="/images/home/img5 - Mulher Roupa Esporte.png" class="card-img-top" alt="...">
+            <img src="/images/produtos/<%= esporte[2].image1 %>" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="title">Tech T-Shirt</p>
-              <p class="preço">R$ 320</p>
-              <p class="shelf__p">10x R$ 32,00 sem juros</p>
+              <p class="title"><%= esporte[2].nome %></p>
+              <p class="preço">R$<%= esporte[2].preco %>,00</p>
+              <p class="shelf__p">10x R$ <%= Math.round(esporte[2].preco /3) %>,00 sem juros</p>
             </div>
             </a>
             <a href="/produtos" class="shelf__btn">Comprar</a>

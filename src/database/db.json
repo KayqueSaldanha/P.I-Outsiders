@@ -108,6 +108,24 @@
                 "GG"
             ],
             "status": "esporte"
+        },
+        {
+            "id": 7,
+            "image1": "img-mulher-esporte.webp",
+            "image2": "",
+            "nome": "Easy Legging",
+            "preco": 270,
+            "cor": "Marrom",
+            "genero": "mulher",
+            "categoria": "Calça",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "esporte"
         }
     ],
     "users": [
