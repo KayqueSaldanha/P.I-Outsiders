@@ -218,14 +218,18 @@
     ],
     "users": [
         {
-            "id": "caa95bcb-018d-440b-8752-21a2db1e8296",
-            "nome": "João",
-            "sobrenome": "Battezini",
+            "id": "26518186-285e-4c00-81df-b326488f1124",
+            "nome": "teste3",
+            "sobrenome": "teste3",
+            "email": "teste3@teste.com",
+            "password": "$2b$10$x6Eg.av/CV9En4A/q5Vy0e5n7UlTlUWIomYdYmdwj37579vy78lsW"
+        },
+        {
+            "id": "6cde2bb8-2b42-4f53-bf92-89fd1e772f9d",
+            "nome": "teste",
+            "sobrenome": "teste",
             "email": "teste@teste.com",
-            "password": "123456",
-            "cpf": null,
-            "nascimento": null,
-            "telefone": null
+            "password": "$2b$10$kZUKbG5pNiV.nq8kLENxLuNyMX3ixhVPhpiYYtm5ZwIkSFEd5aoYG"
         }
     ],
     "compras": [
@@ -252,7 +256,7 @@
             "frete": {
                 "nomeEmpresa": "Loggi",
                 "prazo": "4 dias úteis",
-                "valor": 9.90
+                "valor": 9.9
             }
         }
     ],
