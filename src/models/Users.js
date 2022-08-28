@@ -19,6 +19,10 @@ const User = {
     create: (user) => {
         db.users.push({ id: v4(), ...user });
         writeToDB();
+    },
+
+    account: () => {
+        
     }
 }
 
