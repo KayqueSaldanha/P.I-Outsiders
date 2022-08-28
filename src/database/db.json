@@ -126,6 +126,24 @@
                 "GG"
             ],
             "status": "esporte"
+        },
+        {
+            "id": 8,
+            "image1": "imagem 5.svg",
+            "image2": "",
+            "nome": "T-Shirt Male",
+            "preco": 130,
+            "cor": "Branca",
+            "genero": "mulher",
+            "categoria": "T-shirts",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "interesses"
         }
     ],
     "users": [

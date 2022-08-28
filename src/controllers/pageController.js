@@ -62,11 +62,13 @@ const pageController = {
     mostrarProduto: (req, res) => {
         const { id } = req.params
         console.log(id)
+        const interesses = Produto.findByStatus('interesses')
         const produto = Produto.findById(id)
         console.log(produto)
         res.render('produtos', {
             menu: createMenuObject('false'),
-            produto
+            produto,
+            interesses
         });
 
     },

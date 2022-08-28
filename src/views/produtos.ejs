@@ -92,16 +92,17 @@
             <div id="prateleira">
                 
                 <div class="card">
-                    <a href="#">
-                        <img src="/images/produtos/imagem 5.svg" alt="">
-                        <h2>Tech T-Shirt</h2>
-                        <h3>R$ 320</h3>
-                        <p>10x R$ 32,00 sem juros</p>
+                    <% if(interesses){ %> 
+                    <a href="/produtos">
+                        <img src="/images/produtos/<%= interesses[0].image1 %>" alt="">
+                        <h2><%= interesses[0].nome %></h2>
+                        <h3>R$<%= interesses[0].preco %>,00</h3>
+                        <p>10x R$ <%= Math.round(interesses[0].preco /3) %>,00 sem juros</p>
                     </a>
                         <a class="btn" href="#">comprar</a>
                 </div>
-
-                <div class="card">
+<% } %>
+                <div class="card">                    
                     <a href="#">
                         <img src="/images/produtos/imagem 6.svg" alt="">
                         <h2>Tech T-Shirt</h2>
