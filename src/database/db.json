@@ -39,9 +39,9 @@
         },
         {
             "id": 3,
-            "image1": "img5 - Mulher Roupa Esporte.png",
+            "image1": "img-mulher-esporte-top.webp",
             "image2": "",
-            "nome": "TESTE MULHER",
+            "nome": "Energy Top",
             "preco": 129,
             "cor": "Branca",
             "genero": "mulher",
@@ -93,9 +93,9 @@
         },
         {
             "id": 6,
-            "image1": "img4 - Mulher Blusa Clara.png",
+            "image1": "img-mulher-esporte-T-shirt.webp",
             "image2": "",
-            "nome": "TESTE MULHER",
+            "nome": "T-shirt Feminina",
             "preco": 129,
             "cor": "Branca",
             "genero": "mulher",
