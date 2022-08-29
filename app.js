@@ -6,7 +6,6 @@ const logger = require('morgan');
 const session = require('express-session');
 
 const indexRouter = require('./src/routes/index');
-const userRoute = require('./src/routes/userRoute');
 const publicRoute = require('./src/routes/publicRoute');
 const privateRoute = require('./src/routes/privateRoute');
 
