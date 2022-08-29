@@ -81,7 +81,7 @@
         </div>
     </section>
     <section class="sec3">
-        <div>
+        <div id="banner1">
             <img src="/images/home/img3 - banner.png" alt="">
         </div>
     </section>
@@ -91,50 +91,52 @@
           <h2>DIA A DIA</h2>
         </div>
         <div id="cardsImag" class="disp-flex justify-space-between">
-          <div class="card1" >
-            <a href="/produtos" class="shelf_body">
-            <img src="/images/home/img4 - Mulher Blusa Clara.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="title">Tech T-Shirt</p>
-              <p class="preço">R$ 320</p>
-              <p class="shelf__p">3x R$ 32,00 sem juros</p>
+          <% if(diaDia){ %> 
+            <div  class="card1" >
+              <a href="/produtos" class="shelf_body">
+              <img src="/images/produtos/<%= diaDia[0].image1 %>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="title"><%= diaDia[0].nome %></p>
+                <p class="preço">R$<%= diaDia[0].preco %>,00</p>
+                <p class="shelf__p">3x  R$ <%= Math.round(diaDia[0].preco /3) %>,00 sem juros</p>
+              </div>
+              </a>
+              <a href="/produtos" class="shelf__btn">Comprar</a>
             </div>
-            </a>
-            <a href="/produtos" class="shelf__btn">Comprar</a>
-          </div>
-          <div  class="card1" >
-            <a href="/produtos" class="shelf_body">
-            <img src="/images/home/img4 - Mulher Blusa Clara.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="title">Tech T-Shirt</p>
-              <p class="preço">R$ 320</p>
-              <p class="shelf__p">3x R$ 32,00 sem juros</p>
+            <div  class="card1" >
+              <a href="/produtos" class="shelf_body">
+              <img src="/images/produtos/<%= diaDia[1].image1 %>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="title"><%= diaDia[1].nome %></p>
+                <p class="preço">R$<%= diaDia[1].preco %>,00</p>
+                <p class="shelf__p"> 3x R$ <%= Math.round(diaDia[1].preco /3) %>,00 sem juros</p>
+              </div>
+              </a>
+              <a href="/produtos" class="shelf__btn">Comprar</a>
             </div>
-            </a>
-            <a href="/produtos" class="shelf__btn">Comprar</a>
-          </div>
-          <div  class="card1" >
-            <a href="/produtos" class="shelf_body">
-            <img src="/images/home/img4 - Mulher Blusa Clara.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="title">Tech T-Shirt</p>
-              <p class="preço">R$ 320</p>
-              <p class="shelf__p">3x R$ 32,00 sem juros</p>
+            <div  class="card1" >
+              <a href="/produtos" class="shelf_body">
+              <img src="/images/produtos/<%= diaDia[2].image1 %>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="title"><%= diaDia[2].nome %></p>
+                <p class="preço">R$<%= diaDia[2].preco %>,00</p>
+                <p class="shelf__p">3x R$ <%= Math.round(diaDia[2].preco /3) %>,00 sem juros</p>
+              </div>
+              </a>
+              <a href="/produtos" class="shelf__btn">Comprar</a>
             </div>
-            </a>
-            <a href="/produtos" class="shelf__btn">Comprar</a>
-          </div>
-          <div  class="card1" >
-            <a href="/produtos" class="shelf_body">
-            <img src="/images/home/img4 - Mulher Blusa Clara.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <p class="title">Tech T-Shirt</p>
-              <p class="preço">R$ 320</p>
-              <p class="shelf__p">3x R$ 32,00 sem juros</p>
+            <div  class="card1" >
+              <a href="/produtos" class="shelf_body">
+              <img src="/images/produtos/<%= diaDia[3].image1 %>" class="card-img-top" alt="...">
+              <div class="card-body">
+                <p class="title"><%= diaDia[3].nome %></p>
+                <p class="preço">R$<%= diaDia[3].preco %>,00</p>
+                <p class="shelf__p">3x R$ <%= Math.round(diaDia[3].preco /3) %>,00 sem juros</p>
+              </div>
+              </a>
+              <a href="/produtos" class="shelf__btn">Comprar</a>
             </div>
-            </a>
-            <a href="/produtos" class="shelf__btn">Comprar</a>
-          </div>
+            <% } %>                         
         </a>
         </div>
       </div>
@@ -187,11 +189,11 @@
           </div>
           <div  class="card1" >
             <a href="/produtos" class="shelf_body">
-            <img src="/images/home/img5 - Mulher Roupa Esporte.png" class="card-img-top" alt="...">
+            <img src="/images/produtos/<%= esporte[3].image1 %>" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="title">Tech T-Shirt</p>
-              <p class="preço">R$ 320</p>
-              <p class="shelf__p">3x R$ 32,00 sem juros</p>
+              <p class="title"><%= esporte[3].nome %></p>
+              <p class="preço">R$<%= esporte[3].preco %>,00</p>
+              <p class="shelf__p">3x R$ <%= Math.round(esporte[3].preco /3) %>,00 sem juros</p>
             </div>
             </a>
             <a href="/produtos" class="shelf__btn">Comprar</a>

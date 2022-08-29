@@ -62,12 +62,14 @@ const pageController = {
     },
 
     home: (req, res) => {
+        const diaDia = Produto.findByStatus('diaDia')
         const esporte = Produto.findByStatus('esporte')
         const homens = Produto.findByGenero('homem')
         res.render('home', {
             menu: createMenuObject('false'),
             homens,
-            esporte
+            esporte,
+            diaDia
         });
 
         res.render('home')

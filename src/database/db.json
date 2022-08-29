@@ -71,7 +71,7 @@
                 "G",
                 "GG"
             ],
-            "status": ""
+            "status": "diaDia"
         },
         {
             "id": 5,
@@ -89,7 +89,7 @@
                 "G",
                 "GG"
             ],
-            "status": ""
+            "status": "diaDia"
         },
         {
             "id": 6,
@@ -120,7 +120,7 @@
             "genero": "homem",
             "categoria": "",
             "tamanhos": "",
-            "status": "",
+            "status": "diaDia",
             "descricao": "O primeiro boné Insider é versátil e ultra funcional, resistente à água e com aba flexível."
         },
         {
@@ -139,7 +139,7 @@
                 "G",
                 "GG"
             ],
-            "status": "",
+            "status": "diaDia",
             "descricao": "SPECTRUM é a evolução tecnológica das meias. Além de ser respirável, anti-odor e com rápida evaporação de suor, tem a tecnologia Infrared, que transforma calor corporal em radiação infravermelha para melhorar seu conforto e bem estar."
         },
         {
@@ -214,6 +214,24 @@
                 "GG"
             ],
             "status": "interesses"
+        },
+        {
+            "id": 13,
+            "image1": "img-mulher-esporte-shorts.webp",
+            "image2": "",
+            "nome": "Motion Shorts",
+            "preco": 159,
+            "cor": "Marrom",
+            "genero": "mulher",
+            "categoria": "Shorts",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "esporte"
         }
     ],
     "users": [
