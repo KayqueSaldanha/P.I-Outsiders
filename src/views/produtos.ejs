@@ -101,35 +101,35 @@
                     </a>
                         <a class="btn" href="#">comprar</a>
                 </div>
-<% } %>
                 <div class="card">                    
                     <a href="#">
-                        <img src="/images/produtos/imagem 6.svg" alt="">
-                        <h2>Tech T-Shirt</h2>
-                        <h3>R$ 320</h3>                            
-                        <p>10x R$ 32,00 sem juros</p>
+                        <img src="/images/produtos/<%= interesses[1].image1 %>" alt="">
+                        <h2><%= interesses[1].nome %></h2>
+                        <h3>R$<%= interesses[1].preco %>,00</h3>                            
+                        <p>3x R$ <%= Math.round(interesses[1].preco /3) %>,00 sem juros</p>
                         <a class="btn" href="#">comprar</a>
                     </a>
                 </div>
 
                 <div class="card">
                     <a href="#">
-                        <img src="/images/produtos/imagem 7.svg" alt="">
-                        <h2>Tech T-Shirt</h2>
-                        <h3>R$ 320</h3>
-                        <p>10x R$ 32,00 sem juros</p>
+                        <img src="/images/produtos/<%= interesses[2].image1 %>" alt="">
+                        <h2><%= interesses[2].nome %></h2>
+                        <h3>R$<%= interesses[2].preco %>,00</h3>
+                        <p>3x R$ <%= Math.round(interesses[2].preco /3) %>,00 sem juros</p>
                         <a class="btn" href="#">comprar</a>
                     </a>
                 </div>
 
                 <div class="card">
                     <a href="#">
-                        <img src="/images/produtos/imagem 8.svg" alt="">
-                        <h2>Tech T-Shirt</h2>
-                        <h3>R$ 320</h3>
-                        <p>10x R$ 32,00 sem juros</p>
+                        <img src="/images/produtos/<%= interesses[3].image1 %>" alt="">
+                        <h2><%= interesses[3].nome %></h2>
+                        <h3>R$<%= interesses[3].preco %>,00</h3>
+                        <p>3x R$ <%= Math.round(interesses[3].preco /3) %>,00 sem juros</p>
                         <a class="btn" href="#">comprar</a>
                     </a>
+ <% } %>
                 </div>
             </section>
         </main>
