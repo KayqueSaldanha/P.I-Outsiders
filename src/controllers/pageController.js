@@ -40,18 +40,6 @@ const pageController = {
         });
     },
 
-    account: (req, res) => {
-        res.render('account');
-    },
-
-    account_edit: (req, res) => {
-        res.render('account_edit');
-    },
-
-    account_request: (req, res) => {
-        res.render('account_request');
-    },
-
     produtos: (req, res) => {
         res.render('produtos', {
             menu: createMenuObject('false'),
@@ -71,14 +59,6 @@ const pageController = {
             interesses
         });
 
-    },
-
-    login: (req, res) => {
-        res.render('login');
-    },
-
-    cadastro: (req, res) => {
-        res.render('cadastro');
     },
 
     home: (req, res) => {
