@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const pageController = require('../controllers/pageController');
-// const searchController = require('../controllers/searchController');
+const searchController = require('../controllers/searchController');
 
 
 router.get('/', pageController.home)
@@ -15,6 +15,7 @@ router.get('/homem', pageController.homem)
 router.get('/mulher', pageController.mulher)
 router.get('/produtos', pageController.produtos)
 router.get('/produtos/:id', pageController.mostrarProduto)
+router.get('/busca', searchController)
 
 // router.get('/search', searchController.search)
 
