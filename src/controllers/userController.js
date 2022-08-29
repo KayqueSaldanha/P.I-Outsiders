@@ -41,10 +41,6 @@ const userController = {
         res.render('login', { menu: createMenuObject('false') });
     },
 
-    account: (req, res) => {
-        res.render('account')
-    },
-
     accountEdit: (req, res) => {
         res.render('account_edit')
     },
