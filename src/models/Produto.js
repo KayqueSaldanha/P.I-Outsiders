@@ -22,6 +22,15 @@ const Produto = {
                 }
             })
     },
+    findByName: (nome) => {
+        return db.produtos.filter(produto =>{
+            if(produto.nome.toLowerCase().indexOf(nome.toLowerCase()) > -1){
+                return true
+            }else{
+                return false
+            }
+        })
+    },
 
     findById: (id) => {
         return db.produtos.find(produto => produto.id == id);
