@@ -94,7 +94,7 @@
         {
             "id": 6,
             "image1": "imagem 5.svg",
-            "image2": "",
+            "image2": "imagem 5.svg",
             "nome": "T-shirt PrettyGirl",
             "preco": 120,
             "cor": "Branca",
@@ -200,7 +200,7 @@
         {
             "id": 12,
             "image1": "imagem 5.svg",
-            "image2": "",
+            "image2": "imagem 5.svg",
             "nome": "T-Shirt Male",
             "preco": 130,
             "cor": "Branca",
@@ -254,7 +254,7 @@
         {
             "id": 15,
             "image1": "imagem 6.svg",
-            "image2": "",
+            "image2": "imagem 6.svg",
             "nome": "T-shirt Nice Woman",
             "preco": 200,
             "cor": "Bege",
@@ -273,7 +273,7 @@
         {
             "id": 16,
             "image1": "imagem 7.svg",
-            "image2": "",
+            "image2": "imagem 7.svg",
             "nome": "Casual Sport",
             "preco": 140,
             "cor": "Bege",
@@ -292,7 +292,7 @@
         {
             "id": 17,
             "image1": "imagem 8.svg",
-            "image2": "",
+            "image2": "imagem 8.svg",
             "nome": "Casual home",
             "preco": 120,
             "cor": "blue",

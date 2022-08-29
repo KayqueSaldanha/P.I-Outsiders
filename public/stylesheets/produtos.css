@@ -46,6 +46,10 @@ div>nav>h2>a {
     margin-top: 40px;
 }
 
+#sec1>#esquerda>img {
+    position: relative;
+    
+}
 #direita {
     flex-direction: column;
     margin-left: 30px;
@@ -402,7 +406,9 @@ div>nav>h2>a {
     }
 
     #sec1>#esquerda>img {
-        width: 700px;
+        position: relative;
+        bottom: 100px;
+        width: 600px;
     }
 
     /* direita - top */
@@ -634,12 +640,11 @@ div>nav>h2>a {
 
 @media screen and (max-width:950px) {
 
-    #menu_de_nav>nav {
-        margin-left: 150px;
-    }
+
 
     #sec1>#esquerda>img {
         width: 500px;
+    
     }
 
     #top>div>h3 {
@@ -712,7 +717,7 @@ div>nav>h2>a {
     }
 
     #sec1>#esquerda>img {
-        width: 700px;
+        width: 500px;
     }
 
     #sec1>#esquerda {
@@ -882,7 +887,6 @@ div>nav>h2>a {
         justify-content: start;
         align-items: flex-start;
         margin-left: 120px;
-        margin-top: 30px;
     }
 
     #sec1>#direita>#top>img {
