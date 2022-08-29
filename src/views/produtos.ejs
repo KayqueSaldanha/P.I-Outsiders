@@ -41,7 +41,7 @@
                         <h3><%= produto.nome %></h3>
                         <p id="p1">ref A3060</p>
                         <p id="p2"><span>R$ <%= produto.preco %>,00</span>| RS <%= Math.round(produto.preco * 0.5) %>,00</p>
-                        <p id="p3">ou em até 3x de R$ <%= Math.round(produto.preco * 0.5) %>,00</p>
+                        <p id="p3">ou em até 3x de R$ <%= Math.round(produto.preco * 0.5* 0.33) %>,00</p>
                     </div>
 
                 </div>
@@ -61,7 +61,7 @@
                 </div>
                 
                 <div id="bot">
-                    <img src="/images/produtos/<%= produto.image3 %>" alt="" width="140px" height="135px">
+                    <img src="/images/produtos/<%= produto.image2 %>" alt="" width="140px" height="135px">
                     <div>
                         <div class="cores">
                             <p>cores:</p>                            
@@ -97,7 +97,7 @@
                         <img src="/images/produtos/<%= interesses[0].image1 %>" alt="">
                         <h2><%= interesses[0].nome %></h2>
                         <h3>R$<%= interesses[0].preco %>,00</h3>
-                        <p>10x R$ <%= Math.round(interesses[0].preco /3) %>,00 sem juros</p>
+                        <p>3x R$ <%= Math.round(interesses[0].preco /3) %>,00 sem juros</p>
                     </a>
                         <a class="btn" href="#">comprar</a>
                 </div>
