@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/department.css">
+    <link rel="stylesheet" href="/stylesheets/theme.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outsider</title>
+</head>
+
+<body>
+    <%- include("./partials/header") %>
+        <main>
+            <section>
+                <div class="bread__crumb">
+                    <div class="bread__crumb-c max-width-content">
+                        <ul class="bread__list">
+                            <li>
+                                <a title="Outsider" href="/">Outsider</a>
+                            </li>
+                            <li>
+                                <a href="#" class="bold"><%= busca %></a>
+                            </li>
+                        </ul>
+                    </div> <!-- .bread__crumb-container -->
+                </div> <!-- .bread__crumb -->
+                <div class="box-banner">
+                    
+                </div> <!-- .box-banner -->
+            </section> <!-- .section bread -->
+
+            <section class="max-width-content">
+                <div class="title__dep">
+                    <% if(busca){ %> 
+                        <h2>Resultado para busca de "<%= busca  %> "</h2>
+                            <% }else{ %>
+                                <h2>Digite sua busca na barra de pesquisa "</h2>
+                                <% } %> 
+                </div> <!-- .title__dep -->
+                <div class="filters__mobile">
+                    <div class="filters__container-m">
+                        <ul class="filters__item">
+                            <li>
+                                <a href="#">
+                                    <i class="las la-sort-alpha-down"></i>
+                                    Ordenar por:</a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="las la-filter"></i>
+                                    Filtrar por:</a>
+                            </li>
+                        </ul>
+                    </div> <!-- .filters__container-mobile -->
+                </div> <!-- .filters__mobile -->
+                <div class="filters">
+                    <span class="filters__title">Filtre a sua busca</span>
+                    <ul>
+                        <li>
+                            <span>Categoria</span>
+                            <ul>
+                                <li>Manga Longa</li>
+                                <li>Manga Curta</li>
+                            </ul>
+                        </li> <!-- .categoria -->
+                        <li><span class="filters__title">Tamanhos</span>
+                            <ul>
+                                <li>PP</li>
+                                <li>P</li>
+                                <li>M</li>
+                                <li>G</li>
+                            </ul> <!-- .tamanho -->
+                        <li><span class="filters__title-cores">Cores</span>
+                            <ul>
+                                <li>Preto</li>
+                                <li>Branco</li>
+                                <li>Cinza</li>
+                            </ul> <!-- .cores -->
+                    </ul> <!-- .ul geral -->
+                </div> <!-- .filters -->
+                <div class="line">
+                </div> <!-- .line -->
+                <div class="order">
+                    <ul class="order-c">
+                        <li>
+                            <span class="filters__title">ordenar por:</span>
+                        </li>
+                        <li>
+                            <span class="filters__title">Mais vendidos</span>
+                        </li>
+                        <li>
+                            <span class="filters__title">Menor preço</span>
+                        </li>
+                        <li>
+                            <span class="filters__title">Maior preço</span>
+                        </li>
+                        <li>
+                            <span class="filters__title">Lançamentos</span>
+                        </li>
+                        <li>
+                            <span class="filters__title">Maior desconto</span>
+                        </li>
+                        <li>
+                            <span class="filters__title">A-Z</span>
+                        </li>
+                        <li>
+                            <span class="filters__title">Z-A</span>
+                        </li>
+                    </ul> <!-- .order-c -->
+                </div> <!-- .order -->
+            </section>
+
+            <section id="shelf" class="max-width-content">
+                <div class="shelf__container">
+                    <!-- shelf 1 -->
+                    <% if (produtos && produtos.length> 0) { %>
+                        <% produtos.map( produtos=> { %>
+                            <div class="shelf__product">
+                                <div class="shelf__img">
+                                    <a href="#">
+                                        <img src="/images/produtos/<%= produtos.image1 %>" class="img__shelf"
+                                            alt="Tech Tshirt Preta">
+                                </div> <!-- .shelf__img -->
+                                <div class="shelf__content">
+                                    <h2 class="title">
+                                        <%= produtos.nome %>
+                                    </h2>
+                                    <div class="shelf__price">
+                                        <span class="price">
+                                            R$ <%= produtos.preco %>,00
+                                        </span>
+                                        <p class="shelf__installments">3x de R$ <%= Math.round(produtos.preco /3) %>,00
+                                                sem
+                                                juros</p>
+                                        </a>
+                                    </div> <!-- .shelf__price -->
+                                    <a href="/produtos" class="shelf__btn">Comprar</a>
+                                </div> <!-- .shelf__content -->
+                            </div> <!-- .shelf__product -->
+                            <% }) %>
+                                <% } else { %>
+                                    <h2 class="h2_titulo texto_roboto" style="padding-top: 20px; font-size: 2em;">"Não encontramos nenhum produto com esse nome"</h2>
+                                    <% } %>
+                                        <div class="banner_principal">
+                                            <a href=""><img src="/images/department/base layer.jpg" alt="">
+                                                <span class="cta__banner">comprar agora</span>
+                                            </a>
+                                        </div> <!-- .banner_principal -->
+
+                                        <script
+                                            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                                        <script src="/javascripts/department/department.js"></script>
+        </main> <!-- .main -->
+        <%- include("./partials/footer") %>
+</body> <!-- .body -->
+
+</html> <!-- .html -->
