@@ -93,12 +93,12 @@
         },
         {
             "id": 6,
-            "image1": "img-homem-Cueca-Comfort.webp",
-            "image2": "",
-            "nome": "Cueca Comfort",
-            "preco": 69,
+            "image1": "imagem 5.svg",
+            "image2": "imagem 5.svg",
+            "nome": "T-shirt PrettyGirl",
+            "preco": 120,
             "cor": "Branca",
-            "genero": "homem",
+            "genero": "mulher",
             "categoria": "",
             "tamanhos": [
                 "PP",
@@ -108,7 +108,7 @@
                 "GG"
             ],
             "status": "interesses",
-            "descricao": "Criamos a Cueca Comfort para oferecer mais conforto ao seu dia a dia."
+            "descricao": "Criamos a T-shirt PrettyGirl para oferecer mais conforto ao seu dia a dia."
         },
         {
             "id": 7,
@@ -158,7 +158,7 @@
                 "G",
                 "GG"
             ],
-            "status": "interesses",
+            "status": "",
             "descricao": "Ultra confortável para ser seu agasalho preferido do dia-a-dia, te acompanha em todas as ocasiões."
         },
         {
@@ -200,7 +200,7 @@
         {
             "id": 12,
             "image1": "imagem 5.svg",
-            "image2": "",
+            "image2": "imagem 5.svg",
             "nome": "T-Shirt Male",
             "preco": 130,
             "cor": "Branca",
@@ -213,7 +213,7 @@
                 "G",
                 "GG"
             ],
-            "status": "interesses"
+            "status": ""
         },
         {
             "id": 13,
@@ -232,7 +232,83 @@
                 "GG"
             ],
             "status": "esporte"
+        },
+        {
+            "id": 14,
+            "image1": "imagem 1.svg",
+            "image2": "imagem 2 3 4.svg",
+            "nome": "Motion Shorts",
+            "preco": 180,
+            "cor": "Marrom",
+            "genero": "mulher",
+            "categoria": "Shorts",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "mulher"
+        },
+        {
+            "id": 15,
+            "image1": "imagem 6.svg",
+            "image2": "imagem 6.svg",
+            "nome": "T-shirt Nice Woman",
+            "preco": 200,
+            "cor": "Bege",
+            "genero": "mulher",
+            "categoria": "",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "interesses",
+            "descricao": "Criamos a T-shirt Nice Woman para oferecer mais conforto ao seu dia a dia."
+        },
+        {
+            "id": 16,
+            "image1": "imagem 7.svg",
+            "image2": "imagem 7.svg",
+            "nome": "Casual Sport",
+            "preco": 140,
+            "cor": "Bege",
+            "genero": "mulher",
+            "categoria": "",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "interesses",
+            "descricao": "Criamos a linha Casual Sport para oferecer mais conforto e mobilidade ao seu dia a dia."
+        },
+        {
+            "id": 17,
+            "image1": "imagem 8.svg",
+            "image2": "imagem 8.svg",
+            "nome": "Casual home",
+            "preco": 120,
+            "cor": "blue",
+            "genero": "mulher",
+            "categoria": "",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "interesses",
+            "descricao": "Criamos a linha Casual Home para oferecer mais conforto e mobilidade ao seu dia a dia."
         }
+        
     ],
     "users": [
         {
