@@ -18,25 +18,18 @@ const pageController = {
         res.render('confirmation');
     },
 
-    homem: (req, res) => {
-        const produtos = Produto.findByGenero('homem')
-        res.render('department', {
-            menu: createMenuObject('homem'),
-            banner: {
-                background: 'departamento_homem.png'
-            },
-            produtos
-        });
-    },
 
-    mulher: (req, res) => {
-        const produtos = Produto.findByGenero('mulher')
+
+    department: (req, res) => {
+        const { categoria } = req.params;
+        const produtos = Produto.findByGenero(categoria)
         res.render('department', {
-            menu: createMenuObject('mulher'),
+            menu: createMenuObject(categoria),
             banner: {
-                background: 'departamento_mulher.jpg'
-            }
-            , produtos
+                background: `departamento_${categoria}.jpg`
+            },
+            produtos, 
+            categoria
         });
     },
 

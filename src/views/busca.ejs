@@ -10,7 +10,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= categoria.toUpperCase() %></title>
+    <title>BUSCA</title>
 </head>
 
 <body>
@@ -24,25 +24,23 @@
                                 <a title="Outsider" href="/">Outsider</a>
                             </li>
                             <li>
-                                <a href="#">Tech T-Shirt</a>
-                            </li>
-                            <li>
-                                <a href="#" class="bold"> <%= categoria[0].toUpperCase() + categoria.substring(1) %> </a>
-                                
+                                <a href="#" class="bold"><%= busca %></a>
                             </li>
                         </ul>
                     </div> <!-- .bread__crumb-container -->
                 </div> <!-- .bread__crumb -->
                 <div class="box-banner">
-
-                    <a href="#"><img src="/images/department/<%= banner.background %>" class="img-main"
-                            alt="Categoria Tech T-Shirt Homem"></a>
+                    
                 </div> <!-- .box-banner -->
             </section> <!-- .section bread -->
 
             <section class="max-width-content">
                 <div class="title__dep">
-                    <h2>CAMISETA BÁSICA ANTISSUOR E ANTIODOR</h2>
+                    <% if(busca){ %> 
+                        <h2>Resultado para busca de "<%= busca  %> "</h2>
+                            <% }else{ %>
+                                <h2>Digite sua busca na barra de pesquisa "</h2>
+                                <% } %> 
                 </div> <!-- .title__dep -->
                 <div class="filters__mobile">
                     <div class="filters__container-m">
@@ -146,7 +144,7 @@
                             </div> <!-- .shelf__product -->
                             <% }) %>
                                 <% } else { %>
-                                    <h2 class="h2_titulo texto_roboto">-- NÃO HÁ NENHUM PRODUTO CADASTRADO --</h2>
+                                    <h2 class="h2_titulo texto_roboto" style="padding-top: 20px; font-size: 2em;">"Não encontramos nenhum produto com esse nome"</h2>
                                     <% } %>
                                         <div class="banner_principal">
                                             <a href=""><img src="/images/department/base layer.jpg" alt="">
