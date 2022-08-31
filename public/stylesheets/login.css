@@ -26,12 +26,12 @@ section>#h1{
 section>#p1{
    Font-family: Roboto;
    Font-style: Light;
-   Font-size: 15px;
+   Font-size: 20px;
    Line-height: 25px;
    Line-height: 100%;
    color: rgba(0, 0, 0, 0.7);
-   margin-top: 26px;
-   margin-bottom: 35px;
+   margin-top: 10px;
+   margin-bottom: 45px;
 }
 
 section>#p2,#p3{

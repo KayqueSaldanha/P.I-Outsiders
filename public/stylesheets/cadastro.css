@@ -12,7 +12,7 @@
  
  section>div>h1{
    margin-top: 100px;
-   margin-bottom: 50px;
+   margin-bottom: 10px;
     Font-family: Roboto;
     Font-style: Light;
     Font-size: 35px;
@@ -28,8 +28,8 @@
     Line-height: 25px;
     Line-height: 100%;
     color: rgba(0, 0, 0, 0.7);
-    margin-top: 26px;
-    margin-bottom: 50px;
+    margin-top: 10px;
+    margin-bottom: 45px;
  }
   
  span:hover{
@@ -48,26 +48,28 @@
     border: none;
     Font-family: Roboto;
     Font-style: Regular;
-    Font-size: 30px;
+    Font-size: 25px;
     Line-height: 35px;
     Line-height: 100%;
     text-align: start;
  }
  
  #entrar{
-
+   color: white;
    background-color:black;
    Width: 500px;
    Height: 60px;
    margin-bottom: 43px;
    border: none;
+   font-size: 1.5em; 
+   font-weight:500;
    margin-bottom: 400px;
 }
 
 #entrar:hover{
    cursor: pointer;
-   transition: 1.5s;
-   box-shadow: 0px 10px 40px black;
+   transition: 1s;
+   box-shadow: 0px 10px 30px rgba(77, 77, 77, 0.532);
 }
 
 #entrar>a{
