@@ -89,12 +89,14 @@ span:hover{
    Height: 60px;
    margin-bottom: 43px;
    border: none;
+   font-size: 1.5em; 
+   font-weight:500
 }
 
 .entrar:hover{
    cursor: pointer;
-   transition: 1.5s;
-   box-shadow: 0px 10px 40px black;
+   transition: 1s;
+   box-shadow: 0px 10px 30px rgba(77, 77, 77, 0.532);
 }
 
 .entrar>a{
