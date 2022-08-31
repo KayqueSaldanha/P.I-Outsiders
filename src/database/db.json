@@ -308,7 +308,6 @@
             "status": "interesses",
             "descricao": "Criamos a linha Casual Home para oferecer mais conforto e mobilidade ao seu dia a dia."
         }
-        
     ],
     "users": [
         {
@@ -324,6 +323,27 @@
             "sobrenome": "teste",
             "email": "teste@teste.com",
             "password": "$2b$10$kZUKbG5pNiV.nq8kLENxLuNyMX3ixhVPhpiYYtm5ZwIkSFEd5aoYG"
+        },
+        {
+            "id": "85c8507c-a33e-40a7-b221-ad21205f5d3e",
+            "nome": "Teste",
+            "sobrenome": "Teste2",
+            "email": "teste@teste.com",
+            "password": "$2b$10$HSQcK4hGb7ssDrbpk4.LPuAEqZYlBynajR.NiELYDqwQo6BU85oX6"
+        },
+        {
+            "id": "f6f5a4dc-b8c6-445b-a36b-ff9ed2b86851",
+            "nome": "teste4",
+            "sobrenome": "teste4",
+            "email": "teste4@teste.com",
+            "password": "$2b$10$DAYkhMT1t6v8xDI/ZF03EezEhc4JpVaNb38Dy30PADdIivk/0T1PW"
+        },
+        {
+            "id": "9d2ab0e2-f59d-4f45-8439-b3e7376b6ab8",
+            "nome": "Andressa",
+            "sobrenome": "Paranhos",
+            "email": "andressaparanhos1@hotmail.com",
+            "password": "$2b$10$sFl9jmpDN3M2BKJk1fGj0uQxvz8vyw6EjcF7pNzFs1lADqqs8pv0q"
         }
     ],
     "compras": [
