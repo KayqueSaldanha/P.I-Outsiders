@@ -83,6 +83,7 @@ span:hover{
 }
 
 .entrar{
+   color: white;
    background-color:black;
    Width: 500px;
    Height: 60px;
@@ -105,6 +106,13 @@ span:hover{
    Line-height: 100%;
 
 
+}
+
+.error-login{
+   margin-top: -10px;
+   margin-bottom: 10px;
+   text-align: center;
+   color: red;
 }
 
 /*////////// responsividade /////////*/
