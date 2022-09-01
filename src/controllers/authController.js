@@ -3,6 +3,8 @@
 // (Ex: login, logout)
 // ========================================================
 
+const { createMenuObject } = require('../../helpers/createMenuObject')
+
 const bcrypt = require('bcrypt');
 
 const Users = require('../models/Users');
@@ -18,7 +20,7 @@ const AuthController = {
         // Verifica se o usuário existe
         if (!user) {
             // Se não existir, renderiza a página de login com erro
-            return res.render('login', { error: 'Email ou senha inválidos' });
+            return res.render('login', { error: 'Email ou senha inválidos', menu: createMenuObject('false') });
         }
 
         // Verifica se a senha informada é a mesma que a senha criptografada no db
@@ -26,7 +28,7 @@ const AuthController = {
         // Verifica se a senha é válida
         if (!senhaValida) {
             // Se a senha for inválida, renderiza a página de login com erro
-            return res.render('login', { error: 'Email ou senha inválidos' });
+            return res.render('login', { error: 'Email ou senha inválidos', menu: createMenuObject('false') });
         }
 
         // Se o email e a senha forem válidos, cria uma sessão para o usuário
@@ -55,7 +57,7 @@ const AuthController = {
         }
 
         // Renderiza a página de login
-        return res.render('login', { error: null });
+        return res.render('login', { error: null, menu: createMenuObject('false') });
     },
 
     renderAreaRestrita: (req, res) => {

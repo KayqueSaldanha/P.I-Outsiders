@@ -29,7 +29,7 @@ const UserController = {
         }
 
         // Renderiza a página de cadastro de usuário
-        return res.render('cadastro');
+        return res.render('cadastro', {menu: createMenuObject('false')});
     }    
 }
 
