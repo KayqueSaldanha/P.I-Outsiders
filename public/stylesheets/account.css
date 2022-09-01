@@ -41,11 +41,17 @@ header {
 }
 
 .account__itens {
+    cursor: pointer;
     padding: 7px;
     line-height: 35px;
     color: #979899;
     width: 275px;
     height: 23px;
+    font-size: 16px;
+    background: none;
+    outline-style: none;
+    border: none;
+    text-align: initial; 
 }
 
 .account__itens:hover {

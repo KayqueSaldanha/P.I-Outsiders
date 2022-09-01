@@ -1,7 +1,6 @@
 const express = require('express');
 
-const authController = require('../controllers/authController');
-const userController = require('../controllers/userController');
+const AuthController = require('../controllers/AuthController');
 
 const router = express.Router();
 
@@ -11,12 +10,9 @@ const router = express.Router();
 // ==================
 
 // Renderiza a página restrita
-router.get('/account', authController.renderAreaRestrita);
-
-//edição de dados do usuario
-router.get('/account_edit', userController.accountEdit);
-
-//visualização dos dados de compra
-router.get('/account_request', userController.accountRequest);
+router.get('/account', AuthController.renderAreaRestrita);
+// Rota para mostrar formulário de edição de usuário
+router.get('/edit/:id', AuthController.editForm);
+router.post('/logout', AuthController.logout);
 
 module.exports = router;

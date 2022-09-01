@@ -10,13 +10,10 @@ main {
     flex-direction: column;
 }
 
-#menu_de_nav>nav {
+#sec2>#prateleira {
     display: flex;
-    justify-content: flex-start;
-
-    margin-left: 280px;
-    margin-top: 10px;
-    margin-bottom: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 div>nav>h2 {
@@ -297,6 +294,12 @@ div>nav>h2>a {
     flex-direction: column;
 }
 
+#sec2>#prateleira {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 #sec2>h3 {
     Font-family: Roboto;
     Font-style: Medium;
@@ -307,7 +310,6 @@ div>nav>h2>a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 150px;
     margin-bottom: 40px;
 }
 
@@ -407,8 +409,6 @@ div>nav>h2>a {
 
     #sec1>#esquerda>img {
         position: relative;
-        bottom: 100px;
-        width: 600px;
     }
 
     /* direita - top */
@@ -726,11 +726,6 @@ div>nav>h2>a {
     }
 
     #sec1>#direita {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: flex-start;
-        margin-left: 80px;
         margin-top: 30px;
     }
 
@@ -884,9 +879,10 @@ div>nav>h2>a {
     #sec1>#direita {
         display: flex;
         flex-direction: column;
-        justify-content: start;
-        align-items: flex-start;
-        margin-left: 120px;
+        justify-content: center;  
+        align-items: center;  
+        margin-left: 100px;
+            
     }
 
     #sec1>#direita>#top>img {
@@ -923,7 +919,6 @@ div>nav>h2>a {
     }
 
     /* direita - mid */
-
 
     #sec1>#direita>#mid>img {
         width: 120px;
@@ -1090,10 +1085,7 @@ div>nav>h2>a {
     }
 
 
-    #sec2 {
 
-        display: none
-    }
 
     #descricao {
         position: relative;
