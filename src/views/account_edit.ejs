@@ -57,11 +57,14 @@
                         <form action="/profile" method="post" class="form__edit">
                             <div class="flex__form">
                                 <label for="firstName">Nome</label>
-                                <input type="text" name="firstName" id="firstName" value="Fulano" required>
+                                <input type="text" name="firstName" id="firstName"
+                                    value="<%= user.nome[0].toUpperCase() + user.nome.substring(1) %>" required>
                             </div>
                             <div class="flex__form">
                                 <label for="lastName">Sobrenome</label>
-                                <input type="text" name="lastName" id="lastName" value="De tal" required>
+                                <input type="text" name="lastName" id="lastName"
+                                    value="<%= user.sobrenome[0].toUpperCase() + user.sobrenome.substring(1) %>"
+                                    required>
                             </div>
                             <div class="flex__form">
                                 <label for="document">CPF</label>
