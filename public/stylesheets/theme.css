@@ -56,6 +56,10 @@ ul li.active a {
     font-weight: 500;
 }
 
+.nav__link a:hover{
+    color:#000;
+}
+
 .menu__supportNav {
     gap: 6px;
 }
