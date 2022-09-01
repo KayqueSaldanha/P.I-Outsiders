@@ -31,7 +31,7 @@ const AuthController = {
 
         // Se o email e a senha forem válidos, cria uma sessão para o usuário
         // Salvando o email e o id do usuário na sessão
-        req.session.user = { email: user.email, id: user.id };
+        req.session.user = { email: user.email, id: user.id, nome: user.nome, sobrenome: user.sobrenome };
         console.log(req.session.user)
 
         // Redireciona para a página restrita
@@ -63,7 +63,15 @@ const AuthController = {
         const user = req.session.user;
         // Renderiza a página restrita passando os dados do usuário logado
         return res.render('account', { user });
+    },
+
+    editForm: (req, res) => {
+        // Busca os dados do usuário
+        const { id } = req.params;
+        const user = User.findById(id);
+        res.render('/account_edit', { user });
     }
+
 }
 
 module.exports = AuthController;
