@@ -63,7 +63,15 @@ const AuthController = {
         const user = req.session.user;
         // Renderiza a página restrita passando os dados do usuário logado
         return res.render('account', { user });
+    },
+
+    editForm: (req, res) => {
+        // Busca os dados do usuário
+        const { id } = req.params;
+        const user = User.findById(id);
+        res.render('/account_edit', { user });
     }
+
 }
 
 module.exports = AuthController;
