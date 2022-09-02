@@ -244,17 +244,27 @@
     },
     {
       "id": "9d2ab0e2-f59d-4f45-8439-b3e7376b6ab8",
-      "nome": "Andressa",
-      "sobrenome": "Paranhos",
-      "email": "andressaparanhos1@hotmail.com",
-      "password": "$2b$10$sFl9jmpDN3M2BKJk1fGj0uQxvz8vyw6EjcF7pNzFs1lADqqs8pv0q"
+      "firstName": "Andressa",
+      "lastName": "Paranhos",
+      "document": "430.761.018-03",
+      "phone": "(11) 98469-5778",
+      "birthDate": "01/08/1996"
     },
     {
       "id": "9a45f2a4-df8c-4bd0-bd08-13973cd80aeb",
-      "nome": "gabriel",
-      "sobrenome": "teste",
-      "email": "gabriel@gmail.com",
+      "firstName": "Gabriel",
+      "lastName": "Teste",
+      "document": "430.761.018-03",
+      "phone": "(11) 98469-5778",
+      "birthDate": "27/01/1996",
       "password": "$2b$10$1LQ5CCJcVIl//os40NyCh.3LS1VvrtnMs7SKSbagak5xqmBoneNaG"
+    },
+    {
+      "id": "3f910470-3974-4e34-b0e9-bf5e726480b8",
+      "nome": "natalia",
+      "sobrenome": "teste",
+      "email": "natalia@teste.com",
+      "password": "$2b$10$jHIe3okdlUp3OrrYovCdKeF4piQrU2MDM/0fH4.FeHVrO/qgQbF8K"
     }
   ],
   "compras": [
