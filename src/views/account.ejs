@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="/stylesheets/reset.css">
+    <link rel="stylesheet" href="/stylesheets/theme.css">
     <link rel="stylesheet" href="/stylesheets/department.css">
     <link rel="stylesheet" href="/stylesheets/account.css">
     <meta charset="UTF-8">
@@ -68,20 +69,26 @@
                         </div>
                         <div>
                             <label class="acc__on-base">CPF</label>
-                            <div class="acc__on-disabled">000.000.000-00</div>
+                            <div class="acc__on-disabled">
+                                <%= user.document %>
+                            </div>
                         </div>
                     </div> <!-- .profile__form-email -->
                     <div class="profile__form-date d-flex">
                         <div>
                             <label class="acc__on-base">Data de Nascimento</label>
-                            <div class="acc__on-disabled">00/00/0000</div>
+                            <div class="acc__on-disabled">
+                                <%= user.birthDate %>
+                            </div>
                         </div>
                         <div>
                             <label class="acc__on-base">Telefone</label>
-                            <div class="acc__on-disabled">(11) 00000-0000</div>
+                            <div class="acc__on-disabled">
+                                <%= user.phone %>
+                            </div>
                         </div>
                     </div> <!-- .profile__form-date -->
-                    <a href="/account/edit/<%= user.id %>" class="acc_edit">Editar</a>
+                    <a href="/edit/<%= user.id %>" class="acc_edit">Editar</a>
                 </section> <!-- .account__form -->
             </section> <!-- .account__page -->
         </section> <!-- .account -->
