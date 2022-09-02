@@ -101,7 +101,7 @@
                 <p class="shelf__p">3x  R$ <%= Math.round(diaDia[0].preco /3) %>,00 sem juros</p>
               </div>
               </a>
-              <a href="/produtos" class="shelf__btn">Comprar</a>
+              <a href="/produtos/<%= diaDia[0].id %>" class="shelf__btn">Comprar</a>
             </div>
             <div  class="card1" >
               <a href="/produtos" class="shelf_body">
@@ -112,7 +112,7 @@
                 <p class="shelf__p"> 3x R$ <%= Math.round(diaDia[1].preco /3) %>,00 sem juros</p>
               </div>
               </a>
-              <a href="/produtos" class="shelf__btn">Comprar</a>
+              <a href="/produtos/<%= diaDia[1].id %>" class="shelf__btn">Comprar</a>
             </div>
             <div  class="card1" >
               <a href="/produtos" class="shelf_body">
@@ -123,7 +123,7 @@
                 <p class="shelf__p">3x R$ <%= Math.round(diaDia[2].preco /3) %>,00 sem juros</p>
               </div>
               </a>
-              <a href="/produtos" class="shelf__btn">Comprar</a>
+              <a href="/produtos/<%= diaDia[2].id %>" class="shelf__btn">Comprar</a>
             </div>
             <div  class="card1" >
               <a href="/produtos" class="shelf_body">
@@ -134,7 +134,7 @@
                 <p class="shelf__p">3x R$ <%= Math.round(diaDia[3].preco /3) %>,00 sem juros</p>
               </div>
               </a>
-              <a href="/produtos" class="shelf__btn">Comprar</a>
+              <a href="/produtos/<%= diaDia[3].id %>" class="shelf__btn">Comprar</a>
             </div>
             <% } %>                         
         </a>
