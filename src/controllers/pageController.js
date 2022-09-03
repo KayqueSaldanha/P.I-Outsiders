@@ -44,7 +44,6 @@ const pageController = {
         const { id } = req.params
         const interesses = Produto.findByStatus('interesses')
         const produto = Produto.findById(id)
-        req.session.produto = produto;
         res.render('produtos', {
             menu: createMenuObject('false'),
             produto,
