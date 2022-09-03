@@ -72,7 +72,8 @@ header {
 }
 
 .profile__form-email {
-    gap: 63px;
+    gap: 20px;
+    flex-direction: column;
 }
 
 .profile__form-date {
@@ -159,7 +160,7 @@ html {
 
 .d-flex {
     display: flex;
-    padding-bottom: 42px;
+    padding-bottom: 19px;
     flex-wrap: wrap;
 }
 
