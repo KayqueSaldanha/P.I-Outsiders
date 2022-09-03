@@ -29,7 +29,7 @@
                         <img width="55" src="/images/account/user.svg" alt="Ícone de user">
                     </div> <!-- .account__user-img -->
                     <div class="account__user-greeting">
-                        <span>Olá,!</span>
+                        <span>Olá, <%= user.nome[0].toUpperCase() + user.nome.substring(1) %>!</span>
                     </div> <!-- .account__user-greeting -->
                 </div> <!-- .account__user-info -->
                 <nav class="account__link">
