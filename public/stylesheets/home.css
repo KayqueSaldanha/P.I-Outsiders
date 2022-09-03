@@ -12,6 +12,10 @@
     margin-right: auto;
 }
 
+.carousel-item img {
+    width: 99vw !important;
+}
+
 /* Primeira prateleira de colunas */
 #sec2{
     max-width: 1100px;
@@ -110,9 +114,9 @@
     padding-top: 100px;
 }
 
-/*.sec3 img{
+.sec3 img{
     width: 99vw;
-}*/
+}
 
 /* 1 prateleira de roupas (4 imagens) */
 .sec4{
@@ -166,10 +170,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 263px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 280px;
+    margin-top: 200px;
+    width: 99vw;
+}
+
+.sec5 img {
     width: 99vw;
 }
 
@@ -194,6 +199,10 @@
     margin-left: auto;
     margin-right: auto;
     margin-top: 190px;
+}
+
+.sec7 img {
+    width: 99vw;
 }
 
 #sec8{
@@ -347,7 +356,7 @@
     }
 
     .sec7{
-       display: none;
+        display: none;
     }
 
     #sec8{
@@ -408,11 +417,11 @@ body{
 
 .text-white {
     color: #fff;
-  }
-  
+}
+
 .text-black {
     color: #313131;
-  }
+}
 
 .disp-flex{
     display: flex;
