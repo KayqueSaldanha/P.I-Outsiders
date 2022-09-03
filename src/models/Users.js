@@ -39,7 +39,7 @@ const User = {
     edit: (id, user) => {
         const userIndex = db.users.findIndex(user => user.id === id);
         const userOld = db.users[userIndex];
-        db.users[userIndex] = { id, ...user, password: userOld.password };
+        db.users[userIndex] = { id, ...user, password: userOld.password, email: userOld.email, nome: userOld.nome, sobrenome: userOld.sobrenome };
         writeToDB();
     }
 }
