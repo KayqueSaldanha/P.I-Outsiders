@@ -6,6 +6,11 @@ ul li.active a {
     font-weight: 500;
 }
 
+.line-header{
+    margin-top: -8px;
+    border-bottom: 0.5px solid #E7E7E7;
+}
+
 .topbar {
     padding: 3px 0px;
 }
@@ -160,6 +165,10 @@ html {
 /* FINAL HEADER */
 
 /*FOOTER*/
+
+footer {
+    margin-top: 94px;
+}
 
 .news__container {
     height: 80px;
