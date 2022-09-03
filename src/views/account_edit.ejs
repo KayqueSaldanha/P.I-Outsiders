@@ -70,18 +70,18 @@
                             </div>
                             <div class="flex__form">
                                 <label for="document">CPF</label>
-                                <input type="text" name="document" id="document" value="<%= user ? user.cpf : '' %>"
-                                    required>
+                                <input type="text" name="document" id="document"
+                                    value="<%= user ? user.document : '' %>" required>
                             </div>
                             <div class="flex__form">
                                 <label for="phone">Telefone</label>
-                                <input type="text" name="phone" id="phone" value="<%= user ? user.telefone : '' %>"
+                                <input type="text" name="phone" id="phone" value="<%= user ? user.phone : '' %>"
                                     required>
                             </div>
                             <div class="flex__form">
                                 <label for="birthDate">Data de nascimento</label>
                                 <input type="text" name="birthDate" id="birthDate"
-                                    value="<%= user ? user.nascimento : '' %>" required>
+                                    value="<%= user ? user.birthDate : '' %>" required>
                             </div>
                             <button type="submit" class="submit__form">Salvar alterações</button>
                         </form>
