@@ -4,6 +4,7 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const session = require('express-session');
+const methodOverride = require('method-override');
 
 const indexRouter = require('./src/routes/index');
 const publicRoute = require('./src/routes/publicRoute');
@@ -17,6 +18,8 @@ const app = express();
 app.set('views', path.join(__dirname, 'src/views'));
 app.set('view engine', 'ejs');
 
+// permitir que o servidor use o método PUT e DELETE
+app.use(methodOverride('_method'));
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
