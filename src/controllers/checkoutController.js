@@ -15,15 +15,17 @@ const CheckoutController = {
 
     endereco: (req, res) => {
         // Recebe os dados do corpo da requisição (endereço digitado)
-        const { address } = req.body;
+        const endereco = req.body;
         // Recebe o id do usuario logado caso estiver
         const { id } = req.session.user;
-        // Busca o usuario da sessão e armazena numa constante
-        const idUser = User.findById(id);
         // Salva o endereço com as informações salvas nas constantes anteriores
-        Checkout.addInfo({ idUser, ...address });
+        Checkout.addInfo({ userid: id, endereco });
         // Redireciona para a proxima etapa frete
         res.redirect('/frete');
+    },
+
+    frete: (req, res) => {
+        res.render('shipping');
     }
 }
 
