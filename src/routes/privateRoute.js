@@ -15,6 +15,7 @@ router.get('/account', AuthController.renderAreaRestrita);
 router.get('/edit/:id', AuthController.editForm);
 // Rota para atualizar um usuário
 router.put('/users', AuthController.edit);
+// Rota para deslogar um usuário da sessão
 router.post('/logout', AuthController.logout);
 
 module.exports = router;

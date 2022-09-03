@@ -9,6 +9,7 @@ const methodOverride = require('method-override');
 const indexRouter = require('./src/routes/index');
 const publicRoute = require('./src/routes/publicRoute');
 const privateRoute = require('./src/routes/privateRoute');
+const checkout = require('./src/routes/checkout');
 
 const userIsAuthenticated = require('./src/middlewares/userIsAuthenticated');
 
@@ -38,6 +39,8 @@ app.use('/', publicRoute);
 app.use(userIsAuthenticated);
 // Rota privada - Usuário logado que acessa
 app.use('/', privateRoute);
+// Rota para o checkout
+app.use('/', checkout);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
