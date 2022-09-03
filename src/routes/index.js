@@ -6,7 +6,6 @@ const searchController = require('../controllers/searchController');
 
 
 router.get('/', pageController.home)
-router.get('/carrinho', pageController.carrinho)
 router.get('/information', pageController.information)
 router.get('/frete', pageController.frete)
 router.get('/metodo-de-pagamento', pageController.metodo_de_pagamento)

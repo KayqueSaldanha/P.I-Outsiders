@@ -103,13 +103,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 99vw;
     margin-left: auto;
     margin-right: auto;
     padding-top: 100px;
 }
 
-
+.sec3 img{
+    width: 99vw;
+}
 /* 1 prateleira de roupas (4 imagens) */
 .sec4{
     max-width: 1100px;
