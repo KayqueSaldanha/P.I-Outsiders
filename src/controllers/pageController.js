@@ -2,24 +2,6 @@ const Produto = require('../models/Produto');
 const { createMenuObject } = require('../../helpers/createMenuObject')
 
 const pageController = {
-    information: (req, res) => {
-        res.render('information');
-    },
-
-    frete: (req, res) => {
-        res.render('shipping');
-    },
-
-    metodo_de_pagamento: (req, res) => {
-        res.render('payment');
-    },
-
-    compra_confirmada: (req, res) => {
-        res.render('confirmation');
-    },
-
-
-
     department: (req, res) => {
         const { categoria } = req.params;
         const produtos = Produto.findByGenero(categoria)
