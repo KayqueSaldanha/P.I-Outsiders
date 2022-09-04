@@ -41,11 +41,17 @@ header {
 }
 
 .account__itens {
+    cursor: pointer;
     padding: 7px;
     line-height: 35px;
     color: #979899;
     width: 275px;
     height: 23px;
+    font-size: 16px;
+    background: none;
+    outline-style: none;
+    border: none;
+    text-align: initial;
 }
 
 .account__itens:hover {
@@ -66,7 +72,8 @@ header {
 }
 
 .profile__form-email {
-    gap: 63px;
+    gap: 20px;
+    flex-direction: column;
 }
 
 .profile__form-date {
@@ -76,7 +83,7 @@ header {
 .acc_edit {
     text-transform: uppercase;
     font-size: 13px;
-    margin-left: 475px;
+    margin-left: 459px;
     width: 68px;
     height: 28px;
     display: flex;
@@ -153,7 +160,7 @@ html {
 
 .d-flex {
     display: flex;
-    padding-bottom: 42px;
+    padding-bottom: 19px;
     flex-wrap: wrap;
 }
 

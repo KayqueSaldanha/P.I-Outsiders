@@ -8,25 +8,25 @@ let db = require('../database/db.json');
 // Função writeToDB pega os dados que estão na memoria e transforma em json
 // função necessária para cadastro de:
 const writeToDB = () => {
- const json = JSON.stringify(db);
- fs.writeFileSync('src/database/db.json', json);
+    const json = JSON.stringify(db);
+    fs.writeFileSync('src/database/db.json', json);
 }
 
 const Produto = {
     findByGenero: (genero) => {
-            return db.produtos.filter(produto =>{
-                if(produto.genero == genero){
-                    return true
-                } else{
-                    false
-                }
-            })
+        return db.produtos.filter(produto => {
+            if (produto.genero == genero) {
+                return true
+            } else {
+                false
+            }
+        })
     },
     findByName: (nome) => {
-        return db.produtos.filter(produto =>{
-            if(produto.nome.toLowerCase().indexOf(nome.toLowerCase()) > -1){
+        return db.produtos.filter(produto => {
+            if (produto.nome.toLowerCase().indexOf(nome.toLowerCase()) > -1) {
                 return true
-            }else{
+            } else {
                 return false
             }
         })
@@ -37,10 +37,10 @@ const Produto = {
     },
 
     findByStatus: (status) => {
-        return db.produtos.filter(produto =>{
-            if(produto.status == status){
+        return db.produtos.filter(produto => {
+            if (produto.status == status) {
                 return true
-            } else{
+            } else {
                 false
             }
         })

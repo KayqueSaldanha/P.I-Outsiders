@@ -34,6 +34,13 @@ const User = {
         db.users.push({ id: v4(), ...user });
         // Escreve os dados em memória no arquivo db.json
         writeToDB();
+    },
+
+    edit: (id, user) => {
+        const userIndex = db.users.findIndex(user => user.id === id);
+        const userOld = db.users[userIndex];
+        db.users[userIndex] = { id, ...user, password: userOld.password, email: userOld.email, nome: userOld.nome, sobrenome: userOld.sobrenome };
+        writeToDB();
     }
 }
 

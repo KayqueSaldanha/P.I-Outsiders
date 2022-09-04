@@ -4,10 +4,14 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const session = require('express-session');
+const methodOverride = require('method-override');
 
 const indexRouter = require('./src/routes/index');
 const publicRoute = require('./src/routes/publicRoute');
 const privateRoute = require('./src/routes/privateRoute');
+const checkout = require('./src/routes/checkout');
+
+const userIsAuthenticated = require('./src/middlewares/userIsAuthenticated');
 
 const app = express();
 
@@ -15,6 +19,8 @@ const app = express();
 app.set('views', path.join(__dirname, 'src/views'));
 app.set('view engine', 'ejs');
 
+// permitir que o servidor use o método PUT e DELETE
+app.use(methodOverride('_method'));
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -27,8 +33,14 @@ app.use(session({
 }));
 
 app.use('/', indexRouter);
-app.use('/users', publicRoute);
-app.use('/arealogada', privateRoute);
+// Rota publica - Usuário não logado que acessa
+app.use('/', publicRoute);
+
+app.use(userIsAuthenticated);
+// Rota privada - Usuário logado que acessa
+app.use('/', privateRoute);
+// Rota para o checkout
+app.use('/', checkout);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

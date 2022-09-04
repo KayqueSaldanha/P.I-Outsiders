@@ -1,11 +1,10 @@
-const { create } = require('domain');
 const User = require('../models/Users');
 const { createMenuObject } = require('../../helpers/createMenuObject');
 const bcrypt = require('bcrypt');
 
 const saltRounds = 10;
 
-const userController = {
+const UserController = {
 
     cadastro: (req, res) => {
         const { nome, sobrenome, email, password } = req.body;
@@ -18,7 +17,7 @@ const userController = {
         User.create({ nome, sobrenome, email, password: hash });
 
         // Redireciona para a página de login
-        res.redirect('/users/login');
+        res.redirect('/login');
     },
 
     renderFormCadastro: (req, res) => {
@@ -30,31 +29,8 @@ const userController = {
         }
 
         // Renderiza a página de cadastro de usuário
-        return res.render('/cadastro');
-    },
-
-    formularioCadastro: (req, res) => {
-        res.render('cadastro', { menu: createMenuObject('false') });
-    },
-
-    login: (req, res) => {
-        res.render('login', { menu: createMenuObject('false') });
-    },
-
-    accountEdit: (req, res) => {
-        res.render('account_edit')
-    },
-
-    accountRequest: (req, res) => {
-        res.render('account_request')
-    },
-
-    index: (req, res) => {
-        const users = User.findAll();
-        res.render('', { users });
-    }
-
-
+        return res.render('cadastro', {menu: createMenuObject('false')});
+    }    
 }
 
-module.exports = userController;
+module.exports = UserController;
