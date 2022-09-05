@@ -1,2 +1,585 @@
-
-{"produtos":[{"id":1,"image1":"TechTShirt_Preta.jpg","image2":"TechTShirt_Preta.jpg","image3":"TechTShirt_Preta.jpg","nome":"Tech T-Shirt","preco":229,"cor":"Preta","genero":"homem","categoria":"T-shirts","tamanhos":["PP","P","M","G","GG"],"status":""},{"id":2,"image1":"TshirtSport-Preto02.webp","image2":"","nome":"T-Shirt Sportee","preco":129,"cor":"Branca","genero":"homem","categoria":"T-shirts","tamanhos":["PP","P","M","G","GG"],"status":""},{"id":3,"image1":"img-mulher-esporte-top.webp","image2":"","nome":"Energy Top","preco":129,"cor":"Branca","genero":"mulher","categoria":"T-shirts","tamanhos":["PP","P","M","G","GG"],"status":"esporte"},{"id":4,"image1":"Oversized_T-Shirt.webp","image2":"","nome":"Oversized T-Shirt","preco":249,"cor":"Branca","genero":"homem","categoria":"T-shirts","tamanhos":["PP","P","M","G","GG"],"status":"diaDia"},{"id":5,"image1":"Cueca_Performance.jpg","image2":"","nome":"Cueca Performance","preco":129,"cor":"Branca","genero":"homem","categoria":"T-shirts","tamanhos":["PP","P","M","G","GG"],"status":"diaDia"},{"id":6,"image1":"imagem 5.svg","image2":"imagem 5.svg","nome":"T-shirt PrettyGirl","preco":120,"cor":"Branca","genero":"mulher","categoria":"","tamanhos":["PP","P","M","G","GG"],"status":"interesses","descricao":"Criamos a T-shirt PrettyGirl para oferecer mais conforto ao seu dia a dia."},{"id":7,"image1":"img-homem-Urban-Cap.webp","image2":"","nome":"Urban Cap","preco":159,"cor":"Branca","genero":"homem","categoria":"","tamanhos":"","status":"diaDia","descricao":"O primeiro boné Insider é versátil e ultra funcional, resistente à água e com aba flexível."},{"id":8,"image1":"img-homem-Spectrum-Socks-High.webp","image2":"","nome":"Spectrum Socks High","preco":80,"cor":"Branca","genero":"homem","categoria":"T-shirts","tamanhos":["PP","P","M","G","GG"],"status":"diaDia","descricao":"SPECTRUM é a evolução tecnológica das meias. Além de ser respirável, anti-odor e com rápida evaporação de suor, tem a tecnologia Infrared, que transforma calor corporal em radiação infravermelha para melhorar seu conforto e bem estar."},{"id":9,"image1":"img-homem-Heavy-Hoodie.webp","image2":"","nome":"Heavy Hoodie","preco":449,"cor":"Branca","genero":"homem","categoria":"","tamanhos":["PP","P","M","G","GG"],"status":"","descricao":"Ultra confortável para ser seu agasalho preferido do dia-a-dia, te acompanha em todas as ocasiões."},{"id":10,"image1":"img-mulher-esporte-T-shirt.webp","image2":"","nome":"T-shirt Feminina","preco":129,"cor":"Branca","genero":"mulher","categoria":"T-shirts","tamanhos":["PP","P","M","G","GG"],"status":"esporte"},{"id":11,"image1":"img-mulher-esporte.webp","image2":"","nome":"Easy Legging","preco":270,"cor":"Marrom","genero":"mulher","categoria":"Calça","tamanhos":["PP","P","M","G","GG"],"status":"esporte"},{"id":12,"image1":"imagem 5.svg","image2":"imagem 5.svg","nome":"T-Shirt Male","preco":130,"cor":"Branca","genero":"mulher","categoria":"T-shirts","tamanhos":["PP","P","M","G","GG"],"status":""},{"id":13,"image1":"img-mulher-esporte-shorts.webp","image2":"","nome":"Motion Shorts","preco":159,"cor":"Marrom","genero":"mulher","categoria":"Shorts","tamanhos":["PP","P","M","G","GG"],"status":"esporte"},{"id":14,"image1":"imagem 1.svg","image2":"imagem 2 3 4.svg","nome":"Motion Shorts","preco":180,"cor":"Marrom","genero":"mulher","categoria":"Shorts","tamanhos":["PP","P","M","G","GG"],"status":"mulher"},{"id":15,"image1":"imagem 6.svg","image2":"imagem 6.svg","nome":"T-shirt Nice Woman","preco":200,"cor":"Bege","genero":"mulher","categoria":"","tamanhos":["PP","P","M","G","GG"],"status":"interesses","descricao":"Criamos a T-shirt Nice Woman para oferecer mais conforto ao seu dia a dia."},{"id":16,"image1":"imagem 7.svg","image2":"imagem 7.svg","nome":"Casual Sport","preco":140,"cor":"Bege","genero":"mulher","categoria":"","tamanhos":["PP","P","M","G","GG"],"status":"interesses","descricao":"Criamos a linha Casual Sport para oferecer mais conforto e mobilidade ao seu dia a dia."},{"id":17,"image1":"imagem 8.svg","image2":"imagem 8.svg","nome":"Casual home","preco":120,"cor":"blue","genero":"mulher","categoria":"","tamanhos":["PP","P","M","G","GG"],"status":"interesses","descricao":"Criamos a linha Casual Home para oferecer mais conforto e mobilidade ao seu dia a dia."},{"id":18,"image1":"img-homem-Tech-T-Shirt-Long-Sleeve.webp","image2":"","nome":"Tech T-Shirt Long Sleeve","preco":179,"cor":"preta","genero":"homem","categoria":"","tamanhos":["PP","P","M","G","GG"],"status":"","descricao":"A Tech T-shirt é nosso upgrade da camiseta básica masculina, feita com fibras até 3x mais macias que algodão."},{"id":19,"image1":"img-Daily-T-Shirt.webp","image2":"","nome":"Daily T-Shirt","preco":119,"cor":"preta","genero":"homem","categoria":"","tamanhos":["PP","P","M","G","GG"],"status":"","descricao":"A Daily T-Shirt, como o próprio nome diz, é uma opção a mais para o seu dia a dia."},{"id":20,"image1":"img-homem-Everyday-Shorts.webp","image2":"","nome":"Everyday Shorts","preco":249,"cor":"preta","genero":"homem","categoria":"","tamanhos":["G","GG"],"status":"","descricao":"A Daily T-Shirt, como o próprio nome diz, é uma opção a mais para o seu dia a dia."},{"id":21,"image1":"img-homem-Spectrum-Socks-Mid.webp","image2":"","nome":"Spectrum Socks Mid","preco":39,"cor":"preta","genero":"homem","categoria":"","tamanhos":["G","GG"],"status":"","descricao":"A Daily T-Shirt, como o próprio nome diz, é uma opção a mais para o seu dia a dia."},{"id":22,"image1":"img-homem-Performance-T-Shirt-2.0.webp","image2":"","nome":"Performance T-Shirt 2.0","preco":229,"cor":"preta","genero":"homem","categoria":"","tamanhos":["G","GG"],"status":"","descricao":"A Daily T-Shirt, como o próprio nome diz, é uma opção a mais para o seu dia a dia."}],"users":[{"id":"26518186-285e-4c00-81df-b326488f1124","nome":"teste3","sobrenome":"teste3","email":"teste3@teste.com","password":"$2b$10$x6Eg.av/CV9En4A/q5Vy0e5n7UlTlUWIomYdYmdwj37579vy78lsW"},{"id":"6cde2bb8-2b42-4f53-bf92-89fd1e772f9d","nome":"teste","sobrenome":"teste","email":"teste@teste.com","password":"$2b$10$kZUKbG5pNiV.nq8kLENxLuNyMX3ixhVPhpiYYtm5ZwIkSFEd5aoYG"},{"id":"85c8507c-a33e-40a7-b221-ad21205f5d3e","nome":"Teste","sobrenome":"Teste2","email":"teste@teste.com","password":"$2b$10$HSQcK4hGb7ssDrbpk4.LPuAEqZYlBynajR.NiELYDqwQo6BU85oX6"},{"id":"f6f5a4dc-b8c6-445b-a36b-ff9ed2b86851","firstName":"teste4","lastName":"teste4","document":"430.761.018-03","phone":"(54) 99996-1867","birthDate":"01081996","password":"$2b$10$DAYkhMT1t6v8xDI/ZF03EezEhc4JpVaNb38Dy30PADdIivk/0T1PW"},{"id":"9d2ab0e2-f59d-4f45-8439-b3e7376b6ab8","firstName":"Andressa","lastName":"Paranhos","document":"430.761.018-03","phone":"(11) 98469-5778","birthDate":"01/08/1996"},{"id":"9a45f2a4-df8c-4bd0-bd08-13973cd80aeb","firstName":"Gabriel","lastName":"Teste","document":"430.761.018-03","phone":"(11) 98469-5778","birthDate":"27/01/1996","password":"$2b$10$1LQ5CCJcVIl//os40NyCh.3LS1VvrtnMs7SKSbagak5xqmBoneNaG"},{"id":"3f910470-3974-4e34-b0e9-bf5e726480b8","nome":"natalia","sobrenome":"teste","email":"natalia@teste.com","password":"$2b$10$jHIe3okdlUp3OrrYovCdKeF4piQrU2MDM/0fH4.FeHVrO/qgQbF8K"},{"id":"0bc079d6-ab64-4974-be53-9ab29d4d18d4","nome":"teste24","sobrenome":"testeteste","email":"teste24@teste.com.br","password":"$2b$10$0/d87UkA26SecdOMb20vK.pOkpfaU51FUmKql5qWljMRWIIGg276C"},{"id":"aea19a68-b745-4ee3-a3dd-f6410536eeab","nome":"paranhos","sobrenome":"andressa","email":"paranhos1@gmail.com","password":"$2b$10$5/.2G96LTdVtwB.dTV6XS.F0iTU1C68kjukQR/5U6QvYLvtYiYnPm"},{"id":"64bf74fa-1f2a-41e2-88f4-e468beb97f29","nome":"teste30","sobrenome":"trinta","email":"teste30@teste.com","password":"$2b$10$IQASX8d4.2nfNFQCAxsUvOT01rjgsk.vOabSsDZWmuJf0Z5kcgYEO"},{"id":"effa4454-ad00-486c-beb4-9978f9d1aa1a","firstName":"testefim","lastName":"fim","document":"430.761.018-03","phone":"(54) 99996-1867","birthDate":"27/01/1996","password":"$2b$10$7G8eCRxeZzliudQmScf56eUQDp5i7FDUvjUtoq0BkpGA92nYZN9va"},{"id":"f3c9b638-4c0d-4135-8af1-62d4a16b6cc9","firstName":"joao","lastName":"victor","document":"430.761.018-03","phone":"984695778","birthDate":"01/08/1996","password":"$2b$10$Oi6HzF4MYlSNMKKZzHxeP.eI1NqgZCgQcTlBmOETD8AC.NVmhJu5.","email":"joaovictor@teste.com"},{"id":"b5fcb7cb-503f-4a18-bdad-9cfdaa6a9c62","nome":"Andressa","sobrenome":"Paranhos","email":"andressa.paranhos@incorfast.com.br","password":"$2b$10$YkiYVg1k1F5pWKgG8i7GDOMJosMd9TRRgGaRJMYCoHAVJ.Yx1bFGG"},{"id":"cd5a4921-3dfc-4131-bde3-4f8842e079d1","firstName":"Gabriel","lastName":"Paranhos","document":"55522236925","phone":"(11) 98469-5778","birthDate":"27/01/1996","password":"$2b$10$BMj7Xjv1fj.MGe5Td8cR/eLdfns9OikvJwkpQGYbLtsamCb4Jz.de","email":"gabs@hotmail.com","nome":"gabriel","sobrenome":"paranhos"},{"id":"1eb1821f-7add-4a96-a7c5-5d2421df2988","nome":"Andressa","sobrenome":"Paranhos","email":"andressaparanhos@gmail.com","password":"$2b$10$H7fZPcZij3gj1VZ45HNobedPbsVKuuRyVgiFQU8ptzQjKEVzR9HQ."},{"id":"57b97ca0-9ec1-4a17-869c-e708e3a16195","nome":"Paulo","sobrenome":"Filho","email":"paulokbkfilho@hotmail.com","password":"$2b$10$SrIDq7loQBz7S2l19GySs..OQCD.ALnVYFFHzDxX93vYis1W52Ffy"}],"compras":[{"id":1,"userid":"caa95bcb-018d-440b-8752-21a2db1e8296","enderecoId":278631283512367,"numeroParcela":3,"cartaoId":12345,"boleto":"boletoteste.pdf","pix":"pixteste.png","metodoDePagamento":"cartao","status":"aguardando pagamento","itens":[{"quantidade":1,"nome":"TESTE MULHER","preco":129,"cor":"Preta","tamanho":"P","image1":"img4 - Mulher Blusa Clara.png"}],"frete":{"nomeEmpresa":"Loggi","prazo":"4 dias úteis","valor":9.9}}],"endereco":[{"id":278631283512367,"userid":"caa95bcb-018d-440b-8752-21a2db1e8296","cep":"12345-450","cidade":"santo andré","rua":"rua exemplo","bairro":"bairro exemplo","complemento":"ap 2","estado":"São Paulo - SP"}],"cartoes":[{"id":12345,"userid":"caa95bcb-018d-440b-8752-21a2db1e8296","numeroDoCartao":"2222.2222.2222.2222","validade":"10/29","CVV":123,"nomeImpresso":"Leandro Furtado","CPF":"123.123.123-12"}]}
+{
+    "produtos": [
+        {
+            "id": 1,
+            "image1": "TechTShirt_Preta.jpg",
+            "image2": "TechTShirt_Preta.jpg",
+            "image3": "TechTShirt_Preta.jpg",
+            "nome": "Tech T-Shirt",
+            "preco": 229,
+            "cor": "Preta",
+            "genero": "homem",
+            "categoria": "T-shirts",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": ""
+        },
+        {
+            "id": 2,
+            "image1": "TshirtSport-Preto02.webp",
+            "image2": "",
+            "nome": "T-Shirt Sportee",
+            "preco": 129,
+            "cor": "Branca",
+            "genero": "homem",
+            "categoria": "T-shirts",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": ""
+        },
+        {
+            "id": 3,
+            "image1": "img-mulher-esporte-top.webp",
+            "image2": "",
+            "nome": "Energy Top",
+            "preco": 129,
+            "cor": "Branca",
+            "genero": "mulher",
+            "categoria": "T-shirts",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "esporte"
+        },
+        {
+            "id": 4,
+            "image1": "Oversized_T-Shirt.webp",
+            "image2": "",
+            "nome": "Oversized T-Shirt",
+            "preco": 249,
+            "cor": "Branca",
+            "genero": "homem",
+            "categoria": "T-shirts",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "diaDia"
+        },
+        {
+            "id": 5,
+            "image1": "Cueca_Performance.jpg",
+            "image2": "",
+            "nome": "Cueca Performance",
+            "preco": 129,
+            "cor": "Branca",
+            "genero": "homem",
+            "categoria": "T-shirts",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "diaDia"
+        },
+        {
+            "id": 6,
+            "image1": "imagem 5.svg",
+            "image2": "imagem 5.svg",
+            "nome": "T-shirt PrettyGirl",
+            "preco": 120,
+            "cor": "Branca",
+            "genero": "mulher",
+            "categoria": "",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "interesses",
+            "descricao": "Criamos a T-shirt PrettyGirl para oferecer mais conforto ao seu dia a dia."
+        },
+        {
+            "id": 7,
+            "image1": "img-homem-Urban-Cap.webp",
+            "image2": "",
+            "nome": "Urban Cap",
+            "preco": 159,
+            "cor": "Branca",
+            "genero": "homem",
+            "categoria": "",
+            "tamanhos": "",
+            "status": "diaDia",
+            "descricao": "O primeiro boné Insider é versátil e ultra funcional, resistente à água e com aba flexível."
+        },
+        {
+            "id": 8,
+            "image1": "img-homem-Spectrum-Socks-High.webp",
+            "image2": "",
+            "nome": "Spectrum Socks High",
+            "preco": 80,
+            "cor": "Branca",
+            "genero": "homem",
+            "categoria": "T-shirts",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "diaDia",
+            "descricao": "SPECTRUM é a evolução tecnológica das meias. Além de ser respirável, anti-odor e com rápida evaporação de suor, tem a tecnologia Infrared, que transforma calor corporal em radiação infravermelha para melhorar seu conforto e bem estar."
+        },
+        {
+            "id": 9,
+            "image1": "img-homem-Heavy-Hoodie.webp",
+            "image2": "",
+            "nome": "Heavy Hoodie",
+            "preco": 449,
+            "cor": "Branca",
+            "genero": "homem",
+            "categoria": "",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "",
+            "descricao": "Ultra confortável para ser seu agasalho preferido do dia-a-dia, te acompanha em todas as ocasiões."
+        },
+        {
+            "id": 10,
+            "image1": "img-mulher-esporte-T-shirt.webp",
+            "image2": "",
+            "nome": "T-shirt Feminina",
+            "preco": 129,
+            "cor": "Branca",
+            "genero": "mulher",
+            "categoria": "T-shirts",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "esporte"
+        },
+        {
+            "id": 11,
+            "image1": "img-mulher-esporte.webp",
+            "image2": "",
+            "nome": "Easy Legging",
+            "preco": 270,
+            "cor": "Marrom",
+            "genero": "mulher",
+            "categoria": "Calça",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "esporte"
+        },
+        {
+            "id": 12,
+            "image1": "imagem 5.svg",
+            "image2": "imagem 5.svg",
+            "nome": "T-Shirt Male",
+            "preco": 130,
+            "cor": "Branca",
+            "genero": "mulher",
+            "categoria": "T-shirts",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": ""
+        },
+        {
+            "id": 13,
+            "image1": "img-mulher-esporte-shorts.webp",
+            "image2": "",
+            "nome": "Motion Shorts",
+            "preco": 159,
+            "cor": "Marrom",
+            "genero": "mulher",
+            "categoria": "Shorts",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "esporte"
+        },
+        {
+            "id": 14,
+            "image1": "imagem 1.svg",
+            "image2": "imagem 2 3 4.svg",
+            "nome": "Motion Shorts",
+            "preco": 180,
+            "cor": "Marrom",
+            "genero": "mulher",
+            "categoria": "Shorts",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "mulher"
+        },
+        {
+            "id": 15,
+            "image1": "imagem 6.svg",
+            "image2": "imagem 6.svg",
+            "nome": "T-shirt Nice Woman",
+            "preco": 200,
+            "cor": "Bege",
+            "genero": "mulher",
+            "categoria": "",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "interesses",
+            "descricao": "Criamos a T-shirt Nice Woman para oferecer mais conforto ao seu dia a dia."
+        },
+        {
+            "id": 16,
+            "image1": "imagem 7.svg",
+            "image2": "imagem 7.svg",
+            "nome": "Casual Sport",
+            "preco": 140,
+            "cor": "Bege",
+            "genero": "mulher",
+            "categoria": "",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "interesses",
+            "descricao": "Criamos a linha Casual Sport para oferecer mais conforto e mobilidade ao seu dia a dia."
+        },
+        {
+            "id": 17,
+            "image1": "imagem 8.svg",
+            "image2": "imagem 8.svg",
+            "nome": "Casual home",
+            "preco": 120,
+            "cor": "blue",
+            "genero": "mulher",
+            "categoria": "",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "interesses",
+            "descricao": "Criamos a linha Casual Home para oferecer mais conforto e mobilidade ao seu dia a dia."
+        },
+        {
+            "id": 18,
+            "image1": "img-homem-Tech-T-Shirt-Long-Sleeve.webp",
+            "image2": "",
+            "nome": "Tech T-Shirt Long Sleeve",
+            "preco": 179,
+            "cor": "preta",
+            "genero": "homem",
+            "categoria": "",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "",
+            "descricao": "A Tech T-shirt é nosso upgrade da camiseta básica masculina, feita com fibras até 3x mais macias que algodão."
+        },
+        {
+            "id": 19,
+            "image1": "img-Daily-T-Shirt.webp",
+            "image2": "",
+            "nome": "Daily T-Shirt",
+            "preco": 119,
+            "cor": "preta",
+            "genero": "homem",
+            "categoria": "",
+            "tamanhos": [
+                "PP",
+                "P",
+                "M",
+                "G",
+                "GG"
+            ],
+            "status": "",
+            "descricao": "A Daily T-Shirt, como o próprio nome diz, é uma opção a mais para o seu dia a dia."
+        },
+        {
+            "id": 20,
+            "image1": "img-homem-Everyday-Shorts.webp",
+            "image2": "",
+            "nome": "Everyday Shorts",
+            "preco": 249,
+            "cor": "preta",
+            "genero": "homem",
+            "categoria": "",
+            "tamanhos": [
+                "G",
+                "GG"
+            ],
+            "status": "",
+            "descricao": "A Daily T-Shirt, como o próprio nome diz, é uma opção a mais para o seu dia a dia."
+        },
+        {
+            "id": 21,
+            "image1": "img-homem-Spectrum-Socks-Mid.webp",
+            "image2": "",
+            "nome": "Spectrum Socks Mid",
+            "preco": 39,
+            "cor": "preta",
+            "genero": "homem",
+            "categoria": "",
+            "tamanhos": [
+                "G",
+                "GG"
+            ],
+            "status": "",
+            "descricao": "A Daily T-Shirt, como o próprio nome diz, é uma opção a mais para o seu dia a dia."
+        },
+        {
+            "id": 22,
+            "image1": "img-homem-Performance-T-Shirt-2.0.webp",
+            "image2": "",
+            "nome": "Performance T-Shirt 2.0",
+            "preco": 229,
+            "cor": "preta",
+            "genero": "homem",
+            "categoria": "",
+            "tamanhos": [
+                "G",
+                "GG"
+            ],
+            "status": "",
+            "descricao": "A Daily T-Shirt, como o próprio nome diz, é uma opção a mais para o seu dia a dia."
+        }
+    ],
+    "users": [
+        {
+            "id": "26518186-285e-4c00-81df-b326488f1124",
+            "nome": "teste3",
+            "sobrenome": "teste3",
+            "email": "teste3@teste.com",
+            "password": "$2b$10$x6Eg.av/CV9En4A/q5Vy0e5n7UlTlUWIomYdYmdwj37579vy78lsW"
+        },
+        {
+            "id": "6cde2bb8-2b42-4f53-bf92-89fd1e772f9d",
+            "nome": "teste",
+            "sobrenome": "teste",
+            "email": "teste@teste.com",
+            "password": "$2b$10$kZUKbG5pNiV.nq8kLENxLuNyMX3ixhVPhpiYYtm5ZwIkSFEd5aoYG"
+        },
+        {
+            "id": "85c8507c-a33e-40a7-b221-ad21205f5d3e",
+            "nome": "Teste",
+            "sobrenome": "Teste2",
+            "email": "teste@teste.com",
+            "password": "$2b$10$HSQcK4hGb7ssDrbpk4.LPuAEqZYlBynajR.NiELYDqwQo6BU85oX6"
+        },
+        {
+            "id": "f6f5a4dc-b8c6-445b-a36b-ff9ed2b86851",
+            "firstName": "teste4",
+            "lastName": "teste4",
+            "document": "430.761.018-03",
+            "phone": "(54) 99996-1867",
+            "birthDate": "01081996",
+            "password": "$2b$10$DAYkhMT1t6v8xDI/ZF03EezEhc4JpVaNb38Dy30PADdIivk/0T1PW"
+        },
+        {
+            "id": "9d2ab0e2-f59d-4f45-8439-b3e7376b6ab8",
+            "firstName": "Andressa",
+            "lastName": "Paranhos",
+            "document": "430.761.018-03",
+            "phone": "(11) 98469-5778",
+            "birthDate": "01/08/1996"
+        },
+        {
+            "id": "9a45f2a4-df8c-4bd0-bd08-13973cd80aeb",
+            "firstName": "Gabriel",
+            "lastName": "Teste",
+            "document": "430.761.018-03",
+            "phone": "(11) 98469-5778",
+            "birthDate": "27/01/1996",
+            "password": "$2b$10$1LQ5CCJcVIl//os40NyCh.3LS1VvrtnMs7SKSbagak5xqmBoneNaG"
+        },
+        {
+            "id": "3f910470-3974-4e34-b0e9-bf5e726480b8",
+            "nome": "natalia",
+            "sobrenome": "teste",
+            "email": "natalia@teste.com",
+            "password": "$2b$10$jHIe3okdlUp3OrrYovCdKeF4piQrU2MDM/0fH4.FeHVrO/qgQbF8K"
+        },
+        {
+            "id": "0bc079d6-ab64-4974-be53-9ab29d4d18d4",
+            "nome": "teste24",
+            "sobrenome": "testeteste",
+            "email": "teste24@teste.com.br",
+            "password": "$2b$10$0/d87UkA26SecdOMb20vK.pOkpfaU51FUmKql5qWljMRWIIGg276C"
+        },
+        {
+            "id": "aea19a68-b745-4ee3-a3dd-f6410536eeab",
+            "nome": "paranhos",
+            "sobrenome": "andressa",
+            "email": "paranhos1@gmail.com",
+            "password": "$2b$10$5/.2G96LTdVtwB.dTV6XS.F0iTU1C68kjukQR/5U6QvYLvtYiYnPm"
+        },
+        {
+            "id": "64bf74fa-1f2a-41e2-88f4-e468beb97f29",
+            "nome": "teste30",
+            "sobrenome": "trinta",
+            "email": "teste30@teste.com",
+            "password": "$2b$10$IQASX8d4.2nfNFQCAxsUvOT01rjgsk.vOabSsDZWmuJf0Z5kcgYEO"
+        },
+        {
+            "id": "effa4454-ad00-486c-beb4-9978f9d1aa1a",
+            "firstName": "testefim",
+            "lastName": "fim",
+            "document": "430.761.018-03",
+            "phone": "(54) 99996-1867",
+            "birthDate": "27/01/1996",
+            "password": "$2b$10$7G8eCRxeZzliudQmScf56eUQDp5i7FDUvjUtoq0BkpGA92nYZN9va"
+        },
+        {
+            "id": "f3c9b638-4c0d-4135-8af1-62d4a16b6cc9",
+            "firstName": "joao",
+            "lastName": "victor",
+            "document": "430.761.018-03",
+            "phone": "984695778",
+            "birthDate": "01/08/1996",
+            "password": "$2b$10$Oi6HzF4MYlSNMKKZzHxeP.eI1NqgZCgQcTlBmOETD8AC.NVmhJu5.",
+            "email": "joaovictor@teste.com"
+        },
+        {
+            "id": "b5fcb7cb-503f-4a18-bdad-9cfdaa6a9c62",
+            "nome": "Andressa",
+            "sobrenome": "Paranhos",
+            "email": "andressa.paranhos@incorfast.com.br",
+            "password": "$2b$10$YkiYVg1k1F5pWKgG8i7GDOMJosMd9TRRgGaRJMYCoHAVJ.Yx1bFGG"
+        },
+        {
+            "id": "cd5a4921-3dfc-4131-bde3-4f8842e079d1",
+            "firstName": "Gabriel",
+            "lastName": "Paranhos",
+            "document": "55522236925",
+            "phone": "(11) 98469-5778",
+            "birthDate": "27/01/1996",
+            "password": "$2b$10$BMj7Xjv1fj.MGe5Td8cR/eLdfns9OikvJwkpQGYbLtsamCb4Jz.de",
+            "email": "gabs@hotmail.com",
+            "nome": "gabriel",
+            "sobrenome": "paranhos"
+        },
+        {
+            "id": "1eb1821f-7add-4a96-a7c5-5d2421df2988",
+            "nome": "Andressa",
+            "sobrenome": "Paranhos",
+            "email": "andressaparanhos@gmail.com",
+            "password": "$2b$10$H7fZPcZij3gj1VZ45HNobedPbsVKuuRyVgiFQU8ptzQjKEVzR9HQ."
+        },
+        {
+            "id": "57b97ca0-9ec1-4a17-869c-e708e3a16195",
+            "nome": "Paulo",
+            "sobrenome": "Filho",
+            "email": "paulokbkfilho@hotmail.com",
+            "password": "$2b$10$SrIDq7loQBz7S2l19GySs..OQCD.ALnVYFFHzDxX93vYis1W52Ffy"
+        },
+        {
+            "id": "d1a1e941-6594-4de6-8772-fce46bd68695",
+            "nome": "João Pedro Battezini do Nascimento",
+            "sobrenome": " Battezini do Nascimento",
+            "email": "joaobattezini@gmail.com",
+            "password": "$2b$10$FDaOcDE2WVd37WiLl2yX2eWO6/JTQvRwe87BnbZ2.LVHZYtguEFZW"
+        }
+    ],
+    "compras": [
+        {
+            "id": 1,
+            "userid": "caa95bcb-018d-440b-8752-21a2db1e8296",
+            "enderecoId": 278631283512367,
+            "numeroParcela": 3,
+            "cartaoId": 12345,
+            "boleto": "boletoteste.pdf",
+            "pix": "pixteste.png",
+            "metodoDePagamento": "cartao",
+            "status": "aguardando pagamento",
+            "itens": [
+                {
+                    "quantidade": 1,
+                    "nome": "TESTE MULHER",
+                    "preco": 129,
+                    "cor": "Preta",
+                    "tamanho": "P",
+                    "image1": "img4 - Mulher Blusa Clara.png"
+                }
+            ],
+            "frete": {
+                "nomeEmpresa": "Loggi",
+                "prazo": "4 dias úteis",
+                "valor": 9.9
+            }
+        }
+    ],
+    "endereco": [
+        {
+            "id": 278631283512367,
+            "userid": "caa95bcb-018d-440b-8752-21a2db1e8296",
+            "cep": "12345-450",
+            "cidade": "santo andré",
+            "rua": "rua exemplo",
+            "bairro": "bairro exemplo",
+            "complemento": "ap 2",
+            "estado": "São Paulo - SP"
+        }
+    ],
+    "cartoes": [
+        {
+            "id": 12345,
+            "userid": "caa95bcb-018d-440b-8752-21a2db1e8296",
+            "numeroDoCartao": "2222.2222.2222.2222",
+            "validade": "10/29",
+            "CVV": 123,
+            "nomeImpresso": "Leandro Furtado",
+            "CPF": "123.123.123-12"
+        }
+    ]
+}
