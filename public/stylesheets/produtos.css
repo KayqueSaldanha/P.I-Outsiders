@@ -37,7 +37,7 @@ div>nav>h2>a {
     Line-height: 100%;
 }
 
-#sec1 {
+#sec1>form {
     display: flex;
     justify-content: center;
     margin-top: 40px;
