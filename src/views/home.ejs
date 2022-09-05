@@ -105,7 +105,7 @@
         <div id="cardsImag" class="disp-flex justify-space-between">
           <% if(diaDia){ %>
             <div class="card1">
-              <a href="/produtos" class="shelf_body">
+              <a href="/produtos/<%= diaDia[0].id %>" class="shelf_body">
                 <img src="/images/produtos/<%= diaDia[0].image1 %>" class="card-img-top" alt="...">
                 <div class="card-body">
                   <p class="title">
@@ -118,7 +118,7 @@
               <a href="/produtos/<%= diaDia[0].id %>" class="shelf__btn">Comprar</a>
             </div>
             <div class="card1">
-              <a href="/produtos" class="shelf_body">
+              <a href="/produtos/<%= diaDia[1].id %>" class="shelf_body">
                 <img src="/images/produtos/<%= diaDia[1].image1 %>" class="card-img-top" alt="...">
                 <div class="card-body">
                   <p class="title">
@@ -131,7 +131,7 @@
               <a href="/produtos/<%= diaDia[1].id %>" class="shelf__btn">Comprar</a>
             </div>
             <div class="card1">
-              <a href="/produtos" class="shelf_body">
+              <a href="/produtos/<%= diaDia[2].id %>" class="shelf_body">
                 <img src="/images/produtos/<%= diaDia[2].image1 %>" class="card-img-top" alt="...">
                 <div class="card-body">
                   <p class="title">
@@ -144,7 +144,7 @@
               <a href="/produtos/<%= diaDia[2].id %>" class="shelf__btn">Comprar</a>
             </div>
             <div class="card1">
-              <a href="/produtos" class="shelf_body">
+              <a href="/produtos/<%= diaDia[3].id %>" class="shelf_body">
                 <img src="/images/produtos/<%= diaDia[3].image1 %>" class="card-img-top" alt="...">
                 <div class="card-body">
                   <p class="title">
