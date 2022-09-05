@@ -126,7 +126,7 @@
                         <% produtos.map( produtos=> { %>
                             <div class="shelf__product">
                                 <div class="shelf__img">
-                                    <a href="#">
+                                    <a href="/produtos/<%= produtos.id %>">
                                         <img src="/images/produtos/<%= produtos.image1 %>" class="img__shelf"
                                             alt="Tech Tshirt Preta">
                                 </div> <!-- .shelf__img -->
@@ -143,7 +143,7 @@
                                                 juros</p>
                                         </a>
                                     </div> <!-- .shelf__price -->
-                                    <a href="/produtos" class="shelf__btn">Comprar</a>
+                                    <a href="/produtos/<%= produtos.id %>" class="shelf__btn">Comprar</a>
                                 </div> <!-- .shelf__content -->
                             </div> <!-- .shelf__product -->
                             <% }) %>

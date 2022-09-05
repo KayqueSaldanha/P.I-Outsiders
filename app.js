@@ -10,6 +10,7 @@ const indexRouter = require('./src/routes/index');
 const publicRoute = require('./src/routes/publicRoute');
 const privateRoute = require('./src/routes/privateRoute');
 const checkout = require('./src/routes/checkout');
+const carrinho = require('./src/routes/carrinho')
 
 const userIsAuthenticated = require('./src/middlewares/userIsAuthenticated');
 
@@ -31,6 +32,9 @@ app.use(session({
   resave: true,
   saveUninitialized: true
 }));
+
+
+app.use('/', carrinho);
 
 app.use('/', indexRouter);
 // Rota publica - Usuário não logado que acessa

@@ -63,7 +63,7 @@
           <div id="card-master">
             <% if(homens){ %>
               <div class="card1">
-                <a href="/produtos" class="shelf_body">
+                <a href="/produtos/<%= homens[0].id %>" class="shelf_body">
                   <img src="/images/produtos/<%= homens[0].image1 %>" class="card-img-top" alt="...">
                   <div class="card-body">
                     <p class="title">
@@ -73,10 +73,10 @@
                     <p class="shelf__p">3x R$ <%= Math.round(homens[0].preco /3) %>,00 sem juros</p>
                   </div>
                 </a>
-                <a href="/produtos" class="shelf__btn">Comprar</a>
+                <a href="/produtos/<%= homens[0].id %>" class="shelf__btn">Comprar</a>
               </div>
               <div class="card1">
-                <a href="/produtos" class="shelf_body">
+                <a href="/produtos/<%= homens[1].id %>" class="shelf_body">
                   <img src="/images/produtos/<%= homens[1].image1 %>" class="card-img-top" alt="...">
                   <div class="card-body">
                     <p class="title">
@@ -86,7 +86,7 @@
                     <p class="shelf__p">3x R$ <%= Math.round(homens[1].preco /3) %>,00 sem juros</p>
                   </div>
                 </a>
-                <a href="/produtos" class="shelf__btn">Comprar</a>
+                <a href="/produtos/<%= homens[1].id %>" class="shelf__btn">Comprar</a>
               </div>
               <% } %>
           </div>
