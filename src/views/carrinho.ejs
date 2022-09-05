@@ -29,63 +29,45 @@
         </div>
     </section>
     <section id="sec2">
+        <% if(carrinho && carrinho.length > 0 ){ %>
+        <% carrinho.map(produto =>{ %>
         <div class="desc">
             <div class="imgDesc">
-                <img src="/images/carrinho/carrinha-Img1 - Camiseta Preta.png" alt="">
+                <img src="/images/produtos/<%= produto.image1 %>" alt="" width="240px" height="240px">
             </div>
             <div class="descProd">
-                <p>CAMISETA BÁSICA</p>
-                <p>COR: PRETO</p>
+                <p><%= produto.nome %></p>
+                <p>COR: <%= produto.cor %></p>
                 <p>TAMANHO: pp</p>
-                <p>EM ESTOQUE</p>
             </div>
         </div>
         <div class="valores">
                 <p>1 un</p>
-                <p>R$129,90</p>
-                <p>R$129,90</p>    
+                <p>R$<%= produto.preco %>,00</p>
+                <p>R$<%= produto.preco %>,00</p>    
                 <div><button class="trash"><i class="las la-trash"></i></button></div>          
             </div>
         </div>
-    </section>
-    <section id="sec3">
-        <div class="desc">
-            <div class="imgDesc">
-                <img src="/images/carrinho/carrinha-Img1 - Camiseta Preta.png" alt="">
-            </div>
-            <div class="descProd">
-                <p>CAMISETA BÁSICA</p>
-                <p>COR: PRETO</p>
-                <p>TAMANHO: pp</p>
-                <p>EM ESTOQUE</p>
-            </div>
-        </div>
-        <div class="valores">
-                <p>1 un</p>
-                <p>R$129,90</p>
-                <p>R$129,90</p>    
-                <div><button class="trash"><i class="las la-trash"></i></button></div>          
-            </div>
-        </div>
+        <% }) %>
+        <% } %>
     </section>
     <section id="sec4">
         <div class="escProd">
             <div class="botaoEscolher">
                 <button id="btn_escolher">
-                   <a href="/department">ESCOLHER MAIS PRODUTOS</a>
+                   <a href="/">ESCOLHER MAIS PRODUTOS</a>
                 </button>
             </div>
         </div>
          <div class="finalPedido">
+            <% let valorTotal = 0 %>
+            <% carrinho.map(produto => {%>
+            <% valorTotal = produto.preco + valorTotal })%>
             <div class="totalPedido">
                 <p class="totalPedidoValor">TOTAL DO PEDIDO</p>
-                <p>R$ 259,80</p>
+                <p>R$ <%= valorTotal %>,00</p>
             </div>
             <div class="fecharPedido">
-                <div class="subtotal">
-                    <p class="subTotalValor">SUBTOTAL</p>
-                    <p>R$ 259,80</p>
-                </div>
                 <button id="finalizarCompra"><a href="/information">FECHAR PEDIDO</a><i class="las la-shopping-cart">
                 </i></button>
             </div>
