@@ -19,6 +19,10 @@ const Checkout = {
         db.endereco.push({ id: v4(), ...endereco });
         // Escreve os dados no JSON
         writeToDB();
+    },
+
+    addFrete: (frete) => {
+        db.frete.push({ ...frete })
     }
 }
 
