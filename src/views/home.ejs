@@ -175,7 +175,7 @@
         <div id="cardsImag" class="disp-flex justify-space-between">
           <% if(esporte){ %>
             <div class="card1">
-              <a href="/produtos" class="shelf_body">
+              <a href="/produtos/<%= esporte[0].id %>" class="shelf_body">
                 <img src="/images/produtos/<%= esporte[0].image1 %>" class="card-img-top" alt="...">
                 <div class="card-body">
                   <p class="title">
@@ -185,10 +185,10 @@
                   <p class="shelf__p">3x R$ <%= Math.round(esporte[0].preco /3) %>,00 sem juros</p>
                 </div>
               </a>
-              <a href="/produtos" class="shelf__btn">Comprar</a>
+              <a href="/produtos/<%= esporte[0].id %>" class="shelf__btn">Comprar</a>
             </div>
             <div class="card1">
-              <a href="/produtos" class="shelf_body">
+              <a href="/produtos/<%= esporte[1].id %>" class="shelf_body">
                 <img src="/images/produtos/<%= esporte[1].image1 %>" class="card-img-top" alt="...">
                 <div class="card-body">
                   <p class="title">
@@ -198,10 +198,10 @@
                   <p class="shelf__p"> 3x R$ <%= Math.round(esporte[1].preco /3) %>,00 sem juros</p>
                 </div>
               </a>
-              <a href="/produtos" class="shelf__btn">Comprar</a>
+              <a href="/produtos/<%= esporte[1].id %>" class="shelf__btn">Comprar</a>
             </div>
             <div class="card1">
-              <a href="/produtos" class="shelf_body">
+              <a href="/produtos/<%= esporte[2].id %>" class="shelf_body">
                 <img src="/images/produtos/<%= esporte[2].image1 %>" class="card-img-top" alt="...">
                 <div class="card-body">
                   <p class="title">
@@ -211,10 +211,10 @@
                   <p class="shelf__p">3x R$ <%= Math.round(esporte[2].preco /3) %>,00 sem juros</p>
                 </div>
               </a>
-              <a href="/produtos" class="shelf__btn">Comprar</a>
+              <a href="/produtos/<%= esporte[2].id %>" class="shelf__btn">Comprar</a>
             </div>
             <div class="card1">
-              <a href="/produtos" class="shelf_body">
+              <a href="/produtos/<%= esporte[3].id %>" class="shelf_body">
                 <img src="/images/produtos/<%= esporte[3].image1 %>" class="card-img-top" alt="...">
                 <div class="card-body">
                   <p class="title">
@@ -224,7 +224,7 @@
                   <p class="shelf__p">3x R$ <%= Math.round(esporte[3].preco /3) %>,00 sem juros</p>
                 </div>
               </a>
-              <a href="/produtos" class="shelf__btn">Comprar</a>
+              <a href="/produtos/<%= esporte[3].id %>" class="shelf__btn">Comprar</a>
             </div>
             <% } %>
         </div>
