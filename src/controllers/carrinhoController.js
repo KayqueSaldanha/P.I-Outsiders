@@ -6,7 +6,7 @@ const carrinhoController = {
 
     renderCart: (req, res) => {
         const carrinho = req.session.carrinho
-        res.render('carrinho', { carrinho })
+        res.render('carrinho', { carrinho, menu: createMenuObject('false')  })
     },
 
     adicionar: (req, res) => {
