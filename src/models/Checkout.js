@@ -14,15 +14,22 @@ const Checkout = {
     // Retorna um endereço por um campo
     findAll: () => db.endereco,
 
-    addInfo: (endereco) => {
+    addEndereco: (endereco) => {
+        const id = v4();
         // Pega os dados de endereço recebidos e adiciona no campo endereço do JSON com um ID exclusivo de endereço
-        db.endereco.push({ id: v4(), ...endereco });
+        db.endereco.push({ id: id, ...endereco });
         // Escreve os dados no JSON
         writeToDB();
+        return id;
     },
 
-    addFrete: (frete) => {
-        db.frete.push({ ...frete })
+    addFrete: (idUsuario, idEndereco, produtos, frete) => {
+        // Armazena o id da compra numa constante
+        const idCompra = v4();
+        // Escreve os dados no JSON de compras
+        db.compras.push({ id: idCompra, idUsuario, idEndereco, produtos, status: "incompleto", ...frete });
+        writeToDB();
+        return id;
     }
 }
 
