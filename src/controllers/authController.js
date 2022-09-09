@@ -37,7 +37,7 @@ const AuthController = {
         console.log(req.session.user)
 
         // Redireciona para a página restrita
-        return res.redirect('/account');
+        return res.redirect('/');
     },
 
     logout: (req, res) => {
