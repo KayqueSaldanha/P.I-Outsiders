@@ -4,6 +4,10 @@ const Checkout = require('../models/Checkout');
 
 const CheckoutController = {
     userNotLoggedIn: (req, res) => {
+        if (req.session.carrinho == undefined) {
+            return res.redirect('/');
+        }
+        res.render('information');
         // Verifica se o usuário está logado
         // Ou seja, se existe uma sessão para o usuário
         if (req.session.user == undefined) {
@@ -23,30 +27,64 @@ const CheckoutController = {
         // Redireciona para a proxima etapa frete
         req.session.endereco = idEndereco;
         res.redirect('/frete');
+        return endereco
     },
 
-    frete: (req, res) => {
+    userNotLoggedFrete: (req, res) => {
+        if (req.session.endereco == undefined) {
+            return res.redirect('/login');
+        }
+        res.render('shipping');
+        if (req.session.carrinho == undefined) {
+            return res.redirect('/');
+        }
+        res.render('shipping');
+        if (req.session.user == undefined) {
+            // Se não estiver logado, redireciona para a página login
+            return res.redirect('/login');
+        }
         res.render('shipping');
     },
 
     addFrete: (req, res) => {
-        // Salvando o corpo da requisição numa constante
-        const frete = req.body;
-        // Salvando o a sessão do carrinho numa constante
-        const produtos = req.session.carrinho;
-        // Salvando o id do usuario numa constante
-        const { id } = req.session.user;
-        // Salvando o id do endereço numa constante
-        const idEndereco = req.session.endereco;
-        // Executando a função de addFrete e armazenando o retorno dela numa constante
-        const idCompra = Checkout.addFrete(id, idEndereco, produtos, frete);
-        // deixando o idCompra disponivel para ser usado em outra parte do código
-        req.session.idCompra = idCompra;
+        // Armazena o id do usuario da sessão numa constante chamada idUsuario
+        const idUsuario = req.session.user.id
+        // Pega o id do endereço e armazena numa constante
+        const idEndereco = req.session.endereco
+        // Pega o produto do carrinho e armazena numa constante
+        const produto = req.session.carrinho
+        // Pega a requisição do corpo e armazena na constante body
+        const body = req.body.frete;
+        // Trata a requisição do corpo que vem como texto simples e da um parse pro JSON
+        const frete = JSON.parse(body);
+        // Executa o metodo da Model pra adicionar o frete ao JSON com os parametros especificados
+        const freteSession = Checkout.addFrete(idUsuario, idEndereco, produto, frete);
+        req.session.frete = freteSession;
         res.redirect('/metodo-de-pagamento');
     },
 
-    metodoDePagamento: (req, res) => {
+    metodoDePagamentoLogado: (req, res) => {
+        if (req.session.frete == undefined) {
+            return res.redirect('/login');
+        }
         res.render('payment');
+        if (req.session.carrinho == undefined) {
+            return res.redirect('/');
+        }
+        res.render('payment');
+        if (req.session.user == undefined) {
+            // Se não estiver logado, redireciona para a página login
+            return res.redirect('/login');
+        }
+        res.render('payment');
+    },
+
+    metodoCartao: (req, res) => {
+        const idUsuario = req.session.user.id;
+        const dadosDoCartao = req.body.dadosDoCartao;
+        console.log('ola', dadosDoCartao);
+        const cartaoSession = Checkout.formaDePagamentoCartao(idUsuario, dadosDoCartao);
+        req.session.cartao = cartaoSession;        
     }
 }
 
