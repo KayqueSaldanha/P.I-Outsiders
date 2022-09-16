@@ -92,7 +92,7 @@
                             <li class="payment-li">Pagamento</li>
                         </ul>
                     </div>
-                    <form method="post" action="">
+                    <form method="post" action="/metodo-de-pagamento">
                         <div class="main-container-shipping">
                             <!-- SHIPPING SELECTOR -->
                             <div class="shipping-info">
@@ -109,7 +109,7 @@
                                                 <label class="container">
                                                     <img src="./images/payment/Icon-CreditCard.svg" alt="">
                                                     <p class="description-method">Cartão de crédito</p>
-                                                    <input type="radio" checked name="radio">
+                                                    <input type="radio" checked name="metodoDePagamento">
                                                     <span class="checkmark"></span>
                                                 </label><!-- container -->
                                             </div>
@@ -120,22 +120,22 @@
                                         <div class="accordion-body">
                                             <div class="name">
                                                 <input class="credit-card-input" id="credit-card-nmb" type="number"
-                                                    placeholder="Número do cartão">
+                                                    placeholder="Número do cartão" name="numeroDoCartao">
                                                 <input class="credit-card-input" id="credit-card-expiration" type="text"
-                                                    placeholder="(MM/AA)">
+                                                    placeholder="(MM/AA)" name="validade">
                                                 <input class="credit-card-input" id="credit-card-cvv" type="number"
-                                                    placeholder="CVV">
+                                                    placeholder="CVV" name="CVV">
                                                 <input class="credit-card-input" id="credit-card-name" type="text"
-                                                    placeholder="Nome impresso no cartão">
+                                                    placeholder="Nome impresso no cartão" name="nomeImpresso">
                                                 <input class="credit-card-input" id="credit-card-cpf" type="number"
-                                                    placeholder="CPF ou CNPJ">
+                                                    placeholder="CPF ou CNPJ" name="CPF_CNPJ">
                                                 <div class="form-floating">
-                                                    <select class="form-select" id="floatingSelect"
+                                                    <select name="numeroParcela" class="form-select" id="floatingSelect"
                                                         aria-label="Floating label select example">
                                                         <option id="state-selector" selected>Parcelas</option>
-                                                        <option value="1">1x - R$ 138,90 sem juros</option>
-                                                        <option value="2">2x - R$ 69,45 sem juros</option>
-                                                        <option value="3">3x - R$ 46,30 sem juros</option>
+                                                        <option value="1x">1x - R$ 138,90 sem juros</option>
+                                                        <option value="2x">2x - R$ 69,45 sem juros</option>
+                                                        <option value="3x">3x - R$ 46,30 sem juros</option>
                                                     </select>
                                                 </div>
                                                 <div class="checkbox-item2">
@@ -147,6 +147,7 @@
                                             </div>
                                         </div>
                                     </div>
+
                                     <div class="division division-2">
                                         <!-- Here goes the division page -->
                                     </div>
@@ -191,7 +192,8 @@
                                                 <label class="container">
                                                     <img src="/images/payment/Icon-Barcode.svg" alt="">
                                                     <p class="description-method">Boleto bancário</p>
-                                                    <input type="radio" name="radio">
+                                                    <input type="radio" name="metodoDePagamento"
+                                                        value="Boleto Bancário">
                                                     <span class="checkmark"></span>
                                                 </label><!-- container -->
                                             </div>
