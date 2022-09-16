@@ -36,7 +36,7 @@ const AuthController = {
         req.session.user = { email: user.email, id: user.id, nome: user.nome, sobrenome: user.sobrenome };
         console.log(req.session.user)
 
-        // Redireciona para a página restrita
+        // Redireciona para a página home
         return res.redirect('/');
     },
 
