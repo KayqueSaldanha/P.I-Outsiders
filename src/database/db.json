@@ -967,6 +967,19 @@
                 "complemento": "",
                 "estado": "São Paulo - SP"
             }
+        },
+        {
+            "id": "4b8268f2-d3d9-4a2e-9313-f97dff0967ef",
+            "userid": "6cde2bb8-2b42-4f53-bf92-89fd1e772f9d",
+            "endereco": {
+                "cep": "09181580",
+                "cidade": "Santo André",
+                "rua": "Rua Otávio Marques",
+                "numero": "486",
+                "bairro": "Exemplo",
+                "complemento": "",
+                "estado": "São Paulo - SP"
+            }
         }
     ],
     "cartoes": [
