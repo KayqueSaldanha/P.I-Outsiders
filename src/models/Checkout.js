@@ -23,13 +23,20 @@ const Checkout = {
         return id;
     },
 
-    addFrete: (idUsuario, idEndereco, produtos, frete) => {
+    addFrete: (idUsuario, idEndereco, produto, frete) => {
         // Armazena o id da compra numa constante
         const idCompra = v4();
         // Escreve os dados no JSON de compras
-        db.compras.push({ id: idCompra, idUsuario, idEndereco, produtos, status: "incompleto", ...frete });
+        db.compras.push({ idCompra, idUsuario, idEndereco, status: "incompleto", metodoDePagamento: "", produto, frete });
         writeToDB();
-        return id;
+        return idCompra;
+    },
+
+    formaDePagamentoCartao: (idUsuario, dadosDoCartao) => {
+        const idCard = v4();
+        db.cartoes.push({ idCard, idUsuario, dadosDoCartao })
+        writeToDB();
+        return idCard;
     }
 }
 
