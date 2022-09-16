@@ -557,6 +557,274 @@
                 "prazo": "4 dias úteis",
                 "valor": 9.9
             }
+        },
+        {
+            "compra": "5c38b947-5b59-4da3-b214-5cac9095c4cc",
+            "idUsuario": "6cde2bb8-2b42-4f53-bf92-89fd1e772f9d",
+            "idEndereco": "a098ffec-fe5f-46a2-9c52-c8dac3e66648",
+            "produto": [
+                {
+                    "id": 1,
+                    "image1": "TechTShirt_Preta.jpg",
+                    "image2": "TechTShirt_Preta.jpg",
+                    "image3": "TechTShirt_Preta.jpg",
+                    "nome": "Tech T-Shirt",
+                    "preco": 229,
+                    "cor": "Preta",
+                    "genero": "homem",
+                    "categoria": "T-shirts",
+                    "tamanhos": [
+                        "PP",
+                        "P",
+                        "M",
+                        "G",
+                        "GG"
+                    ],
+                    "status": "",
+                    "quantidade": 1
+                }
+            ],
+            "frete": {
+                "empresa": "Loggi",
+                "prazo": "4 dias úteis",
+                "valor": 9.9
+            }
+        },
+        {
+            "compra": "99f342a0-b3df-41ce-9df3-384366305569",
+            "idUsuario": "6cde2bb8-2b42-4f53-bf92-89fd1e772f9d",
+            "idEndereco": "615d16a2-b4f8-4ae0-97ac-fd649da9a923",
+            "status": "incompleto",
+            "produto": [
+                {
+                    "id": 1,
+                    "image1": "TechTShirt_Preta.jpg",
+                    "image2": "TechTShirt_Preta.jpg",
+                    "image3": "TechTShirt_Preta.jpg",
+                    "nome": "Tech T-Shirt",
+                    "preco": 229,
+                    "cor": "Preta",
+                    "genero": "homem",
+                    "categoria": "T-shirts",
+                    "tamanhos": [
+                        "PP",
+                        "P",
+                        "M",
+                        "G",
+                        "GG"
+                    ],
+                    "status": "",
+                    "quantidade": 1
+                }
+            ],
+            "frete": {
+                "empresa": "Loggi",
+                "prazo": "4 dias úteis",
+                "valor": 9.9
+            }
+        },
+        {
+            "compra": "45121313-5f5f-44ee-bc13-a21ca501143e",
+            "idUsuario": "6cde2bb8-2b42-4f53-bf92-89fd1e772f9d",
+            "idEndereco": "8073b4e0-98a3-47bf-81bf-433d0a29e49b",
+            "status": "incompleto",
+            "metodoDePagamento": "",
+            "produto": [
+                {
+                    "id": 1,
+                    "image1": "TechTShirt_Preta.jpg",
+                    "image2": "TechTShirt_Preta.jpg",
+                    "image3": "TechTShirt_Preta.jpg",
+                    "nome": "Tech T-Shirt",
+                    "preco": 229,
+                    "cor": "Preta",
+                    "genero": "homem",
+                    "categoria": "T-shirts",
+                    "tamanhos": [
+                        "PP",
+                        "P",
+                        "M",
+                        "G",
+                        "GG"
+                    ],
+                    "status": "",
+                    "quantidade": 1
+                }
+            ],
+            "frete": {
+                "empresa": "Loggi",
+                "prazo": "4 dias úteis",
+                "valor": 9.9
+            }
+        },
+        {
+            "idCompra": "8511772b-5ee9-49ea-adc2-dd35b0e00a5b",
+            "idUsuario": "6cde2bb8-2b42-4f53-bf92-89fd1e772f9d",
+            "idEndereco": "210737f2-b07c-4630-81fe-281c367078a7",
+            "status": "incompleto",
+            "metodoDePagamento": "",
+            "produto": [
+                {
+                    "id": 1,
+                    "image1": "TechTShirt_Preta.jpg",
+                    "image2": "TechTShirt_Preta.jpg",
+                    "image3": "TechTShirt_Preta.jpg",
+                    "nome": "Tech T-Shirt",
+                    "preco": 229,
+                    "cor": "Preta",
+                    "genero": "homem",
+                    "categoria": "T-shirts",
+                    "tamanhos": [
+                        "PP",
+                        "P",
+                        "M",
+                        "G",
+                        "GG"
+                    ],
+                    "status": "",
+                    "quantidade": 1
+                }
+            ],
+            "frete": {
+                "empresa": "Loggi",
+                "prazo": "4 dias úteis",
+                "valor": 9.9
+            }
+        },
+        {
+            "idCompra": "1a4be35f-f500-4842-9ba6-96636bf2b9f3",
+            "idUsuario": "6cde2bb8-2b42-4f53-bf92-89fd1e772f9d",
+            "idEndereco": "79b122f8-b4a4-4551-b72c-f3df31d2268b",
+            "status": "incompleto",
+            "metodoDePagamento": "",
+            "produto": [
+                {
+                    "id": 1,
+                    "image1": "TechTShirt_Preta.jpg",
+                    "image2": "TechTShirt_Preta.jpg",
+                    "image3": "TechTShirt_Preta.jpg",
+                    "nome": "Tech T-Shirt",
+                    "preco": 229,
+                    "cor": "Preta",
+                    "genero": "homem",
+                    "categoria": "T-shirts",
+                    "tamanhos": [
+                        "PP",
+                        "P",
+                        "M",
+                        "G",
+                        "GG"
+                    ],
+                    "status": "",
+                    "quantidade": 1
+                }
+            ],
+            "frete": {
+                "empresa": "Loggi",
+                "prazo": "4 dias úteis",
+                "valor": 9.9
+            }
+        },
+        {
+            "idCompra": "ec537ba5-ffd1-40d2-bba9-b752d91df179",
+            "idUsuario": "6cde2bb8-2b42-4f53-bf92-89fd1e772f9d",
+            "idEndereco": "f1727723-3c57-414f-a711-4e6fd52b8404",
+            "status": "incompleto",
+            "metodoDePagamento": "",
+            "produto": [
+                {
+                    "id": 1,
+                    "image1": "TechTShirt_Preta.jpg",
+                    "image2": "TechTShirt_Preta.jpg",
+                    "image3": "TechTShirt_Preta.jpg",
+                    "nome": "Tech T-Shirt",
+                    "preco": 229,
+                    "cor": "Preta",
+                    "genero": "homem",
+                    "categoria": "T-shirts",
+                    "tamanhos": [
+                        "PP",
+                        "P",
+                        "M",
+                        "G",
+                        "GG"
+                    ],
+                    "status": "",
+                    "quantidade": 1
+                }
+            ],
+            "frete": {
+                "empresa": "Loggi",
+                "prazo": "4 dias úteis",
+                "valor": 9.9
+            }
+        },
+        {
+            "idCompra": "230ed367-a919-4066-8c16-081bfcee4004",
+            "idUsuario": "6cde2bb8-2b42-4f53-bf92-89fd1e772f9d",
+            "idEndereco": "deaf63b6-b2a4-4d49-97e5-8ba4044439e7",
+            "status": "incompleto",
+            "metodoDePagamento": "",
+            "produto": [
+                {
+                    "id": 1,
+                    "image1": "TechTShirt_Preta.jpg",
+                    "image2": "TechTShirt_Preta.jpg",
+                    "image3": "TechTShirt_Preta.jpg",
+                    "nome": "Tech T-Shirt",
+                    "preco": 229,
+                    "cor": "Preta",
+                    "genero": "homem",
+                    "categoria": "T-shirts",
+                    "tamanhos": [
+                        "PP",
+                        "P",
+                        "M",
+                        "G",
+                        "GG"
+                    ],
+                    "status": "",
+                    "quantidade": 1
+                }
+            ],
+            "frete": {
+                "empresa": "Loggi",
+                "prazo": "4 dias úteis",
+                "valor": 9.9
+            }
+        },
+        {
+            "idCompra": "4d744485-9274-41e9-b0be-ec335657c109",
+            "idUsuario": "6cde2bb8-2b42-4f53-bf92-89fd1e772f9d",
+            "idEndereco": "5276f663-1220-44bd-86b3-11feff30f952",
+            "status": "incompleto",
+            "metodoDePagamento": "",
+            "produto": [
+                {
+                    "id": 2,
+                    "image1": "TshirtSport-Preto02.webp",
+                    "image2": "",
+                    "nome": "T-Shirt Sportee",
+                    "preco": 129,
+                    "cor": "Branca",
+                    "genero": "homem",
+                    "categoria": "T-shirts",
+                    "tamanhos": [
+                        "PP",
+                        "P",
+                        "M",
+                        "G",
+                        "GG"
+                    ],
+                    "status": "",
+                    "quantidade": 1
+                }
+            ],
+            "frete": {
+                "empresa": "Loggi",
+                "prazo": "4 dias úteis",
+                "valor": 9.9
+            }
         }
     ],
     "endereco": [
@@ -569,6 +837,136 @@
             "bairro": "bairro exemplo",
             "complemento": "ap 2",
             "estado": "São Paulo - SP"
+        },
+        {
+            "id": "a098ffec-fe5f-46a2-9c52-c8dac3e66648",
+            "userid": "6cde2bb8-2b42-4f53-bf92-89fd1e772f9d",
+            "endereco": {
+                "cep": "09181580",
+                "cidade": "Santo André",
+                "rua": "Rua Otávio Marques",
+                "numero": "486",
+                "bairro": "Exemplo",
+                "complemento": "",
+                "estado": "São Paulo - SP"
+            }
+        },
+        {
+            "id": "615d16a2-b4f8-4ae0-97ac-fd649da9a923",
+            "userid": "6cde2bb8-2b42-4f53-bf92-89fd1e772f9d",
+            "endereco": {
+                "cep": "09181580",
+                "cidade": "Santo André",
+                "rua": "Rua Otávio Marques",
+                "numero": "486",
+                "bairro": "Exemplo",
+                "complemento": "",
+                "estado": "São Paulo - SP"
+            }
+        },
+        {
+            "id": "8073b4e0-98a3-47bf-81bf-433d0a29e49b",
+            "userid": "6cde2bb8-2b42-4f53-bf92-89fd1e772f9d",
+            "endereco": {
+                "cep": "09181580",
+                "cidade": "Santo André",
+                "rua": "Rua Otávio Marques",
+                "numero": "486",
+                "bairro": "Exemplo",
+                "complemento": "",
+                "estado": "São Paulo - SP"
+            }
+        },
+        {
+            "id": "210737f2-b07c-4630-81fe-281c367078a7",
+            "userid": "6cde2bb8-2b42-4f53-bf92-89fd1e772f9d",
+            "endereco": {
+                "cep": "09181580",
+                "cidade": "Santo André",
+                "rua": "Rua Otávio Marques",
+                "numero": "486",
+                "bairro": "Exemplo",
+                "complemento": "",
+                "estado": "São Paulo - SP"
+            }
+        },
+        {
+            "id": "949035fb-c185-4cf0-b3c7-a9c2e4e76dad",
+            "userid": "6cde2bb8-2b42-4f53-bf92-89fd1e772f9d",
+            "endereco": {
+                "cep": "09181580",
+                "cidade": "Santo André",
+                "rua": "Rua Otávio Marques",
+                "numero": "486",
+                "bairro": "Exemplo",
+                "complemento": "",
+                "estado": "São Paulo - SP"
+            }
+        },
+        {
+            "id": "edd1e5b0-2546-410c-8c6b-6007a100421f",
+            "userid": "6cde2bb8-2b42-4f53-bf92-89fd1e772f9d",
+            "endereco": {
+                "cep": "09181580",
+                "cidade": "Santo André",
+                "rua": "Rua Otávio Marques",
+                "numero": "486",
+                "bairro": "Exemplo",
+                "complemento": "",
+                "estado": "São Paulo - SP"
+            }
+        },
+        {
+            "id": "79b122f8-b4a4-4551-b72c-f3df31d2268b",
+            "userid": "6cde2bb8-2b42-4f53-bf92-89fd1e772f9d",
+            "endereco": {
+                "cep": "09181580",
+                "cidade": "Santo André",
+                "rua": "Rua Otávio Marques",
+                "numero": "486",
+                "bairro": "Exemplo",
+                "complemento": "",
+                "estado": "São Paulo - SP"
+            }
+        },
+        {
+            "id": "f1727723-3c57-414f-a711-4e6fd52b8404",
+            "userid": "6cde2bb8-2b42-4f53-bf92-89fd1e772f9d",
+            "endereco": {
+                "cep": "09181580",
+                "cidade": "Santo André",
+                "rua": "Rua Otávio Marques",
+                "numero": "486",
+                "bairro": "Exemplo",
+                "complemento": "",
+                "estado": "São Paulo - SP"
+            }
+        },
+        {
+            "id": "deaf63b6-b2a4-4d49-97e5-8ba4044439e7",
+            "userid": "6cde2bb8-2b42-4f53-bf92-89fd1e772f9d",
+            "endereco": {
+                "cep": "09181580",
+                "cidade": "Santo André",
+                "rua": "Rua Otávio Marques",
+                "numero": "486",
+                "bairro": "Exemplo",
+                "complemento": "",
+                "estado": "São Paulo - SP"
+            }
+        },
+        {
+            "id": "5276f663-1220-44bd-86b3-11feff30f952",
+            "userid": "6cde2bb8-2b42-4f53-bf92-89fd1e772f9d",
+            "endereco": {
+                "cep": "09181580",
+                "cidade": "Santo André",
+                "rua": "Rua Otávio Marques",
+                "numero": "486",
+                "bairro": "Parque Erasmo Assunção",
+                "complemento": "",
+                "estado": "São Paulo - SP"
+            }
         }
     ],
     "cartoes": [
