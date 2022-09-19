@@ -34,6 +34,14 @@ const pageController = {
 
     },
 
+    // aumentar: (req, res) => {
+    //         const idProduto = req.params.id
+    //         const produtoIndex = req.session.produtos.findIndex(produto => produto.id === idProduto)
+    //         const produto = req.session.produtos[produtoIndex]
+    //          req.session.produtos[produtoIndex] = { ...produto, quantidade: produto.quantidade + 1 }
+    //         res.redirect('/carrinho')
+    //      },
+
     home: (req, res) => {
         const diaDia = Produto.findByStatus('diaDia')
         const esporte = Produto.findByStatus('esporte')

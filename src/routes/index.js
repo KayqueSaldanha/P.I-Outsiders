@@ -8,6 +8,7 @@ const searchController = require('../controllers/searchController');
 router.get('/', pageController.home)
 router.get('/departamento/:categoria', pageController.department)
 router.get('/produtos', pageController.produtos)
+// router.get('/produtos', pageController.aumentar)
 router.get('/produtos/:id', pageController.mostrarProduto)
 router.get('/busca', searchController)
 

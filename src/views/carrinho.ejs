@@ -42,10 +42,12 @@
             </div>
         </div>
         <div class="valores">
-                <p>1 un</p>
+                <p><%= produto.quantidade %></p>
                 <p>R$<%= produto.preco %>,00</p>
-                <p>R$<%= produto.preco %>,00</p>    
-                <div><button class="trash"><i class="las la-trash"></i></button></div>          
+                <p>R$<%= produto.preco * produto.quantidade %>,00</p>    
+                <form action="/carrinho/<%= produto.id %>?_method=DELETE" method="post">
+                <div><button class="trash"><i class="las la-trash"></i></button></div>     
+                </form>     
             </div>
         </div>
         <% }) %>
