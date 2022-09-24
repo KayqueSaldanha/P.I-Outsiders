@@ -14,7 +14,7 @@ router.post('/frete', CheckoutController.addFrete);
 // renderiza a pagina de pagamento
 router.get('/metodo-de-pagamento', CheckoutController.metodoDePagamentoLogado);
 
-router.post('metodo-de-pagamento', CheckoutController.metodoCartao);
+router.post('/metodo-de-pagamento', CheckoutController.metodoCartao);
 
 
 
