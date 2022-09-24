@@ -34,9 +34,19 @@ const Checkout = {
 
     formaDePagamentoCartao: (idUsuario, dadosDoCartao) => {
         const idCard = v4();
-        db.cartoes.push({ idCard, idUsuario, dadosDoCartao })
+        db.cartoes.push({ idCard, idUsuario, dadosDoCartao });
         writeToDB();
         return idCard;
+    },
+
+    atualizaCompra: (idCompra, idCard, metodoDePagamento) => {
+        const compraIndex = db.compras.findIndex(compra => compra.idCompra === idCompra);
+        console.log("index", compraIndex);
+        const compraOld = db.compras[compraIndex];
+        console.log("OLD", compraOld);
+        db.compras[compraIndex] = { ...compraOld, idCompra, idCard, metodoDePagamento, status: "aguardando pagamento" };
+        console.log("COMPRINHA", db.compras[compraIndex]);
+        writeToDB();
     }
 }
 
