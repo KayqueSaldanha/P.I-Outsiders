@@ -1,7 +1,5 @@
 const express = require('express');
-
 const AuthController = require('../controllers/AuthController');
-
 const router = express.Router();
 
 // ==================
@@ -10,7 +8,7 @@ const router = express.Router();
 // ==================
 
 // Renderiza a página restrita
-router.get('/account', AuthController.renderAreaRestrita);
+router.get('/account', AuthController.renderRestrictArea);
 // Rota para mostrar formulário de edição de usuário
 router.get('/edit/:id', AuthController.editForm);
 // Rota para atualizar um usuário

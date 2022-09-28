@@ -1,26 +1,20 @@
 const express = require('express');
-
-// Importando o controller de usuários
 const UserController = require('../controllers/UserController');
-// Importando o controller de autenticação
 const AuthController = require('../controllers/AuthController');
-
 const router = express.Router();
 
-// Rotas públicas para usuários não logados
-
-// Renderiza a página inicial de login
-// Utiliza o middleware redirectAuthenticatedUser para redirecionar o usuário que está logado
-router.get('/login', AuthController.renderLogin);
+// ======================
+// Rotas Públicas
+// (Usuários não logados)
+// ======================
 
 // Renderiza a página de cadastro de usuário
-// Utiliza o middleware redirectAuthenticatedUser para redirecionar o usuário logado
-router.get('/cadastro', UserController.renderFormCadastro);
-
+router.get('/cadastro', UserController.renderFormRegister);
+// Rota para cadastrar um novo usuário
+router.post('/cadastro', UserController.createNewUser);
+// Renderiza a página inicial de login
+router.get('/login', AuthController.renderLogin);
 // Rota para fazer o login do usuário
 router.post('/login', AuthController.login);
-
-// Rota para cadastrar um novo usuário
-router.post('/cadastro', UserController.cadastro);
 
 module.exports = router;

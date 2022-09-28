@@ -2,20 +2,21 @@
 // Controller responsável por gerenciar a sessão do usuário
 // (Ex: login, logout)
 // ========================================================
-
-const { createMenuObject } = require('../../helpers/createMenuObject')
-
+const { createMenuObject } = require('../../helpers/createMenuObject');
 const bcrypt = require('bcrypt');
-
-const Users = require('../models/Users');
+const { User } = require('../models');
 
 const AuthController = {
-    login: (req, res) => {
-        // Pega os dados do usuário do corpo da requisição
-        const { email, password } = req.body;
-
-        // Chama a model para buscar um usuário pelo email
-        const user = Users.findByEmail(email);
+    login: async (req, res) => {
+        // Busca no banco de dados um usuário pelos campos especificados
+        const user = await User.findOne({
+            // attribute: atributos nos quais o metodo findOne irá procurar
+            attibutes: ['id', 'email', 'senha'],
+            // onde o email é igual ao que foi recebido pelo corpo da requisição
+            where: {
+                email: req.body.email
+            }
+        });
 
         // Verifica se o usuário existe
         if (!user) {
@@ -24,9 +25,9 @@ const AuthController = {
         }
 
         // Verifica se a senha informada é a mesma que a senha criptografada no db
-        const senhaValida = bcrypt.compareSync(password, user.password);
+        const validPassword = bcrypt.compareSync(req.body.senha, user.senha);
         // Verifica se a senha é válida
-        if (!senhaValida) {
+        if (!validPassword) {
             // Se a senha for inválida, renderiza a página de login com erro
             return res.render('login', { error: 'Email ou senha inválidos', menu: createMenuObject('false') });
         }
@@ -34,14 +35,13 @@ const AuthController = {
         // Se o email e a senha forem válidos, cria uma sessão para o usuário
         // Salvando o email e o id do usuário na sessão
         req.session.user = { email: user.email, id: user.id, nome: user.nome, sobrenome: user.sobrenome };
-        console.log(req.session.user)
 
         // Redireciona para a página home
         return res.redirect('/');
     },
 
     logout: (req, res) => {
-        // Destroi a sessão do usuário
+        // Exclui a sessão do usuário
         req.session.destroy();
 
         // Redireciona para a página inicial
@@ -60,9 +60,9 @@ const AuthController = {
         return res.render('login', { error: null, menu: createMenuObject('false') });
     },
 
-    renderAreaRestrita: (req, res) => {
+    renderRestrictArea: (req, res) => {
         const { id } = req.session.user;
-        const user = Users.findById(id);
+        const user = User.findByPk(id);
         // Renderiza a página restrita passando os dados do usuário logado
         return res.render('account', { user });
     },
@@ -70,18 +70,17 @@ const AuthController = {
     editForm: (req, res) => {
         // Busca os dados do usuário
         const { id } = req.params;
-        const user = Users.findById(id);
+        const user = User.findById(id);
         res.render('account_edit', { user });
     },
 
     edit: (req, res) => {
         const { id } = req.session.user;
         const user = req.body
-        Users.edit(id, user)
+        User.edit(id, user)
         res.redirect('/account')
         console.log(req.body)
     }
-
 }
 
 module.exports = AuthController;
