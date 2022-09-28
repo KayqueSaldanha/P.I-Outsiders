@@ -1,4 +1,4 @@
-const Produto = require('../models/Produto');
+const Produto = require('../modelsJson/Produto');
 const { createMenuObject } = require('../../helpers/createMenuObject')
 const { db } = require('../database/db.json');
 

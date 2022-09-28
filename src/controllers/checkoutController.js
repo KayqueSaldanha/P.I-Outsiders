@@ -1,5 +1,5 @@
-const User = require('../models/Users');
-const Checkout = require('../models/Checkout');
+const User = require('../modelsJson/Users');
+const Checkout = require('../modelsJson/Checkout');
 
 
 const CheckoutController = {
