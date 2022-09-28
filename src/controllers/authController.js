@@ -62,7 +62,7 @@ const AuthController = {
 
     renderRestrictArea: (req, res) => {
         const { id } = req.session.user;
-        const user = User.findById(id);
+        const user = User.findByPk(id);
         // Renderiza a página restrita passando os dados do usuário logado
         return res.render('account', { user });
     },
