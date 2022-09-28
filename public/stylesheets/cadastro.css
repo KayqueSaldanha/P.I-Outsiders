@@ -11,8 +11,7 @@
  }
  
  section>div>h1{
-   margin-top: 100px;
-   margin-bottom: 10px;
+   margin-top: 20px;
     Font-family: Roboto;
     Font-style: Light;
     Font-size: 50px;
@@ -25,8 +24,6 @@
     Font-family: Roboto;
     Font-style: Light;
     Font-size: 20px;
-    Line-height: 25px;
-    Line-height: 100%;
     color: rgba(0, 0, 0, 0.7);
     margin-top: 10px;
     margin-bottom: 45px;
@@ -44,8 +41,9 @@
     background-color: #D9D9D9;
     Width: 500px;
     Height: 60px;
-    margin-bottom: 43px;
+    margin-bottom: 20px;
     border: none;
+    border-radius: 5px;
     Font-family: Roboto;
     Font-style: Regular;
     Font-size: 25px;
@@ -59,11 +57,10 @@
    background-color:black;
    Width: 500px;
    Height: 60px;
-   margin-bottom: 43px;
    border: none;
    font-size: 1.5em; 
    font-weight:500;
-   margin-bottom: 400px;
+   margin-bottom: 10px;
 }
 
 #entrar:hover{
@@ -79,6 +76,10 @@
    Font-size: 39px;
    Line-height: 40px;
    Line-height: 100%;
+}
+
+#p3 {
+   
 }
 
 /*////////// responsividade //////////*/
@@ -114,7 +115,7 @@
            background-color:black;
            Width: 300px;
            Height: 40px;
-           margin-bottom: 120px;
+           margin-bottom: 20px;
            border: none;
            Font-family: Roboto;
            Font-style: Regular;
