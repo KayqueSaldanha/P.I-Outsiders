@@ -33,8 +33,16 @@ const AuthController = {
         }
 
         // Se o email e a senha forem válidos, cria uma sessão para o usuário
-        // Salvando o email e o id do usuário na sessão
-        req.session.user = { email: user.email, id: user.id, nome: user.nome, sobrenome: user.sobrenome };
+        // Salvando as informações do usuário na sessão
+        req.session.user = {
+            email: user.email,
+            id: user.id,
+            nome: user.nome,
+            sobrenome: user.sobrenome,
+            cpf: user.cpf,
+            dataNascimento: user.dataNascimento,
+            telefone: user.telefone
+        };
 
         // Redireciona para a página home
         return res.redirect('/');
@@ -45,7 +53,7 @@ const AuthController = {
         req.session.destroy();
 
         // Redireciona para a página inicial
-        return res.redirect('/home');
+        return res.redirect('/login');
     },
 
     renderLogin: (req, res) => {
@@ -61,25 +69,35 @@ const AuthController = {
     },
 
     renderRestrictArea: (req, res) => {
-        const { id } = req.session.user;
-        const user = User.findByPk(id);
+        const userData = req.session.user;
         // Renderiza a página restrita passando os dados do usuário logado
-        return res.render('account', { user });
+        return res.render('account', { userData });
     },
 
-    editForm: (req, res) => {
-        // Busca os dados do usuário
-        const { id } = req.params;
-        const user = User.findById(id);
-        res.render('account_edit', { user });
+    editForm: async (req, res) => {
+        const userData = req.session.user;
+
+        res.render('account_edit', { userData });
     },
 
-    edit: (req, res) => {
-        const { id } = req.session.user;
-        const user = req.body
-        User.edit(id, user)
+    edit: async (req, res) => {
+        const userData = req.body;
+
+        await User.update(
+            {
+                nome: userData.nome,
+                sobrenome: userData.sobrenome,
+                cpf: userData.cpf,
+                telefone: userData.telefone,
+                dataNascimento: userData.dataNascimento
+            }, {
+                where: {
+                    id: req.session.user.id
+                }
+            }
+        )
+
         res.redirect('/account')
-        console.log(req.body)
     }
 }
 

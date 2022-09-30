@@ -33,7 +33,7 @@
                         <img width="55" src="/images/account/user.svg" alt="Ícone de user">
                     </div> <!-- .account__user-img -->
                     <div class="account__user-greeting">
-                        <span>Olá, <%= user.nome[0].toUpperCase() + user.nome.substring(1) %>!</span>
+                        <span>Olá, <%= userData.nome %>!</span>
                     </div> <!-- .account__user-greeting -->
                 </div> <!-- .account__user-info -->
                 <nav class="account__link">
@@ -58,30 +58,30 @@
                     <div class="container__form">
                         <form action="/users?_method=PUT" method="post" class="form__edit">
                             <div class="flex__form">
-                                <label for="firstName">Nome</label>
-                                <input type="text" name="firstName" id="firstName"
-                                    value="<%= user.nome[0].toUpperCase() + user.nome.substring(1) %>" required>
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome" id="firstName"
+                                    value="<%= userData.nome %>" required>
                             </div>
                             <div class="flex__form">
-                                <label for="lastName">Sobrenome</label>
-                                <input type="text" name="lastName" id="lastName"
-                                    value="<%= user.sobrenome[0].toUpperCase() + user.sobrenome.substring(1) %>"
+                                <label for="sobrenome">Sobrenome</label>
+                                <input type="text" name="sobrenome" id="lastName"
+                                    value="<%= userData.sobrenome %>"
                                     required>
                             </div>
                             <div class="flex__form">
-                                <label for="document">CPF</label>
-                                <input type="text" name="document" id="document"
-                                    value="<%= user ? user.document : '' %>" required>
+                                <label for="cpf">CPF</label>
+                                <input type="text" name="cpf" id="document"
+                                    value="<%= userData ? userData.cpf : '' %>" required>
                             </div>
                             <div class="flex__form">
-                                <label for="phone">Telefone</label>
-                                <input type="text" name="phone" id="phone" value="<%= user ? user.phone : '' %>"
+                                <label for="telefone">Telefone</label>
+                                <input type="text" name="telefone" id="phone" value="<%= userData ? userData.telefone : '' %>"
                                     required>
                             </div>
                             <div class="flex__form">
-                                <label for="birthDate">Data de nascimento</label>
-                                <input type="text" name="birthDate" id="birthDate"
-                                    value="<%= user ? user.birthDate : '' %>" required>
+                                <label for="dataNascimento">Data de nascimento</label>
+                                <input type="text" name="dataNascimento" id="birthDate"
+                                    value="<%= userData ? userData.dataNascimento : '' %>" required>
                             </div>
                             <button type="submit" class="submit__form">Salvar alterações</button>
                         </form>

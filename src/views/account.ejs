@@ -29,7 +29,7 @@
                         <img width="55" src="/images/account/user.svg" alt="Ícone de user">
                     </div> <!-- .account__user-img -->
                     <div class="account__user-greeting">
-                        <span>Olá, <%= user.nome[0].toUpperCase() + user.nome.substring(1) %>!</span>
+                        <span>Olá, <%= userData.nome[0].toUpperCase() + userData.nome.substring(1) %>!</span>
                     </div> <!-- .account__user-greeting -->
                 </div> <!-- .account__user-info -->
                 <nav class="account__link">
@@ -50,13 +50,13 @@
                         <div>
                             <label class="acc__on-base">Nome</label>
                             <div class="acc__on-disabled">
-                                <%= user.nome[0].toUpperCase() + user.nome.substring(1) %>
+                                <%= userData.nome[0].toUpperCase() + userData.nome.substring(1) %>
                             </div>
                         </div>
                         <div>
                             <label class="acc__on-base">Sobrenome</label>
                             <div class="acc__on-disabled">
-                                <%= user.sobrenome[0].toUpperCase() + user.sobrenome.substring(1) %>
+                                <%= userData.sobrenome[0].toUpperCase() + userData.sobrenome.substring(1) %>
                             </div>
                         </div>
                     </div> <!-- .profile__form -->
@@ -64,13 +64,13 @@
                         <div>
                             <label class="acc__on-base">Email</label>
                             <div class="acc__on-disabled">
-                                <%= user.email %>
+                                <%= userData.email %>
                             </div>
                         </div>
                         <div>
                             <label class="acc__on-base">CPF</label>
                             <div class="acc__on-disabled">
-                                <%= user.document %>
+                                <%= userData.cpf %>
                             </div>
                         </div>
                     </div> <!-- .profile__form-email -->
@@ -78,17 +78,17 @@
                         <div>
                             <label class="acc__on-base">Data de Nascimento</label>
                             <div class="acc__on-disabled">
-                                <%= user.birthDate %>
+                                <%= userData.dataNascimento %>
                             </div>
                         </div>
                         <div>
                             <label class="acc__on-base">Telefone</label>
                             <div class="acc__on-disabled">
-                                <%= user.phone %>
+                                <%= userData.telefone %>
                             </div>
                         </div>
                     </div> <!-- .profile__form-date -->
-                    <a href="/edit/<%= user.id %>" class="acc_edit">Editar</a>
+                    <a href="/edit/<%= userData.id %>" class="acc_edit">Editar</a>
                 </section> <!-- .account__form -->
             </section> <!-- .account__page -->
         </section> <!-- .account -->
