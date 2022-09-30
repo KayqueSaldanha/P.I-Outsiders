@@ -40,13 +40,13 @@ const CheckoutController = {
         })
 
         if (currentAddress) {
-            req.session.address = currentAddress.id;
+            req.session.addressId = currentAddress.id;
         } else if (!currentAddress) {
             const newAddress = await Address.create({
                 ...addressInformation,
                 usuarioId: id
             })
-            req.session.address = newAddress.id;
+            req.session.addressId = newAddress.id;
         }
         res.redirect('/frete');
 

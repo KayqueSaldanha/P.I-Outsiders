@@ -1,47 +1,39 @@
 module.exports = (sequelize, DataType) => {
-    const Address = sequelize.define('Address', {
+    const CreditCard = sequelize.define('CreditCard', {
         id: {
             type: DataType.INTEGER,
             primaryKey: true,
             autoIncrement: true
         },
-        cep: {
-            type: DataType.STRING,
-            allowNull: false
-        },
-        cidade: {
-            type: DataType.STRING,
-            allowNull: false
-        },
-        rua: {
-            type: DataType.STRING,
-            allowNull: false
-        },
         numero: {
             type: DataType.STRING,
             allowNull: false
         },
-        bairro: {
+        validade: {
             type: DataType.STRING,
             allowNull: false
         },
-        complemento: {
+        cvv: {
             type: DataType.STRING,
             allowNull: false
         },
-        estado: {
+        nomeImpresso: {
+            type: DataType.STRING,
+            allowNull: false
+        },
+        cpf: {
             type: DataType.STRING,
             allowNull: false
         },
         usuarioId: {
-            type: DataType.INTEGER,
-            primaryKey: true,
-            autoIncrement: true
+            type:DataType.INTEGER,
+            primaryKey:true,
+            autoIncrement:true
         }
     }, {
-        tableName: 'enderecos',
+        tableName: 'cartoes',
         timestamps: false
     })
 
-    return Address;
+    return CreditCard;
 }
