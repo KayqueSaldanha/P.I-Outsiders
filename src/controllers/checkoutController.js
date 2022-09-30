@@ -1,9 +1,13 @@
 const User = require('../modelsJson/Users');
+const { Address } = require('../models');
 const Checkout = require('../modelsJson/Checkout');
 
-
 const CheckoutController = {
-    userNotLoggedIn: (req, res) => {
+    index: async (req, res) => {
+        let address = await Address.findAll();
+    },
+
+    userIsNotLoggedInAddress: (req, res) => {
         if (req.session.carrinho == undefined) {
             return res.redirect('/');
         }
@@ -17,20 +21,38 @@ const CheckoutController = {
         res.render('information');
     },
 
-    endereco: (req, res) => {
+    addAddress: async (req, res) => {
         // Recebe os dados do corpo da requisição (endereço digitado)
-        const endereco = req.body;
+        const addressInformation = req.body;
         // Recebe o id do usuario logado caso estiver
         const { id } = req.session.user;
-        // Salva o endereço com as informações salvas nas constantes anteriores
-        const idEndereco = Checkout.addEndereco({ userid: id, endereco });
-        // Redireciona para a proxima etapa frete
-        req.session.endereco = idEndereco;
+
+        const currentAddress = await Address.findOne({
+            where: {
+                cep: addressInformation.cep,
+                cidade: addressInformation.cidade,
+                rua: addressInformation.rua,
+                numero: addressInformation.numero,
+                bairro: addressInformation.bairro,
+                complemento: addressInformation.complemento,
+                estado: addressInformation.estado
+            }
+        })
+
+        if (currentAddress) {
+            req.session.address = currentAddress.id;
+        } else if (!currentAddress) {
+            const newAddress = await Address.create({
+                ...addressInformation,
+                usuarioId: id
+            })
+            req.session.address = newAddress.id;
+        }
         res.redirect('/frete');
-        return endereco
+
     },
 
-    userNotLoggedFrete: (req, res) => {
+    userIsNotLoggedInShipping: (req, res) => {
         if (req.session.endereco == undefined) {
             return res.redirect('/login');
         }

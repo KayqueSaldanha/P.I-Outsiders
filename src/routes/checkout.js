@@ -2,14 +2,13 @@ const express = require('express');
 const router = express.Router();
 
 const CheckoutController = require('../controllers/checkoutController');
-const AddressController = require('../controllers/addressController');
 
 // Verifica se o usuário está logado
-router.get('/information', AddressController.userIsNotLoggedIn);
+router.get('/information', CheckoutController.userIsNotLoggedInAddress);
 // Pega a requisição e armazena no banco de dados via post
-router.post('/information', AddressController.addAddress);
+router.post('/information', CheckoutController.addAddress);
 // Renderiza a pagina de frete
-router.get('/frete', CheckoutController.userNotLoggedFrete);
+router.get('/frete', CheckoutController.userIsNotLoggedInShipping);
 // Adiciona o frete por post
 router.post('/frete', CheckoutController.addFrete);
 // renderiza a pagina de pagamento
