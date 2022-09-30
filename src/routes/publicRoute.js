@@ -16,5 +16,7 @@ router.post('/cadastro', UserController.createNewUser);
 router.get('/login', AuthController.renderLogin);
 // Rota para fazer o login do usuário
 router.post('/login', AuthController.login);
+// Rota para renderizar a página de departamento
+router.get('/collections/:categoria', ProductController.findByCategory);
 
 module.exports = router;
