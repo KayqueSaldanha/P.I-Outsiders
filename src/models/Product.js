@@ -25,7 +25,7 @@ module.exports = (sequelize, DataType) => {
             allowNull:false
         },
         preco: {
-            type:DataType.DECIMAL,
+            type:DataType.INTEGER,
             allowNull:false
         },
         cores: {
