@@ -105,15 +105,15 @@
                                     <div class="shipping-container">
                                         <div class="shipping-item">
                                             <label class="container">
-                                                <p>Loggi</p>
-                                                <p>4 dias úteis</p>
-                                                <input value='{"empresa": "Loggi","prazo": "4 dias úteis","valor": 9.90}' 
+                                                <p><%= firstField.empresa %></p>
+                                                <p><%= firstField.prazo %></p>
+                                                <input value=<%= firstField.id %>
                                                 type="radio" name="frete">
                                                 <span class="checkmark"></span>
                                             </label><!-- container -->
                                         </div><!-- shipping-item -->
                                         <div class="shipping-price">
-                                            <span id="shipping-price">R$ 9,90</span>
+                                            <span id="shipping-price">R$ <%= firstField.valor %></span>
                                         </div><!-- shipping-price -->
                                     </div><!-- shipping-container -->
                                     <div class="division-shipping">
@@ -122,15 +122,15 @@
                                     <div class="shipping-container">
                                         <div class="shipping-item">
                                             <label class="container">
-                                                <p>Loggi</p>
-                                                <p>4 dias úteis</p>
-                                                <input value='{"empresa": "Loggi","prazo": "4 dias úteis","valor": 9.90}' 
+                                                <p><%= secondField.empresa %></p>
+                                                <p><%= secondField.prazo %></p>
+                                                <input value=<%= secondField.id %>
                                                 type="radio" name="frete">
                                                 <span class="checkmark"></span>
                                             </label><!-- container -->
                                         </div><!-- shipping-item -->
                                         <div class="shipping-price">
-                                            <span id="shipping-price">R$ 9,90</span>
+                                            <span id="shipping-price">R$ <%= secondField.valor %></span>
                                         </div><!-- shipping-price -->
                                     </div><!-- shipping-container -->
                                     <div class="division-shipping">
@@ -139,15 +139,15 @@
                                     <div class="shipping-container">
                                         <div class="shipping-item">
                                             <label class="container">
-                                                <p>Loggi</p>
-                                                <p>4 dias úteis</p>
-                                                <input value='{"empresa": "Loggi","prazo": "4 dias úteis","valor": 9.90}' 
+                                                <p><%= thirdField.empresa %></p>
+                                                <p><%= thirdField.prazo %></p>
+                                                <input value=<%= thirdField.id %>
                                                 type="radio" name="frete">
                                                 <span class="checkmark"></span>
                                             </label><!-- container -->
                                         </div><!-- shipping-item -->
                                         <div class="shipping-price">
-                                            <span id="shipping-price">R$ 9,90</span>
+                                            <span id="shipping-price">R$ <%= thirdField.valor %></span>
                                         </div><!-- shipping-price -->
                                     </div><!-- shipping-container -->
                                 </div><!-- slc-shipping -->
