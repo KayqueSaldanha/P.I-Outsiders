@@ -27,8 +27,7 @@ module.exports = (sequelize, DataType) => {
         },
         usuarioId: {
             type:DataType.INTEGER,
-            primaryKey:true,
-            autoIncrement:true
+            primaryKey:true
         }
     }, {
         tableName: 'cartoes',
