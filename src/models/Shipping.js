@@ -14,7 +14,7 @@ module.exports = (sequelize, DataType) => {
             allowNull: false
         },
         valor: {
-            type: DataType.INTEGER,
+            type: DataType.DECIMAL,
             allowNull: false
         }
     }, {
