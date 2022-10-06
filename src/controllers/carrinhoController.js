@@ -1,6 +1,6 @@
-const Produto = require('../modelsJson/Produto');
 const { createMenuObject } = require('../../helpers/createMenuObject');
 const bcrypt = require('bcrypt');
+const { User } = require('../models');
 
 const carrinhoController = {
 
@@ -9,9 +9,13 @@ const carrinhoController = {
         res.render('carrinho', { carrinho, menu: createMenuObject('false')  })
     },
 
-    adicionar: (req, res) => {
-        const idProduto = req.params.id
-        const produtoPesquisa = Produto.findById(idProduto)
+    adicionar: async (req, res) => {
+        const produtoPesquisa = await User.findOne({
+            attibutes: ['id'],
+            where: {
+                id : req.params.id
+            }
+        })
         const quantidadeProduto = { ...produtoPesquisa, quantidade: 1 }
         if (req.session.carrinho != undefined) {
             req.session.carrinho.push(quantidadeProduto)
@@ -35,8 +39,13 @@ const carrinhoController = {
     //     writeToDB();
     //     },
 
-    remover: (req, res) => {
-        const idProduto = req.params.id
+    remover: async (req, res) => {
+        const idProduto = await User.findOne({
+            attibutes: ['id'],
+            where: {
+                id : req.params.id
+            }
+        })
         const produtoIndex = req.session.carrinho.findIndex(produto => produto.id === idProduto)
         req.session.carrinho.splice(produtoIndex, 1) 
     res.redirect('/carrinho')
