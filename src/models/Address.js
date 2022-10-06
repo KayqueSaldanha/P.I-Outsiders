@@ -42,5 +42,19 @@ module.exports = (sequelize, DataType) => {
         timestamps: false
     })
 
+    // Address.associate = (modelList) => {
+    //     Address.belongsTo(modelList.User, {
+    //         foreignKey: 'enderecoId',
+    //         as: 'enderecoId'
+    //     });
+    // };
+
+    // Address.associate = (modelList) => {
+    //     Address.hasOne(modelList.Purchase, {
+    //         foreignKey: 'enderecoId',
+    //         as: 'enderecoId'
+    //     });
+    // };
+
     return Address;
 }

@@ -34,5 +34,19 @@ module.exports = (sequelize, DataType) => {
         timestamps: false
     })
 
+    // CreditCard.associate = (modelList) => {
+    //     CreditCard.belongsTo(modelList.User, {
+    //         foreignKey: 'usuarioId',
+    //         as: 'usuarios'
+    //     });
+    // };
+
+    // CreditCard.associate = (modelList) => {
+    //     CreditCard.hasMany(modelList.Purchase, {
+    //         foreignKey: 'cartaoId',
+    //         as: 'compras'
+    //     });
+    // };
+
     return CreditCard;
 }
