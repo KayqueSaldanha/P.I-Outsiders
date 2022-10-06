@@ -1,12 +1,26 @@
-const Produto = require('../modelsJson/Produto');
+const { Product } = require('../models');
+const Produto = require('../modelsJson/Produto')
 const { createMenuObject } = require('../../helpers/createMenuObject')
-const { db } = require('../database/db.json');
 
 
-const buscar = (req, res) =>{
+const buscar = async (req, res) =>{
 
     let busca = req.query.q;
-    let produtos = Produto.findByName(busca)
+    
+    let allProduct = await Product.findAll({})
+
+    let produtos = allProduct.filter(produto => {
+        if (produto.nome.toLowerCase().indexOf(busca.toLowerCase()) > -1) {
+            return true
+        } else {
+            return false
+        }
+    })
+
+    console.log(produtos)
+
+
+
 
     res.render('busca', {
         menu: createMenuObject('false'),
