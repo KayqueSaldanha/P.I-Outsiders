@@ -18,5 +18,12 @@ module.exports = (sequelize, DataType) => {
         timestamps: false
     })
 
+    // Pix.associate = (modelList) => {
+    //     Pix.belongsTo(modelList.Purchase, {
+    //         foreignKey: 'pixId',
+    //         as: 'compras'
+    //     });
+    // };
+
     return Pix;
 }
