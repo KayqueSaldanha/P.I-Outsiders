@@ -33,19 +33,19 @@
         <% carrinho.map(produto =>{ %>
         <div class="desc">
             <div class="imgDesc">
-                <img src="/images/produtos/<%= produto.image1 %>" alt="" width="240px" height="240px">
+                <img src="/images/produtos/<%= produto.dataValues.imagem1 %>" alt="" width="240px" height="240px">
             </div>
             <div class="descProd">
-                <p><%= produto.nome %></p>
-                <p>COR: <%= produto.cor %></p>
+                <p><%= produto.dataValues.nome %></p>
+                <p>COR: <%= produto.dataValues.cor %></p>
                 <p>TAMANHO: pp</p>
             </div>
         </div>
         <div class="valores">
-                <p><%= produto.quantidade %></p>
-                <p>R$<%= produto.preco %>,00</p>
-                <p>R$<%= produto.preco * produto.quantidade %>,00</p>    
-                <form action="/carrinho/<%= produto.id %>?_method=DELETE" method="post">
+                <p><%= produto.dataValues.quantidade %></p>
+                <p>R$<%= produto.dataValues.preco %>,00</p>
+                <p>R$<%= produto.dataValues.preco * produto.dataValues.quantidade %>,00</p>    
+                <form action="/carrinho/<%= produto.dataValues.id %>?_method=DELETE" method="post">
                 <div><button class="trash"><i class="las la-trash"></i></button></div>     
                 </form>     
             </div>
@@ -64,7 +64,7 @@
          <div class="finalPedido">
             <% let valorTotal = 0 %>
             <% carrinho.map(produto => {%>
-            <% valorTotal = produto.preco + valorTotal })%>
+            <% valorTotal = produto.dataValues.preco + valorTotal })%>
             <div class="totalPedido">
                 <p class="totalPedidoValor">TOTAL DO PEDIDO</p>
                 <p>R$ <%= valorTotal %>,00</p>

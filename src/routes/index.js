@@ -3,13 +3,14 @@ const router = express.Router();
 
 const pageController = require('../controllers/pageController');
 const searchController = require('../controllers/searchController');
+const ProductController = require('../controllers/productController');
 
 
 router.get('/', pageController.home)
 //router.get('/departamento/:categoria', pageController.department)
-router.get('/produtos', pageController.produtos)
-// router.get('/produtos', pageController.aumentar)
-router.get('/produtos/:id', pageController.mostrarProduto)
+// router.get('/produtos/:id', ProductController.produto);
+// router.post('/produtos/:id', ProductController.produto);
+router.get('/produtos/:id', ProductController.produto)
 router.get('/busca', searchController)
 
 // router.get('/search', searchController.search)

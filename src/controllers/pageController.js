@@ -22,7 +22,7 @@ const pageController = {
         res.render('produtos');
     },
 
-    mostrarProduto: (req, res) => {
+    mostrarProduto: async (req, res) => {
         const { id } = req.params
         const interesses = Produto.findByStatus('interesses')
         const produto = Produto.findById(id)
@@ -32,6 +32,15 @@ const pageController = {
             interesses
         });
 
+    },
+
+    remover: async (req, res) => {
+        const idProduto = await User.findOne({
+            attibutes: ['id'],
+            where: {
+                id : req.params.id
+            }
+        })
     },
 
     // aumentar: (req, res) => {
