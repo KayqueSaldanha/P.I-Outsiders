@@ -34,6 +34,20 @@ module.exports = (sequelize, DataType) => {
         tableName:'usuarios',
         timestamps:false
     })
+    
+    // User.associate = (modelList) => {
+    //     User.hasMany(modelList.Address, {
+    //         foreignKey: 'enderecoId',
+    //         as: 'enderecoId'
+    //     });
+    // };
+    
+    // User.associate = (modelList) => {
+    //     User.hasMany(modelList.CreditCard, {
+    //         foreignKey: 'cartaoId',
+    //         as: 'cartoes'
+    //     });
+    // };
 
     return User;
 }
