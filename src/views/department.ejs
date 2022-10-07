@@ -122,43 +122,45 @@
             <section id="shelf" class="max-width-content">
                 <div class="shelf__container">
                     <!-- shelf 1 -->
-                    <% if (produtos && produtos.length> 0) { %>
-                        <% produtos.map( produtos=> { %>
-                            <div class="shelf__product">
-                                <div class="shelf__img">
-                                    <a href="/produtos/<%= produtos.id %>">
-                                        <img src="/images/produtos/<%= produtos.image1 %>" class="img__shelf"
-                                            alt="Tech Tshirt Preta">
-                                </div> <!-- .shelf__img -->
-                                <div class="shelf__content">
-                                    <h2 class="title">
-                                        <%= produtos.nome %>
-                                    </h2>
-                                    <div class="shelf__price">
-                                        <span class="price">
-                                            R$ <%= produtos.preco %>,00
-                                        </span>
-                                        <p class="shelf__installments">3x de R$ <%= Math.round(produtos.preco /3) %>,00
-                                                sem
-                                                juros</p>
-                                        </a>
-                                    </div> <!-- .shelf__price -->
-                                    <a href="/produtos/<%= produtos.id %>" class="shelf__btn">Comprar</a>
-                                </div> <!-- .shelf__content -->
-                            </div> <!-- .shelf__product -->
-                            <% }) %>
-                                <% } else { %>
-                                    <h2 class="h2_titulo texto_roboto">-- NÃO HÁ NENHUM PRODUTO CADASTRADO --</h2>
-                                    <% } %>
-                                        <!-- <div class="banner_principal">
+                    <% console.log(categoria) %>
+                        <% if (products && products.length> 0) { %>
+                            <% products.map( products=> { %>
+                                <div class="shelf__product">
+                                    <div class="shelf__img">
+                                        <a href="/produtos/<%= products.id %>">
+                                            <img src="/images/produtos/<%= products.imagem1 %>" class="img__shelf"
+                                                alt=<%=products.nome %>>
+                                    </div> <!-- .shelf__img -->
+                                    <div class="shelf__content">
+                                        <h2 class="title">
+                                            <%= products.nome %>
+                                        </h2>
+                                        <div class="shelf__price">
+                                            <span class="price">
+                                                R$ <%= products.preco %>,00
+                                            </span>
+                                            <p class="shelf__installments">3x de R$ <%= Math.round(products.preco /3) %>
+                                                    ,00
+                                                    sem
+                                                    juros</p>
+                                            </a>
+                                        </div> <!-- .shelf__price -->
+                                        <a href="/produtos/<%= products.id %>" class="shelf__btn">Comprar</a>
+                                    </div> <!-- .shelf__content -->
+                                </div> <!-- .shelf__product -->
+                                <% }) %>
+                                    <% } else { %>
+                                        <h2 class="h2_titulo texto_roboto">-- NÃO HÁ NENHUM PRODUTO CADASTRADO --</h2>
+                                        <% } %>
+                                            <!-- <div class="banner_principal">
                                             <a href=""><img src="/images/department/base layer.jpg" alt="">
                                                 <span class="cta__banner">comprar agora</span>
                                             </a>
                                         </div>  .banner_principal -->
 
-                                        <script
-                                            src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-                                        <script src="/javascripts/department/department.js"></script>
+                                            <script
+                                                src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                                            <script src="/javascripts/department/department.js"></script>
         </main> <!-- .main -->
         <%- include("./partials/footer") %>
 </body> <!-- .body -->
