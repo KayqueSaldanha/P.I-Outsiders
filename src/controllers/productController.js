@@ -25,11 +25,10 @@ const ProductController = {
 
         return res.render('department',{ menu: createMenuObject(categoria), 
             banner: {background: `departamento_${categoria}.jpg`}})
-        // Renderiza a view department
     },
-
-
      
+
+
     produto: async (req, res) => {
         const {id} = req.params
         console.log(id)
@@ -44,31 +43,6 @@ const ProductController = {
         // res.redirect('/carrinho')
     
     },
-
-
-
-
-
-    // mostrarProduto: async (req, res) => {
-    //     const { id } = req.params
-    //     const interesses = Produto.findByStatus('interesses')
-    //     const produto = Produto.findById(id)
-    //     res.render('produtos', {
-    //         menu: createMenuObject('false'),
-    //         produto,
-    //         interesses
-    //     });
-    // },
-
-
-    // remover: async (req, res) => {
-    //     const idProduto = await User.findOne({
-    //         attibutes: ['id'],
-    //         where: {
-    //             id : req.params.id
-    //         }
-    //     })
-    // },
 
 }
 
