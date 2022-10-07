@@ -21,6 +21,48 @@ const ProductController = {
         // Renderiza a view department
     },
 
+
+     
+    produto: async (req, res) => {
+        const {id} = req.params
+        console.log(id)
+        const produto = await Product.findAll({ 
+            // Where: Filtra e exibi somente os produtos que possuem o mesmo id passada na url
+                where: { 
+                    id: id,
+                }
+            });
+            console.log(produto[0].nome)
+        res.render('produtos', { produto, menu: createMenuObject('false') })
+        // res.redirect('/carrinho')
+    
+    },
+
+
+
+
+
+    // mostrarProduto: async (req, res) => {
+    //     const { id } = req.params
+    //     const interesses = Produto.findByStatus('interesses')
+    //     const produto = Produto.findById(id)
+    //     res.render('produtos', {
+    //         menu: createMenuObject('false'),
+    //         produto,
+    //         interesses
+    //     });
+    // },
+
+
+    // remover: async (req, res) => {
+    //     const idProduto = await User.findOne({
+    //         attibutes: ['id'],
+    //         where: {
+    //             id : req.params.id
+    //         }
+    //     })
+    // },
+
 }
 
 
