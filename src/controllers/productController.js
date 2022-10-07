@@ -13,8 +13,10 @@ const ProductController = {
         // Busca no banco de dados todos os produtos existente
         const products = await Product.findAll({ 
            // Where: Filtra e exibi somente os produtos que possuem a mesma categoria passada na url
+           where: {
+                categoria
+           }
         })
-        console.log(JSON.stringify(products))
         res.render('department', {
             menu: createMenuObject(categoria),
             banner: {
