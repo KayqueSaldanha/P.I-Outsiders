@@ -28,7 +28,7 @@ const ProductController = {
     },
      
 
-    
+
     produto: async (req, res) => {
         const {id} = req.params
         console.log(id)
