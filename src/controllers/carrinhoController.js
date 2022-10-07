@@ -1,6 +1,6 @@
 const { createMenuObject } = require('../../helpers/createMenuObject');
 const bcrypt = require('bcrypt');
-const { User } = require('../models');
+const { Product } = require('../models');
 
 const carrinhoController = {
 
@@ -10,7 +10,7 @@ const carrinhoController = {
     },
 
     adicionar: async (req, res) => {
-        const produtoPesquisa = await User.findOne({
+        const produtoPesquisa = await Product.findOne({
             attibutes: ['id'],
             where: {
                 id : req.params.id
