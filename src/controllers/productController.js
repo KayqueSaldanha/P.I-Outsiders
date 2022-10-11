@@ -1,6 +1,7 @@
 // ============================================================
 // Controller responsável pela exibição de produtos no banco
 // ============================================================
+const { ProdutoModel } = require('../models');
 const { Product } = require('../models');
 const { createMenuObject } = require('../../helpers/createMenuObject');
 
@@ -34,7 +35,7 @@ const ProductController = {
     produto: async (req, res) => {
         const {id} = req.params
         console.log(id)
-        const produto = await Product.findAll({ 
+        const produto = await ProdutoModel.findAll({ 
             // Where: Filtra e exibi somente os produtos que possuem o mesmo id passada na url
                 where: { 
                     id: id,
