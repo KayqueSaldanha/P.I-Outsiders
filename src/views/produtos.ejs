@@ -18,30 +18,30 @@
 
         <main>
             <section id="sec1">
-                <form action="/carrinho/<%= produto.id %>" method="post">
+                <form action="/carrinho/<%= produto[0].id %>" method="post">
                     
                     <div id="esquerda">
-                        <img src="/images/produtos/<%= produto.image1 %>" alt="" width="954px">
+                        <img src="/images/produtos/<%= produto[0].imagem1 %>" alt="" width="954px">
                     </div>
 
 
                     <div id="direita">
 
                         <div id="top">
-                            <img src="/images/produtos/<%= produto.image2 %>" alt="" width="140px">
+                            <img src="/images/produtos/<%= produto[0].imagem2 %>" alt="" width="140px">
                             <div>
                                 <h3>
-                                    <%= produto.nome %>
+                                    <%= produto[0].nome %>
                                 </h3>
                                 <p id="p1">ref A3060</p>
-                                <p id="p2"><span>R$ <%= produto.preco %>,00</span>| RS <%= Math.round(produto.preco *
+                                <p id="p2"><span>R$ <%= produto[0].preco %>,00</span>| RS <%= Math.round(produto[0].preco *
                                         0.5) %>,00</p>
-                                <p id="p3">ou em até 3x de R$ <%= Math.round(produto.preco * 0.5* 0.33) %>,00</p>
+                                <p id="p3">ou em até 3x de R$ <%= Math.round(produto[0].preco * 0.5* 0.33) %>,00</p>
                             </div>
 
                         </div>
                         <div id="mid">
-                            <img src="/images/produtos/<%= produto.image2 %>" alt="" width="140px">
+                            <img src="/images/produtos/<%= produto[0].imagem2 %>" alt="" width="140px">
                             <div>
                                 <h3>Tamanho</h3>
                                 <div id="escolhaTamanho">
@@ -66,7 +66,7 @@
                         </div>
 
                         <div id="bot">
-                            <img src="/images/produtos/<%= produto.image2 %>" alt="" width="140px">
+                            <img src="/images/produtos/<%= produto[0].imagem2 %>" alt="" width="140px">
                             <div>
                                 <div class="cores">
                                     <p>cores:</p>
@@ -77,74 +77,20 @@
                                     <div class="cor" id="preto"></div>
                                 </div>
                                 <div>
-                                    <button id="carrinho">adicionar a sacola →</button>
+                                    <button href="/carrinho" id="carrinho">adicionar a sacola →</button>
                                 </div>
                             </div>
                         </div>
 
                         <div id="descricao">
                             <h4>Descrição:</h4>
-                            <p><%= produto.descricao %></p>
+                            <p><%= produto[0].descricao %></p>
                         </div>
                     </div>
                 </form>
             </section>
 
-            <section id="sec2">
 
-                <h3>Talvez te interesse</h3>
-
-                <div id="prateleira">
-
-                    <div class="card">
-                        <% if(interesses){ %>
-                            <a href="/produtos">
-                                <img src="/images/produtos/<%= interesses[0].image1 %>" alt="">
-                                <h2>
-                                    <%= interesses[0].nome %>
-                                </h2>
-                                <h3>R$<%= interesses[0].preco %>,00</h3>
-                                <p>3x R$ <%= Math.round(interesses[0].preco /3) %>,00 sem juros</p>
-                            </a>
-                            <a class="btn" href="#">comprar</a>
-                    </div>
-                    <div class="card">
-                        <a href="#">
-                            <img src="/images/produtos/<%= interesses[1].image1 %>" alt="">
-                            <h2>
-                                <%= interesses[1].nome %>
-                            </h2>
-                            <h3>R$<%= interesses[1].preco %>,00</h3>
-                            <p>3x R$ <%= Math.round(interesses[1].preco /3) %>,00 sem juros</p>
-                            <a class="btn" href="#">comprar</a>
-                        </a>
-                    </div>
-
-                    <div class="card">
-                        <a href="#">
-                            <img src="/images/produtos/<%= interesses[2].image1 %>" alt="">
-                            <h2>
-                                <%= interesses[2].nome %>
-                            </h2>
-                            <h3>R$<%= interesses[2].preco %>,00</h3>
-                            <p>3x R$ <%= Math.round(interesses[2].preco /3) %>,00 sem juros</p>
-                            <a class="btn" href="#">comprar</a>
-                        </a>
-                    </div>
-
-                    <div class="card">
-                        <a href="#">
-                            <img src="/images/produtos/<%= interesses[3].image1 %>" alt="">
-                            <h2>
-                                <%= interesses[3].nome %>
-                            </h2>
-                            <h3>R$<%= interesses[3].preco %>,00</h3>
-                            <p>3x R$ <%= Math.round(interesses[3].preco /3) %>,00 sem juros</p>
-                            <a class="btn" href="#">comprar</a>
-                        </a>
-                        <% } %>
-                    </div>
-            </section>
         </main>
         <div class="espaco"></div>
         <%- include("./partials/footer") %>
