@@ -46,10 +46,11 @@ const carrinhoController = {
                 id : req.params.id
             }
         })
-        const produtoIndex = req.session.carrinho.findIndex(produto => produto.id === idProduto)
-        req.session.carrinho.splice(produtoIndex, 1) 
+        const produtoIndex = req.session.carrinho.findAll(produto => produto.id === idProduto)
+        req.session.carrinho.destroy(produtoIndex, 1) 
     res.redirect('/carrinho')
     }
 }
 
-module.exports = carrinhoController
+
+module.exports = carrinhoController 
