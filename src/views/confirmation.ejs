@@ -20,7 +20,7 @@
             <div class="grid_container bg-left-side">
                 <div class="content_section">
                     <div class="main_logo">
-                        <a href="#">
+                        <a href="/">
                             <img src="/images/main-logo.png" alt="Outsider logo">
                         </a>
                         <div class="division-1"></div>
@@ -94,7 +94,7 @@
                         </div>
                         <div class="order-badge">
                             <div class="order-number">
-                                <span id="order-number">Compra nº:</span> <span id="numer-of-order">0001</span>
+                                <span id="order-number">Compra nº:</span> <span id="numer-of-order"><%= purchaseId.id %> </span>
                             </div>
                             <div class="payment-method">
                                 <h2>Forma de pagamento</h2>
@@ -113,7 +113,7 @@
                         </div>
                         <div class="email-of-contact">
                             <h2>E-mail de contato</h2>
-                            <span id="email">email@email.com.br</span>
+                            <span id="email"><%= userData.email %> </span>
                         </div>
                         <div class="division division-adjustment">
                             <!-- Here goes the division page -->
@@ -121,14 +121,14 @@
                         <div class="address">
                             <h2>Endereço de entrega</h2>
                             <div class="address-badge">
-                                <p>Fulano de tal
-                                <p>123.123.123-12</p>
-                                <p>Rua blabla, 123</p>
-                                <p>Ap 1</p>
-                                <p>Santo André - SP</p>
-                                <p>01234-123</p>
+                                <p><%= userData.nome %> </p>
+                                <p><%= userData.cpf %> </p>
+                                <p><%= addressData.rua %> , <%= addressData.numero %> </p>
+                                <p><%= addressData.complemento %> </p>
+                                <p><%= addressData.cidade %>  - <%= addressData.estado %> </p>
+                                <p><%= addressData.cep %> </p>
                                 <p>Brasil</p>
-                                <p>(11)99999-9999</p>
+                                <p><%= userData.telefone %> </p>
                             </div>
                         </div>
                         <div class="division division-adjustment">
@@ -136,7 +136,8 @@
                         </div>
                         <div class="shipping-method">
                             <h2>Forma de frete</h2>
-                            <p>Loggi</p>
+                            <p><%= shippingData.empresa %> </p>
+                            <p><%= shippingData.prazo %> </p>
                         </div>
                     </div>
 

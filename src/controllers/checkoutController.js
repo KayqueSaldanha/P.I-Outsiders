@@ -1,11 +1,5 @@
 const User = require('../modelsJson/Users');
-const { Address } = require('../models');
-const { Shipping } = require('../models');
-const { CreditCard } = require('../models');
-const { Pix } = require('../models');
-const { Ticket } = require('../models');
-const { Purchase } = require('../models');
-const Checkout = require('../modelsJson/Checkout');
+const { Address, Shipping, CreditCard, Pix, Ticket, Purchase } = require('../models');
 
 const CheckoutController = {
 
@@ -95,9 +89,18 @@ const CheckoutController = {
         if (paymentMethodSelected.metodoDePagamento === "cartao") {
 
             const creditCardInformations = req.body;
-            const saveCard = req.body.saveCard;
 
-            if (saveCard) {
+            const oldCreditCard = await CreditCard.findOne({
+                where: {
+                    numero: creditCardInformations.numero,
+                    validade: creditCardInformations.validade,
+                    cvv: creditCardInformations.cvv,
+                    nomeImpresso: creditCardInformations.nomeImpresso,
+                    cpf: creditCardInformations.cpf
+                }
+            });
+
+            if (!oldCreditCard) {
 
                 const newCreditCardSaved = await CreditCard.create({
                     ...creditCardInformations,
@@ -107,16 +110,6 @@ const CheckoutController = {
                 req.session.creditCardId = newCreditCardSaved.id;
 
             } else {
-
-                const oldCreditCard = await CreditCard.findOne({
-                    where: {
-                        numero: creditCardInformations.numero,
-                        validade: creditCardInformations.validade,
-                        cvv: creditCardInformations.cvv,
-                        nomeImpresso: creditCardInformations.nomeImpresso,
-                        cpf: creditCardInformations.cpf
-                    }
-                });
 
                 req.session.creditCardId = oldCreditCard.id;
                 req.session.parcelNumbers = creditCardInformations.numeroParcela;
@@ -149,22 +142,38 @@ const CheckoutController = {
     },
 
     purchaseFinalization: async (req, res) => {
-
-        !req.session.creditCardId || !req.session.pixId || !req.session.ticketId ? res.redirect('/login') : res.render('confirmation');
-
-        await Purchase.create({
+        
+        const purchaseInformation = await Purchase.create({            
+            usuarioId: req.session.user.id,
+            freteId: req.session.shippingId,
+            enderecoId: req.session.addressId,
+            boletoId: req.session.ticketId,
+            pixId: req.session.pixId,
+            cartaoId: req.session.creditCardId,                
+            status: "Compra finalizada com sucesso",
+            numeroParcela: req.session.parcelNumbers
+        });
+        
+        const purchaseId = await Purchase.findOne({
             where: {
-                usuarioId: req.session.user.id,
-                freteId: req.session.shippingId,
-                enderecoId: req.session.addressId,
-                boletoId: req.session.ticketId,
-                pixId: req.session.pixId,
-                cartaoId: req.session.creditCardId,                
-                status: "Compra finalizada com sucesso",
-                numeroParcela: req.session.parcelNumbers
+                id: purchaseInformation.id
             }
-        })
+        });
+        const userData = req.session.user;
+        const addressData = await Address.findOne({
+            where: {
+                id: req.session.addressId
+            }
+        });
+        const shippingData = await Shipping.findOne({
+            where: {
+                id: req.session.shippingId
+            }
+        });
 
+        // !req.session.creditCardId || !req.session.pixId || !req.session.ticketId ? res.redirect('/login') : '';
+
+        res.render('confirmation', { purchaseInformation, userData, addressData, shippingData, purchaseId });
     }
 }
 

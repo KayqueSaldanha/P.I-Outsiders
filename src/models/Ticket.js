@@ -22,5 +22,12 @@ module.exports = (sequelize, DataType) => {
         timestamps: false
     })
 
+    // Ticket.associate = (modelList) => {
+    //     Ticket.belongsTo(modelList.Purchase, {
+    //         foreignKey: 'boletoId',
+    //         as: 'compras'
+    //     });
+    // };
+
     return Ticket;
 }

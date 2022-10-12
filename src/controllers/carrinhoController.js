@@ -1,18 +1,24 @@
-const Produto = require('../modelsJson/Produto');
 const { createMenuObject } = require('../../helpers/createMenuObject');
 const bcrypt = require('bcrypt');
+const { Product } = require('../models');
 
 const carrinhoController = {
 
     renderCart: (req, res) => {
         const carrinho = req.session.carrinho
+        console.log(carrinho)
         res.render('carrinho', { carrinho, menu: createMenuObject('false')  })
     },
 
-    adicionar: (req, res) => {
-        const idProduto = req.params.id
-        const produtoPesquisa = Produto.findById(idProduto)
+    adicionar: async (req, res) => {
+        const produtoPesquisa = await Product.findOne({
+            attibutes: ['id'],
+            where: {
+                id : req.params.id
+            }
+        })
         const quantidadeProduto = { ...produtoPesquisa, quantidade: 1 }
+        // console.log(JSON.stringify(quantidadeProduto))
         if (req.session.carrinho != undefined) {
             req.session.carrinho.push(quantidadeProduto)
         } else {
@@ -35,12 +41,18 @@ const carrinhoController = {
     //     writeToDB();
     //     },
 
-    remover: (req, res) => {
-        const idProduto = req.params.id
-        const produtoIndex = req.session.carrinho.findIndex(produto => produto.id === idProduto)
-        req.session.carrinho.splice(produtoIndex, 1) 
+    remover: async (req, res) => {
+        const idProduto = await User.findOne({
+            attibutes: ['id'],
+            where: {
+                id : req.params.id
+            }
+        })
+        const produtoIndex = req.session.carrinho.findAll(produto => produto.id === idProduto)
+        req.session.carrinho.destroy(produtoIndex, 1) 
     res.redirect('/carrinho')
     }
 }
 
-module.exports = carrinhoController
+
+module.exports = carrinhoController 
