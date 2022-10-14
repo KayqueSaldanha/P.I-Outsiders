@@ -11,6 +11,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>Outsider - Selecione o endereço</title>
 </head>
 
@@ -100,12 +101,12 @@
                     <form class="form" method="post" action="/information">
                         <div class="contact__address">
                             <div class="cep">
-                                <input name="cep" class="deliver-input" id="cep" type="text" placeholder="CEP" required>
+                                <input name="cep" class="deliver-input" id="cep" type="text" placeholder="CEP" maxlength="9" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
                                 <input name="cidade" class="deliver-input" id="city" type="text" placeholder="Cidade" required>
                             </div>
                             <div class="street">
                                 <input name="rua" class="deliver-input" id="street" type="text" placeholder="Rua" required>
-                                <input name="numero" class="deliver-input" id="number" type="number" placeholder="Número" required>
+                                <input name="numero" class="deliver-input" id="number" type="text" placeholder="Número" onkeypress="return event.charCode >= 48 && event.charCode <= 57" required>
                             </div>
                             <div class="district">
                                 <input name="bairro" class="deliver-input" id="neighborhood" type="text" placeholder="Bairro" required>
@@ -210,7 +211,9 @@
             </div>
         </section>
     </main>
+    <script src="/javascripts/checkout/script.js"></script>
     <!-- BOOTSTRAP SCRIPT -->
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
         crossorigin="anonymous"></script>
