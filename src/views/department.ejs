@@ -65,21 +65,13 @@
                 <div class="filters">
                     <span class="filters__title">Filtre a sua busca</span>
                     <ul>
-                        <li>
-                            <span>Categoria</span>
-                            <ul>
-                                <li>Manga Longa</li>
-                                <li>Manga Curta</li>
-                            </ul>
-                        </li> <!-- .categoria -->
                         <li><span class="filters__title">Tamanhos</span>
                             <ul>
-                                <li>PP</li>
-                                <li>P</li>
-                                <li>M</li>
-                                <li>G</li>
+                                <li>
+                                    <%= products.tamanhos %>
+                                </li>
                             </ul> <!-- .tamanho -->
-                        <li><span class="filters__title-cores">Cores</span>
+                        <li><span class="filters__title-cores">Cor</span>
                             <ul>
                                 <li>Preto</li>
                                 <li>Branco</li>
@@ -91,30 +83,31 @@
                 </div> <!-- .line -->
                 <div class="order">
                     <ul class="order-c">
-                        <li>
-                            <span class="filters__title">ordenar por:</span>
-                        </li>
-                        <li>
-                            <span class="filters__title">Mais vendidos</span>
-                        </li>
-                        <li>
-                            <span class="filters__title">Menor preço</span>
-                        </li>
-                        <li>
-                            <span class="filters__title">Maior preço</span>
-                        </li>
-                        <li>
-                            <span class="filters__title">Lançamentos</span>
-                        </li>
-                        <li>
-                            <span class="filters__title">Maior desconto</span>
-                        </li>
-                        <li>
-                            <span class="filters__title">A-Z</span>
-                        </li>
-                        <li>
-                            <span class="filters__title">Z-A</span>
-                        </li>
+                        <% console.log("console logo aqui", productsLowestPrice)%>
+                            <li>
+                                <span class="filters__title">ordenar por:</span>
+                            </li>
+                            <li>
+                                <span class="filters__title" id="">Mais vendidos</span>
+                            </li>
+                            <li>
+                                <span class="filters__title" id="">Menor preço</span>
+                            </li>
+                            <li>
+                                <span class="filters__title">Maior preço</span>
+                            </li>
+                            <li>
+                                <span class="filters__title">Lançamentos</span>
+                            </li>
+                            <li>
+                                <span class="filters__title">Maior desconto</span>
+                            </li>
+                            <li>
+                                <span class="filters__title">A-Z</span>
+                            </li>
+                            <li>
+                                <span class="filters__title">Z-A</span>
+                            </li>
                     </ul> <!-- .order-c -->
                 </div> <!-- .order -->
             </section>
