@@ -17,20 +17,23 @@ const ProductController = {
            where: {
                 categoria
            }
-        })
+        });
+    
+        const productsLowestPrice = await Product.findAll({
+            order: [
+                ['preco', 'ASC']
+            ]
+        });
         res.render('department', {
             menu: createMenuObject(categoria),
             banner: {
                 background: `departamento_${categoria}.jpg`
             },
-            products, categoria
+            products, categoria, productsLowestPrice
         });
-
         return res.render('department',{ menu: createMenuObject(categoria), 
             banner: {background: `departamento_${categoria}.jpg`}})
     },
-     
-
 
     produto: async (req, res) => {
         const {id} = req.params
