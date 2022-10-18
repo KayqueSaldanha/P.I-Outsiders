@@ -1,3 +1,4 @@
+// Função de dropdown
 $(document).ready(function () {
     $('.filters>ul>li>span').on('click', function () {
         if (!$(this).parent().hasClass('opened')) {
@@ -6,3 +7,4 @@ $(document).ready(function () {
         $(this).parent().toggleClass('opened');
     });
 });
+
