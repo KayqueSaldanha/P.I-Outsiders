@@ -16,7 +16,7 @@
 <body>
 
     <%- include("./partials/header") %>
-    
+
         <main>
             <section>
                 <div>
@@ -25,28 +25,45 @@
 
                 <p id="p1">Preencha as informações abaixo:</p>
 
-                <form action="/cadastro" method="post">
+                <form id="form" class="form" action="/cadastro" method="post">
+                    <div class="form-control">
+                        <input class="campo" name="nome" type="text" placeholder="Nome" id="nome">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <div class="msg-erro">
+                            <small>Mensagem de erro</small>
+                        </div>
+                    </div>
 
+                    <div class="form-control">
+                        <input class="campo" name="sobrenome" type="text" placeholder="Sobrenome" id="sobrenome">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <div class="msg-erro">
+                            <small>Mensagem de erro</small>
+                        </div>
+                    </div>
 
-                    <div>
-                        <input class="campo" name="nome" type="text" placeholder="Nome" id="nome" required>
+                    <div class="form-control">
+                        <input class="campo" name="email" type="email" placeholder="E-mail" id="email">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <div class="msg-erro">
+                            <small>Mensagem de erro</small>
+                        </div>
+                    </div>
+
+                    <div class="form-control">
+                        <input class="campo" name="senha" type="password" placeholder="Senha" id="password">
+                        <i class="fas fa-exclamation-circle"></i>
+                        <i class="fas fa-check-circle"></i>
+                        <div class="msg-erro">
+                            <small>Mensagem de erro</small>
+                        </div>
                     </div>
 
                     <div>
-                        <input class="campo" name="sobrenome" type="text" placeholder="Sobrenome" id="sobrenome"
-                            required>
-                    </div>
-
-                    <div>
-                        <input class="campo" name="email" type="email" placeholder="E-mail" id="email" required>
-                    </div>
-
-                    <div>
-                        <input class="campo" name="senha" type="password" placeholder="Senha" id="password" required>
-                    </div>
-
-                    <div>
-                        <button id="entrar">CADASTRAR</button>
+                        <button type="submit" id="entrar">CADASTRAR</button>
                     </div>
 
                 </form>
@@ -55,9 +72,9 @@
 
             </section>
         </main>
-
+        <script src="/javascripts/cadastro/script.js"></script>
         <%- include("./partials/footer") %>
-
+            <script src="https://kit.fontawesome.com/5c3542a6a8.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
