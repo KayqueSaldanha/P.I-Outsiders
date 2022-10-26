@@ -19,29 +19,41 @@
         <main>
             <section id="sec1">
                 <form action="/carrinho/<%= produto[0].id %>" method="post">
-                    
-                    <div id="esquerda">
-                        <img src="/images/produtos/<%= produto[0].imagem1 %>" alt="" width="954px">
+
+                    <div id="imagemPrincipal">
+                        <img class="imagem_principal" src="/images/produtos/<%= produto[0].imagem1 %>" alt="">
                     </div>
 
+                    <div>
+                        <div id="imagem1" class="imagens_laterais">
+                            <img  class="teste" onclick='clickImagem(1)' src="/images/produtos/<%= produto[0].imagem1 %>"
+                                alt="produto">
+                        </div>
+                        <div id="imagem2" class="imagens_laterais" >
+                            <img  class="teste" onclick='clickImagem(2)' src="/images/produtos/<%= produto[0].imagem2 %>"
+                                alt="produto">
+                        </div>
+                        <div id="imagem3" class="imagens_laterais">
+                            <img  class="teste" onclick='clickImagem(3)' src="/images/produtos/<%= produto[0].imagem3 %>"
+                                alt="produto">
+                        </div>
+                    </div>
 
                     <div id="direita">
 
                         <div id="top">
-                            <img src="/images/produtos/<%= produto[0].imagem2 %>" alt="" width="140px">
                             <div>
                                 <h3>
                                     <%= produto[0].nome %>
                                 </h3>
                                 <p id="p1">ref A3060</p>
-                                <p id="p2"><span>R$ <%= produto[0].preco %>,00</span>| RS <%= Math.round(produto[0].preco *
-                                        0.5) %>,00</p>
+                                <p id="p2"><span>R$ <%= produto[0].preco %>,00</span>| RS <%=
+                                        Math.round(produto[0].preco * 0.5) %>,00</p>
                                 <p id="p3">ou em até 3x de R$ <%= Math.round(produto[0].preco * 0.5* 0.33) %>,00</p>
                             </div>
 
                         </div>
                         <div id="mid">
-                            <img src="/images/produtos/<%= produto[0].imagem2 %>" alt="" width="140px">
                             <div>
                                 <h3>Tamanho</h3>
                                 <div id="escolhaTamanho">
@@ -61,12 +73,11 @@
                                         <p>GG</p>
                                     </div>
                                 </div>
-                                <p> <span>Quantidade: </span><input type="number" min="1" ></p>
+                                <p> <span>Quantidade: </span><input type="number" min="1"></p>
                             </div>
                         </div>
 
                         <div id="bot">
-                            <img src="/images/produtos/<%= produto[0].imagem2 %>" alt="" width="140px">
                             <div>
                                 <div class="cores">
                                     <p>cores:</p>
@@ -84,7 +95,9 @@
 
                         <div id="descricao">
                             <h4>Descrição:</h4>
-                            <p><%= produto[0].descricao %></p>
+                            <p>
+                                <%= produto[0].descricao %>
+                            </p>
                         </div>
                     </div>
                 </form>
@@ -94,6 +107,7 @@
         </main>
         <div class="espaco"></div>
         <%- include("./partials/footer") %>
+            <script src="/javascripts/product/product.js"></script>
 </body>
 
 </html>

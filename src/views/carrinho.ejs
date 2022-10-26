@@ -46,7 +46,8 @@
                 <p>R$<%= produto.dataValues.preco %>,00</p>
                 <p>R$<%= produto.dataValues.preco * produto.dataValues.quantidade %>,00</p>    
                 <form action="/carrinho/<%= produto.dataValues.id %>?_method=DELETE" method="post">
-                <div><button class="trash"><i class="las la-trash"></i></button></div>     
+                <div><button class="trash"><i class="las la-trash"></i></button>
+                </div>     
                 </form>     
             </div>
         </div>

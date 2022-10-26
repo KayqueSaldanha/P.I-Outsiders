@@ -5,15 +5,52 @@
 
 /* main - corpo da pagina - superior */
 
+@keyframes Surgir {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+
 main {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 #sec2>#prateleira {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+.imagem_principal{
+   width: 800px;
+   height: 800px;
+   animation: Surgir 0.5s linear 0s 1 normal forwards;
+}
+
+.imagem_selecionada{
+    
+}
+
+.imagens_laterais {
+    box-sizing: border-box;
+    margin: 0 10px 10px 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 150px;
+    height: 150px;
+}
+
+.imagens_laterais:hover{
+    cursor: pointer;
 }
 
 div>nav>h2 {
