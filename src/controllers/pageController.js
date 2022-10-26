@@ -1,5 +1,7 @@
+const { ProdutoModel } = require('../models');
+const { Product } = require('../models');
+const { createMenuObject } = require('../../helpers/createMenuObject');
 const Produto = require('../modelsJson/Produto');
-const { createMenuObject } = require('../../helpers/createMenuObject')
 
 const pageController = {
     department: (req, res) => {
@@ -51,20 +53,16 @@ const pageController = {
     //         res.redirect('/carrinho')
     //      },
 
-    home: (req, res) => {
+    home: async (req, res) => {
         const diaDia = Produto.findByStatus('diaDia')
         const esporte = Produto.findByStatus('esporte')
-        const homens = Produto.findByGenero('homem')
-        res.render('home', {
-            menu: createMenuObject('false'),
-            homens,
-            esporte,
-            diaDia
-        });
-
-        res.render('home')
-    }
+        let homens = await Product.findAll({ 
+                where: { 
+                    categoria: 'homem',
+                }
+            });
+        res.render('home', { esporte, diaDia, homens, menu: createMenuObject('false') })}
 
 }
 
-module.exports = pageController;
+module.exports = pageController
