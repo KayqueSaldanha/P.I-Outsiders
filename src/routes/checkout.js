@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 
 const CheckoutController = require('../controllers/checkoutController');
-const renderShippingMethod = require('../middlewares/renderShippingMethod');
 
 // Verifica se o usuário está logado
 router.get('/information', CheckoutController.userIsNotLoggedInAddress);
