@@ -301,13 +301,12 @@ div>nav>h2>a {
 
 #descricao {
     margin-top: 20px;
-    margin-left: 160px;
     width: 400px;
 }
 
 #descricao>h4 {
     Font-family: Roboto;
-    Font-style: Bold;
+    font-weight: 800;
     Font-size: 20px;
     Line-height: 23px;
     color: #363636
