@@ -11,10 +11,10 @@
  }
  
  section>div>h1{
-   margin-top: 20px;
+    margin-top: 50px;
     Font-family: Roboto;
     Font-style: Light;
-    Font-size: 50px;
+    Font-size: 30px;
     Line-height: 45px;
     Line-height: 100%;
     color: rgba(0, 0, 0, 0.7);
@@ -38,29 +38,26 @@
  
  
  .campo{
-    background-color: #D9D9D9;
-    Width: 500px;
-    Height: 60px;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 5px;
-    Font-family: Roboto;
-    Font-style: Regular;
-    Font-size: 25px;
-    Line-height: 35px;
-    Line-height: 100%;
-    text-align: start;
+   padding: 7px;
+   border: 2px solid #f0f0f0;
+   Width: 476px;
+   Height: 26px;
+   margin-bottom: 5px;
+   border-radius: 5px;
+   font-family: Roboto;
+   font-size: 20px;
  }
  
  #entrar{
    color: white;
-   background-color:black;
-   Width: 500px;
-   Height: 60px;
+   background-color: black;
+   Width: 495px;
+   Height: 50px;
    border: none;
-   font-size: 1.5em; 
-   font-weight:500;
+   font-size: 20px;
+   font-weight: 500;
    margin-bottom: 10px;
+   border-radius: 5px;
 }
 
 #entrar:hover{
@@ -81,6 +78,49 @@
 #p3 {
    
 }
+
+.form-control i{
+   visibility: hidden;
+   position: relative;
+}
+
+.form-control small {
+   bottom: 0;
+   font-size: 15px;
+   padding: 3px;
+   visibility: hidden;
+}
+
+.form-control.success input {
+   border-color: #2ecc71;
+
+}
+
+.form-control.error input {
+   border-color: #e74c3c;
+}
+
+.form-control.success i.fa-check-circle {
+   color: #2ecc71;
+   visibility: visible;
+   position: relative;
+   right: 20px;
+}
+
+.form-control.error i.fa-exclamation-circle {
+   color: #e74c3c;
+   visibility: visible;
+}
+
+.form-control.error small {
+   visibility: visible;
+   color: #e74c3c;
+}
+
+.msg-erro {
+   padding-bottom: 10px;
+}
+
 
 /*////////// responsividade //////////*/
 

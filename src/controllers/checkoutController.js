@@ -1,5 +1,5 @@
 const User = require('../modelsJson/Users');
-const { Address, Shipping, CreditCard, Pix, Ticket, Purchase } = require('../models');
+const { Address, Shipping, CreditCard, Pix, Ticket, Purchase, Product } = require('../models');
 
 const CheckoutController = {
 
@@ -10,8 +10,11 @@ const CheckoutController = {
 
     userIsNotLoggedInAddress: (req, res) => {
 
-        !req.session.carrinho ? res.redirect('/') : res.render('information');
-        !req.session.user ? res.redirect('/login') : res.render('information');
+        const productCart = req.session.carrinho;
+        console.log("carrinho aqui", productCart[0].quantidade);
+
+        !req.session.carrinho ? res.redirect('/') : res.render('information', { productCart });
+        !req.session.user ? res.redirect('/login') : res.render('information', { productCart });
         
     },
 
@@ -52,11 +55,35 @@ const CheckoutController = {
 
     },
 
-    userIsNotLoggedInShipping: (req, res) => {
+    userIsNotLoggedInShipping: async (req, res) => {
 
-        !req.session.addressId ? res.redirect('/login') : res.render('shipping');
-        !req.session.carrinho ? res.redirect('/') : res.render('shipping');
-        !req.session.user ? res.redirect('/login') : res.render('shipping');
+        const productCart = req.session.carrinho;
+        console.log("carrinho aqui", productCart[0].dataValues.preco);
+        
+        const firstField = await Shipping.findOne({
+            where: {
+                id: 1
+            }
+        });
+        const secondField = await Shipping.findOne({
+            where: {
+                id: 2
+            }
+        });
+        const thirdField = await Shipping.findOne({
+            where: {
+                id: 3
+            }
+        });
+
+        !req.session.addressId ? res.redirect('/login') : res.render('shipping', { productCart, firstField, secondField, thirdField });
+        !req.session.carrinho ? res.redirect('/') : res.render('shipping', { productCart, firstField, secondField, thirdField });
+        !req.session.user ? res.redirect('/login') : res.render('shipping', { productCart, firstField, secondField, thirdField });
+        
+
+    
+        // res.render('shipping', { productCart, firstField, secondField, thirdField });
+
 
     },
 
