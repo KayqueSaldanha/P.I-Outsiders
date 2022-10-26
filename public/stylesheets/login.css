@@ -17,8 +17,7 @@ section{
 
 section>#h1{
    Font-family: Roboto;
-   Font-size: 50px;
-   Line-height: 45px;
+   Font-size: 30px;
    Line-height: 100%;
    color: rgba(0, 0, 0, 0.7);
 }
@@ -69,28 +68,24 @@ span:hover{
 
 
 .campo{
-   background-color: #D9D9D9;
-   Width: 500px;
-   Height: 60px;
-   margin-bottom: 43px;
-   border: none;
-   Font-family: Roboto;
-   Font-style: Regular;
-   Font-size: 25px;
-   Line-height: 35px;
-   Line-height: 100%;
-   text-align: start;
+   Width: 476px;
+   Height: 26px;
+   padding: 7px;
+   border-radius: 5px;
+   margin-bottom: 27px;
+   border: 2px solid #f0f0f0;
+   Font-family: Roboto;  
+   Font-size: 20px;
 }
 
 .entrar{
    color: white;
-   background-color:black;
-   Width: 500px;
-   Height: 60px;
-   margin-bottom: 43px;
+   background-color: black;
+   Width: 495px;
+   Height: 50px;
    border: none;
-   font-size: 1.5em; 
-   font-weight:500
+   margin-bottom: 10px;
+   border-radius: 5px;
 }
 
 .entrar:hover{
@@ -117,6 +112,23 @@ span:hover{
    color: red;
 }
 
+.wrapper {
+   position: relative;
+}
+
+i.fa-regular.fa-eye{
+   position: relative;
+   visibility: visible;
+   right: 33px;
+   cursor: pointer;
+}
+
+i.fa-regular.fa-eye-slash{
+   position: relative;
+   visibility: hidden;
+   right: 56px;
+   cursor: pointer;
+}
 /*////////// responsividade /////////*/
 
 @media screen and (max-width:375px){

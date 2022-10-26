@@ -7,7 +7,7 @@ const senha = document.getElementById("password");
 form.addEventListener('submit', (e) => {
     //evento para prevenir o carregamento do botão caso esteja vazio
     e.preventDefault()
-    checkInputs()
+    checkInputs()    
 });
 
 function checkInputs (){
@@ -57,7 +57,6 @@ function checkEmail(email) {
 }
 
 function setErrorFor(input, message){
-    console.log("teste1")
     const formControl = input.parentElement
     const small = formControl.querySelector("small")
     small.innerText = message
@@ -65,7 +64,6 @@ function setErrorFor(input, message){
 }
 
 function setSuccessFor (input){
-    console.log("teste2")
     const formControl = input.parentElement
     formControl.className = "form-control success"
 }
