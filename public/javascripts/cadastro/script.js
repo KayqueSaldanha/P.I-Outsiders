@@ -4,14 +4,12 @@ const sobrenome = document.getElementById("sobrenome");
 const email = document.getElementById("email");
 const senha = document.getElementById("password");
 
-form.addEventListener('submit', (e) => {
-    //evento para prevenir o carregamento do botão caso esteja vazio
+form.addEventListener('submit', checkInputs(), (e)  => {
+    //evento para prevenir o carregamento do botão caso esteja vazio  
     e.preventDefault()
-    checkInputs()    
 });
 
-function checkInputs (){
-    const nomeValue = nome.value;
+function checkInputs (){    const nomeValue = nome.value;
     const sobrenomeValue = sobrenome.value;
     const emailValue = email.value;
     const senhaValue = senha.value;
