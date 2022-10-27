@@ -32,8 +32,8 @@
 
                     <div class="wrapper">
                         <input class="campo" name="senha" type="password" placeholder="Senha" id="senha">
-                        <i class="fa-regular fa-eye" id="btn"></i>
-                        <i class="fa-regular fa-eye-slash"></i>
+                        <i class="fa-regular fa-eye" id="btn-show" onclick="showHide()"></i>
+                        <i class="none fa-regular fa-eye-slash" id="btn-hidden" onclick="showHide()"></i>
                     </div>
 
                     <% if(error) {%>
