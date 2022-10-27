@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `mydb` /*!40100 DEFAULT CHARACTER SET utf8mb3 */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `mydb`;
 -- MySQL dump 10.13  Distrib 8.0.30, for Win64 (x86_64)
 --
 -- Host: localhost    Database: mydb
@@ -220,9 +218,9 @@ CREATE TABLE `produtos` (
   `categoria` varchar(15) NOT NULL,
   `tamanhos` json NOT NULL,
   `status` varchar(15) DEFAULT NULL,
-  `descricao` varchar(45) DEFAULT NULL,
+  `descricao` varchar(500) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -231,7 +229,7 @@ CREATE TABLE `produtos` (
 
 LOCK TABLES `produtos` WRITE;
 /*!40000 ALTER TABLE `produtos` DISABLE KEYS */;
-INSERT INTO `produtos` VALUES (1,'produto teste','','','teste',249,'{\"cores\": [\"preto\", \"branco\", \"azul\"]}','homem','homem','{\"tamanhos\": [\"P\", \"PP\", \"M\", \"G\", \"GG\"]}','diaDia','');
+INSERT INTO `produtos` VALUES (1,'2_0a0f523a-d08d-417e-8854-c89803d2196b.webp','4_a316be1d-95eb-4006-a550-8d35f4f3823b.webp','1_432c1241-2b54-4a8d-9a10-b0aa77ca863f.webp','Future Shorts',249,'{\"cores\": [\"preto\", \"branco\", \"azul\"]}','homem','homem','{\"tamanhos\": [\"P\", \"PP\", \"M\", \"G\", \"GG\"]}','diaDia','O Future Shorts é nosso primeiro shorts masculino, o item aguardado há anos que vai superar sua expectativa. Como tudo na Insider, ele foi pensado nos mínimos detalhes para ser seu novo shorts favorito.'),(2,'TechTShirt_Preta-04.webp','TechTShirt_Preta-06.webp','TechTShirt_Preta-02.webp','Tech TShirt',169,'{\"cores\": [\"preto\", \"branco\", \"azul\"]}','homem','homem','{\"tamanhos\": [\"P\", \"PP\", \"M\", \"G\", \"GG\"]}','diaDia','A Tech T-shirt foi desenvolvida para facilitar a vida de quem vive na correria: não precisa ser passada, não esquenta e evita odores desagradáveis. Ela é uma releitura tecnológica da camiseta básica e oferece excelentes níveis de respirabilidade, aumentando a sensação de bem-estar.');
 /*!40000 ALTER TABLE `produtos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -296,10 +294,6 @@ LOCK TABLES `usuarios` WRITE;
 INSERT INTO `usuarios` VALUES (1,'LEANDRO','FURTADO','le_furtado@outlook.com.br','123',NULL,NULL,NULL),(3,'Leandro','Furtado','teste@email.com','$2b$10$yZ1mbL.VgCX5WLbifkmvke3HsBhBZ3upea.GV8AV4a7ikwZH2j0Fa','12312312312','11971815551','1993-04-22'),(4,'Andressa','Paranhos','andressaparanhos1@hotmail.com','$2b$10$vHCEr3K4CuECXSfBxJxXF.5uAVvG8zEA3/g6PvZUNT4QAWhWlDEIW',NULL,NULL,NULL);
 /*!40000 ALTER TABLE `usuarios` ENABLE KEYS */;
 UNLOCK TABLES;
-
---
--- Dumping routines for database 'mydb'
---
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -310,4 +304,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-10-18 22:40:00
+-- Dump completed on 2022-10-26  0:29:12
