@@ -106,9 +106,10 @@ span:hover{
 }
 
 .error-login{
-   margin-top: -10px;
-   margin-bottom: 10px;
-   text-align: center;
+   margin-top: -21px;
+   margin-left: 5px;
+   margin-bottom: 11px;
+   font-size: 13px;
    color: red;
 }
 
@@ -116,19 +117,32 @@ span:hover{
    position: relative;
 }
 
-i.fa-regular.fa-eye{
+i#btn-show.fa-regular.fa-eye{
    position: relative;
-   visibility: visible;
-   right: 33px;
+   right: -461px;
    cursor: pointer;
+   top: -56px;
 }
 
-i.fa-regular.fa-eye-slash{
+i#btn-hidden.fa-regular.fa-eye-slash{
    position: relative;
-   visibility: hidden;
-   right: 56px;
+   right: -439px;
    cursor: pointer;
+   top: -56px;
 }
+
+.hidden{
+   display: hidden;
+}
+
+.none{
+   display:none !important;
+}
+
+.wrapper{
+   width: 494px;
+}
+
 /*////////// responsividade /////////*/
 
 @media screen and (max-width:375px){
