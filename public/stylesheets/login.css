@@ -119,14 +119,16 @@ span:hover{
 
 i#btn-show.fa-regular.fa-eye{
    position: relative;
-   right: 33px;
+   right: -461px;
    cursor: pointer;
+   top: -56px;
 }
 
 i#btn-hidden.fa-regular.fa-eye-slash{
    position: relative;
-   right: 56px;
+   right: -439px;
    cursor: pointer;
+   top: -56px;
 }
 
 .hidden{
@@ -135,6 +137,10 @@ i#btn-hidden.fa-regular.fa-eye-slash{
 
 .none{
    display:none !important;
+}
+
+.wrapper{
+   width: 494px;
 }
 
 /*////////// responsividade /////////*/
