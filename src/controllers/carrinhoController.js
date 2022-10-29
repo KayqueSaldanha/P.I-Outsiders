@@ -42,14 +42,14 @@ const carrinhoController = {
     //     },
 
     remover: async (req, res) => {
-        const idProduto = await User.findOne({
+        const idProduto = await Product.findOne({
             attibutes: ['id'],
             where: {
                 id : req.params.id
             }
         })
-        const produtoIndex = req.session.carrinho.findAll(produto => produto.id === idProduto)
-        req.session.carrinho.destroy(produtoIndex, 1) 
+        const produtoIndex = req.session.carrinho.find(produto => produto.id === idProduto)
+        req.session.carrinho.splice(produtoIndex, 1) 
     res.redirect('/carrinho')
     }
 }

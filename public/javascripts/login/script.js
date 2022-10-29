@@ -1,22 +1,23 @@
 const senha = document.getElementById("senha");
-const btn = document.getElementById("btn");
-
-console.log("Pass filed", senha)
-console.log("Pass filed", btn)
+const btnShow = document.querySelector("#btn-show");
+const btnHide = document.querySelector("#btn-hidden");
 
 
-btn.onclick = () => {
+const showHide = () => {
+    console.log('type password');
     //comparando se o tipo de senha é igual ao password
     if(senha.type === "password"){
         // quando clicar no icone o "type" vai mudar de password para texto
         senha.type = 'text';
-        btn.classList.add('fa-eye-slash');
-        console.log('type password');
-    } else {
+        btnHide.classList.remove('none');
+        console.log('teste1')
+
+    } else if (senha.type === "text") {
         senha.type = 'password';
-        btn.classList.remove('fa-eye-slash');
-    }
-}
+        btnHide.classList.toggle('none');
+        console.log('teste2')
+    } 
+} 
 
 /*
 function showHide(){
