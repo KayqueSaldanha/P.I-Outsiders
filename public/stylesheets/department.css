@@ -2,6 +2,18 @@
 /************************************/
 
 /* BREAD */
+
+@keyframes myAnim {
+    0% {
+        opacity: 0;
+        transform: rotate(-540deg) scale(2);
+    }
+
+    100% {
+        opacity: 1;
+        transform: rotate(0) scale(1);
+    }
+}
 .bread__list {
     display: flex;
     gap: 5px;
@@ -226,6 +238,17 @@ html {
     height: 232px;
     display: flex;
     padding: 4px 4px;
+    position: absolute;
+}
+
+.shelf__img{
+    width: 232px;
+    height: 232px;
+}
+
+.opacity-none {
+    display: none !important;
+    animation: myAnim 1s ease 0s 1 normal forwards !important;
 }
 
 .price {
