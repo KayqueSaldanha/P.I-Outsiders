@@ -1,6 +1,6 @@
 const config = {
     username: 'root',
-    password: 'vvpdhoc3',
+    password: '12345678',
     database: 'mydb',
     host: 'localhost',
     dialect: 'mysql'
