@@ -1,21 +1,18 @@
-const User = require('../modelsJson/Users');
-const { Address, Shipping, CreditCard, Pix, Ticket, Purchase, Product } = require('../models');
+const { Address, Shipping, CreditCard, Pix, Ticket, Purchase } = require('../models');
 
 const CheckoutController = {
 
     index: async (req, res) => {
         let address = await Address.findAll();
-
     },
 
     userIsNotLoggedInAddress: (req, res) => {
 
         const productCart = req.session.carrinho;
-        console.log("carrinho aqui", productCart[0].quantidade);
 
         !req.session.carrinho ? res.redirect('/') : res.render('information', { productCart });
         !req.session.user ? res.redirect('/login') : res.render('information', { productCart });
-        
+
     },
 
     addAddress: async (req, res) => {
@@ -58,8 +55,7 @@ const CheckoutController = {
     userIsNotLoggedInShipping: async (req, res) => {
 
         const productCart = req.session.carrinho;
-        console.log("carrinho aqui", productCart[0].dataValues.preco);
-        
+
         const firstField = await Shipping.findOne({
             where: {
                 id: 1
@@ -76,12 +72,24 @@ const CheckoutController = {
             }
         });
 
-        !req.session.addressId ? res.redirect('/login') : res.render('shipping', { productCart, firstField, secondField, thirdField });
-        !req.session.carrinho ? res.redirect('/') : res.render('shipping', { productCart, firstField, secondField, thirdField });
-        !req.session.user ? res.redirect('/login') : res.render('shipping', { productCart, firstField, secondField, thirdField });
-        
 
-    
+        if (!req.session.addressId || !req.session.user) {
+            return res.redirect('/login')
+        };
+
+        if (!req.session.carrinho) {
+            return res.redirect('/')
+        };
+
+        res.render('shipping', { productCart, firstField, secondField, thirdField });
+
+
+        // !req.session.addressId ? res.redirect('/login') : res.render('shipping', { productCart, firstField, secondField, thirdField });
+        // !req.session.carrinho ? res.redirect('/') : res.render('shipping', { productCart, firstField, secondField, thirdField });
+        // !req.session.user ? res.redirect('/login') : res.render('shipping', { productCart, firstField, secondField, thirdField });
+
+
+
         // res.render('shipping', { productCart, firstField, secondField, thirdField });
 
 
@@ -101,10 +109,11 @@ const CheckoutController = {
     },
 
     userIdNotLoggedInPaymentMethod: (req, res) => {
+        const productCart = req.session.carrinho;
 
-        !req.session.shippingId ? res.redirect('/login') : res.render('payment');
-        !req.session.carrinho ? res.redirect('/') : res.render('payment');
-        !req.session.user ? res.redirect('/login') : res.render('payment');
+        !req.session.shippingId ? res.redirect('/login') : res.render('payment', { productCart });
+        !req.session.carrinho ? res.redirect('/') : res.render('payment', { productCart });
+        !req.session.user ? res.redirect('/login') : res.render('payment', { productCart });
 
     },
 
@@ -161,7 +170,7 @@ const CheckoutController = {
             });
 
             req.session.ticketId = ticket.id;
-            
+
         };
 
         res.redirect('/compra-confirmada');
@@ -169,18 +178,19 @@ const CheckoutController = {
     },
 
     purchaseFinalization: async (req, res) => {
-        
-        const purchaseInformation = await Purchase.create({            
+        const productCart = req.session.carrinho;
+
+        const purchaseInformation = await Purchase.create({
             usuarioId: req.session.user.id,
             freteId: req.session.shippingId,
             enderecoId: req.session.addressId,
             boletoId: req.session.ticketId,
             pixId: req.session.pixId,
-            cartaoId: req.session.creditCardId,                
+            cartaoId: req.session.creditCardId,
             status: "Compra finalizada com sucesso",
             numeroParcela: req.session.parcelNumbers
         });
-        
+
         const purchaseId = await Purchase.findOne({
             where: {
                 id: purchaseInformation.id
@@ -200,7 +210,7 @@ const CheckoutController = {
 
         // !req.session.creditCardId || !req.session.pixId || !req.session.ticketId ? res.redirect('/login') : '';
 
-        res.render('confirmation', { purchaseInformation, userData, addressData, shippingData, purchaseId });
+        res.render('confirmation', { productCart, purchaseInformation, userData, addressData, shippingData, purchaseId });
     }
 }
 
