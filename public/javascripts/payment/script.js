@@ -14,7 +14,7 @@ inputCard.addEventListener('keypress', () => {
     let inputLength = inputCard.value.length;
 
     if (inputLength === 4 || inputLength === 9 || inputLength === 14) {
-        inputCard.value += '.'
+        inputCard.value += ' '
     }
 })
 
